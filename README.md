@@ -1,5 +1,11 @@
 # hexagone — mappa ibis & ibis Styles in Francia
 
+[![Sito pubblicato](https://img.shields.io/badge/demo-GitHub%20Pages-d0006f)](https://calca.github.io/hexagone/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+**🌐 Sito live: https://calca.github.io/hexagone/**
+**📦 Repository: https://github.com/calca/hexagone**
+
 Pipeline Python + sito statico che mostra tutti gli hotel **ibis** e **ibis
 Styles** in Francia, raggruppati per citta'. Per ogni citta' vengono
 mostrati popolazione, cenni storici e cosa visitare in un giorno.
@@ -8,6 +14,7 @@ mostrati popolazione, cenni storici e cosa visitare in un giorno.
 - **Popolazione**: Wikidata (SPARQL) — licenza CC0
 - **Storia e attrazioni**: Wikipedia e Wikivoyage in francese — licenza CC BY-SA
 - **Frontend**: HTML/CSS/JS statico con mappa Leaflet (vendorizzata in `docs/vendor/`, nessuna dipendenza da CDN esterne), pubblicabile su GitHub Pages
+- **Licenza**: [MIT](LICENSE) per codice e sito. I dati restano soggetti alle licenze delle rispettive fonti (ODbL / CC0 / CC BY-SA elencate sopra).
 
 ## Struttura del progetto
 
@@ -123,3 +130,11 @@ l'elenco citta' (campo "Popolazione minima" e ordinamento nella sidebar).
 - Rispetta le policy di utilizzo di Overpass API e Wikimedia (User-Agent
   identificativo gia' impostato negli script, non aumentare la frequenza
   delle richieste).
+
+## Licenza
+
+Codice e sito sono rilasciati con licenza [MIT](LICENSE). I dati mostrati
+provengono da fonti terze con licenze proprie e vanno attribuiti di
+conseguenza: OpenStreetMap (ODbL), Wikidata (CC0), Wikipedia/Wikivoyage in
+francese (CC BY-SA) — vedi i link diretti nella scheda di ogni citta' sul
+sito.
