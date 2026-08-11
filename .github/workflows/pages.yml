@@ -1,5 +1,6 @@
 name: Deploy GitHub Pages
 
+# Ritocco per forzare GitHub a re-indicizzare il workflow.
 on:
   push:
     branches: [main]
