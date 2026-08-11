@@ -14,10 +14,42 @@
     sort: document.getElementById("sort"),
     minpop: document.getElementById("minpop"),
     list: document.getElementById("city-list"),
+    listMeta: document.getElementById("list-meta"),
+    layout: document.getElementById("layout"),
+    viewTabs: document.getElementById("view-tabs"),
     detail: document.getElementById("detail"),
     detailContent: document.getElementById("detail-content"),
     detailClose: document.getElementById("detail-close"),
+    detailBackdrop: document.getElementById("detail-backdrop"),
   };
+
+  const mobileQuery = window.matchMedia("(max-width: 860px)");
+
+  function setView(view) {
+    els.layout.dataset.view = view;
+    els.viewTabs.querySelectorAll("button").forEach((btn) => {
+      const active = btn.dataset.view === view;
+      btn.classList.toggle("active", active);
+      btn.setAttribute("aria-pressed", String(active));
+    });
+    if (view === "map") {
+      setTimeout(() => map.invalidateSize(), 50);
+    }
+  }
+
+  els.viewTabs.addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-view]");
+    if (btn) setView(btn.dataset.view);
+  });
+
+  function closeDetail() {
+    els.detail.hidden = true;
+    els.detailBackdrop.hidden = true;
+    state.activeId = null;
+    renderList();
+  }
+
+  els.detailBackdrop.addEventListener("click", closeDetail);
 
   const map = L.map("map", { zoomControl: true }).setView([46.6, 2.4], 6);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -68,6 +100,15 @@
   }
 
   function renderList() {
+    els.listMeta.textContent = state.filtered.length === 1
+      ? "1 citta' trovata"
+      : `${numberFmt(state.filtered.length)} citta' trovate`;
+
+    if (!state.filtered.length) {
+      els.list.innerHTML = `<li class="empty-state" style="cursor:default">Nessuna citta' corrisponde ai filtri.</li>`;
+      return;
+    }
+
     els.list.innerHTML = "";
     const frag = document.createDocumentFragment();
     state.filtered.forEach((city) => {
@@ -123,6 +164,7 @@
     renderList();
 
     if (panMap) {
+      if (mobileQuery.matches) setView("map");
       map.flyTo([city.lat, city.lon], Math.max(map.getZoom(), 12), { duration: 0.6 });
     }
     const marker = state.markers.get(cityId);
@@ -171,13 +213,10 @@
       </div>
     `;
     els.detail.hidden = false;
+    els.detailBackdrop.hidden = false;
   }
 
-  els.detailClose.addEventListener("click", () => {
-    els.detail.hidden = true;
-    state.activeId = null;
-    renderList();
-  });
+  els.detailClose.addEventListener("click", closeDetail);
 
   els.search.addEventListener("input", applyFilters);
   els.sort.addEventListener("change", applyFilters);
