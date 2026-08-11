@@ -1,0 +1,188 @@
+:root {
+  --bg: #f5f4f0;
+  --panel: #ffffff;
+  --border: #ddd8cf;
+  --text: #201e1a;
+  --text-muted: #6b665c;
+  --accent: #d0006f; /* rosso Accor/ibis */
+  --accent-styles: #ff6a13; /* arancio ibis Styles */
+  --shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .6rem 1.2rem;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.topbar h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 700;
+}
+.topbar h1 span { color: var(--accent); }
+.topbar h1 .fr { color: var(--text-muted); font-weight: 400; }
+
+.stats { font-size: .85rem; color: var(--text-muted); }
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: calc(100vh - 52px);
+  position: relative;
+}
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.controls {
+  padding: .8rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.controls input, .controls select {
+  width: 100%;
+  padding: .45rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: .9rem;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+}
+.control-row label { font-size: .78rem; color: var(--text-muted); white-space: nowrap; }
+.control-row select, .control-row input { width: auto; flex: 1; }
+
+.city-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.city-list li {
+  padding: .6rem .9rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  align-items: baseline;
+}
+.city-list li:hover, .city-list li.active { background: #fbeef4; }
+
+.city-name { font-weight: 600; font-size: .92rem; }
+.city-meta { font-size: .75rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
+
+#map { width: 100%; height: 100%; }
+
+.detail {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: min(420px, 92vw);
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  background: var(--panel);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 1.1rem 1.2rem 1.4rem;
+  z-index: 500;
+}
+
+.detail-close {
+  position: absolute;
+  top: .5rem;
+  right: .6rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.detail h2 { margin: 0 .2rem .1rem 0; font-size: 1.25rem; }
+.detail .subtitle { color: var(--text-muted); font-size: .85rem; margin-bottom: .8rem; }
+
+.detail-section { margin-top: 1rem; }
+.detail-section h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); margin: 0 0 .4rem; }
+.detail-section p { margin: 0; font-size: .92rem; line-height: 1.5; }
+
+.attractions { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.attractions li {
+  background: #f1eee7;
+  border-radius: 20px;
+  padding: .3rem .7rem;
+  font-size: .82rem;
+}
+
+.hotel-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: .6rem .7rem;
+  margin-bottom: .5rem;
+}
+.hotel-card .name { font-weight: 600; font-size: .92rem; }
+.hotel-card .address { font-size: .82rem; color: var(--text-muted); margin-top: .15rem; }
+.hotel-card .links { margin-top: .3rem; font-size: .78rem; display: flex; gap: .7rem; }
+.hotel-card .links a { color: var(--accent); text-decoration: none; }
+
+.badge {
+  display: inline-block;
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .12rem .45rem;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: .4rem;
+  vertical-align: middle;
+}
+.badge.ibis { background: var(--accent); }
+.badge.styles { background: var(--accent-styles); }
+
+.leaflet-popup-content { font-size: .85rem; }
+.leaflet-popup-content button {
+  margin-top: .4rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: .3rem .6rem;
+  font-size: .8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .layout { grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }
+  .sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+  .detail { left: 12px; right: 12px; width: auto; }
+}

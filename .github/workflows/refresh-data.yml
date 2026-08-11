@@ -1,0 +1,59 @@
+name: Refresh dataset (Overpass/Wikidata/Wikipedia)
+
+on:
+  schedule:
+    - cron: "0 3 * * 1" # ogni lunedi' alle 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      skip_wikimedia:
+        description: "Salta storia/attrazioni (giro rapido, solo hotel+popolazione)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      # Cache la cache Wikipedia/Wikivoyage (data/cache/wiki_cache.json) tra le run:
+      # evita di ri-scaricare storia/attrazioni per citta' gia' viste.
+      - name: Ripristina cache wiki
+        uses: actions/cache@v4
+        with:
+          path: data/cache/wiki_cache.json
+          key: wiki-cache-${{ github.run_id }}
+          restore-keys: |
+            wiki-cache-
+
+      - name: Esegui pipeline
+        run: |
+          if [ "${{ github.event.inputs.skip_wikimedia }}" = "true" ]; then
+            python scripts/pipeline.py --skip-wikimedia
+          else
+            python scripts/pipeline.py
+          fi
+
+      - name: Commit dataset aggiornato
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica al dataset."
+          else
+            git commit -m "chore: refresh dataset ibis/ibis Styles Francia"
+            git push origin main
+          fi

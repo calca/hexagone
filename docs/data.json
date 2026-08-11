@@ -1,0 +1,129 @@
+{
+  "generated_at": "SAMPLE",
+  "sample": true,
+  "source": "DATI DI ESEMPIO per dimostrare il sito. Esegui `python scripts/pipeline.py` (o il workflow GitHub Actions 'Refresh dataset') per generare il dataset reale da OpenStreetMap (ODbL), Wikidata (CC0) e Wikipedia/Wikivoyage FR (CC BY-SA).",
+  "stats": { "cities": 7, "hotels": 9, "ibis": 6, "ibis_styles": 3 },
+  "cities": [
+    {
+      "id": "paris",
+      "name": "Paris",
+      "insee": "75056",
+      "wikidata": "Q90",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "population": 2133000,
+      "population_year": "esempio",
+      "history_summary": "Fondata come Lutetia dai Parisii, capitale della Francia dal Medioevo, Parigi e' cresciuta come centro politico, culturale ed economico d'Europa attraverso monarchia, rivoluzione e modernizzazione ottocentesca (i grandi boulevard di Haussmann).",
+      "attractions": ["Torre Eiffel", "Museo del Louvre", "Notre-Dame", "Montmartre e Sacre-Coeur", "Musee d'Orsay"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris",
+      "hotel_count": 2,
+      "hotels": [
+        { "osm_id": "sample/1", "name": "ibis Paris Bastille Faubourg Saint-Antoine", "brand": "ibis", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "75011", "lat": 48.8532, "lon": 2.3746, "phone": null, "website": null },
+        { "osm_id": "sample/2", "name": "ibis Styles Paris Gare Montparnasse", "brand": "ibis Styles", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "75014", "lat": 48.8388, "lon": 2.3210, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "insee": "13055",
+      "wikidata": "Q23482",
+      "lat": 43.2965,
+      "lon": 5.3698,
+      "population": 873000,
+      "population_year": "esempio",
+      "history_summary": "Fondata dai Focesi greci come Massalia intorno al 600 a.C., e' la citta' piu' antica di Francia e uno dei principali porti del Mediterraneo, crocevia di commerci e migrazioni per oltre 2600 anni.",
+      "attractions": ["Vieux-Port", "Notre-Dame de la Garde", "Le Panier", "MuCEM", "Calanques"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Marseille",
+      "hotel_count": 2,
+      "hotels": [
+        { "osm_id": "sample/3", "name": "ibis Marseille Centre Prefecture", "brand": "ibis", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "13006", "lat": 43.2892, "lon": 5.3836, "phone": null, "website": null },
+        { "osm_id": "sample/4", "name": "ibis Styles Marseille Vieux Port", "brand": "ibis Styles", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "13001", "lat": 43.2967, "lon": 5.3750, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "lyon",
+      "name": "Lyon",
+      "insee": "69123",
+      "wikidata": "Q456",
+      "lat": 45.7640,
+      "lon": 4.8357,
+      "population": 522000,
+      "population_year": "esempio",
+      "history_summary": "Fondata dai Romani nel 43 a.C. come Lugdunum, capitale delle Gallie, Lione divenne poi capitale europea della seta nel Rinascimento; il centro storico e' Patrimonio UNESCO.",
+      "attractions": ["Vieux Lyon", "Basilique de Fourviere", "Presqu'ile", "Traboules", "Parc de la Tete d'Or"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lyon",
+      "hotel_count": 1,
+      "hotels": [
+        { "osm_id": "sample/5", "name": "ibis Lyon Centre Confluence", "brand": "ibis", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "69002", "lat": 45.7452, "lon": 4.8180, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "toulouse",
+      "name": "Toulouse",
+      "insee": "31555",
+      "wikidata": "Q5222",
+      "lat": 43.6047,
+      "lon": 1.4442,
+      "population": 493000,
+      "population_year": "esempio",
+      "history_summary": "Detta 'la Ville Rose' per il colore dei mattoni dei suoi edifici, fu capitale del regno visigoto e poi della contea di Tolosa; oggi e' capitale europea dell'industria aerospaziale.",
+      "attractions": ["Basilique Saint-Sernin", "Capitole", "Cite de l'Espace", "Canal du Midi"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Toulouse",
+      "hotel_count": 1,
+      "hotels": [
+        { "osm_id": "sample/6", "name": "ibis Styles Toulouse Centre Compans Caffarelli", "brand": "ibis Styles", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "31000", "lat": 43.6082, "lon": 1.4372, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "nantes",
+      "name": "Nantes",
+      "insee": "44109",
+      "wikidata": "Q12191",
+      "lat": 47.2184,
+      "lon": -1.5536,
+      "population": 320000,
+      "population_year": "esempio",
+      "history_summary": "Antica capitale della Bretagna e porto atlantico legato alla storia coloniale francese, Nantes ha riconvertito i suoi ex cantieri navali dell'isola di Nantes in un distretto culturale e creativo.",
+      "attractions": ["Chateau des ducs de Bretagne", "Les Machines de l'ile", "Cathedrale Saint-Pierre", "Passage Pommeraye"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Nantes",
+      "hotel_count": 1,
+      "hotels": [
+        { "osm_id": "sample/7", "name": "ibis Nantes Centre Gare", "brand": "ibis", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "44000", "lat": 47.2150, "lon": -1.5420, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "insee": "67482",
+      "wikidata": "Q6602",
+      "lat": 48.5734,
+      "lon": 7.7521,
+      "population": 287000,
+      "population_year": "esempio",
+      "history_summary": "Al confine tra Francia e Germania, Strasburgo ha cambiato piu' volte nazionalita' tra il 1871 e il 1945; oggi e' sede del Parlamento europeo e il suo centro medievale (Grande-Ile) e' Patrimonio UNESCO.",
+      "attractions": ["Cathedrale Notre-Dame", "La Petite France", "Quartier europeen", "Barrage Vauban"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Strasbourg",
+      "hotel_count": 1,
+      "hotels": [
+        { "osm_id": "sample/8", "name": "ibis Styles Strasbourg Centre Gare", "brand": "ibis Styles", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "67000", "lat": 48.5850, "lon": 7.7345, "phone": null, "website": null }
+      ]
+    },
+    {
+      "id": "bordeaux",
+      "name": "Bordeaux",
+      "insee": "33063",
+      "wikidata": "Q1479",
+      "lat": 44.8378,
+      "lon": -0.5792,
+      "population": 260000,
+      "population_year": "esempio",
+      "history_summary": "Porto romano poi capitale del commercio del vino sotto la dominazione angioina, Bordeaux conserva la piu' vasta area urbana classificata Patrimonio UNESCO di Francia grazie alla sua architettura settecentesca.",
+      "attractions": ["Place de la Bourse", "Cite du Vin", "Grand Theatre", "Miroir d'eau"],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Bordeaux",
+      "hotel_count": 1,
+      "hotels": [
+        { "osm_id": "sample/9", "name": "ibis Bordeaux Centre Meriadeck", "brand": "ibis", "address": "Indirizzo reale disponibile dopo l'esecuzione della pipeline", "postcode": "33000", "lat": 44.8402, "lon": -0.5850, "phone": null, "website": null }
+      ]
+    }
+  ]
+}

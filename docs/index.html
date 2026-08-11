@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>ibis &amp; ibis Styles in Francia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mappa degli hotel ibis e ibis Styles in Francia, con dati su popolazione, storia e cosa visitare per ogni citta'.">
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>ibis <span>&amp;</span> ibis Styles <span class="fr">— Francia</span></h1>
+  <div id="stats" class="stats">Caricamento dati…</div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <div class="controls">
+      <input id="search" type="search" placeholder="Cerca citta'…" autocomplete="off">
+      <div class="control-row">
+        <label for="sort">Ordina per</label>
+        <select id="sort">
+          <option value="population-desc">Popolazione ↓</option>
+          <option value="population-asc">Popolazione ↑</option>
+          <option value="name-asc">Nome A→Z</option>
+          <option value="hotels-desc">N. hotel ↓</option>
+        </select>
+      </div>
+      <div class="control-row">
+        <label for="minpop">Popolazione minima</label>
+        <input id="minpop" type="number" min="0" step="1000" placeholder="0">
+      </div>
+    </div>
+    <ul id="city-list" class="city-list" aria-label="Elenco citta'"></ul>
+  </aside>
+
+  <div id="map"></div>
+
+  <section id="detail" class="detail" hidden>
+    <button id="detail-close" class="detail-close" aria-label="Chiudi">&times;</button>
+    <div id="detail-content"></div>
+  </section>
+</main>
+
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
