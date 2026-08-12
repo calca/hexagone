@@ -50,11 +50,19 @@ class WikiCache:
 
 
 def clean_wikitext(text: str) -> str:
+    # Righe di titolo/sottotitolo (== Storia ==, === Preistoria e Antichita' ===):
+    # l'API extracts le lascia in sintassi wiki quando serve per individuare i
+    # confini delle sezioni (exsectionformat=wiki), ma non vanno mostrate cosi'
+    # com'e' in un paragrafo di prosa continua.
+    text = re.sub(r"^=+\s*.*?\s*=+$", "", text, flags=re.M)
     text = re.sub(r"'''?", "", text)
     text = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]+)\]\]", r"\1", text)
     text = re.sub(r"\{\{[^{}]*\}\}", "", text)
     text = re.sub(r"<ref[^>]*>.*?</ref>", "", text, flags=re.S)
     text = re.sub(r"<[^>]+>", "", text)
+    # righe vuote multiple lasciate dalla rimozione dei titoli
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r"[ \t]+\n", "\n", text)
     return text.strip()
 
 
@@ -86,9 +94,9 @@ def fetch_history_extract(title: str, cache: WikiCache) -> str | None:
             r"\n==\s*Histoire\s*==\n(.*?)(\n==[^=]|\Z)", full_text, flags=re.S | re.I
         )
         if match:
-            text = match.group(1).strip()
+            text = clean_wikitext(match.group(1))
         elif full_text:
-            text = full_text.split("\n\n")[0].strip()
+            text = clean_wikitext(full_text.split("\n\n")[0])
     except requests.RequestException as exc:
         print(f"  WARN wikipedia '{title}': {exc}", file=sys.stderr)
 
