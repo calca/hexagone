@@ -162,7 +162,12 @@ def main() -> int:
         cached = cache.get(insee)
         if cached == "__missing__":
             monuments = fetch_monuments(insee, city.get("name"))
-            cache.set(insee, monuments)
+            # Si scrive in cache solo un esito valido (anche [] = "zero
+            # monumenti confermato"): un fallimento (None) non va cachato,
+            # altrimenti una prossima run lo scambierebbe per "gia' provato"
+            # e non ritenterebbe mai piu' quel comune.
+            if monuments is not None:
+                cache.set(insee, monuments)
             time.sleep(REQUEST_PAUSE)
         else:
             monuments = cached

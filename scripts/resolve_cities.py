@@ -255,10 +255,14 @@ def main() -> int:
         else:
             try:
                 match = query_commune_containing(h["lat"], h["lon"])
+                # Si scrive in cache solo un esito valido (anche None = "nessun
+                # comune trovato per questo punto, confermato"): un fallimento
+                # di query (eccezione) non va cachato, altrimenti una prossima
+                # run lo scambierebbe per "gia' provato" e non ritenterebbe.
+                geo_cache.set(h["osm_id"], match)
             except RuntimeError as exc:
                 print(f"  ATTENZIONE: query fallita per hotel {h['osm_id']} ({h['lat']},{h['lon']}): {exc}", file=sys.stderr)
                 match = None
-            geo_cache.set(h["osm_id"], match)
             time.sleep(GEO_QUERY_PAUSE)
 
         if match and match["name_norm"]:
