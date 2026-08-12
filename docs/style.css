@@ -639,6 +639,17 @@ a { color: var(--accent); }
   .detail-backdrop { display: block; }
   .detail-backdrop[hidden] { display: none; }
 
+  /* Lo sheet di dettaglio copre fino all'82% dello schermo dal basso: i
+     controlli +/- (in alto a sinistra) e l'attribuzione Leaflet/OSM (in
+     basso) finiscono a cavallo del suo bordo e, avendo z-index piu' alto
+     di quello dello sheet, ci galleggiano sopra in modo fastidioso. Si
+     nascondono mentre lo sheet e' aperto, dato che in quel momento resta
+     visibile solo una piccola porzione di mappa in alto. */
+  .layout:has(#detail:not([hidden])) .leaflet-control-zoom,
+  .layout:has(#detail:not([hidden])) .leaflet-control-attribution {
+    display: none;
+  }
+
   .detail {
     position: fixed;
     left: 0;

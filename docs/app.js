@@ -101,7 +101,13 @@
       btn.setAttribute("aria-pressed", String(active));
     });
     if (view === "map") {
-      setTimeout(() => map.invalidateSize(), 50);
+      // Sincrono, non differito: leggere/scrivere le dimensioni forza comunque
+      // un reflow immediato. Un setTimeout qui lasciava una finestra in cui un
+      // successivo map.flyTo() (es. da showDetail) partiva mentre la mappa
+      // pensava ancora di avere dimensioni 0x0 (nascosta via display:none fino
+      // a un attimo prima), causando un errore "Invalid LatLng (NaN, NaN)" che
+      // interrompeva silenziosamente il resto della funzione chiamante.
+      map.invalidateSize();
     }
   }
 
