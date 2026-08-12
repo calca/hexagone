@@ -12,9 +12,9 @@
     stats: document.getElementById("stats"),
     search: document.getElementById("search"),
     sort: document.getElementById("sort"),
-    minpop: document.getElementById("minpop"),
-    minpopValue: document.getElementById("minpop-value"),
-    minpopFill: document.getElementById("minpop-fill"),
+    maxpop: document.getElementById("maxpop"),
+    maxpopValue: document.getElementById("maxpop-value"),
+    maxpopFill: document.getElementById("maxpop-fill"),
     list: document.getElementById("city-list"),
     listMeta: document.getElementById("list-meta"),
     layout: document.getElementById("layout"),
@@ -27,14 +27,15 @@
 
   const mobileQuery = window.matchMedia("(max-width: 860px)");
 
-  // step non lineari: dal nessun filtro ("Tutte") fino alle grandi città
-  const MINPOP_STEPS = [0, 10000, 20000, 50000, 100000, 250000, 500000];
-  const MINPOP_LABELS = ["Tutte", "10 Mila", "20 Mila", "50 Mila", "100 Mila", "250 Mila", "500 Mila"];
+  // step non lineari: da un tetto basso fino a nessun limite ("Tutte") a destra,
+  // cosi' trascinare verso destra allenta sempre il filtro (mai il contrario)
+  const MAXPOP_STEPS = [10000, 20000, 50000, 100000, 250000, 500000, Infinity];
+  const MAXPOP_LABELS = ["10 Mila", "20 Mila", "50 Mila", "100 Mila", "250 Mila", "500 Mila", "Tutte"];
 
-  function updateMinpopUI() {
-    const idx = Number(els.minpop.value);
-    els.minpopValue.textContent = MINPOP_LABELS[idx];
-    els.minpopFill.style.width = `${(idx / (MINPOP_STEPS.length - 1)) * 100}%`;
+  function updateMaxpopUI() {
+    const idx = Number(els.maxpop.value);
+    els.maxpopValue.textContent = MAXPOP_LABELS[idx];
+    els.maxpopFill.style.width = `${(idx / (MAXPOP_STEPS.length - 1)) * 100}%`;
   }
 
   function setView(view) {
@@ -139,12 +140,12 @@
 
   function applyFilters() {
     const q = els.search.value.trim().toLowerCase();
-    const minPop = MINPOP_STEPS[Number(els.minpop.value)] || 0;
+    const maxPop = MAXPOP_STEPS[Number(els.maxpop.value)];
     const sort = els.sort.value;
 
     let list = state.cities.filter((c) => {
       const matchesName = !q || c.name.toLowerCase().includes(q);
-      const matchesPop = (c.population || 0) >= minPop;
+      const matchesPop = (c.population || 0) <= maxPop;
       return matchesName && matchesPop;
     });
 
@@ -252,11 +253,11 @@
 
   els.search.addEventListener("input", applyFilters);
   els.sort.addEventListener("change", applyFilters);
-  els.minpop.addEventListener("input", () => {
-    updateMinpopUI();
+  els.maxpop.addEventListener("input", () => {
+    updateMaxpopUI();
     applyFilters();
   });
-  updateMinpopUI();
+  updateMaxpopUI();
 
   fetch("data.json")
     .then((r) => {

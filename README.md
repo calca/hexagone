@@ -130,7 +130,7 @@ le policy di Wikimedia/OSM).
 ```
 
 Nel frontend, la **popolazione** e' la colonna usata per ordinare/filtrare
-l'elenco citta' (campo "Popolazione minima" e ordinamento nella sidebar).
+l'elenco citta' (campo "Popolazione massima" e ordinamento nella sidebar).
 
 ## Limiti noti
 
