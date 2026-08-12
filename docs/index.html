@@ -58,9 +58,22 @@
           <option value="hotels-desc">N. hotel ↓</option>
         </select>
       </div>
-      <div class="control-row">
-        <label for="minpop">Popolazione minima</label>
-        <input id="minpop" type="number" min="0" step="1000" placeholder="0">
+      <div class="control-block">
+        <div class="control-row">
+          <label for="minpop">Popolazione minima</label>
+          <span id="minpop-value" class="minpop-value">Tutte</span>
+        </div>
+        <div class="minpop-slider">
+          <div class="minpop-track"></div>
+          <div class="minpop-fill" id="minpop-fill"></div>
+          <div class="minpop-dots" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <input id="minpop" type="range" min="0" max="6" step="1" value="0" aria-label="Popolazione minima">
+        </div>
+        <div class="minpop-ticks" aria-hidden="true">
+          <span>Tutte</span><span>500 Mila</span>
+        </div>
       </div>
     </div>
     <div id="list-meta" class="list-meta"></div>

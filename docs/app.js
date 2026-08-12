@@ -13,6 +13,8 @@
     search: document.getElementById("search"),
     sort: document.getElementById("sort"),
     minpop: document.getElementById("minpop"),
+    minpopValue: document.getElementById("minpop-value"),
+    minpopFill: document.getElementById("minpop-fill"),
     list: document.getElementById("city-list"),
     listMeta: document.getElementById("list-meta"),
     layout: document.getElementById("layout"),
@@ -24,6 +26,16 @@
   };
 
   const mobileQuery = window.matchMedia("(max-width: 860px)");
+
+  // step non lineari: dal nessun filtro ("Tutte") fino alle grandi città
+  const MINPOP_STEPS = [0, 10000, 20000, 50000, 100000, 250000, 500000];
+  const MINPOP_LABELS = ["Tutte", "10 Mila", "20 Mila", "50 Mila", "100 Mila", "250 Mila", "500 Mila"];
+
+  function updateMinpopUI() {
+    const idx = Number(els.minpop.value);
+    els.minpopValue.textContent = MINPOP_LABELS[idx];
+    els.minpopFill.style.width = `${(idx / (MINPOP_STEPS.length - 1)) * 100}%`;
+  }
 
   function setView(view) {
     els.layout.dataset.view = view;
@@ -127,7 +139,7 @@
 
   function applyFilters() {
     const q = els.search.value.trim().toLowerCase();
-    const minPop = Number(els.minpop.value) || 0;
+    const minPop = MINPOP_STEPS[Number(els.minpop.value)] || 0;
     const sort = els.sort.value;
 
     let list = state.cities.filter((c) => {
@@ -226,7 +238,11 @@
 
   els.search.addEventListener("input", applyFilters);
   els.sort.addEventListener("change", applyFilters);
-  els.minpop.addEventListener("input", applyFilters);
+  els.minpop.addEventListener("input", () => {
+    updateMinpopUI();
+    applyFilters();
+  });
+  updateMinpopUI();
 
   fetch("data.json")
     .then((r) => {
