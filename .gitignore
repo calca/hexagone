@@ -2,4 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 venv/
-data/cache/
+data/cache/*
+# Cache resumibili tracciate in git cosi' il progresso sopravvive tra job
+# GitHub Actions separati (geocodifica per-hotel e storia/attrazioni wiki).
+!data/cache/geo_lookup_cache.json
+!data/cache/wiki_cache.json

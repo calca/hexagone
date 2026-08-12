@@ -16,6 +16,10 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # Ceiling esplicito: se qualcosa si blocca, il job fallisce in modo
+    # visibile invece di consumare in silenzio le 6h di default di GitHub
+    # Actions (come successo il 12/08/2026).
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,28 +32,56 @@ jobs:
       - name: Installa dipendenze
         run: pip install -r requirements.txt
 
-      # Cache la cache Wikipedia/Wikivoyage (data/cache/wiki_cache.json) tra le run:
-      # evita di ri-scaricare storia/attrazioni per citta' gia' viste.
-      - name: Ripristina cache wiki
-        uses: actions/cache@v4
-        with:
-          path: data/cache/wiki_cache.json
-          key: wiki-cache-${{ github.run_id }}
-          restore-keys: |
-            wiki-cache-
-
-      - name: Esegui pipeline
-        run: |
-          if [ "${{ github.event.inputs.skip_wikimedia }}" = "true" ]; then
-            python scripts/pipeline.py --skip-wikimedia
-          else
-            python scripts/pipeline.py
-          fi
-
-      - name: Commit dataset aggiornato
+      - name: Configura git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # La pipeline e' eseguita uno step alla volta (invece che come unico
+      # comando) e ogni step che produce una cache resumibile viene committato
+      # subito dopo: se una run successiva viene interrotta (timeout, crash),
+      # la prossima riparte dal progresso gia' salvato invece che da zero.
+      - name: "Step: hotel"
+        run: python scripts/pipeline.py --only hotels
+
+      - name: "Step: citta' (raggruppamento + geocodifica per-hotel)"
+        timeout-minutes: 20
+        run: python scripts/pipeline.py --only cities
+
+      - name: "Commit: cache geocodifica"
+        run: |
+          git add data/cache/geo_lookup_cache.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica alla cache di geocodifica."
+          else
+            git commit -m "chore: aggiorna cache geocodifica hotel (refresh dataset)"
+            git push origin main
+          fi
+
+      - name: "Step: wikidata (popolazione)"
+        run: python scripts/pipeline.py --only wikidata
+
+      - name: "Step: wikimedia (storia/attrazioni)"
+        if: ${{ github.event.inputs.skip_wikimedia != 'true' }}
+        timeout-minutes: 30
+        run: python scripts/pipeline.py --only wikimedia
+
+      - name: "Commit: cache Wikipedia/Wikivoyage"
+        if: ${{ github.event.inputs.skip_wikimedia != 'true' }}
+        run: |
+          git add data/cache/wiki_cache.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica alla cache wiki."
+          else
+            git commit -m "chore: aggiorna cache storia/attrazioni (refresh dataset)"
+            git push origin main
+          fi
+
+      - name: "Step: build dataset finale"
+        run: python scripts/pipeline.py --only build
+
+      - name: "Commit: dataset aggiornato"
+        run: |
           git add docs/data.json
           if git diff --cached --quiet; then
             echo "Nessuna modifica al dataset."
