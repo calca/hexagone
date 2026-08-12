@@ -12,9 +12,6 @@
   --shadow-lg: 0 12px 32px rgba(0, 0, 0, .18);
   --radius: 12px;
   --radius-sm: 8px;
-  --topbar-h: 56px;
-  --tabs-h: 0px;
-  --footer-h: 34px;
   color-scheme: light;
 }
 
@@ -43,7 +40,16 @@ html, body {
   -webkit-tap-highlight-color: transparent;
 }
 
-body { overflow: hidden; }
+/* Colonna flex invece di calcolare a mano l'altezza di layout/footer da
+   sottrarre a 100vh: quel calcolo dipendeva da variabili CSS che potevano
+   disallinearsi dall'altezza reale renderizzata di topbar/tabs/footer
+   (metriche del font, safe-area-inset, min-height che cresce col contenuto),
+   causando il taglio del footer fuori viewport su alcuni browser (Chrome). */
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
 a { color: var(--accent); }
 
@@ -67,7 +73,8 @@ a { color: var(--accent); }
   padding-right: calc(.9rem + env(safe-area-inset-right));
   background: var(--panel);
   border-bottom: 1px solid var(--border);
-  min-height: var(--topbar-h);
+  min-height: 56px;
+  flex-shrink: 0;
   position: relative;
   z-index: 20;
 }
@@ -111,6 +118,7 @@ a { color: var(--accent); }
 
 .view-tabs {
   display: none;
+  flex-shrink: 0;
   gap: .4rem;
   padding: .5rem .7rem;
   background: var(--panel);
@@ -149,16 +157,17 @@ a { color: var(--accent); }
 .layout {
   display: grid;
   grid-template-columns: 340px 1fr;
-  height: calc(100vh - var(--topbar-h) - var(--tabs-h) - var(--footer-h));
+  flex: 1 1 auto;
+  min-height: 0;
   position: relative;
 }
 
 /* ---------- Footer ---------- */
 
 .footer {
-  height: var(--footer-h);
-  padding: 0 .9rem;
-  padding-bottom: env(safe-area-inset-bottom);
+  flex-shrink: 0;
+  padding: .35rem .9rem;
+  padding-bottom: calc(.35rem + env(safe-area-inset-bottom));
   padding-left: calc(.9rem + env(safe-area-inset-left));
   padding-right: calc(.9rem + env(safe-area-inset-right));
   display: flex;
@@ -215,6 +224,31 @@ a { color: var(--accent); }
   gap: .55rem;
 }
 
+.filters-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+  padding: .2rem 0;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  user-select: none;
+}
+.filters-toggle::-webkit-details-marker { display: none; }
+.filters-toggle:hover { color: var(--text); }
+
+.filters-chevron { width: 16px; height: 16px; flex-shrink: 0; transition: transform .15s; }
+.filters[open] .filters-chevron { transform: rotate(180deg); }
+
+.filters-body {
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  padding-top: .6rem;
+}
+
 .search-field {
   position: relative;
   display: flex;
@@ -241,7 +275,12 @@ a { color: var(--accent); }
 }
 .controls input:not([type="range"]):focus, .controls select:focus { border-color: var(--accent); }
 
-.search-field input { padding-left: 2.1rem; }
+/* #search invece di .search-field input: la specificita' di
+   ".controls input:not([type=range])" (classe + tipo + attributo dentro
+   :not) batteva quella di ".search-field input" (classe + tipo) e la sua
+   "padding: .55rem .7rem" vinceva su "padding-left: 2.1rem", lasciando il
+   testo digitato sotto l'icona della lente. */
+#search { padding-left: 2.1rem; }
 
 .control-row {
   display: flex;
@@ -249,8 +288,14 @@ a { color: var(--accent); }
   justify-content: space-between;
   gap: .5rem;
 }
-.control-row label { font-size: .76rem; color: var(--text-muted); white-space: nowrap; }
-.control-row select, .control-row input { width: auto; flex: 1; }
+/* min-width fissa sulle etichette: senza, ogni riga (Ordina per/Dipartimento/
+   UNESCO) lascia allo <select> uno spazio "flex: 1" diverso a seconda della
+   lunghezza del proprio testo, risultando in dropdown di larghezze diverse. */
+.control-row label { font-size: .76rem; color: var(--text-muted); white-space: nowrap; min-width: 5.2rem; flex-shrink: 0; }
+/* min-width: 0 permette allo <select> di restringersi sotto la larghezza
+   della sua opzione piu' lunga (es. i nomi dei dipartimenti): senza,
+   flex:1 non basta a garantire la stessa larghezza tra le varie select. */
+.control-row select, .control-row input { width: auto; flex: 1; min-width: 0; }
 
 .control-block { display: flex; flex-direction: column; }
 
@@ -541,8 +586,6 @@ a { color: var(--accent); }
    Mobile: tab Elenco/Mappa, dettaglio come bottom-sheet
    ================================================== */
 @media (max-width: 860px) {
-  :root { --tabs-h: 52px; }
-
   .topbar h1 { font-size: .95rem; }
   .stats { font-size: .72rem; max-width: 40vw; overflow: hidden; text-overflow: ellipsis; }
 
@@ -584,9 +627,7 @@ a { color: var(--accent); }
   }
 
   /* Footer più comodo al tocco, sempre con il link alle note legali visibile */
-  :root { --footer-h: 48px; }
-
-  .footer { justify-content: center; gap: 1.5rem; }
+  .footer { min-height: 48px; justify-content: center; gap: 1.5rem; }
   .footer-legal { display: none; }
   .footer-links { gap: 1.5rem; }
   .footer-link {
