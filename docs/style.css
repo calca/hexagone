@@ -178,14 +178,26 @@ a { color: var(--accent); }
 .footer a { color: var(--text-muted); text-decoration: none; }
 .footer a:hover { color: var(--accent); text-decoration: underline; }
 
-.footer-repo {
+.footer-legal {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-shrink: 0;
+}
+
+.footer-link {
   display: inline-flex;
   align-items: center;
   gap: .35rem;
-  flex-shrink: 0;
   font-weight: 600;
 }
-.footer-repo svg { flex-shrink: 0; }
+.footer-link svg { flex-shrink: 0; }
 
 .sidebar {
   border-right: 1px solid var(--border);
@@ -464,16 +476,24 @@ a { color: var(--accent); }
     border-radius: 999px;
     background: var(--border);
   }
-}
 
-@media (max-width: 560px) {
-  .footer span { overflow: hidden; text-overflow: ellipsis; }
+  /* Footer più comodo al tocco, sempre con il link alle note legali visibile */
+  :root { --footer-h: 48px; }
+
+  .footer { justify-content: center; gap: 1.5rem; }
+  .footer-legal { display: none; }
+  .footer-links { gap: 1.5rem; }
+  .footer-link {
+    font-size: .8rem;
+    padding: .5rem .2rem;
+    min-height: 44px;
+  }
 }
 
 @media (max-width: 420px) {
   .topbar h1 .fr { display: none; }
-  .footer span { display: none; }
-  .footer { justify-content: center; }
+  .footer-links { gap: 1.2rem; }
+  .footer-repo-text { display: none; }
 }
 
 /* Rispetta chi ha disabilitato le animazioni */
