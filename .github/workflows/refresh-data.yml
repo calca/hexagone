@@ -61,6 +61,20 @@ jobs:
       - name: "Step: wikidata (popolazione)"
         run: python scripts/pipeline.py --only wikidata
 
+      - name: "Step: patrimonio (UNESCO + monumenti storici)"
+        timeout-minutes: 20
+        run: python scripts/pipeline.py --only heritage
+
+      - name: "Commit: cache monumenti storici"
+        run: |
+          git add data/cache/heritage_cache.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica alla cache monumenti storici."
+          else
+            git commit -m "chore: aggiorna cache monumenti storici (refresh dataset)"
+            git push origin main
+          fi
+
       - name: "Step: wikimedia (storia/attrazioni)"
         if: ${{ github.event.inputs.skip_wikimedia != 'true' }}
         timeout-minutes: 30

@@ -14,6 +14,8 @@ mostrati popolazione, cenni storici e cosa visitare in un giorno.
 - **Risoluzione del comune di appartenenza di ogni hotel** (per nome o per coordinate): API geografica del governo francese ([geo.api.gouv.fr](https://geo.api.gouv.fr/)) — dati pubblici INSEE/IGN, licenza Etalab Open Licence 2.0
 - **Popolazione**: Wikidata (SPARQL) — licenza CC0
 - **Storia e attrazioni**: Wikipedia e Wikivoyage in francese — licenza CC BY-SA
+- **Monumenti storici classificati/iscritti**: Base Merimee, Ministero della Cultura francese, via [data.culture.gouv.fr](https://data.culture.gouv.fr/) — licenza Etalab Open Licence 2.0
+- **Siti UNESCO**: lista statica curata a mano (`data/unesco_sites_fr.json`, non esaustiva — solo i siti che corrispondono a un singolo comune), non una fonte live
 - **Frontend**: HTML/CSS/JS statico con mappa Leaflet (vendorizzata in `docs/vendor/`, nessuna dipendenza da CDN esterne), pubblicabile su GitHub Pages
 - **Licenza**: [MIT](LICENSE) per codice e sito. I dati restano soggetti alle licenze delle rispettive fonti (ODbL / Etalab / CC0 / CC BY-SA elencate sopra).
 
@@ -27,9 +29,14 @@ scripts/
                           (per nome, o per coordinate per hotel senza addr:city, con
                           cache resumibile su disco)
   enrich_wikidata.py     step 3: popolazione via SPARQL (batch)
-  enrich_wikimedia.py    step 4: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
-  build_dataset.py       step 5: genera docs/data.json (il "DB" del sito)
+  enrich_heritage.py     step 4: siti UNESCO (lista statica) e monumenti storici
+                          (data.culture.gouv.fr), con cache resumibile su disco
+  enrich_wikimedia.py    step 5: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
+  build_dataset.py       step 6: genera docs/data.json (il "DB" del sito)
   pipeline.py            esegue tutti gli step in sequenza
+data/
+  unesco_sites_fr.json   lista statica curata a mano dei siti UNESCO francesi
+                          (solo quelli mappabili a un singolo comune)
 docs/                    sito statico (GitHub Pages), installabile come PWA
   index.html / style.css / app.js
   about.html               pagina "Info & note legali" (fonti dati, disclaimer di non affiliazione)
@@ -108,6 +115,8 @@ le policy di Wikimedia/OSM).
       "population_year": "2021",
       "history_summary": "...",
       "attractions": ["Torre Eiffel", "..."],
+      "unesco_sites": [{ "name": "Rive della Senna a Parigi", "year": 1991 }],
+      "monuments_historiques": ["Notre-Dame de Paris", "..."],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris",
       "hotel_count": 12,
       "hotels": [
@@ -137,11 +146,21 @@ l'elenco citta' (campo "Popolazione minima" e ordinamento nella sidebar).
 - Rispetta le policy di utilizzo di Overpass API e Wikimedia (User-Agent
   identificativo gia' impostato negli script, non aumentare la frequenza
   delle richieste).
+- La lista dei siti UNESCO (`data/unesco_sites_fr.json`) e' curata a mano e
+  non esaustiva: copre solo i siti che corrispondono chiaramente a un
+  singolo comune (niente siti seriali su decine di comuni ne' siti
+  naturali), e non e' garantita aggiornata alle ultime iscrizioni UNESCO.
+- I campi (nomi) usati dall'API dei monumenti storici (data.culture.gouv.fr)
+  non sono verificati contro una risposta live in fase di sviluppo: se il
+  formato del dataset cambia, `enrich_heritage.py` logga un avviso e
+  prosegue senza quel dato invece di far fallire la pipeline (vedi i log
+  della Action "Refresh dataset" per diagnosticare).
 
 ## Licenza
 
 Codice e sito sono rilasciati con licenza [MIT](LICENSE). I dati mostrati
 provengono da fonti terze con licenze proprie e vanno attribuiti di
-conseguenza: OpenStreetMap (ODbL), Wikidata (CC0), Wikipedia/Wikivoyage in
+conseguenza: OpenStreetMap (ODbL), geo.api.gouv.fr / data.culture.gouv.fr
+(Etalab Open Licence 2.0), Wikidata (CC0), Wikipedia/Wikivoyage in
 francese (CC BY-SA) — vedi i link diretti nella scheda di ogni citta' sul
 sito.

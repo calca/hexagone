@@ -186,6 +186,18 @@
       ? `<ul class="attractions">${city.attractions.map((a) => `<li>${escapeHtml(a)}</li>`).join("")}</ul>`
       : `<p>Nessuna segnalazione disponibile su Wikivoyage.</p>`;
 
+    const unescoSites = city.unesco_sites || [];
+    const monuments = city.monuments_historiques || [];
+    const unescoBadge = unescoSites.length
+      ? ` <span class="badge unesco" title="${escapeHtml(unescoSites.map((s) => s.name).join(", "))}">Patrimonio UNESCO</span>`
+      : "";
+    const heritageHtml = monuments.length
+      ? `<div class="detail-section">
+          <h3>Monumenti storici</h3>
+          <ul class="attractions monuments">${monuments.map((m) => `<li>${escapeHtml(m)}</li>`).join("")}</ul>
+        </div>`
+      : "";
+
     const hotelsHtml = city.hotels
       .map((h) => {
         const badgeClass = h.brand === "ibis Styles" ? "styles" : "ibis";
@@ -209,7 +221,7 @@
       .join("");
 
     els.detailContent.innerHTML = `
-      <h2>${escapeHtml(city.name)}</h2>
+      <h2>${escapeHtml(city.name)}${unescoBadge}</h2>
       <div class="subtitle">
         ${numberFmt(city.population)} abitanti${city.population_year ? " (" + city.population_year + ")" : ""}
         ${city.wikipedia_url ? ` · <a href="${city.wikipedia_url}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
@@ -219,6 +231,8 @@
         <h3>Cenni storici</h3>
         <p>${escapeHtml(city.history_summary) || "Nessun estratto disponibile."}</p>
       </div>
+
+      ${heritageHtml}
 
       <div class="detail-section">
         <h3>Cosa visitare in un giorno</h3>
