@@ -11,7 +11,7 @@ Styles** in Francia, raggruppati per citta'. Per ogni citta' vengono
 mostrati popolazione, cenni storici e cosa visitare in un giorno.
 
 - **Dati hotel**: OpenStreetMap (Overpass API) — licenza ODbL
-- **Comune di appartenenza per hotel senza `addr:city`**: API geografica del governo francese ([geo.api.gouv.fr](https://geo.api.gouv.fr/)) — dati pubblici INSEE/IGN, licenza Etalab Open Licence 2.0
+- **Risoluzione del comune di appartenenza di ogni hotel** (per nome o per coordinate): API geografica del governo francese ([geo.api.gouv.fr](https://geo.api.gouv.fr/)) — dati pubblici INSEE/IGN, licenza Etalab Open Licence 2.0
 - **Popolazione**: Wikidata (SPARQL) — licenza CC0
 - **Storia e attrazioni**: Wikipedia e Wikivoyage in francese — licenza CC BY-SA
 - **Frontend**: HTML/CSS/JS statico con mappa Leaflet (vendorizzata in `docs/vendor/`, nessuna dipendenza da CDN esterne), pubblicabile su GitHub Pages
@@ -23,8 +23,9 @@ mostrati popolazione, cenni storici e cosa visitare in un giorno.
 scripts/
   overpass_client.py    client HTTP verso Overpass API (con failover su piu' mirror)
   fetch_hotels.py        step 1: scarica gli hotel ibis/ibis Styles in Francia
-  resolve_cities.py      step 2: raggruppa per comune, risolve INSEE (per hotel senza
-                          addr:city usa geo.api.gouv.fr, con cache resumibile su disco)
+  resolve_cities.py      step 2: raggruppa per comune, risolve INSEE via geo.api.gouv.fr
+                          (per nome, o per coordinate per hotel senza addr:city, con
+                          cache resumibile su disco)
   enrich_wikidata.py     step 3: popolazione via SPARQL (batch)
   enrich_wikimedia.py    step 4: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
   build_dataset.py       step 5: genera docs/data.json (il "DB" del sito)

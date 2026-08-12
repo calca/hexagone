@@ -1,6 +1,9 @@
 """Step 2 della pipeline: raggruppa gli hotel per comune francese e risolve
-ciascun comune al relativo confine amministrativo OSM (admin_level=8), da
-cui recuperiamo il codice INSEE, l'id Wikidata e il centroide.
+ciascun comune (nome, codice INSEE, centroide) tramite l'API geografica
+ufficiale del governo francese (geo.api.gouv.fr), sia per nome (hotel con
+addr:city) sia per coordinate (hotel senza addr:city). L'id Wikidata viene
+recuperato in un secondo momento (via codice INSEE) dallo step
+enrich_wikidata.
 
 Uso:
     python scripts/resolve_cities.py \
@@ -13,7 +16,6 @@ from __future__ import annotations
 import argparse
 import json
 import math
-import re
 import sys
 import time
 from collections import defaultdict
@@ -22,9 +24,7 @@ from pathlib import Path
 import requests
 
 from fetch_hotels import normalize
-from overpass_client import run_query
 
-BATCH_SIZE = 25
 GEO_API_GOUV_URL = "https://geo.api.gouv.fr/communes"
 GEO_API_USER_AGENT = (
     "hexagone-ibis-scraper/1.0 "
@@ -45,44 +45,50 @@ def dept_candidates_from_postcode(postcode: str | None) -> list[str]:
     return [postcode[:2]]
 
 
-def escape_regex(name: str) -> str:
-    return re.escape(name)
-
-
-def query_communes_by_name(names: list[str]) -> list[dict]:
-    alternation = "|".join(escape_regex(n) for n in names)
-    query = f"""
-[out:json][timeout:180];
-area["ISO3166-1"="FR"][admin_level=2]->.fr;
-relation(area.fr)["admin_level"="8"]["boundary"="administrative"]["name"~"^({alternation})$",i];
-out center tags;
-"""
-    result = run_query(query)
+def _communes_from_response(results: list[dict]) -> list[dict]:
     communes = []
-    for element in result.get("elements", []):
-        tags = element.get("tags", {})
-        center = element.get("center") or {}
+    for commune in results:
+        centre = commune.get("centre") or {}
+        coords = centre.get("coordinates") or [None, None]
         communes.append(
             {
-                "name": tags.get("name"),
-                "name_norm": normalize(tags.get("name")),
-                "insee": tags.get("ref:INSEE"),
-                "wikidata": tags.get("wikidata"),
-                "lat": center.get("lat"),
-                "lon": center.get("lon"),
+                "name": commune.get("nom"),
+                "name_norm": normalize(commune.get("nom")),
+                "insee": commune.get("code"),
+                "wikidata": None,
+                "lat": coords[1],
+                "lon": coords[0],
             }
         )
     return communes
 
 
+def query_commune_by_name(name: str, retries: int = 3, limit: int = 20) -> list[dict]:
+    """Cerca i comuni che corrispondono a un nome, via geo.api.gouv.fr.
+
+    Puo' ritornare piu' candidati (comuni omonimi in dipartimenti diversi):
+    la disambiguazione la fa pick_best_match usando CAP e vicinanza geografica.
+    """
+    last_error: Exception | None = None
+    for attempt in range(retries):
+        try:
+            resp = requests.get(
+                GEO_API_GOUV_URL,
+                params={"nom": name, "fields": "nom,code,centre", "boost": "population", "limit": limit},
+                headers={"User-Agent": GEO_API_USER_AGENT},
+                timeout=15,
+            )
+            resp.raise_for_status()
+            return _communes_from_response(resp.json())
+        except requests.RequestException as exc:
+            last_error = exc
+            time.sleep(1.0 * (attempt + 1))
+    raise RuntimeError(f"geo.api.gouv.fr fallito per il nome '{name}': {last_error}")
+
+
 def query_commune_containing(lat: float, lon: float, retries: int = 3) -> dict | None:
     """Fallback per hotel senza addr:city: trova il comune che contiene il punto,
     usando l'API geografica ufficiale del governo francese (geo.api.gouv.fr).
-
-    Molto piu' veloce e affidabile delle query Overpass punto-per-punto (nessun
-    mirror da gestire, nessun linguaggio di query, un solo HTTP GET). Non
-    fornisce l'id Wikidata: viene recuperato in un secondo momento (via codice
-    INSEE) dallo step enrich_wikidata.
     """
     last_error: Exception | None = None
     for attempt in range(retries):
@@ -94,20 +100,13 @@ def query_commune_containing(lat: float, lon: float, retries: int = 3) -> dict |
                 timeout=15,
             )
             resp.raise_for_status()
-            results = resp.json()
-            if not results:
+            communes = _communes_from_response(resp.json())
+            if not communes:
                 return None
-            commune = results[0]
-            centre = commune.get("centre") or {}
-            coords = centre.get("coordinates") or [lon, lat]
-            return {
-                "name": commune.get("nom"),
-                "name_norm": normalize(commune.get("nom")),
-                "insee": commune.get("code"),
-                "wikidata": None,
-                "lat": coords[1],
-                "lon": coords[0],
-            }
+            commune = communes[0]
+            if commune["lat"] is None or commune["lon"] is None:
+                commune["lat"], commune["lon"] = lat, lon
+            return commune
         except requests.RequestException as exc:
             last_error = exc
             time.sleep(1.0 * (attempt + 1))
@@ -186,17 +185,18 @@ def main() -> int:
             without_city.append(h)
 
     unique_names = sorted(by_name.keys())
-    print(f"{len(unique_names)} nomi di citta' unici da risolvere via Overpass...", file=sys.stderr)
+    print(f"{len(unique_names)} nomi di citta' unici da risolvere via geo.api.gouv.fr...", file=sys.stderr)
 
-    all_candidates: dict[str, list[dict]] = defaultdict(list)
-    for i in range(0, len(unique_names), BATCH_SIZE):
-        if i:
-            time.sleep(3.0)  # rispetta il rate limit di Overpass tra un batch e l'altro
-        batch = unique_names[i : i + BATCH_SIZE]
-        print(f"  batch {i // BATCH_SIZE + 1}: {batch}", file=sys.stderr)
-        for commune in query_communes_by_name(batch):
-            if commune["name_norm"]:
-                all_candidates[commune["name_norm"]].append(commune)
+    all_candidates: dict[str, list[dict]] = {}
+    for i, name in enumerate(unique_names):
+        if i and i % 30 == 0:
+            print(f"  ...{i}/{len(unique_names)} nomi processati", file=sys.stderr)
+        try:
+            all_candidates[name] = query_commune_by_name(name)
+        except RuntimeError as exc:
+            print(f"  ATTENZIONE: ricerca fallita per '{name}': {exc}", file=sys.stderr)
+            all_candidates[name] = []
+        time.sleep(GEO_QUERY_PAUSE)
 
     cities: dict[str, dict] = {}
     unresolved = []
