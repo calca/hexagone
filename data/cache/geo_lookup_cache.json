@@ -1,0 +1,3426 @@
+{
+  "node/206325024": {
+    "name": "Limas",
+    "name_norm": "Limas",
+    "insee": "69115",
+    "wikidata": null,
+    "lat": 45.9717,
+    "lon": 4.7196
+  },
+  "node/220322134": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/224711659": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/252819330": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/254499721": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/259009772": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/259043288": {
+    "name": "Labège",
+    "name_norm": "Labege",
+    "insee": "31254",
+    "wikidata": null,
+    "lat": 43.5396,
+    "lon": 1.5207
+  },
+  "node/267843295": {
+    "name": "Montpellier",
+    "name_norm": "Montpellier",
+    "insee": "34172",
+    "wikidata": null,
+    "lat": 43.61,
+    "lon": 3.8742
+  },
+  "node/269018590": {
+    "name": "Cesson-Sévigné",
+    "name_norm": "Cesson-Sevigne",
+    "insee": "35051",
+    "wikidata": null,
+    "lat": 48.1235,
+    "lon": -1.5935
+  },
+  "node/279511406": {
+    "name": "Nuits-Saint-Georges",
+    "name_norm": "Nuits-Saint-Georges",
+    "insee": "21464",
+    "wikidata": null,
+    "lat": 47.1518,
+    "lon": 4.9414
+  },
+  "node/280999683": {
+    "name": "Gennevilliers",
+    "name_norm": "Gennevilliers",
+    "insee": "92036",
+    "wikidata": null,
+    "lat": 48.9319,
+    "lon": 2.288
+  },
+  "node/290790131": {
+    "name": "Rouen",
+    "name_norm": "Rouen",
+    "insee": "76540",
+    "wikidata": null,
+    "lat": 49.4412,
+    "lon": 1.0912
+  },
+  "node/298829846": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "node/300444885": {
+    "name": "Lannion",
+    "name_norm": "Lannion",
+    "insee": "22113",
+    "wikidata": null,
+    "lat": 48.7454,
+    "lon": -3.4697
+  },
+  "node/311838028": {
+    "name": "Grenoble",
+    "name_norm": "Grenoble",
+    "insee": "38185",
+    "wikidata": null,
+    "lat": 45.1842,
+    "lon": 5.7155
+  },
+  "node/314745388": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/368359669": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "node/370403355": {
+    "name": "Archamps",
+    "name_norm": "Archamps",
+    "insee": "74016",
+    "wikidata": null,
+    "lat": 46.1207,
+    "lon": 6.1417
+  },
+  "node/399828551": {
+    "name": "Châteauroux",
+    "name_norm": "Chateauroux",
+    "insee": "36044",
+    "wikidata": null,
+    "lat": 46.8023,
+    "lon": 1.6903
+  },
+  "node/412299770": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/418214106": {
+    "name": "Châtellerault",
+    "name_norm": "Chatellerault",
+    "insee": "86066",
+    "wikidata": null,
+    "lat": 46.8147,
+    "lon": 0.5583
+  },
+  "node/418510260": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/435610065": {
+    "name": "Toulouse",
+    "name_norm": "Toulouse",
+    "insee": "31555",
+    "wikidata": null,
+    "lat": 43.6007,
+    "lon": 1.4328
+  },
+  "node/472351942": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/472398315": {
+    "name": "Bagnolet",
+    "name_norm": "Bagnolet",
+    "insee": "93006",
+    "wikidata": null,
+    "lat": 48.8671,
+    "lon": 2.4252
+  },
+  "node/472940830": {
+    "name": "Bayonne",
+    "name_norm": "Bayonne",
+    "insee": "64102",
+    "wikidata": null,
+    "lat": 43.4844,
+    "lon": -1.4611
+  },
+  "node/560857303": {
+    "name": "Saint-Étienne",
+    "name_norm": "Saint-Etienne",
+    "insee": "42218",
+    "wikidata": null,
+    "lat": 45.4241,
+    "lon": 4.3665
+  },
+  "node/564702250": {
+    "name": "Antibes",
+    "name_norm": "Antibes",
+    "insee": "06004",
+    "wikidata": null,
+    "lat": 43.5823,
+    "lon": 7.1048
+  },
+  "node/669876542": {
+    "name": "Grenoble",
+    "name_norm": "Grenoble",
+    "insee": "38185",
+    "wikidata": null,
+    "lat": 45.1842,
+    "lon": 5.7155
+  },
+  "node/681555268": {
+    "name": "Colmar",
+    "name_norm": "Colmar",
+    "insee": "68066",
+    "wikidata": null,
+    "lat": 48.1115,
+    "lon": 7.3924
+  },
+  "node/692165406": {
+    "name": "Boulogne-sur-Mer",
+    "name_norm": "Boulogne-sur-Mer",
+    "insee": "62160",
+    "wikidata": null,
+    "lat": 50.7303,
+    "lon": 1.6062
+  },
+  "node/707729988": {
+    "name": "Beaulieu-sur-Mer",
+    "name_norm": "Beaulieu-sur-Mer",
+    "insee": "06011",
+    "wikidata": null,
+    "lat": 43.7081,
+    "lon": 7.3324
+  },
+  "node/739753898": {
+    "name": "Brest",
+    "name_norm": "Brest",
+    "insee": "29019",
+    "wikidata": null,
+    "lat": 48.4085,
+    "lon": -4.4996
+  },
+  "node/739753900": {
+    "name": "Brest",
+    "name_norm": "Brest",
+    "insee": "29019",
+    "wikidata": null,
+    "lat": 48.4085,
+    "lon": -4.4996
+  },
+  "node/779108255": {
+    "name": "Caen",
+    "name_norm": "Caen",
+    "insee": "14118",
+    "wikidata": null,
+    "lat": 49.1846,
+    "lon": -0.3722
+  },
+  "node/842475310": {
+    "name": "Carcassonne",
+    "name_norm": "Carcassonne",
+    "insee": "11069",
+    "wikidata": null,
+    "lat": 43.2078,
+    "lon": 2.3491
+  },
+  "node/882356125": {
+    "name": "Boulogne-Billancourt",
+    "name_norm": "Boulogne-Billancourt",
+    "insee": "92012",
+    "wikidata": null,
+    "lat": 48.8375,
+    "lon": 2.2429
+  },
+  "node/903539223": {
+    "name": "Tours",
+    "name_norm": "Tours",
+    "insee": "37261",
+    "wikidata": null,
+    "lat": 47.3943,
+    "lon": 0.6949
+  },
+  "node/924020743": {
+    "name": "Tourcoing",
+    "name_norm": "Tourcoing",
+    "insee": "59599",
+    "wikidata": null,
+    "lat": 50.721,
+    "lon": 3.1577
+  },
+  "node/940377387": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "node/949529537": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/959625340": {
+    "name": "Bourg-la-Reine",
+    "name_norm": "Bourg-la-Reine",
+    "insee": "92014",
+    "wikidata": null,
+    "lat": 48.7801,
+    "lon": 2.3167
+  },
+  "node/966027167": {
+    "name": "Albert",
+    "name_norm": "Albert",
+    "insee": "80016",
+    "wikidata": null,
+    "lat": 50.0035,
+    "lon": 2.6515
+  },
+  "node/1015772245": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "node/1078806875": {
+    "name": "Saint-Malo",
+    "name_norm": "Saint-Malo",
+    "insee": "35288",
+    "wikidata": null,
+    "lat": 48.6465,
+    "lon": -2.0066
+  },
+  "node/1081151262": {
+    "name": "Gentilly",
+    "name_norm": "Gentilly",
+    "insee": "94037",
+    "wikidata": null,
+    "lat": 48.812,
+    "lon": 2.3426
+  },
+  "node/1097753765": {
+    "name": "Poitiers",
+    "name_norm": "Poitiers",
+    "insee": "86194",
+    "wikidata": null,
+    "lat": 46.5846,
+    "lon": 0.3715
+  },
+  "node/1244411691": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/1247193372": {
+    "name": "Horbourg-Wihr",
+    "name_norm": "Horbourg-Wihr",
+    "insee": "68145",
+    "wikidata": null,
+    "lat": 48.0827,
+    "lon": 7.407
+  },
+  "node/1282625919": {
+    "name": "Suresnes",
+    "name_norm": "Suresnes",
+    "insee": "92073",
+    "wikidata": null,
+    "lat": 48.871,
+    "lon": 2.2183
+  },
+  "node/1282625920": {
+    "name": "Courbevoie",
+    "name_norm": "Courbevoie",
+    "insee": "92026",
+    "wikidata": null,
+    "lat": 48.8976,
+    "lon": 2.2574
+  },
+  "node/1334585636": {
+    "name": "Champs-sur-Marne",
+    "name_norm": "Champs-sur-Marne",
+    "insee": "77083",
+    "wikidata": null,
+    "lat": 48.8485,
+    "lon": 2.594
+  },
+  "node/1335893317": {
+    "name": "Saint-Quentin",
+    "name_norm": "Saint-Quentin",
+    "insee": "02691",
+    "wikidata": null,
+    "lat": 49.8475,
+    "lon": 3.279
+  },
+  "node/1348554962": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/1372862253": {
+    "name": "Toulouse",
+    "name_norm": "Toulouse",
+    "insee": "31555",
+    "wikidata": null,
+    "lat": 43.6007,
+    "lon": 1.4328
+  },
+  "node/1410954166": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "node/1418993558": {
+    "name": "Granville",
+    "name_norm": "Granville",
+    "insee": "50218",
+    "wikidata": null,
+    "lat": 48.8724,
+    "lon": -1.7657
+  },
+  "node/1480282509": {
+    "name": "Valenciennes",
+    "name_norm": "Valenciennes",
+    "insee": "59606",
+    "wikidata": null,
+    "lat": 50.362,
+    "lon": 3.5142
+  },
+  "node/1482812013": {
+    "name": "Moulins",
+    "name_norm": "Moulins",
+    "insee": "03190",
+    "wikidata": null,
+    "lat": 46.5591,
+    "lon": 3.3255
+  },
+  "node/1490602508": {
+    "name": "Fontaine-Notre-Dame",
+    "name_norm": "Fontaine-Notre-Dame",
+    "insee": "59244",
+    "wikidata": null,
+    "lat": 50.1662,
+    "lon": 3.1728
+  },
+  "node/1527088390": {
+    "name": "Saint-Étienne-du-Rouvray",
+    "name_norm": "Saint-Etienne-du-Rouvray",
+    "insee": "76575",
+    "wikidata": null,
+    "lat": 49.3833,
+    "lon": 1.0909
+  },
+  "node/1534538447": {
+    "name": "Lille",
+    "name_norm": "Lille",
+    "insee": "59350",
+    "wikidata": null,
+    "lat": 50.6311,
+    "lon": 3.0468
+  },
+  "node/1582025319": {
+    "name": "Mandelieu-la-Napoule",
+    "name_norm": "Mandelieu-la-Napoule",
+    "insee": "06079",
+    "wikidata": null,
+    "lat": 43.5334,
+    "lon": 6.918
+  },
+  "node/1584907258": {
+    "name": "Douai",
+    "name_norm": "Douai",
+    "insee": "59178",
+    "wikidata": null,
+    "lat": 50.3785,
+    "lon": 3.1004
+  },
+  "node/1596738663": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/1617770466": {
+    "name": "Issy-les-Moulineaux",
+    "name_norm": "Issy-les-Moulineaux",
+    "insee": "92040",
+    "wikidata": null,
+    "lat": 48.824,
+    "lon": 2.2628
+  },
+  "node/1642338514": {
+    "name": "Alès",
+    "name_norm": "Ales",
+    "insee": "30007",
+    "wikidata": null,
+    "lat": 44.125,
+    "lon": 4.0905
+  },
+  "node/1718590023": {
+    "name": "Toulon",
+    "name_norm": "Toulon",
+    "insee": "83137",
+    "wikidata": null,
+    "lat": 43.1364,
+    "lon": 5.9334
+  },
+  "node/1723256757": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/1757393312": {
+    "name": "Besançon",
+    "name_norm": "Besancon",
+    "insee": "25056",
+    "wikidata": null,
+    "lat": 47.2602,
+    "lon": 6.0123
+  },
+  "node/1759435234": {
+    "name": "Tours",
+    "name_norm": "Tours",
+    "insee": "37261",
+    "wikidata": null,
+    "lat": 47.3943,
+    "lon": 0.6949
+  },
+  "node/1764542117": {
+    "name": "Nancy",
+    "name_norm": "Nancy",
+    "insee": "54395",
+    "wikidata": null,
+    "lat": 48.6881,
+    "lon": 6.1734
+  },
+  "node/1770433160": {
+    "name": "Lille",
+    "name_norm": "Lille",
+    "insee": "59350",
+    "wikidata": null,
+    "lat": 50.6311,
+    "lon": 3.0468
+  },
+  "node/1785415633": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/1808933786": {
+    "name": "Amiens",
+    "name_norm": "Amiens",
+    "insee": "80021",
+    "wikidata": null,
+    "lat": 49.8987,
+    "lon": 2.2847
+  },
+  "node/1836911059": {
+    "name": "Limoges",
+    "name_norm": "Limoges",
+    "insee": "87085",
+    "wikidata": null,
+    "lat": 45.8567,
+    "lon": 1.226
+  },
+  "node/1849074941": {
+    "name": "Arles",
+    "name_norm": "Arles",
+    "insee": "13004",
+    "wikidata": null,
+    "lat": 43.5441,
+    "lon": 4.6513
+  },
+  "node/1860066933": {
+    "name": "Beaune",
+    "name_norm": "Beaune",
+    "insee": "21054",
+    "wikidata": null,
+    "lat": 47.0272,
+    "lon": 4.8421
+  },
+  "node/1869618567": {
+    "name": "Moulins",
+    "name_norm": "Moulins",
+    "insee": "03190",
+    "wikidata": null,
+    "lat": 46.5591,
+    "lon": 3.3255
+  },
+  "node/1887592439": {
+    "name": "Rodez",
+    "name_norm": "Rodez",
+    "insee": "12202",
+    "wikidata": null,
+    "lat": 44.3591,
+    "lon": 2.5699
+  },
+  "node/1898757227": {
+    "name": "Saint-Germain-en-Laye",
+    "name_norm": "Saint-Germain-en-Laye",
+    "insee": "78551",
+    "wikidata": null,
+    "lat": 48.931,
+    "lon": 2.1052
+  },
+  "node/1917432082": {
+    "name": "Poitiers",
+    "name_norm": "Poitiers",
+    "insee": "86194",
+    "wikidata": null,
+    "lat": 46.5846,
+    "lon": 0.3715
+  },
+  "node/1931241104": {
+    "name": "Sausheim",
+    "name_norm": "Sausheim",
+    "insee": "68300",
+    "wikidata": null,
+    "lat": 47.7841,
+    "lon": 7.4041
+  },
+  "node/1937473376": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "node/1954985287": {
+    "name": "Montreuil",
+    "name_norm": "Montreuil",
+    "insee": "93048",
+    "wikidata": null,
+    "lat": 48.8637,
+    "lon": 2.4491
+  },
+  "node/1988526093": {
+    "name": "Épernay",
+    "name_norm": "Epernay",
+    "insee": "51230",
+    "wikidata": null,
+    "lat": 49.0391,
+    "lon": 3.9282
+  },
+  "node/1996000499": {
+    "name": "Les Sables-d'Olonne",
+    "name_norm": "Les Sables-d'Olonne",
+    "insee": "85194",
+    "wikidata": null,
+    "lat": 46.5264,
+    "lon": -1.7611
+  },
+  "node/1996975261": {
+    "name": "Le Pouzin",
+    "name_norm": "Le Pouzin",
+    "insee": "07181",
+    "wikidata": null,
+    "lat": 44.7537,
+    "lon": 4.7491
+  },
+  "node/1997286723": {
+    "name": "Caen",
+    "name_norm": "Caen",
+    "insee": "14118",
+    "wikidata": null,
+    "lat": 49.1846,
+    "lon": -0.3722
+  },
+  "node/2004013193": {
+    "name": "Versailles",
+    "name_norm": "Versailles",
+    "insee": "78646",
+    "wikidata": null,
+    "lat": 48.8039,
+    "lon": 2.1191
+  },
+  "node/2022974893": {
+    "name": "Beaune",
+    "name_norm": "Beaune",
+    "insee": "21054",
+    "wikidata": null,
+    "lat": 47.0272,
+    "lon": 4.8421
+  },
+  "node/2061506710": {
+    "name": "Lille",
+    "name_norm": "Lille",
+    "insee": "59350",
+    "wikidata": null,
+    "lat": 50.6311,
+    "lon": 3.0468
+  },
+  "node/2061506751": {
+    "name": "Lille",
+    "name_norm": "Lille",
+    "insee": "59350",
+    "wikidata": null,
+    "lat": 50.6311,
+    "lon": 3.0468
+  },
+  "node/2111107939": {
+    "name": "Trignac",
+    "name_norm": "Trignac",
+    "insee": "44210",
+    "wikidata": null,
+    "lat": 47.3116,
+    "lon": -2.2052
+  },
+  "node/2117622714": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/2187139804": {
+    "name": "Montévrain",
+    "name_norm": "Montevrain",
+    "insee": "77307",
+    "wikidata": null,
+    "lat": 48.8673,
+    "lon": 2.7511
+  },
+  "node/2204804205": {
+    "name": "Strasbourg",
+    "name_norm": "Strasbourg",
+    "insee": "67482",
+    "wikidata": null,
+    "lat": 48.5691,
+    "lon": 7.7621
+  },
+  "node/2212596028": {
+    "name": "Caluire-et-Cuire",
+    "name_norm": "Caluire-et-Cuire",
+    "insee": "69034",
+    "wikidata": null,
+    "lat": 45.7986,
+    "lon": 4.8494
+  },
+  "node/2241170118": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "node/2279433467": {
+    "name": "Calais",
+    "name_norm": "Calais",
+    "insee": "62193",
+    "wikidata": null,
+    "lat": 50.9523,
+    "lon": 1.869
+  },
+  "node/2286848096": {
+    "name": "Évry-Courcouronnes",
+    "name_norm": "Evry-Courcouronnes",
+    "insee": "91228",
+    "wikidata": null,
+    "lat": 48.6287,
+    "lon": 2.4313
+  },
+  "node/2296383112": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "node/2301882942": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/2359964748": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/2361876911": {
+    "name": "Toulouse",
+    "name_norm": "Toulouse",
+    "insee": "31555",
+    "wikidata": null,
+    "lat": 43.6007,
+    "lon": 1.4328
+  },
+  "node/2394130298": {
+    "name": "Metz",
+    "name_norm": "Metz",
+    "insee": "57463",
+    "wikidata": null,
+    "lat": 49.1048,
+    "lon": 6.1962
+  },
+  "node/2425250190": {
+    "name": "Abbeville",
+    "name_norm": "Abbeville",
+    "insee": "80001",
+    "wikidata": null,
+    "lat": 50.1101,
+    "lon": 1.8319
+  },
+  "node/2425765431": {
+    "name": "Assevillers",
+    "name_norm": "Assevillers",
+    "insee": "80033",
+    "wikidata": null,
+    "lat": 49.8976,
+    "lon": 2.8422
+  },
+  "node/2444345565": {
+    "name": "Toulouse",
+    "name_norm": "Toulouse",
+    "insee": "31555",
+    "wikidata": null,
+    "lat": 43.6007,
+    "lon": 1.4328
+  },
+  "node/2447114989": {
+    "name": "Montpellier",
+    "name_norm": "Montpellier",
+    "insee": "34172",
+    "wikidata": null,
+    "lat": 43.61,
+    "lon": 3.8742
+  },
+  "node/2451414094": {
+    "name": "Nancy",
+    "name_norm": "Nancy",
+    "insee": "54395",
+    "wikidata": null,
+    "lat": 48.6881,
+    "lon": 6.1734
+  },
+  "node/2593699320": {
+    "name": "Périgueux",
+    "name_norm": "Perigueux",
+    "insee": "24322",
+    "wikidata": null,
+    "lat": 45.1939,
+    "lon": 0.7105
+  },
+  "node/2620323474": {
+    "name": "Odos",
+    "name_norm": "Odos",
+    "insee": "65331",
+    "wikidata": null,
+    "lat": 43.1949,
+    "lon": 0.0531
+  },
+  "node/2631246264": {
+    "name": "Compiègne",
+    "name_norm": "Compiegne",
+    "insee": "60159",
+    "wikidata": null,
+    "lat": 49.4006,
+    "lon": 2.8547
+  },
+  "node/2703935837": {
+    "name": "Rueil-Malmaison",
+    "name_norm": "Rueil-Malmaison",
+    "insee": "92063",
+    "wikidata": null,
+    "lat": 48.8717,
+    "lon": 2.1806
+  },
+  "node/2718671992": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/2751053707": {
+    "name": "Marennes-Hiers-Brouage",
+    "name_norm": "Marennes-Hiers-Brouage",
+    "insee": "17219",
+    "wikidata": null,
+    "lat": 45.8328,
+    "lon": -1.0702
+  },
+  "node/2809969133": {
+    "name": "Arles",
+    "name_norm": "Arles",
+    "insee": "13004",
+    "wikidata": null,
+    "lat": 43.5441,
+    "lon": 4.6513
+  },
+  "node/2901319301": {
+    "name": "Pannes",
+    "name_norm": "Pannes",
+    "insee": "45247",
+    "wikidata": null,
+    "lat": 48.0119,
+    "lon": 2.6708
+  },
+  "node/2901507201": {
+    "name": "Montargis",
+    "name_norm": "Montargis",
+    "insee": "45208",
+    "wikidata": null,
+    "lat": 47.9998,
+    "lon": 2.7388
+  },
+  "node/2982367094": {
+    "name": "Saint-Denis",
+    "name_norm": "Saint-Denis",
+    "insee": "93066",
+    "wikidata": null,
+    "lat": 48.9378,
+    "lon": 2.3657
+  },
+  "node/3156937984": {
+    "name": "Vitré",
+    "name_norm": "Vitre",
+    "insee": "35360",
+    "wikidata": null,
+    "lat": 48.1105,
+    "lon": -1.1972
+  },
+  "node/3200412591": {
+    "name": "Vanves",
+    "name_norm": "Vanves",
+    "insee": "92075",
+    "wikidata": null,
+    "lat": 48.8214,
+    "lon": 2.2869
+  },
+  "node/3260726705": {
+    "name": "Autun",
+    "name_norm": "Autun",
+    "insee": "71014",
+    "wikidata": null,
+    "lat": 46.9386,
+    "lon": 4.3038
+  },
+  "node/3302081423": {
+    "name": "Cholet",
+    "name_norm": "Cholet",
+    "insee": "49099",
+    "wikidata": null,
+    "lat": 47.0358,
+    "lon": -0.875
+  },
+  "node/3330368383": {
+    "name": "Vannes",
+    "name_norm": "Vannes",
+    "insee": "56260",
+    "wikidata": null,
+    "lat": 47.6577,
+    "lon": -2.7485
+  },
+  "node/3352567807": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/3415274893": {
+    "name": "Deauville",
+    "name_norm": "Deauville",
+    "insee": "14220",
+    "wikidata": null,
+    "lat": 49.3539,
+    "lon": 0.075
+  },
+  "node/3444688919": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/3454934178": {
+    "name": "Mulhouse",
+    "name_norm": "Mulhouse",
+    "insee": "68224",
+    "wikidata": null,
+    "lat": 47.7526,
+    "lon": 7.3255
+  },
+  "node/3468121487": {
+    "name": "Beauvais",
+    "name_norm": "Beauvais",
+    "insee": "60057",
+    "wikidata": null,
+    "lat": 49.4425,
+    "lon": 2.0877
+  },
+  "node/3522465884": {
+    "name": "Nîmes",
+    "name_norm": "Nimes",
+    "insee": "30189",
+    "wikidata": null,
+    "lat": 43.8322,
+    "lon": 4.3429
+  },
+  "node/3572022711": {
+    "name": "Angers",
+    "name_norm": "Angers",
+    "insee": "49007",
+    "wikidata": null,
+    "lat": 47.4819,
+    "lon": -0.5629
+  },
+  "node/3578548917": {
+    "name": "Anglet",
+    "name_norm": "Anglet",
+    "insee": "64024",
+    "wikidata": null,
+    "lat": 43.4893,
+    "lon": -1.5193
+  },
+  "node/3660819947": {
+    "name": "Jonage",
+    "name_norm": "Jonage",
+    "insee": "69279",
+    "wikidata": null,
+    "lat": 45.7886,
+    "lon": 5.0377
+  },
+  "node/3716655235": {
+    "name": "Le Puy-en-Velay",
+    "name_norm": "Le Puy-en-Velay",
+    "insee": "43157",
+    "wikidata": null,
+    "lat": 45.0283,
+    "lon": 3.8973
+  },
+  "node/3772432526": {
+    "name": "Nogent-sur-Marne",
+    "name_norm": "Nogent-sur-Marne",
+    "insee": "94052",
+    "wikidata": null,
+    "lat": 48.837,
+    "lon": 2.4811
+  },
+  "node/3871575583": {
+    "name": "Bayonne",
+    "name_norm": "Bayonne",
+    "insee": "64102",
+    "wikidata": null,
+    "lat": 43.4844,
+    "lon": -1.4611
+  },
+  "node/3943644377": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "node/3960011710": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/4044625004": {
+    "name": "Nemours",
+    "name_norm": "Nemours",
+    "insee": "77333",
+    "wikidata": null,
+    "lat": 48.2633,
+    "lon": 2.7187
+  },
+  "node/4106674964": {
+    "name": "Villeurbanne",
+    "name_norm": "Villeurbanne",
+    "insee": "69266",
+    "wikidata": null,
+    "lat": 45.7719,
+    "lon": 4.8898
+  },
+  "node/4119515567": {
+    "name": "Metz",
+    "name_norm": "Metz",
+    "insee": "57463",
+    "wikidata": null,
+    "lat": 49.1048,
+    "lon": 6.1962
+  },
+  "node/4160120595": {
+    "name": "Brest",
+    "name_norm": "Brest",
+    "insee": "29019",
+    "wikidata": null,
+    "lat": 48.4085,
+    "lon": -4.4996
+  },
+  "node/4162531889": {
+    "name": "La Courneuve",
+    "name_norm": "La Courneuve",
+    "insee": "93027",
+    "wikidata": null,
+    "lat": 48.9341,
+    "lon": 2.3986
+  },
+  "node/4184087491": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "node/4209223692": {
+    "name": "Maisons-Laffitte",
+    "name_norm": "Maisons-Laffitte",
+    "insee": "78358",
+    "wikidata": null,
+    "lat": 48.9503,
+    "lon": 2.1533
+  },
+  "node/4209868190": {
+    "name": "Grenoble",
+    "name_norm": "Grenoble",
+    "insee": "38185",
+    "wikidata": null,
+    "lat": 45.1842,
+    "lon": 5.7155
+  },
+  "node/4239360601": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "node/4307143029": {
+    "name": "Rivesaltes",
+    "name_norm": "Rivesaltes",
+    "insee": "66164",
+    "wikidata": null,
+    "lat": 42.7761,
+    "lon": 2.8769
+  },
+  "node/4412206417": {
+    "name": "Villeneuve-sur-Lot",
+    "name_norm": "Villeneuve-sur-Lot",
+    "insee": "47323",
+    "wikidata": null,
+    "lat": 44.4183,
+    "lon": 0.7484
+  },
+  "node/4480846089": {
+    "name": "Soissons",
+    "name_norm": "Soissons",
+    "insee": "02722",
+    "wikidata": null,
+    "lat": 49.3766,
+    "lon": 3.3235
+  },
+  "node/4499249280": {
+    "name": "Saint-Gratien",
+    "name_norm": "Saint-Gratien",
+    "insee": "95555",
+    "wikidata": null,
+    "lat": 48.9679,
+    "lon": 2.285
+  },
+  "node/4594259123": {
+    "name": "Mulhouse",
+    "name_norm": "Mulhouse",
+    "insee": "68224",
+    "wikidata": null,
+    "lat": 47.7526,
+    "lon": 7.3255
+  },
+  "node/4697330143": {
+    "name": "Étampes",
+    "name_norm": "Etampes",
+    "insee": "91223",
+    "wikidata": null,
+    "lat": 48.4227,
+    "lon": 2.1524
+  },
+  "node/4732532638": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/4837534977": {
+    "name": "Saint-Quentin-sur-le-Homme",
+    "name_norm": "Saint-Quentin-sur-le-Homme",
+    "insee": "50543",
+    "wikidata": null,
+    "lat": 48.6475,
+    "lon": -1.3029
+  },
+  "node/4868217868": {
+    "name": "Villeneuve-lès-Béziers",
+    "name_norm": "Villeneuve-les-Beziers",
+    "insee": "34336",
+    "wikidata": null,
+    "lat": 43.3178,
+    "lon": 3.2909
+  },
+  "node/4923949181": {
+    "name": "Saint-Émilion",
+    "name_norm": "Saint-Emilion",
+    "insee": "33394",
+    "wikidata": null,
+    "lat": 44.8947,
+    "lon": -0.1715
+  },
+  "node/5031869715": {
+    "name": "Nancy",
+    "name_norm": "Nancy",
+    "insee": "54395",
+    "wikidata": null,
+    "lat": 48.6881,
+    "lon": 6.1734
+  },
+  "node/5245794547": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/5250915337": {
+    "name": "Montigny-le-Bretonneux",
+    "name_norm": "Montigny-le-Bretonneux",
+    "insee": "78423",
+    "wikidata": null,
+    "lat": 48.7776,
+    "lon": 2.0252
+  },
+  "node/5531520795": {
+    "name": "Caudan",
+    "name_norm": "Caudan",
+    "insee": "56036",
+    "wikidata": null,
+    "lat": 47.8099,
+    "lon": -3.3383
+  },
+  "node/5836210355": {
+    "name": "Saint-Brieuc",
+    "name_norm": "Saint-Brieuc",
+    "insee": "22278",
+    "wikidata": null,
+    "lat": 48.5108,
+    "lon": -2.7657
+  },
+  "node/6051383944": {
+    "name": "Ploumagoar",
+    "name_norm": "Ploumagoar",
+    "insee": "22225",
+    "wikidata": null,
+    "lat": 48.5295,
+    "lon": -3.1096
+  },
+  "node/6090949532": {
+    "name": "Pornichet",
+    "name_norm": "Pornichet",
+    "insee": "44132",
+    "wikidata": null,
+    "lat": 47.2599,
+    "lon": -2.3225
+  },
+  "node/6148782415": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "node/6544329342": {
+    "name": "Saint-Dié-des-Vosges",
+    "name_norm": "Saint-Die-des-Vosges",
+    "insee": "88413",
+    "wikidata": null,
+    "lat": 48.2973,
+    "lon": 6.9386
+  },
+  "node/6772801543": {
+    "name": "Manosque",
+    "name_norm": "Manosque",
+    "insee": "04112",
+    "wikidata": null,
+    "lat": 43.8293,
+    "lon": 5.7896
+  },
+  "node/6968271351": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "node/7074407598": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/7086161715": {
+    "name": "Rouen",
+    "name_norm": "Rouen",
+    "insee": "76540",
+    "wikidata": null,
+    "lat": 49.4412,
+    "lon": 1.0912
+  },
+  "node/7098629350": {
+    "name": "Puteaux",
+    "name_norm": "Puteaux",
+    "insee": "92062",
+    "wikidata": null,
+    "lat": 48.8824,
+    "lon": 2.2384
+  },
+  "node/7130352486": {
+    "name": "Saint-Médard-en-Jalles",
+    "name_norm": "Saint-Medard-en-Jalles",
+    "insee": "33449",
+    "wikidata": null,
+    "lat": 44.8861,
+    "lon": -0.7823
+  },
+  "node/7196887991": {
+    "name": "Lyon",
+    "name_norm": "Lyon",
+    "insee": "69123",
+    "wikidata": null,
+    "lat": 45.758,
+    "lon": 4.8351
+  },
+  "node/7265640837": {
+    "name": "Vouillé",
+    "name_norm": "Vouille",
+    "insee": "79355",
+    "wikidata": null,
+    "lat": 46.3199,
+    "lon": -0.3555
+  },
+  "node/7430438701": {
+    "name": "Blois",
+    "name_norm": "Blois",
+    "insee": "41018",
+    "wikidata": null,
+    "lat": 47.5813,
+    "lon": 1.3049
+  },
+  "node/7435608845": {
+    "name": "Pontarlier",
+    "name_norm": "Pontarlier",
+    "insee": "25462",
+    "wikidata": null,
+    "lat": 46.9167,
+    "lon": 6.3796
+  },
+  "node/7445026234": {
+    "name": "Rezé",
+    "name_norm": "Reze",
+    "insee": "44143",
+    "wikidata": null,
+    "lat": 47.1733,
+    "lon": -1.5573
+  },
+  "node/7548958153": {
+    "name": "La Rochelle",
+    "name_norm": "La Rochelle",
+    "insee": "17300",
+    "wikidata": null,
+    "lat": 46.162,
+    "lon": -1.1765
+  },
+  "node/7955800437": {
+    "name": "Rouen",
+    "name_norm": "Rouen",
+    "insee": "76540",
+    "wikidata": null,
+    "lat": 49.4412,
+    "lon": 1.0912
+  },
+  "node/8006447954": {
+    "name": "Alençon",
+    "name_norm": "Alencon",
+    "insee": "61001",
+    "wikidata": null,
+    "lat": 48.431,
+    "lon": 0.0923
+  },
+  "node/8179030084": {
+    "name": "Saint-Étienne",
+    "name_norm": "Saint-Etienne",
+    "insee": "42218",
+    "wikidata": null,
+    "lat": 45.4241,
+    "lon": 4.3665
+  },
+  "node/8595753014": {
+    "name": "Port-Vendres",
+    "name_norm": "Port-Vendres",
+    "insee": "66148",
+    "wikidata": null,
+    "lat": 42.5034,
+    "lon": 3.1048
+  },
+  "node/8904462601": {
+    "name": "Lesquin",
+    "name_norm": "Lesquin",
+    "insee": "59343",
+    "wikidata": null,
+    "lat": 50.5904,
+    "lon": 3.1132
+  },
+  "node/9157455815": {
+    "name": "Beaucé",
+    "name_norm": "Beauce",
+    "insee": "35021",
+    "wikidata": null,
+    "lat": 48.346,
+    "lon": -1.1554
+  },
+  "node/9270340891": {
+    "name": "Amiens",
+    "name_norm": "Amiens",
+    "insee": "80021",
+    "wikidata": null,
+    "lat": 49.8987,
+    "lon": 2.2847
+  },
+  "node/9446853812": {
+    "name": "Arras",
+    "name_norm": "Arras",
+    "insee": "62041",
+    "wikidata": null,
+    "lat": 50.2893,
+    "lon": 2.7679
+  },
+  "node/9455171488": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/9549675053": {
+    "name": "Jaux",
+    "name_norm": "Jaux",
+    "insee": "60325",
+    "wikidata": null,
+    "lat": 49.3948,
+    "lon": 2.7703
+  },
+  "node/9804191175": {
+    "name": "Clermont-Ferrand",
+    "name_norm": "Clermont-Ferrand",
+    "insee": "63113",
+    "wikidata": null,
+    "lat": 45.787,
+    "lon": 3.1127
+  },
+  "node/9878535023": {
+    "name": "Mers-les-Bains",
+    "name_norm": "Mers-les-Bains",
+    "insee": "80533",
+    "wikidata": null,
+    "lat": 50.0723,
+    "lon": 1.4031
+  },
+  "node/9943726088": {
+    "name": "Romainville",
+    "name_norm": "Romainville",
+    "insee": "93063",
+    "wikidata": null,
+    "lat": 48.8849,
+    "lon": 2.4391
+  },
+  "node/10155550035": {
+    "name": "Le Cannet",
+    "name_norm": "Le Cannet",
+    "insee": "06030",
+    "wikidata": null,
+    "lat": 43.5745,
+    "lon": 7.001
+  },
+  "node/10197466413": {
+    "name": "Gonesse",
+    "name_norm": "Gonesse",
+    "insee": "95277",
+    "wikidata": null,
+    "lat": 48.9856,
+    "lon": 2.4602
+  },
+  "node/10698188122": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/10718358114": {
+    "name": "Lingolsheim",
+    "name_norm": "Lingolsheim",
+    "insee": "67267",
+    "wikidata": null,
+    "lat": 48.5543,
+    "lon": 7.6837
+  },
+  "node/10902320234": {
+    "name": "Bordeaux",
+    "name_norm": "Bordeaux",
+    "insee": "33063",
+    "wikidata": null,
+    "lat": 44.8624,
+    "lon": -0.5848
+  },
+  "node/11063316988": {
+    "name": "La Rochelle",
+    "name_norm": "La Rochelle",
+    "insee": "17300",
+    "wikidata": null,
+    "lat": 46.162,
+    "lon": -1.1765
+  },
+  "node/11112560377": {
+    "name": "Hyères",
+    "name_norm": "Hyeres",
+    "insee": "83069",
+    "wikidata": null,
+    "lat": 43.1139,
+    "lon": 6.2357
+  },
+  "node/11256413823": {
+    "name": "Orly",
+    "name_norm": "Orly",
+    "insee": "94054",
+    "wikidata": null,
+    "lat": 48.7402,
+    "lon": 2.403
+  },
+  "node/11453868066": {
+    "name": "Hyères",
+    "name_norm": "Hyeres",
+    "insee": "83069",
+    "wikidata": null,
+    "lat": 43.1139,
+    "lon": 6.2357
+  },
+  "node/11665979418": {
+    "name": "Rochefort",
+    "name_norm": "Rochefort",
+    "insee": "17299",
+    "wikidata": null,
+    "lat": 45.9455,
+    "lon": -0.9745
+  },
+  "node/11681670323": {
+    "name": "La Rochelle",
+    "name_norm": "La Rochelle",
+    "insee": "17300",
+    "wikidata": null,
+    "lat": 46.162,
+    "lon": -1.1765
+  },
+  "node/11874203064": {
+    "name": "Sarlat-la-Canéda",
+    "name_norm": "Sarlat-la-Caneda",
+    "insee": "24520",
+    "wikidata": null,
+    "lat": 44.906,
+    "lon": 1.1994
+  },
+  "node/11881577593": {
+    "name": "Guyancourt",
+    "name_norm": "Guyancourt",
+    "insee": "78297",
+    "wikidata": null,
+    "lat": 48.7735,
+    "lon": 2.0745
+  },
+  "node/12033476364": {
+    "name": "Longvic",
+    "name_norm": "Longvic",
+    "insee": "21355",
+    "wikidata": null,
+    "lat": 47.2855,
+    "lon": 5.0585
+  },
+  "node/12041587588": {
+    "name": "Cahors",
+    "name_norm": "Cahors",
+    "insee": "46042",
+    "wikidata": null,
+    "lat": 44.4565,
+    "lon": 1.439
+  },
+  "node/12065151805": {
+    "name": "Bordeaux",
+    "name_norm": "Bordeaux",
+    "insee": "33063",
+    "wikidata": null,
+    "lat": 44.8624,
+    "lon": -0.5848
+  },
+  "node/12093773302": {
+    "name": "Reims",
+    "name_norm": "Reims",
+    "insee": "51454",
+    "wikidata": null,
+    "lat": 49.2535,
+    "lon": 4.0551
+  },
+  "node/12112384580": {
+    "name": "Ancenis-Saint-Géréon",
+    "name_norm": "Ancenis-Saint-Gereon",
+    "insee": "44003",
+    "wikidata": null,
+    "lat": 47.382,
+    "lon": -1.1681
+  },
+  "node/12139409279": {
+    "name": "Poitiers",
+    "name_norm": "Poitiers",
+    "insee": "86194",
+    "wikidata": null,
+    "lat": 46.5846,
+    "lon": 0.3715
+  },
+  "node/12149154404": {
+    "name": "Pamandzi",
+    "name_norm": "Pamandzi",
+    "insee": "97615",
+    "wikidata": null,
+    "lat": -12.801,
+    "lon": 45.2842
+  },
+  "node/12164215548": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/12214889616": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/12246833570": {
+    "name": "Ouistreham",
+    "name_norm": "Ouistreham",
+    "insee": "14488",
+    "wikidata": null,
+    "lat": 49.2709,
+    "lon": -0.2564
+  },
+  "node/12369248801": {
+    "name": "Saint-Paul-Trois-Châteaux",
+    "name_norm": "Saint-Paul-Trois-Chateaux",
+    "insee": "26324",
+    "wikidata": null,
+    "lat": 44.3489,
+    "lon": 4.7617
+  },
+  "node/12400211096": {
+    "name": "Prévessin-Moëns",
+    "name_norm": "Prevessin-Moens",
+    "insee": "01313",
+    "wikidata": null,
+    "lat": 46.2594,
+    "lon": 6.0722
+  },
+  "node/12463776361": {
+    "name": "Vichy",
+    "name_norm": "Vichy",
+    "insee": "03310",
+    "wikidata": null,
+    "lat": 46.1318,
+    "lon": 3.4254
+  },
+  "node/12647823892": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/12920941305": {
+    "name": "Le Coteau",
+    "name_norm": "Le Coteau",
+    "insee": "42071",
+    "wikidata": null,
+    "lat": 46.0217,
+    "lon": 4.0925
+  },
+  "node/12947005876": {
+    "name": "Rennes",
+    "name_norm": "Rennes",
+    "insee": "35238",
+    "wikidata": null,
+    "lat": 48.1159,
+    "lon": -1.6884
+  },
+  "node/13036061797": {
+    "name": "Longvic",
+    "name_norm": "Longvic",
+    "insee": "21355",
+    "wikidata": null,
+    "lat": 47.2855,
+    "lon": 5.0585
+  },
+  "node/13116088544": {
+    "name": "Pau",
+    "name_norm": "Pau",
+    "insee": "64445",
+    "wikidata": null,
+    "lat": 43.3219,
+    "lon": -0.3435
+  },
+  "node/13316573052": {
+    "name": "Saint-Rambert-d'Albon",
+    "name_norm": "Saint-Rambert-d'Albon",
+    "insee": "26325",
+    "wikidata": null,
+    "lat": 45.2883,
+    "lon": 4.8299
+  },
+  "node/13421942834": {
+    "name": "Dinan",
+    "name_norm": "Dinan",
+    "insee": "22050",
+    "wikidata": null,
+    "lat": 48.4471,
+    "lon": -2.0533
+  },
+  "node/13603177001": {
+    "name": "Levallois-Perret",
+    "name_norm": "Levallois-Perret",
+    "insee": "92044",
+    "wikidata": null,
+    "lat": 48.8946,
+    "lon": 2.2874
+  },
+  "node/14023843176": {
+    "name": "Saint-Gilles-Croix-de-Vie",
+    "name_norm": "Saint-Gilles-Croix-de-Vie",
+    "insee": "85222",
+    "wikidata": null,
+    "lat": 46.688,
+    "lon": -1.9207
+  },
+  "way/23980912": {
+    "name": "Jouy-en-Josas",
+    "name_norm": "Jouy-en-Josas",
+    "insee": "78322",
+    "wikidata": null,
+    "lat": 48.7652,
+    "lon": 2.161
+  },
+  "way/31717437": {
+    "name": "Pessac",
+    "name_norm": "Pessac",
+    "insee": "33318",
+    "wikidata": null,
+    "lat": 44.786,
+    "lon": -0.681
+  },
+  "way/31884127": {
+    "name": "Tremblay-en-France",
+    "name_norm": "Tremblay-en-France",
+    "insee": "93073",
+    "wikidata": null,
+    "lat": 48.9744,
+    "lon": 2.5481
+  },
+  "way/32126433": {
+    "name": "Valbonne",
+    "name_norm": "Valbonne",
+    "insee": "06152",
+    "wikidata": null,
+    "lat": 43.6267,
+    "lon": 7.0291
+  },
+  "way/40222088": {
+    "name": "Strasbourg",
+    "name_norm": "Strasbourg",
+    "insee": "67482",
+    "wikidata": null,
+    "lat": 48.5691,
+    "lon": 7.7621
+  },
+  "way/41123899": {
+    "name": "Strasbourg",
+    "name_norm": "Strasbourg",
+    "insee": "67482",
+    "wikidata": null,
+    "lat": 48.5691,
+    "lon": 7.7621
+  },
+  "way/43666858": {
+    "name": "Strasbourg",
+    "name_norm": "Strasbourg",
+    "insee": "67482",
+    "wikidata": null,
+    "lat": 48.5691,
+    "lon": 7.7621
+  },
+  "way/48585649": {
+    "name": "Colmar",
+    "name_norm": "Colmar",
+    "insee": "68066",
+    "wikidata": null,
+    "lat": 48.1115,
+    "lon": 7.3924
+  },
+  "way/51206730": {
+    "name": "Colmar",
+    "name_norm": "Colmar",
+    "insee": "68066",
+    "wikidata": null,
+    "lat": 48.1115,
+    "lon": 7.3924
+  },
+  "way/52130814": {
+    "name": "Ostwald",
+    "name_norm": "Ostwald",
+    "insee": "67365",
+    "wikidata": null,
+    "lat": 48.5469,
+    "lon": 7.7093
+  },
+  "way/52403594": {
+    "name": "Haguenau",
+    "name_norm": "Haguenau",
+    "insee": "67180",
+    "wikidata": null,
+    "lat": 48.8388,
+    "lon": 7.8213
+  },
+  "way/52464150": {
+    "name": "Mâcon",
+    "name_norm": "Macon",
+    "insee": "71270",
+    "wikidata": null,
+    "lat": 46.3265,
+    "lon": 4.8083
+  },
+  "way/53815583": {
+    "name": "Besançon",
+    "name_norm": "Besancon",
+    "insee": "25056",
+    "wikidata": null,
+    "lat": 47.2602,
+    "lon": 6.0123
+  },
+  "way/62649400": {
+    "name": "Annecy",
+    "name_norm": "Annecy",
+    "insee": "74010",
+    "wikidata": null,
+    "lat": 45.9024,
+    "lon": 6.1264
+  },
+  "way/63195543": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63195932": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63198280": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63202044": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63202200": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63237481": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63495702": {
+    "name": "Lons",
+    "name_norm": "Lons",
+    "insee": "64348",
+    "wikidata": null,
+    "lat": 43.3253,
+    "lon": -0.4067
+  },
+  "way/63641010": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/63896860": {
+    "name": "Saint-Grégoire",
+    "name_norm": "Saint-Gregoire",
+    "insee": "35278",
+    "wikidata": null,
+    "lat": 48.1598,
+    "lon": -1.6815
+  },
+  "way/63959300": {
+    "name": "Gennevilliers",
+    "name_norm": "Gennevilliers",
+    "insee": "92036",
+    "wikidata": null,
+    "lat": 48.9319,
+    "lon": 2.288
+  },
+  "way/63980435": {
+    "name": "Saint-Denis",
+    "name_norm": "Saint-Denis",
+    "insee": "93066",
+    "wikidata": null,
+    "lat": 48.9378,
+    "lon": 2.3657
+  },
+  "way/63993218": {
+    "name": "Saint-Denis",
+    "name_norm": "Saint-Denis",
+    "insee": "93066",
+    "wikidata": null,
+    "lat": 48.9378,
+    "lon": 2.3657
+  },
+  "way/64040950": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/64600414": {
+    "name": "Bourges",
+    "name_norm": "Bourges",
+    "insee": "18033",
+    "wikidata": null,
+    "lat": 47.078,
+    "lon": 2.3983
+  },
+  "way/64738648": {
+    "name": "Mouans-Sartoux",
+    "name_norm": "Mouans-Sartoux",
+    "insee": "06084",
+    "wikidata": null,
+    "lat": 43.6192,
+    "lon": 6.9677
+  },
+  "way/65131680": {
+    "name": "Le Mans",
+    "name_norm": "Le Mans",
+    "insee": "72181",
+    "wikidata": null,
+    "lat": 47.9819,
+    "lon": 0.1957
+  },
+  "way/65192522": {
+    "name": "Sallanches",
+    "name_norm": "Sallanches",
+    "insee": "74256",
+    "wikidata": null,
+    "lat": 45.9323,
+    "lon": 6.6041
+  },
+  "way/65454392": {
+    "name": "Auch",
+    "name_norm": "Auch",
+    "insee": "32013",
+    "wikidata": null,
+    "lat": 43.6602,
+    "lon": 0.5673
+  },
+  "way/65526939": {
+    "name": "Cognac",
+    "name_norm": "Cognac",
+    "insee": "16102",
+    "wikidata": null,
+    "lat": 45.696,
+    "lon": -0.3376
+  },
+  "way/65785617": {
+    "name": "Châteaubernard",
+    "name_norm": "Chateaubernard",
+    "insee": "16089",
+    "wikidata": null,
+    "lat": 45.6753,
+    "lon": -0.3168
+  },
+  "way/66119197": {
+    "name": "Issoire",
+    "name_norm": "Issoire",
+    "insee": "63178",
+    "wikidata": null,
+    "lat": 45.5442,
+    "lon": 3.2444
+  },
+  "way/67373188": {
+    "name": "Clermont-Ferrand",
+    "name_norm": "Clermont-Ferrand",
+    "insee": "63113",
+    "wikidata": null,
+    "lat": 45.787,
+    "lon": 3.1127
+  },
+  "way/67954368": {
+    "name": "Aubenas",
+    "name_norm": "Aubenas",
+    "insee": "07019",
+    "wikidata": null,
+    "lat": 44.6107,
+    "lon": 4.3942
+  },
+  "way/68340939": {
+    "name": "Carcassonne",
+    "name_norm": "Carcassonne",
+    "insee": "11069",
+    "wikidata": null,
+    "lat": 43.2078,
+    "lon": 2.3491
+  },
+  "way/68769897": {
+    "name": "Chambray-lès-Tours",
+    "name_norm": "Chambray-les-Tours",
+    "insee": "37050",
+    "wikidata": null,
+    "lat": 47.3329,
+    "lon": 0.7205
+  },
+  "way/68860233": {
+    "name": "Lourdes",
+    "name_norm": "Lourdes",
+    "insee": "65286",
+    "wikidata": null,
+    "lat": 43.109,
+    "lon": -0.0806
+  },
+  "way/68995901": {
+    "name": "Metz",
+    "name_norm": "Metz",
+    "insee": "57463",
+    "wikidata": null,
+    "lat": 49.1048,
+    "lon": 6.1962
+  },
+  "way/69382450": {
+    "name": "Tours",
+    "name_norm": "Tours",
+    "insee": "37261",
+    "wikidata": null,
+    "lat": 47.3943,
+    "lon": 0.6949
+  },
+  "way/69551216": {
+    "name": "Tours",
+    "name_norm": "Tours",
+    "insee": "37261",
+    "wikidata": null,
+    "lat": 47.3943,
+    "lon": 0.6949
+  },
+  "way/70677447": {
+    "name": "Limoges",
+    "name_norm": "Limoges",
+    "insee": "87085",
+    "wikidata": null,
+    "lat": 45.8567,
+    "lon": 1.226
+  },
+  "way/70787838": {
+    "name": "Asnières-sur-Seine",
+    "name_norm": "Asnieres-sur-Seine",
+    "insee": "92004",
+    "wikidata": null,
+    "lat": 48.9181,
+    "lon": 2.2935
+  },
+  "way/72075491": {
+    "name": "Roscoff",
+    "name_norm": "Roscoff",
+    "insee": "29239",
+    "wikidata": null,
+    "lat": 48.7135,
+    "lon": -3.9866
+  },
+  "way/73132258": {
+    "name": "Val-de-Reuil",
+    "name_norm": "Val-de-Reuil",
+    "insee": "27701",
+    "wikidata": null,
+    "lat": 49.264,
+    "lon": 1.2142
+  },
+  "way/74145617": {
+    "name": "Boulogne-Billancourt",
+    "name_norm": "Boulogne-Billancourt",
+    "insee": "92012",
+    "wikidata": null,
+    "lat": 48.8375,
+    "lon": 2.2429
+  },
+  "way/74469035": {
+    "name": "Clichy",
+    "name_norm": "Clichy",
+    "insee": "92024",
+    "wikidata": null,
+    "lat": 48.9041,
+    "lon": 2.3041
+  },
+  "way/74473458": {
+    "name": "Clichy",
+    "name_norm": "Clichy",
+    "insee": "92024",
+    "wikidata": null,
+    "lat": 48.9041,
+    "lon": 2.3041
+  },
+  "way/75183890": {
+    "name": "Albi",
+    "name_norm": "Albi",
+    "insee": "81004",
+    "wikidata": null,
+    "lat": 43.929,
+    "lon": 2.1323
+  },
+  "way/78145490": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/78148653": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/78148957": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/78493738": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/78534480": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/79049491": {
+    "name": "Villeneuve-d'Ascq",
+    "name_norm": "Villeneuve-d'Ascq",
+    "insee": "59009",
+    "wikidata": null,
+    "lat": 50.6362,
+    "lon": 3.1619
+  },
+  "way/79083291": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/79688152": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/79719355": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/79764048": {
+    "name": "Belfort",
+    "name_norm": "Belfort",
+    "insee": "90010",
+    "wikidata": null,
+    "lat": 47.6458,
+    "lon": 6.841
+  },
+  "way/81285124": {
+    "name": "Bobigny",
+    "name_norm": "Bobigny",
+    "insee": "93008",
+    "wikidata": null,
+    "lat": 48.9073,
+    "lon": 2.4432
+  },
+  "way/81415868": {
+    "name": "Égletons",
+    "name_norm": "Egletons",
+    "insee": "19073",
+    "wikidata": null,
+    "lat": 45.4245,
+    "lon": 2.0338
+  },
+  "way/81662806": {
+    "name": "Perpignan",
+    "name_norm": "Perpignan",
+    "insee": "66136",
+    "wikidata": null,
+    "lat": 42.699,
+    "lon": 2.9045
+  },
+  "way/81668652": {
+    "name": "Perpignan",
+    "name_norm": "Perpignan",
+    "insee": "66136",
+    "wikidata": null,
+    "lat": 42.699,
+    "lon": 2.9045
+  },
+  "way/81779869": {
+    "name": "Cesson-Sévigné",
+    "name_norm": "Cesson-Sevigne",
+    "insee": "35051",
+    "wikidata": null,
+    "lat": 48.1235,
+    "lon": -1.5935
+  },
+  "way/81787682": {
+    "name": "Cesson-Sévigné",
+    "name_norm": "Cesson-Sevigne",
+    "insee": "35051",
+    "wikidata": null,
+    "lat": 48.1235,
+    "lon": -1.5935
+  },
+  "way/82063006": {
+    "name": "Changé",
+    "name_norm": "Change",
+    "insee": "53054",
+    "wikidata": null,
+    "lat": 48.1131,
+    "lon": -0.7961
+  },
+  "way/82532791": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "way/82964232": {
+    "name": "Danjoutin",
+    "name_norm": "Danjoutin",
+    "insee": "90032",
+    "wikidata": null,
+    "lat": 47.6187,
+    "lon": 6.8647
+  },
+  "way/83233811": {
+    "name": "Montrouge",
+    "name_norm": "Montrouge",
+    "insee": "92049",
+    "wikidata": null,
+    "lat": 48.8159,
+    "lon": 2.3163
+  },
+  "way/84281774": {
+    "name": "Le Blanc-Mesnil",
+    "name_norm": "Le Blanc-Mesnil",
+    "insee": "93007",
+    "wikidata": null,
+    "lat": 48.9372,
+    "lon": 2.4576
+  },
+  "way/85075030": {
+    "name": "Chasseneuil-du-Poitou",
+    "name_norm": "Chasseneuil-du-Poitou",
+    "insee": "86062",
+    "wikidata": null,
+    "lat": 46.6476,
+    "lon": 0.356
+  },
+  "way/86284644": {
+    "name": "Mouilleron-le-Captif",
+    "name_norm": "Mouilleron-le-Captif",
+    "insee": "85155",
+    "wikidata": null,
+    "lat": 46.7114,
+    "lon": -1.4649
+  },
+  "way/86361482": {
+    "name": "Le Puy-en-Velay",
+    "name_norm": "Le Puy-en-Velay",
+    "insee": "43157",
+    "wikidata": null,
+    "lat": 45.0283,
+    "lon": 3.8973
+  },
+  "way/86602217": {
+    "name": "Tinqueux",
+    "name_norm": "Tinqueux",
+    "insee": "51573",
+    "wikidata": null,
+    "lat": 49.2488,
+    "lon": 3.9895
+  },
+  "way/88129413": {
+    "name": "Poitiers",
+    "name_norm": "Poitiers",
+    "insee": "86194",
+    "wikidata": null,
+    "lat": 46.5846,
+    "lon": 0.3715
+  },
+  "way/89057170": {
+    "name": "Vandœuvre-lès-Nancy",
+    "name_norm": "Vandœuvre-les-Nancy",
+    "insee": "54547",
+    "wikidata": null,
+    "lat": 48.66,
+    "lon": 6.1603
+  },
+  "way/89669940": {
+    "name": "Châtenay-Malabry",
+    "name_norm": "Chatenay-Malabry",
+    "insee": "92019",
+    "wikidata": null,
+    "lat": 48.7697,
+    "lon": 2.2603
+  },
+  "way/89765887": {
+    "name": "Les Houches",
+    "name_norm": "Les Houches",
+    "insee": "74143",
+    "wikidata": null,
+    "lat": 45.8919,
+    "lon": 6.7991
+  },
+  "way/90603028": {
+    "name": "Vichy",
+    "name_norm": "Vichy",
+    "insee": "03310",
+    "wikidata": null,
+    "lat": 46.1318,
+    "lon": 3.4254
+  },
+  "way/92296018": {
+    "name": "Reims",
+    "name_norm": "Reims",
+    "insee": "51454",
+    "wikidata": null,
+    "lat": 49.2535,
+    "lon": 4.0551
+  },
+  "way/93349343": {
+    "name": "Fabrègues",
+    "name_norm": "Fabregues",
+    "insee": "34095",
+    "wikidata": null,
+    "lat": 43.5312,
+    "lon": 3.7737
+  },
+  "way/94679611": {
+    "name": "Saint-Malo",
+    "name_norm": "Saint-Malo",
+    "insee": "35288",
+    "wikidata": null,
+    "lat": 48.6465,
+    "lon": -2.0066
+  },
+  "way/97618227": {
+    "name": "Sarrebourg",
+    "name_norm": "Sarrebourg",
+    "insee": "57630",
+    "wikidata": null,
+    "lat": 48.7329,
+    "lon": 7.0476
+  },
+  "way/100335016": {
+    "name": "Salon-de-Provence",
+    "name_norm": "Salon-de-Provence",
+    "insee": "13103",
+    "wikidata": null,
+    "lat": 43.643,
+    "lon": 5.049
+  },
+  "way/101025028": {
+    "name": "Les Pennes-Mirabeau",
+    "name_norm": "Les Pennes-Mirabeau",
+    "insee": "13071",
+    "wikidata": null,
+    "lat": 43.4005,
+    "lon": 5.3222
+  },
+  "way/101285036": {
+    "name": "Vitrolles",
+    "name_norm": "Vitrolles",
+    "insee": "13117",
+    "wikidata": null,
+    "lat": 43.4509,
+    "lon": 5.2656
+  },
+  "way/102563405": {
+    "name": "Orgeval",
+    "name_norm": "Orgeval",
+    "insee": "78466",
+    "wikidata": null,
+    "lat": 48.9185,
+    "lon": 1.9698
+  },
+  "way/102986261": {
+    "name": "Cergy",
+    "name_norm": "Cergy",
+    "insee": "95127",
+    "wikidata": null,
+    "lat": 49.0373,
+    "lon": 2.0455
+  },
+  "way/104641255": {
+    "name": "Issy-les-Moulineaux",
+    "name_norm": "Issy-les-Moulineaux",
+    "insee": "92040",
+    "wikidata": null,
+    "lat": 48.824,
+    "lon": 2.2628
+  },
+  "way/105727379": {
+    "name": "Fontenay-sous-Bois",
+    "name_norm": "Fontenay-sous-Bois",
+    "insee": "94033",
+    "wikidata": null,
+    "lat": 48.8503,
+    "lon": 2.4736
+  },
+  "way/106058522": {
+    "name": "Beauvais",
+    "name_norm": "Beauvais",
+    "insee": "60057",
+    "wikidata": null,
+    "lat": 49.4425,
+    "lon": 2.0877
+  },
+  "way/108214172": {
+    "name": "Falaise",
+    "name_norm": "Falaise",
+    "insee": "14258",
+    "wikidata": null,
+    "lat": 48.8986,
+    "lon": -0.1924
+  },
+  "way/110600529": {
+    "name": "Chambéry",
+    "name_norm": "Chambery",
+    "insee": "73065",
+    "wikidata": null,
+    "lat": 45.5822,
+    "lon": 5.9064
+  },
+  "way/111733764": {
+    "name": "Valence",
+    "name_norm": "Valence",
+    "insee": "26362",
+    "wikidata": null,
+    "lat": 44.9234,
+    "lon": 4.9164
+  },
+  "way/112362932": {
+    "name": "Melun",
+    "name_norm": "Melun",
+    "insee": "77288",
+    "wikidata": null,
+    "lat": 48.5421,
+    "lon": 2.6552
+  },
+  "way/114030130": {
+    "name": "Vesoul",
+    "name_norm": "Vesoul",
+    "insee": "70550",
+    "wikidata": null,
+    "lat": 47.6323,
+    "lon": 6.1523
+  },
+  "way/114156205": {
+    "name": "Rubelles",
+    "name_norm": "Rubelles",
+    "insee": "77394",
+    "wikidata": null,
+    "lat": 48.5654,
+    "lon": 2.6808
+  },
+  "way/114995223": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/115346435": {
+    "name": "Chasse-sur-Rhône",
+    "name_norm": "Chasse-sur-Rhone",
+    "insee": "38087",
+    "wikidata": null,
+    "lat": 45.578,
+    "lon": 4.8129
+  },
+  "way/116039724": {
+    "name": "Le Coudray",
+    "name_norm": "Le Coudray",
+    "insee": "28110",
+    "wikidata": null,
+    "lat": 48.4188,
+    "lon": 1.5026
+  },
+  "way/116124938": {
+    "name": "Montévrain",
+    "name_norm": "Montevrain",
+    "insee": "77307",
+    "wikidata": null,
+    "lat": 48.8673,
+    "lon": 2.7511
+  },
+  "way/116979402": {
+    "name": "Évry-Courcouronnes",
+    "name_norm": "Evry-Courcouronnes",
+    "insee": "91228",
+    "wikidata": null,
+    "lat": 48.6287,
+    "lon": 2.4313
+  },
+  "way/117478436": {
+    "name": "Chasse-sur-Rhône",
+    "name_norm": "Chasse-sur-Rhone",
+    "insee": "38087",
+    "wikidata": null,
+    "lat": 45.578,
+    "lon": 4.8129
+  },
+  "way/117542749": {
+    "name": "Bordeaux",
+    "name_norm": "Bordeaux",
+    "insee": "33063",
+    "wikidata": null,
+    "lat": 44.8624,
+    "lon": -0.5848
+  },
+  "way/119814788": {
+    "name": "La Rochelle",
+    "name_norm": "La Rochelle",
+    "insee": "17300",
+    "wikidata": null,
+    "lat": 46.162,
+    "lon": -1.1765
+  },
+  "way/120960209": {
+    "name": "Brignoles",
+    "name_norm": "Brignoles",
+    "insee": "83023",
+    "wikidata": null,
+    "lat": 43.3878,
+    "lon": 6.0759
+  },
+  "way/121573053": {
+    "name": "Chalon-sur-Saône",
+    "name_norm": "Chalon-sur-Saone",
+    "insee": "71076",
+    "wikidata": null,
+    "lat": 46.7896,
+    "lon": 4.8509
+  },
+  "way/124461864": {
+    "name": "Bron",
+    "name_norm": "Bron",
+    "insee": "69029",
+    "wikidata": null,
+    "lat": 45.7355,
+    "lon": 4.9116
+  },
+  "way/124567032": {
+    "name": "Brive-la-Gaillarde",
+    "name_norm": "Brive-la-Gaillarde",
+    "insee": "19031",
+    "wikidata": null,
+    "lat": 45.145,
+    "lon": 1.5144
+  },
+  "way/125155785": {
+    "name": "Harfleur",
+    "name_norm": "Harfleur",
+    "insee": "76341",
+    "wikidata": null,
+    "lat": 49.5137,
+    "lon": 0.1964
+  },
+  "way/125396804": {
+    "name": "Mulsanne",
+    "name_norm": "Mulsanne",
+    "insee": "72213",
+    "wikidata": null,
+    "lat": 47.919,
+    "lon": 0.244
+  },
+  "way/126727231": {
+    "name": "Dardilly",
+    "name_norm": "Dardilly",
+    "insee": "69072",
+    "wikidata": null,
+    "lat": 45.8133,
+    "lon": 4.7466
+  },
+  "way/127059135": {
+    "name": "Créteil",
+    "name_norm": "Creteil",
+    "insee": "94028",
+    "wikidata": null,
+    "lat": 48.7845,
+    "lon": 2.4523
+  },
+  "way/128235194": {
+    "name": "Troyes",
+    "name_norm": "Troyes",
+    "insee": "10387",
+    "wikidata": null,
+    "lat": 48.2924,
+    "lon": 4.0761
+  },
+  "way/128235196": {
+    "name": "Troyes",
+    "name_norm": "Troyes",
+    "insee": "10387",
+    "wikidata": null,
+    "lat": 48.2924,
+    "lon": 4.0761
+  },
+  "way/133171562": {
+    "name": "Perrigny-lès-Dijon",
+    "name_norm": "Perrigny-les-Dijon",
+    "insee": "21481",
+    "wikidata": null,
+    "lat": 47.2556,
+    "lon": 5.0197
+  },
+  "way/134684876": {
+    "name": "Saint-Herblain",
+    "name_norm": "Saint-Herblain",
+    "insee": "44162",
+    "wikidata": null,
+    "lat": 47.2246,
+    "lon": -1.6306
+  },
+  "way/135742603": {
+    "name": "Alixan",
+    "name_norm": "Alixan",
+    "insee": "26004",
+    "wikidata": null,
+    "lat": 44.9843,
+    "lon": 5.0167
+  },
+  "way/135878203": {
+    "name": "Vienne",
+    "name_norm": "Vienne",
+    "insee": "38544",
+    "wikidata": null,
+    "lat": 45.5221,
+    "lon": 4.8803
+  },
+  "way/136641915": {
+    "name": "Saintes",
+    "name_norm": "Saintes",
+    "insee": "17415",
+    "wikidata": null,
+    "lat": 45.7462,
+    "lon": -0.6456
+  },
+  "way/136810690": {
+    "name": "Aulnay-sous-Bois",
+    "name_norm": "Aulnay-sous-Bois",
+    "insee": "93005",
+    "wikidata": null,
+    "lat": 48.9457,
+    "lon": 2.4918
+  },
+  "way/137674626": {
+    "name": "Avignon",
+    "name_norm": "Avignon",
+    "insee": "84007",
+    "wikidata": null,
+    "lat": 43.9416,
+    "lon": 4.8333
+  },
+  "way/139675877": {
+    "name": "Villenave-d'Ornon",
+    "name_norm": "Villenave-d'Ornon",
+    "insee": "33550",
+    "wikidata": null,
+    "lat": 44.7736,
+    "lon": -0.5523
+  },
+  "way/142258167": {
+    "name": "Senlis",
+    "name_norm": "Senlis",
+    "insee": "60612",
+    "wikidata": null,
+    "lat": 49.2156,
+    "lon": 2.5912
+  },
+  "way/142945093": {
+    "name": "Nice",
+    "name_norm": "Nice",
+    "insee": "06088",
+    "wikidata": null,
+    "lat": 43.7032,
+    "lon": 7.2528
+  },
+  "way/144793614": {
+    "name": "Plérin",
+    "name_norm": "Plerin",
+    "insee": "22187",
+    "wikidata": null,
+    "lat": 48.5467,
+    "lon": -2.7818
+  },
+  "way/146518940": {
+    "name": "Villepinte",
+    "name_norm": "Villepinte",
+    "insee": "93078",
+    "wikidata": null,
+    "lat": 48.956,
+    "lon": 2.5323
+  },
+  "way/146527056": {
+    "name": "Villepinte",
+    "name_norm": "Villepinte",
+    "insee": "93078",
+    "wikidata": null,
+    "lat": 48.956,
+    "lon": 2.5323
+  },
+  "way/146673444": {
+    "name": "Laon",
+    "name_norm": "Laon",
+    "insee": "02408",
+    "wikidata": null,
+    "lat": 49.5711,
+    "lon": 3.613
+  },
+  "way/149973922": {
+    "name": "Saumur",
+    "name_norm": "Saumur",
+    "insee": "49328",
+    "wikidata": null,
+    "lat": 47.2645,
+    "lon": -0.0837
+  },
+  "way/152125220": {
+    "name": "Albertville",
+    "name_norm": "Albertville",
+    "insee": "73011",
+    "wikidata": null,
+    "lat": 45.6647,
+    "lon": 6.41
+  },
+  "way/153897287": {
+    "name": "Saint-Lô",
+    "name_norm": "Saint-Lo",
+    "insee": "50502",
+    "wikidata": null,
+    "lat": 49.1123,
+    "lon": -1.0812
+  },
+  "way/154148377": {
+    "name": "Bordeaux",
+    "name_norm": "Bordeaux",
+    "insee": "33063",
+    "wikidata": null,
+    "lat": 44.8624,
+    "lon": -0.5848
+  },
+  "way/155548310": {
+    "name": "Chevilly-Larue",
+    "name_norm": "Chevilly-Larue",
+    "insee": "94021",
+    "wikidata": null,
+    "lat": 48.7679,
+    "lon": 2.3507
+  },
+  "way/156678475": {
+    "name": "Châlons-en-Champagne",
+    "name_norm": "Chalons-en-Champagne",
+    "insee": "51108",
+    "wikidata": null,
+    "lat": 48.9656,
+    "lon": 4.3801
+  },
+  "way/159723247": {
+    "name": "La Bresse",
+    "name_norm": "La Bresse",
+    "insee": "88075",
+    "wikidata": null,
+    "lat": 48.0211,
+    "lon": 6.9202
+  },
+  "way/164117655": {
+    "name": "Challes-les-Eaux",
+    "name_norm": "Challes-les-Eaux",
+    "insee": "73064",
+    "wikidata": null,
+    "lat": 45.5498,
+    "lon": 5.9829
+  },
+  "way/164484529": {
+    "name": "Cholet",
+    "name_norm": "Cholet",
+    "insee": "49099",
+    "wikidata": null,
+    "lat": 47.0358,
+    "lon": -0.875
+  },
+  "way/167432778": {
+    "name": "Mérignac",
+    "name_norm": "Merignac",
+    "insee": "33281",
+    "wikidata": null,
+    "lat": 44.8313,
+    "lon": -0.682
+  },
+  "way/167432905": {
+    "name": "Mérignac",
+    "name_norm": "Merignac",
+    "insee": "33281",
+    "wikidata": null,
+    "lat": 44.8313,
+    "lon": -0.682
+  },
+  "way/169480681": {
+    "name": "Choisey",
+    "name_norm": "Choisey",
+    "insee": "39150",
+    "wikidata": null,
+    "lat": 47.0585,
+    "lon": 5.4522
+  },
+  "way/170763622": {
+    "name": "Toulon",
+    "name_norm": "Toulon",
+    "insee": "83137",
+    "wikidata": null,
+    "lat": 43.1364,
+    "lon": 5.9334
+  },
+  "way/174099087": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "way/182885995": {
+    "name": "Beynost",
+    "name_norm": "Beynost",
+    "insee": "01043",
+    "wikidata": null,
+    "lat": 45.8359,
+    "lon": 4.9964
+  },
+  "way/198429831": {
+    "name": "Hyères",
+    "name_norm": "Hyeres",
+    "insee": "83069",
+    "wikidata": null,
+    "lat": 43.1139,
+    "lon": 6.2357
+  },
+  "way/221862716": {
+    "name": "Hyères",
+    "name_norm": "Hyeres",
+    "insee": "83069",
+    "wikidata": null,
+    "lat": 43.1139,
+    "lon": 6.2357
+  },
+  "way/231842147": {
+    "name": "Pertuis",
+    "name_norm": "Pertuis",
+    "insee": "84089",
+    "wikidata": null,
+    "lat": 43.6931,
+    "lon": 5.5345
+  },
+  "way/235971453": {
+    "name": "Villers-Semeuse",
+    "name_norm": "Villers-Semeuse",
+    "insee": "08480",
+    "wikidata": null,
+    "lat": 49.7404,
+    "lon": 4.7537
+  },
+  "way/237131134": {
+    "name": "Chaintré",
+    "name_norm": "Chaintre",
+    "insee": "71074",
+    "wikidata": null,
+    "lat": 46.2587,
+    "lon": 4.7742
+  },
+  "way/241052754": {
+    "name": "Besançon",
+    "name_norm": "Besancon",
+    "insee": "25056",
+    "wikidata": null,
+    "lat": 47.2602,
+    "lon": 6.0123
+  },
+  "way/246277494": {
+    "name": "Aix-en-Provence",
+    "name_norm": "Aix-en-Provence",
+    "insee": "13001",
+    "wikidata": null,
+    "lat": 43.536,
+    "lon": 5.3879
+  },
+  "way/299684704": {
+    "name": "Strasbourg",
+    "name_norm": "Strasbourg",
+    "insee": "67482",
+    "wikidata": null,
+    "lat": 48.5691,
+    "lon": 7.7621
+  },
+  "way/303292240": {
+    "name": "Riom",
+    "name_norm": "Riom",
+    "insee": "63300",
+    "wikidata": null,
+    "lat": 45.8937,
+    "lon": 3.1274
+  },
+  "way/306707394": {
+    "name": "Yffiniac",
+    "name_norm": "Yffiniac",
+    "insee": "22389",
+    "wikidata": null,
+    "lat": 48.4692,
+    "lon": -2.6862
+  },
+  "way/312391501": {
+    "name": "Nanterre",
+    "name_norm": "Nanterre",
+    "insee": "92050",
+    "wikidata": null,
+    "lat": 48.8974,
+    "lon": 2.2018
+  },
+  "way/315548187": {
+    "name": "Jasseron",
+    "name_norm": "Jasseron",
+    "insee": "01195",
+    "wikidata": null,
+    "lat": 46.2176,
+    "lon": 5.317
+  },
+  "way/328139499": {
+    "name": "La Chapelle-Saint-Mesmin",
+    "name_norm": "La Chapelle-Saint-Mesmin",
+    "insee": "45075",
+    "wikidata": null,
+    "lat": 47.8861,
+    "lon": 1.8324
+  },
+  "way/362269159": {
+    "name": "Magny",
+    "name_norm": "Magny",
+    "insee": "89235",
+    "wikidata": null,
+    "lat": 47.4685,
+    "lon": 3.9757
+  },
+  "way/372489206": {
+    "name": "Port-en-Bessin-Huppain",
+    "name_norm": "Port-en-Bessin-Huppain",
+    "insee": "14515",
+    "wikidata": null,
+    "lat": 49.3387,
+    "lon": -0.7727
+  },
+  "way/389798557": {
+    "name": "Pontivy",
+    "name_norm": "Pontivy",
+    "insee": "56178",
+    "wikidata": null,
+    "lat": 48.0663,
+    "lon": -2.9697
+  },
+  "way/404298384": {
+    "name": "Laxou",
+    "name_norm": "Laxou",
+    "insee": "54304",
+    "wikidata": null,
+    "lat": 48.6839,
+    "lon": 6.1183
+  },
+  "way/456853140": {
+    "name": "Les Herbiers",
+    "name_norm": "Les Herbiers",
+    "insee": "85109",
+    "wikidata": null,
+    "lat": 46.8644,
+    "lon": -1.0286
+  },
+  "way/486619103": {
+    "name": "Saulce-sur-Rhône",
+    "name_norm": "Saulce-sur-Rhone",
+    "insee": "26337",
+    "wikidata": null,
+    "lat": 44.7054,
+    "lon": 4.7891
+  },
+  "way/495943574": {
+    "name": "Bretteville-sur-Odon",
+    "name_norm": "Bretteville-sur-Odon",
+    "insee": "14101",
+    "wikidata": null,
+    "lat": 49.1728,
+    "lon": -0.4212
+  },
+  "way/518594247": {
+    "name": "Vierzon",
+    "name_norm": "Vierzon",
+    "insee": "18279",
+    "wikidata": null,
+    "lat": 47.2351,
+    "lon": 2.0776
+  },
+  "way/549808125": {
+    "name": "Clermont-Ferrand",
+    "name_norm": "Clermont-Ferrand",
+    "insee": "63113",
+    "wikidata": null,
+    "lat": 45.787,
+    "lon": 3.1127
+  },
+  "way/550505493": {
+    "name": "Clermont-Ferrand",
+    "name_norm": "Clermont-Ferrand",
+    "insee": "63113",
+    "wikidata": null,
+    "lat": 45.787,
+    "lon": 3.1127
+  },
+  "way/589578674": {
+    "name": "Clamart",
+    "name_norm": "Clamart",
+    "insee": "92023",
+    "wikidata": null,
+    "lat": 48.7957,
+    "lon": 2.2518
+  },
+  "way/656243972": {
+    "name": "Vaulx-en-Velin",
+    "name_norm": "Vaulx-en-Velin",
+    "insee": "69256",
+    "wikidata": null,
+    "lat": 45.7776,
+    "lon": 4.925
+  },
+  "way/659025466": {
+    "name": "Niort",
+    "name_norm": "Niort",
+    "insee": "79191",
+    "wikidata": null,
+    "lat": 46.3274,
+    "lon": -0.4613
+  },
+  "way/683253624": {
+    "name": "La Ciotat",
+    "name_norm": "La Ciotat",
+    "insee": "13028",
+    "wikidata": null,
+    "lat": 43.1882,
+    "lon": 5.6175
+  },
+  "way/691582020": {
+    "name": "Fontainebleau",
+    "name_norm": "Fontainebleau",
+    "insee": "77186",
+    "wikidata": null,
+    "lat": 48.4236,
+    "lon": 2.6817
+  },
+  "way/738039169": {
+    "name": "Épinay-sur-Seine",
+    "name_norm": "Epinay-sur-Seine",
+    "insee": "93031",
+    "wikidata": null,
+    "lat": 48.9544,
+    "lon": 2.3172
+  },
+  "way/745733838": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/752856886": {
+    "name": "Bourges",
+    "name_norm": "Bourges",
+    "insee": "18033",
+    "wikidata": null,
+    "lat": 47.078,
+    "lon": 2.3983
+  },
+  "way/760418070": {
+    "name": "Niort",
+    "name_norm": "Niort",
+    "insee": "79191",
+    "wikidata": null,
+    "lat": 46.3274,
+    "lon": -0.4613
+  },
+  "way/827640522": {
+    "name": "Plérin",
+    "name_norm": "Plerin",
+    "insee": "22187",
+    "wikidata": null,
+    "lat": 48.5467,
+    "lon": -2.7818
+  },
+  "way/838949258": {
+    "name": "Saint-Georges-de-Gréhaigne",
+    "name_norm": "Saint-Georges-de-Grehaigne",
+    "insee": "35270",
+    "wikidata": null,
+    "lat": 48.5823,
+    "lon": -1.547
+  },
+  "way/845682220": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/941944705": {
+    "name": "Nantes",
+    "name_norm": "Nantes",
+    "insee": "44109",
+    "wikidata": null,
+    "lat": 47.2382,
+    "lon": -1.5603
+  },
+  "way/943584857": {
+    "name": "Lormont",
+    "name_norm": "Lormont",
+    "insee": "33249",
+    "wikidata": null,
+    "lat": 44.8749,
+    "lon": -0.5176
+  },
+  "way/956949867": {
+    "name": "Houdemont",
+    "name_norm": "Houdemont",
+    "insee": "54265",
+    "wikidata": null,
+    "lat": 48.6409,
+    "lon": 6.1718
+  },
+  "way/958116859": {
+    "name": "Montlhéry",
+    "name_norm": "Montlhery",
+    "insee": "91425",
+    "wikidata": null,
+    "lat": 48.6392,
+    "lon": 2.266
+  },
+  "way/998123667": {
+    "name": "Saint-Malo",
+    "name_norm": "Saint-Malo",
+    "insee": "35288",
+    "wikidata": null,
+    "lat": 48.6465,
+    "lon": -2.0066
+  },
+  "way/1041550688": {
+    "name": "Castelnaudary",
+    "name_norm": "Castelnaudary",
+    "insee": "11076",
+    "wikidata": null,
+    "lat": 43.3201,
+    "lon": 1.9613
+  },
+  "way/1057106370": {
+    "name": "Porto-Vecchio",
+    "name_norm": "Porto-Vecchio",
+    "insee": "2A247",
+    "wikidata": null,
+    "lat": 41.5849,
+    "lon": 9.2732
+  },
+  "way/1124390622": {
+    "name": "Miramas",
+    "name_norm": "Miramas",
+    "insee": "13063",
+    "wikidata": null,
+    "lat": 43.5841,
+    "lon": 5.0148
+  },
+  "way/1185694666": {
+    "name": "Segré-en-Anjou Bleu",
+    "name_norm": "Segre-en-Anjou Bleu",
+    "insee": "49331",
+    "wikidata": null,
+    "lat": 47.7111,
+    "lon": -0.854
+  },
+  "way/1190420787": {
+    "name": "Marignane",
+    "name_norm": "Marignane",
+    "insee": "13054",
+    "wikidata": null,
+    "lat": 43.4218,
+    "lon": 5.2178
+  },
+  "way/1214635702": {
+    "name": "Thonon-les-Bains",
+    "name_norm": "Thonon-les-Bains",
+    "insee": "74281",
+    "wikidata": null,
+    "lat": 46.3745,
+    "lon": 6.4776
+  },
+  "way/1230720205": {
+    "name": "Dreux",
+    "name_norm": "Dreux",
+    "insee": "28134",
+    "wikidata": null,
+    "lat": 48.7482,
+    "lon": 1.3578
+  },
+  "way/1358149112": {
+    "name": "Antony",
+    "name_norm": "Antony",
+    "insee": "92002",
+    "wikidata": null,
+    "lat": 48.7507,
+    "lon": 2.2976
+  },
+  "way/1443081719": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "way/1499101025": {
+    "name": "Châtelaillon-Plage",
+    "name_norm": "Chatelaillon-Plage",
+    "insee": "17094",
+    "wikidata": null,
+    "lat": 46.0738,
+    "lon": -1.0804
+  },
+  "relation/975141": {
+    "name": "Auxerre",
+    "name_norm": "Auxerre",
+    "insee": "89024",
+    "wikidata": null,
+    "lat": 47.7939,
+    "lon": 3.5821
+  },
+  "relation/983994": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "relation/1141676": {
+    "name": "Boulogne-Billancourt",
+    "name_norm": "Boulogne-Billancourt",
+    "insee": "92012",
+    "wikidata": null,
+    "lat": 48.8375,
+    "lon": 2.2429
+  },
+  "relation/10404673": {
+    "name": "Metz",
+    "name_norm": "Metz",
+    "insee": "57463",
+    "wikidata": null,
+    "lat": 49.1048,
+    "lon": 6.1962
+  }
+}
