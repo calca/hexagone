@@ -83,6 +83,21 @@ a { color: var(--accent); }
 .topbar h1 span { color: var(--accent); }
 .topbar h1 .fr { color: var(--text-muted); font-weight: 400; }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.brand-mark { flex-shrink: 0; display: block; }
+.brand-name { color: var(--text); }
+.brand .fr {
+  font-size: .8rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  padding-left: .5rem;
+  border-left: 1px solid var(--border);
+}
+
 .stats {
   font-size: .78rem;
   color: var(--text-muted);
@@ -465,3 +480,53 @@ a { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* ---------- Pagina statica (es. About) ---------- */
+
+body.page {
+  height: auto;
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body.page .topbar a.brand { color: inherit; }
+
+.page-wrap {
+  flex: 1;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.6rem 1.2rem 3rem;
+  padding-left: calc(1.2rem + env(safe-area-inset-left));
+  padding-right: calc(1.2rem + env(safe-area-inset-right));
+}
+
+.page-wrap h1 {
+  font-size: 1.4rem;
+  margin: .4rem 0 .6rem;
+}
+
+.page-wrap h2 {
+  font-size: 1rem;
+  margin: 1.8rem 0 .5rem;
+  color: var(--text);
+}
+
+.page-wrap p, .page-wrap li {
+  font-size: .93rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.page-wrap .lead { color: var(--text-muted); }
+
+.page-wrap ul { padding-left: 1.2rem; }
+.page-wrap li { margin-bottom: .3rem; }
+
+.back-link { margin: 0 0 .8rem; }
+.back-link a { font-size: .85rem; font-weight: 600; text-decoration: none; }
+.back-link a:hover { text-decoration: underline; }
+
+body.page .footer { position: static; }

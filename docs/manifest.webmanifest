@@ -1,0 +1,41 @@
+{
+  "id": ".",
+  "name": "hexagone — ibis & ibis Styles in Francia",
+  "short_name": "hexagone",
+  "description": "Mappa non ufficiale degli hotel ibis e ibis Styles in Francia, con popolazione, storia e attrazioni per ogni citta'.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f4f0",
+  "theme_color": "#d0006f",
+  "lang": "it",
+  "dir": "ltr",
+  "categories": ["travel", "navigation"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

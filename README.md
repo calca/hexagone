@@ -27,8 +27,12 @@ scripts/
   enrich_wikimedia.py    step 4: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
   build_dataset.py       step 5: genera docs/data.json (il "DB" del sito)
   pipeline.py            esegue tutti gli step in sequenza
-docs/                    sito statico (GitHub Pages)
+docs/                    sito statico (GitHub Pages), installabile come PWA
   index.html / style.css / app.js
+  about.html               pagina "Info & note legali" (fonti dati, disclaimer di non affiliazione)
+  manifest.webmanifest     manifest PWA (nome, icone, colori)
+  sw.js                    service worker (cache offline dell'app shell + dati)
+  icons/                   favicon e icone dell'app (incl. varianti maskable)
   data.json               dataset consumato dal frontend (contiene DATI DI ESEMPIO finche' non esegui la pipeline)
   vendor/leaflet/          libreria Leaflet vendorizzata
 .github/workflows/
