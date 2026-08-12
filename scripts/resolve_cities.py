@@ -15,6 +15,7 @@ import json
 import math
 import re
 import sys
+import time
 from collections import defaultdict
 from pathlib import Path
 
@@ -22,6 +23,7 @@ from fetch_hotels import normalize
 from overpass_client import run_query
 
 BATCH_SIZE = 25
+GEO_QUERY_PAUSE = 1.0  # secondi tra una query per-hotel e la successiva (policy Overpass)
 
 
 def dept_candidates_from_postcode(postcode: str | None) -> list[str]:
@@ -186,8 +188,16 @@ def main() -> int:
 
     # Hotel senza addr:city: risolvi punto per punto (dovrebbero essere pochi)
     print(f"{len(without_city)} hotel senza addr:city, risolvo per coordinate...", file=sys.stderr)
-    for h in without_city:
-        match = query_commune_containing(h["lat"], h["lon"])
+    for i, h in enumerate(without_city):
+        if i and i % 50 == 0:
+            print(f"  ...{i}/{len(without_city)} risolti", file=sys.stderr)
+        try:
+            match = query_commune_containing(h["lat"], h["lon"])
+        except RuntimeError as exc:
+            print(f"  ATTENZIONE: query fallita per hotel {h['osm_id']} ({h['lat']},{h['lon']}): {exc}", file=sys.stderr)
+            match = None
+        finally:
+            time.sleep(GEO_QUERY_PAUSE)
         if match and match["name_norm"]:
             city_key = match.get("insee") or f"{match['name_norm']}|geo"
             if city_key not in cities:
