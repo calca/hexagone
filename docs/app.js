@@ -18,6 +18,8 @@
     maxpop: document.getElementById("maxpop"),
     maxpopValue: document.getElementById("maxpop-value"),
     maxpopFill: document.getElementById("maxpop-fill"),
+    filters: document.querySelector(".filters"),
+    filtersBadge: document.getElementById("filters-badge"),
     list: document.getElementById("city-list"),
     listMeta: document.getElementById("list-meta"),
     layout: document.getElementById("layout"),
@@ -257,13 +259,21 @@
     els.list.appendChild(frag);
   }
 
+  function updateFiltersBadge(region, department, unescoMode, maxpopIdx) {
+    const active = [region, department, unescoMode, maxpopIdx < MAXPOP_STEPS.length - 1 ? "x" : ""].filter(Boolean).length;
+    els.filtersBadge.textContent = String(active);
+    els.filtersBadge.hidden = active === 0;
+  }
+
   function applyFilters() {
     const q = els.search.value.trim().toLowerCase();
-    const maxPop = MAXPOP_STEPS[Number(els.maxpop.value)];
+    const maxpopIdx = Number(els.maxpop.value);
+    const maxPop = MAXPOP_STEPS[maxpopIdx];
     const sort = els.sort.value;
     const region = els.region.value;
     const department = els.department.value;
     const unescoMode = els.unescoFilter.value;
+    updateFiltersBadge(region, department, unescoMode, maxpopIdx);
 
     let list = state.cities.filter((c) => {
       const matchesName = !q || c.name.toLowerCase().includes(q);
@@ -442,6 +452,15 @@
   }
 
   els.detailClose.addEventListener("click", closeDetail);
+
+  // Chiude i filtri appena si scorre la lista, per non sottrarle spazio.
+  els.list.addEventListener(
+    "scroll",
+    () => {
+      if (els.filters.open) els.filters.open = false;
+    },
+    { passive: true }
+  );
 
   els.search.addEventListener("input", applyFilters);
   els.sort.addEventListener("change", applyFilters);
