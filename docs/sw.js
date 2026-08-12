@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "hexagone-v1";
+const CACHE_VERSION = "hexagone-v2";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 
@@ -51,34 +51,25 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  // dataset: network-first, così i dati restano aggiornati quando c'e' connessione,
-  // ma l'app resta utilizzabile offline con l'ultima copia disponibile
-  if (url.pathname.endsWith("data.json")) {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          const copy = response.clone();
-          caches.open(DATA_CACHE).then((cache) => cache.put(request, copy));
-          return response;
-        })
-        .catch(() => caches.match(request))
-    );
-    return;
-  }
-
-  // app shell e tile della mappa: cache-first con aggiornamento in background
+  // Network-first per tutto (shell incluso, non solo il dataset): l'app
+  // resta sempre aggiornata quando c'e' connessione, con fallback alla
+  // cache solo per l'uso offline. Prima l'app shell (index.html/app.js/
+  // style.css) era cache-first con aggiornamento in background: HTML e JS
+  // venivano cacheati/aggiornati indipendentemente l'uno dall'altro, non
+  // come unita' atomica, cosi' un utente poteva ritrovarsi con un
+  // index.html nuovo abbinato a un app.js vecchio (o viceversa) dopo un
+  // deploy, con elementi dell'interfaccia presenti ma non funzionanti.
+  const isData = url.pathname.endsWith("data.json");
+  const cacheName = isData ? DATA_CACHE : SHELL_CACHE;
   event.respondWith(
-    caches.match(request).then((cached) => {
-      const network = fetch(request)
-        .then((response) => {
-          if (response.ok && response.type === "basic") {
-            const copy = response.clone();
-            caches.open(SHELL_CACHE).then((cache) => cache.put(request, copy));
-          }
-          return response;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
+    fetch(request)
+      .then((response) => {
+        if (response.ok) {
+          const copy = response.clone();
+          caches.open(cacheName).then((cache) => cache.put(request, copy));
+        }
+        return response;
+      })
+      .catch(() => caches.match(request))
   );
 });
