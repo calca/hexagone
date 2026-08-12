@@ -29,10 +29,14 @@ from fetch_hotels import normalize
 
 UNESCO_FILE = Path(__file__).resolve().parent.parent / "data" / "unesco_sites_fr.json"
 
-MONUMENTS_API_URL = (
-    "https://data.culture.gouv.fr/api/explore/v2.1/catalog/datasets/"
-    "liste-des-monuments-historiques/records"
-)
+MONUMENTS_API_URL = "https://data.culture.gouv.fr/api/records/1.0/search/"
+MONUMENTS_DATASET = "liste-des-immeubles-proteges-au-titre-des-monuments-historiques"
+# Candidati per il campo nome/titolo del monumento nel record: lo schema
+# esatto di questo dataset (Base Merimee via Ministero della Cultura) non e'
+# stato verificabile con una chiamata live da questo ambiente di sviluppo
+# (dominio bloccato dalla policy di rete della sandbox), quindi si prova una
+# lista di nomi plausibili invece di assumerne uno solo.
+MONUMENT_NAME_FIELDS = ["appellation_courante", "denomination", "appellation", "titre_courant", "edifice"]
 USER_AGENT = (
     "hexagone-ibis-scraper/1.0 "
     "(+https://github.com/calca/hexagone; contact: gianluigi.calcaterra@gmail.com)"
@@ -76,27 +80,45 @@ def load_unesco_sites() -> dict[str, list[dict]]:
     return by_commune
 
 
+_schema_logged = False
+
+
 def fetch_monuments(insee: str, commune_name: str | None) -> list[str] | None:
     """Ritorna i nomi dei monumenti storici del comune, [] se nessuno, None
     se la query e' fallita (network/formato) - da non confondere con "zero
     monumenti", per non scrivere in cache un falso "nessun monumento".
+
+    Usa una ricerca full-text (`q=`) sul nome del comune invece di un filtro
+    su un campo esatto (es. "insee"): lo schema preciso del dataset non e'
+    verificabile da questo ambiente, e una ricerca full-text e' piu' tollerante
+    a differenze di nomenclatura dei campi.
     """
+    if not commune_name:
+        return None
     try:
         resp = requests.get(
             MONUMENTS_API_URL,
             params={
-                "where": f'insee="{insee}"',
-                "limit": MAX_MONUMENTS,
-                "select": "titre_courant,appellation_courante",
+                "dataset": MONUMENTS_DATASET,
+                "q": f'commune:"{commune_name}"',
+                "rows": MAX_MONUMENTS,
             },
             headers={"User-Agent": USER_AGENT},
             timeout=20,
         )
         resp.raise_for_status()
         payload = resp.json()
+        records = payload.get("records", [])
+
+        global _schema_logged
+        if not _schema_logged and records:
+            _schema_logged = True
+            print(f"  [diagnostica] campi disponibili nel primo record: {sorted(records[0].get('fields', {}).keys())}", file=sys.stderr)
+
         names: list[str] = []
-        for record in payload.get("results", []):
-            name = record.get("titre_courant") or record.get("appellation_courante")
+        for record in records:
+            fields = record.get("fields", {})
+            name = next((fields[f] for f in MONUMENT_NAME_FIELDS if fields.get(f)), None)
             if name and name not in names:
                 names.append(name)
         return names
