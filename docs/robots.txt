@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calca.github.io/hexagone/sitemap.xml
