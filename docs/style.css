@@ -360,6 +360,21 @@ a { color: var(--accent); }
 .hotel-card .links a { font-weight: 600; text-decoration: none; }
 .hotel-card .links a:hover { text-decoration: underline; }
 
+.hotel-card .book-links { margin-top: .5rem; gap: .5rem; }
+.book-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: .76rem !important;
+  font-weight: 600;
+  padding: .32rem .65rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  transition: background .12s, color .12s;
+}
+.book-link:hover { background: var(--accent); color: #fff !important; }
+
 .badge {
   display: inline-block;
   font-size: .66rem;

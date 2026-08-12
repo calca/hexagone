@@ -177,14 +177,20 @@
     const hotelsHtml = city.hotels
       .map((h) => {
         const badgeClass = h.brand === "ibis Styles" ? "styles" : "ibis";
+        const searchQuery = encodeURIComponent(`${h.name} ${city.name}`);
         const links = [];
         if (h.website) links.push(`<a href="${escapeHtml(h.website)}" target="_blank" rel="noopener">Sito</a>`);
         if (h.phone) links.push(`<a href="tel:${escapeHtml(h.phone)}">${escapeHtml(h.phone)}</a>`);
+        const bookLinks = [
+          `<a class="book-link" href="https://all.accor.com/search/index.en.shtml?destination=${searchQuery}" target="_blank" rel="noopener sponsored">Prenota su ibis</a>`,
+          `<a class="book-link" href="https://www.booking.com/searchresults.html?ss=${searchQuery}" target="_blank" rel="noopener sponsored">Prenota su Booking</a>`,
+        ];
         return `
           <div class="hotel-card">
             <div class="name">${escapeHtml(h.name)} <span class="badge ${badgeClass}">${escapeHtml(h.brand)}</span></div>
             <div class="address">${escapeHtml(h.address || "Indirizzo non disponibile")}</div>
             ${links.length ? `<div class="links">${links.join("")}</div>` : ""}
+            <div class="links book-links">${bookLinks.join("")}</div>
           </div>
         `;
       })
