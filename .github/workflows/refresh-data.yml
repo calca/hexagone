@@ -19,7 +19,7 @@ jobs:
     # Ceiling esplicito: se qualcosa si blocca, il job fallisce in modo
     # visibile invece di consumare in silenzio le 6h di default di GitHub
     # Actions (come successo il 12/08/2026).
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -45,7 +45,7 @@ jobs:
         run: python scripts/pipeline.py --only hotels
 
       - name: "Step: citta' (raggruppamento + geocodifica per-hotel)"
-        timeout-minutes: 20
+        timeout-minutes: 35
         run: python scripts/pipeline.py --only cities
 
       - name: "Commit: cache geocodifica"

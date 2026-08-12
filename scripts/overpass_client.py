@@ -27,32 +27,42 @@ REQUEST_TIMEOUT = (10, 180)
 
 
 RATE_LIMIT_PAUSE = 20.0  # secondi di attesa dopo un HTTP 429 (rate limit esplicito)
+ROUND_PAUSE = 30.0  # secondi di attesa se TUTTI i mirror falliscono, prima di riprovare da capo
 
 
-def run_query(query: str, retries: int = 2, pause: float = 2.0) -> dict:
+def run_query(query: str, retries: int = 2, pause: float = 2.0, rounds: int = 2) -> dict:
     """Esegue una query Overpass QL, tentando i mirror in ordine.
+
+    Se un giro completo su tutti i mirror fallisce (es. instabilita'
+    momentanea del servizio, non solo di un singolo mirror), aspetta
+    ROUND_PAUSE secondi e riprova da capo fino a `rounds` volte, invece di
+    arrendersi subito.
 
     Ritorna il JSON decodificato ({"elements": [...]}).
     """
     last_error: Exception | None = None
-    for mirror in MIRRORS:
-        for attempt in range(retries):
-            rate_limited = False
-            try:
-                resp = requests.post(
-                    mirror,
-                    data={"data": query},
-                    headers={"User-Agent": USER_AGENT},
-                    timeout=REQUEST_TIMEOUT,
-                )
-                if resp.status_code == 200:
-                    return resp.json()
-                rate_limited = resp.status_code == 429
-                last_error = RuntimeError(f"{mirror} -> HTTP {resp.status_code}")
-            except requests.RequestException as exc:
-                last_error = exc
-            print(f"  Overpass {mirror} tentativo {attempt + 1}/{retries} fallito: {last_error}", file=sys.stderr)
-            # Un 429 e' un rate limit esplicito: retry immediati sullo stesso
-            # mirror non aiutano, serve un raffreddamento piu' lungo.
-            time.sleep(RATE_LIMIT_PAUSE if rate_limited else pause * (attempt + 1))
+    for round_num in range(rounds):
+        for mirror in MIRRORS:
+            for attempt in range(retries):
+                rate_limited = False
+                try:
+                    resp = requests.post(
+                        mirror,
+                        data={"data": query},
+                        headers={"User-Agent": USER_AGENT},
+                        timeout=REQUEST_TIMEOUT,
+                    )
+                    if resp.status_code == 200:
+                        return resp.json()
+                    rate_limited = resp.status_code == 429
+                    last_error = RuntimeError(f"{mirror} -> HTTP {resp.status_code}")
+                except requests.RequestException as exc:
+                    last_error = exc
+                print(f"  Overpass {mirror} tentativo {attempt + 1}/{retries} fallito: {last_error}", file=sys.stderr)
+                # Un 429 e' un rate limit esplicito: retry immediati sullo stesso
+                # mirror non aiutano, serve un raffreddamento piu' lungo.
+                time.sleep(RATE_LIMIT_PAUSE if rate_limited else pause * (attempt + 1))
+        if round_num < rounds - 1:
+            print(f"  Tutti i mirror Overpass falliti al giro {round_num + 1}/{rounds}, aspetto {ROUND_PAUSE}s e riprovo...", file=sys.stderr)
+            time.sleep(ROUND_PAUSE)
     raise RuntimeError(f"Tutti i mirror Overpass hanno fallito: {last_error}")
