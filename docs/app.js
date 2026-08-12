@@ -12,6 +12,7 @@
     stats: document.getElementById("stats"),
     search: document.getElementById("search"),
     sort: document.getElementById("sort"),
+    region: document.getElementById("region"),
     department: document.getElementById("department"),
     unescoFilter: document.getElementById("unesco-filter"),
     maxpop: document.getElementById("maxpop"),
@@ -58,6 +59,33 @@
     "974": "La Reunion", "976": "Mayotte",
   };
 
+  // Regioni amministrative francesi (riforma 2016) come raggruppamento sopra
+  // ai dipartimenti - ogni dipartimento appartiene a una sola regione.
+  const REGION_DEPARTMENTS = {
+    "Auvergne-Rhone-Alpes": ["01", "03", "07", "15", "26", "38", "42", "43", "63", "69", "73", "74"],
+    "Bourgogne-Franche-Comte": ["21", "25", "39", "58", "70", "71", "89", "90"],
+    "Bretagne": ["22", "29", "35", "56"],
+    "Centre-Val de Loire": ["18", "28", "36", "37", "41", "45"],
+    "Corse": ["2A", "2B"],
+    "Grand Est": ["08", "10", "51", "52", "54", "55", "57", "67", "68", "88"],
+    "Hauts-de-France": ["02", "59", "60", "62", "80"],
+    "Ile-de-France": ["75", "77", "78", "91", "92", "93", "94", "95"],
+    "Normandie": ["14", "27", "50", "61", "76"],
+    "Nouvelle-Aquitaine": ["16", "17", "19", "23", "24", "33", "40", "47", "64", "79", "86", "87"],
+    "Occitanie": ["09", "11", "12", "30", "31", "32", "34", "46", "48", "65", "66", "81", "82"],
+    "Pays de la Loire": ["44", "49", "53", "72", "85"],
+    "Provence-Alpes-Cote d'Azur": ["04", "05", "06", "13", "83", "84"],
+    "Guadeloupe": ["971"],
+    "Martinique": ["972"],
+    "Guyane": ["973"],
+    "La Reunion": ["974"],
+    "Mayotte": ["976"],
+  };
+  const DEPT_TO_REGION = {};
+  Object.entries(REGION_DEPARTMENTS).forEach(([region, codes]) => {
+    codes.forEach((code) => { DEPT_TO_REGION[code] = region; });
+  });
+
   function departmentCodeFromInsee(insee) {
     if (!insee) return null;
     if (insee.startsWith("2A") || insee.startsWith("2B")) return insee.slice(0, 2);
@@ -65,13 +93,42 @@
     return insee.slice(0, 2);
   }
 
-  function populateDepartments(cities) {
+  function populateRegions(cities) {
+    const regions = new Set();
+    cities.forEach((c) => {
+      const code = departmentCodeFromInsee(c.insee);
+      const region = code && DEPT_TO_REGION[code];
+      if (region) regions.add(region);
+    });
+    const sorted = [...regions].sort((a, b) => a.localeCompare(b, "fr"));
+    const frag = document.createDocumentFragment();
+    sorted.forEach((region) => {
+      const opt = document.createElement("option");
+      opt.value = region;
+      opt.textContent = region;
+      frag.appendChild(opt);
+    });
+    els.region.appendChild(frag);
+  }
+
+  // Popola il dropdown Dipartimento, opzionalmente ristretto a una sola
+  // regione (filtro a cascata): ricostruisce le opzioni ogni volta che
+  // cambia la regione selezionata, preservando il dipartimento scelto se
+  // appartiene ancora alla nuova regione.
+  function populateDepartments(cities, regionFilter, preserveValue) {
     const codes = new Set();
     cities.forEach((c) => {
       const code = departmentCodeFromInsee(c.insee);
-      if (code) codes.add(code);
+      if (!code) return;
+      if (regionFilter && DEPT_TO_REGION[code] !== regionFilter) return;
+      codes.add(code);
     });
     const sorted = [...codes].sort((a, b) => a.localeCompare(b, "fr", { numeric: true }));
+    els.department.innerHTML = "";
+    const allOpt = document.createElement("option");
+    allOpt.value = "";
+    allOpt.textContent = "Tutti";
+    els.department.appendChild(allOpt);
     const frag = document.createDocumentFragment();
     sorted.forEach((code) => {
       const opt = document.createElement("option");
@@ -80,6 +137,7 @@
       frag.appendChild(opt);
     });
     els.department.appendChild(frag);
+    els.department.value = preserveValue && codes.has(preserveValue) ? preserveValue : "";
   }
 
   // step non lineari: da un tetto basso fino a nessun limite ("Tutte") a destra,
@@ -203,16 +261,19 @@
     const q = els.search.value.trim().toLowerCase();
     const maxPop = MAXPOP_STEPS[Number(els.maxpop.value)];
     const sort = els.sort.value;
+    const region = els.region.value;
     const department = els.department.value;
     const unescoMode = els.unescoFilter.value;
 
     let list = state.cities.filter((c) => {
       const matchesName = !q || c.name.toLowerCase().includes(q);
       const matchesPop = (c.population || 0) <= maxPop;
-      const matchesDept = !department || departmentCodeFromInsee(c.insee) === department;
+      const deptCode = departmentCodeFromInsee(c.insee);
+      const matchesRegion = !region || DEPT_TO_REGION[deptCode] === region;
+      const matchesDept = !department || deptCode === department;
       const hasUnesco = (c.unesco_sites || []).length > 0;
       const matchesUnesco = !unescoMode || (unescoMode === "with" ? hasUnesco : !hasUnesco);
-      return matchesName && matchesPop && matchesDept && matchesUnesco;
+      return matchesName && matchesPop && matchesRegion && matchesDept && matchesUnesco;
     });
 
     const sorters = {
@@ -384,7 +445,20 @@
 
   els.search.addEventListener("input", applyFilters);
   els.sort.addEventListener("change", applyFilters);
-  els.department.addEventListener("change", applyFilters);
+  els.region.addEventListener("change", () => {
+    // cascata verso il basso: la regione restringe le opzioni di dipartimento
+    populateDepartments(state.cities, els.region.value || null, els.department.value);
+    applyFilters();
+  });
+  els.department.addEventListener("change", () => {
+    // cascata verso l'alto: scegliere un dipartimento imposta/mostra la sua regione
+    const region = DEPT_TO_REGION[els.department.value] || "";
+    if (els.region.value !== region) {
+      els.region.value = region;
+      populateDepartments(state.cities, region || null, els.department.value);
+    }
+    applyFilters();
+  });
   els.unescoFilter.addEventListener("change", applyFilters);
   els.maxpop.addEventListener("input", () => {
     updateMaxpopUI();
@@ -403,6 +477,7 @@
       els.stats.textContent =
         `${numberFmt(data.stats.cities)} citta' · ${numberFmt(data.stats.hotels)} hotel ` +
         `(${numberFmt(data.stats.ibis)} ibis, ${numberFmt(data.stats.ibis_styles)} ibis Styles)${sampleNote}`;
+      populateRegions(state.cities);
       populateDepartments(state.cities);
       buildMarkers();
       applyFilters();
