@@ -230,6 +230,59 @@
     });
   }
 
+  const commonsGalleryCache = new Map(); // city.id -> array di immagini, o null se non trovate/fallito
+
+  function renderGallery(cityId, images) {
+    if (state.activeId !== cityId) return; // l'utente ha gia' aperto un'altra citta'
+    const el = document.getElementById("gallery");
+    if (!el) return;
+    if (!images || !images.length) {
+      el.innerHTML = `<p class="gallery-empty">Nessuna foto trovata su Wikimedia Commons.</p>`;
+      return;
+    }
+    el.innerHTML = images
+      .map(
+        (img) => `
+        <a href="${escapeHtml(img.pageUrl)}" target="_blank" rel="noopener" class="gallery-item" title="${escapeHtml(img.title)}">
+          <img src="${escapeHtml(img.thumb)}" alt="${escapeHtml(img.title)}" loading="lazy">
+        </a>`
+      )
+      .join("");
+  }
+
+  async function loadCityGallery(city) {
+    if (commonsGalleryCache.has(city.id)) {
+      renderGallery(city.id, commonsGalleryCache.get(city.id));
+      return;
+    }
+    try {
+      const query = encodeURIComponent(`${city.name} France filetype:bitmap`);
+      const url =
+        `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrnamespace=6&gsrlimit=8` +
+        `&gsrsearch=${query}&prop=imageinfo&iiprop=url&iiurlwidth=320&format=json&origin=*`;
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+      const pages = Object.values((data.query && data.query.pages) || {});
+      // l'ordine delle chiavi dell'oggetto "pages" (pageid) NON riflette la
+      // rilevanza della ricerca: MediaWiki fornisce "index" per riordinare.
+      pages.sort((a, b) => (a.index || 0) - (b.index || 0));
+      const images = pages
+        .filter((p) => p.imageinfo && p.imageinfo[0] && p.imageinfo[0].thumburl)
+        .map((p) => ({
+          thumb: p.imageinfo[0].thumburl,
+          pageUrl: p.imageinfo[0].descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(p.title)}`,
+          title: (p.title || "").replace(/^File:/, ""),
+        }));
+      commonsGalleryCache.set(city.id, images);
+      renderGallery(city.id, images);
+    } catch (err) {
+      console.error("Errore galleria Wikimedia Commons", err);
+      commonsGalleryCache.set(city.id, null);
+      renderGallery(city.id, null);
+    }
+  }
+
   function showDetail(cityId, panMap) {
     const city = state.cities.find((c) => c.id === cityId);
     if (!city) return;
@@ -281,11 +334,22 @@
       })
       .join("");
 
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(city.name + " Francia")}`;
+
     els.detailContent.innerHTML = `
       <h2>${escapeHtml(city.name)}${unescoBadge}</h2>
       <div class="subtitle">
         ${numberFmt(city.population)} abitanti${city.population_year ? " (" + city.population_year + ")" : ""}
         ${city.wikipedia_url ? ` · <a href="${city.wikipedia_url}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
+      </div>
+
+      <div class="detail-section gallery-section">
+        <div class="gallery-header">
+          <h3>Foto</h3>
+          <a href="${googleImagesUrl}" target="_blank" rel="noopener" class="gallery-google-link">Cerca su Google Images ↗</a>
+        </div>
+        <div class="gallery" id="gallery"><p class="gallery-loading">Caricamento foto…</p></div>
+        <p class="gallery-credit">Foto da <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>, licenze varie (vedi ogni foto)</p>
       </div>
 
       <div class="detail-section">
@@ -307,6 +371,7 @@
     `;
     els.detail.hidden = false;
     els.detailBackdrop.hidden = false;
+    loadCityGallery(city);
   }
 
   els.detailClose.addEventListener("click", closeDetail);
