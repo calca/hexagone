@@ -190,6 +190,8 @@ def main() -> int:
 
     all_candidates: dict[str, list[dict]] = defaultdict(list)
     for i in range(0, len(unique_names), BATCH_SIZE):
+        if i:
+            time.sleep(3.0)  # rispetta il rate limit di Overpass tra un batch e l'altro
         batch = unique_names[i : i + BATCH_SIZE]
         print(f"  batch {i // BATCH_SIZE + 1}: {batch}", file=sys.stderr)
         for commune in query_communes_by_name(batch):

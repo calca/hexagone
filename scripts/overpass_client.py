@@ -26,6 +26,9 @@ USER_AGENT = (
 REQUEST_TIMEOUT = (10, 180)
 
 
+RATE_LIMIT_PAUSE = 20.0  # secondi di attesa dopo un HTTP 429 (rate limit esplicito)
+
+
 def run_query(query: str, retries: int = 2, pause: float = 2.0) -> dict:
     """Esegue una query Overpass QL, tentando i mirror in ordine.
 
@@ -34,6 +37,7 @@ def run_query(query: str, retries: int = 2, pause: float = 2.0) -> dict:
     last_error: Exception | None = None
     for mirror in MIRRORS:
         for attempt in range(retries):
+            rate_limited = False
             try:
                 resp = requests.post(
                     mirror,
@@ -43,9 +47,12 @@ def run_query(query: str, retries: int = 2, pause: float = 2.0) -> dict:
                 )
                 if resp.status_code == 200:
                     return resp.json()
+                rate_limited = resp.status_code == 429
                 last_error = RuntimeError(f"{mirror} -> HTTP {resp.status_code}")
             except requests.RequestException as exc:
                 last_error = exc
             print(f"  Overpass {mirror} tentativo {attempt + 1}/{retries} fallito: {last_error}", file=sys.stderr)
-            time.sleep(pause * (attempt + 1))
+            # Un 429 e' un rate limit esplicito: retry immediati sullo stesso
+            # mirror non aiutano, serve un raffreddamento piu' lungo.
+            time.sleep(RATE_LIMIT_PAUSE if rate_limited else pause * (attempt + 1))
     raise RuntimeError(f"Tutti i mirror Overpass hanno fallito: {last_error}")
