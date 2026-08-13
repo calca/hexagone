@@ -506,6 +506,13 @@
     })[c]);
   }
 
+  // Cosi' cercare "cote" trova anche "Côte d'Azur", "Chatelaillon" trova
+  // "Châtelaillon" ecc.: normalizza togliendo i segni diacritici invece di
+  // confrontare le stringhe cosi' come sono.
+  function stripDiacritics(s) {
+    return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
   function renderList() {
     els.listMeta.textContent = state.filtered.length === 1
       ? t("cityFoundOne")
@@ -548,8 +555,9 @@
     const unescoMode = els.unescoFilter.value;
     updateFiltersBadge(region, department, unescoMode, maxpopIdx);
 
+    const qNorm = stripDiacritics(q);
     let list = state.cities.filter((c) => {
-      const matchesName = !q || c.name.toLowerCase().includes(q);
+      const matchesName = !q || stripDiacritics(c.name.toLowerCase()).includes(qNorm);
       const matchesPop = (c.population || 0) <= maxPop;
       const deptCode = departmentCodeFromInsee(c.insee);
       const matchesRegion = !region || DEPT_TO_REGION[deptCode] === region;
