@@ -105,6 +105,13 @@ a { color: var(--accent); }
   border-left: 1px solid var(--border);
 }
 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  flex-shrink: 0;
+}
+
 .stats {
   font-size: .78rem;
   color: var(--text-muted);
@@ -113,6 +120,26 @@ a { color: var(--accent); }
   flex-shrink: 0;
 }
 .stats .warn { color: var(--accent-styles); font-weight: 600; }
+
+.lang-switch {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.lang-switch button {
+  border: none;
+  background: var(--panel-alt);
+  color: var(--text-muted);
+  font-size: .68rem;
+  font-weight: 700;
+  padding: .3rem .5rem;
+  cursor: pointer;
+  letter-spacing: .02em;
+}
+.lang-switch button + button { border-left: 1px solid var(--border); }
+.lang-switch button[aria-pressed="true"] { background: var(--accent); color: #fff; }
 
 /* ---------- Mobile view tabs ---------- */
 
@@ -703,6 +730,8 @@ a { color: var(--accent); }
   .topbar h1 .fr { display: none; }
   .footer-links { gap: 1.2rem; }
   .footer-repo-text { display: none; }
+  .topbar-right { gap: .4rem; }
+  .lang-switch button { padding: .3rem .4rem; }
 }
 
 /* Rispetta chi ha disabilitato le animazioni */

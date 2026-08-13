@@ -32,6 +32,279 @@
 
   const mobileQuery = window.matchMedia("(max-width: 860px)");
 
+  // ---------- i18n ----------
+  // Solo l'interfaccia viene tradotta (it/fr/en): i contenuti derivati da
+  // Wikipedia/Wikivoyage (storia, attrazioni) restano in francese in ogni
+  // lingua, perche' tradurli richiederebbe interrogare le wiki it/en (con
+  // scarsa copertura per i piccoli comuni francesi) o un servizio di
+  // traduzione a pagamento, non sostenibile per un sito statico senza backend.
+  const LANG_STORAGE_KEY = "hexagone-lang";
+  const DEFAULT_LANG = "it";
+  const NUMBER_LOCALES = { it: "it-IT", fr: "fr-FR", en: "en-GB" };
+
+  const TRANSLATIONS = {
+    it: {
+      tagline: "ibis & ibis Styles — Francia",
+      loading: "Caricamento dati…",
+      ariaView: "Vista",
+      tabList: "Elenco",
+      tabMap: "Mappa",
+      searchPlaceholder: "Cerca citta'…",
+      filtersLabel: "Filtri",
+      sortLabel: "Ordina per",
+      sortPopDesc: "Popolazione ↓",
+      sortPopAsc: "Popolazione ↑",
+      sortNameAsc: "Nome A→Z",
+      sortHotelsDesc: "N. hotel ↓",
+      regionLabel: "Regione",
+      allRegions: "Tutte",
+      departmentLabel: "Dipartimento",
+      allDepartments: "Tutti",
+      unescoLabel: "UNESCO",
+      unescoAll: "Tutte le citta'",
+      unescoWith: "Solo con sito UNESCO",
+      unescoWithout: "Solo senza sito UNESCO",
+      maxpopLabel: "Popolazione massima",
+      maxpopTickMin: "10 Mila",
+      maxpopTickAll: "Tutte",
+      maxpopSteps: ["10 Mila", "20 Mila", "50 Mila", "100 Mila", "250 Mila", "500 Mila", "Tutte"],
+      ariaCityList: "Elenco citta'",
+      close: "Chiudi",
+      licenseWord: "Licenza",
+      ariaUsefulLinks: "Link utili",
+      footerAbout: "Info & note legali",
+      langAria: "Lingua",
+      notAvailable: "n/d",
+      population: "Popolazione:",
+      hotelsCount: "Hotel:",
+      viewDetails: "Vedi dettagli",
+      cityFoundOne: "1 citta' trovata",
+      citiesFound: "{n} citta' trovate",
+      noCitiesMatch: "Nessuna citta' corrisponde ai filtri.",
+      cityMetaPop: "ab.",
+      cityMetaHotels: "hotel",
+      inhabitants: "abitanti",
+      wikipediaLink: "Wikipedia",
+      photosTitle: "Foto",
+      googleImagesLink: "Cerca su Google Images ↗",
+      loadingPhotos: "Caricamento foto…",
+      noPhotos: "Nessuna foto trovata su Wikimedia Commons.",
+      galleryCredit: "Foto da Wikimedia Commons, licenze varie (vedi ogni foto)",
+      historyTitle: "Cenni storici",
+      noExtract: "Nessun estratto disponibile.",
+      monumentsTitle: "Monumenti storici",
+      unescoBadge: "Patrimonio UNESCO",
+      attractionsTitle: "Cosa visitare in un giorno",
+      noAttractions: "Nessuna segnalazione disponibile su Wikivoyage.",
+      hotelsTitle: "Hotel ibis / ibis Styles ({n})",
+      addressUnavailable: "Indirizzo non disponibile",
+      siteLink: "Sito",
+      bookIbis: "Prenota su ibis",
+      bookBooking: "Prenota su Booking",
+      statsTemplate: "{cities} citta' · {hotels} hotel ({ibis} ibis, {styles} ibis Styles)",
+      sampleDataWarning: " — ⚠ DATI DI ESEMPIO, esegui la pipeline per i dati reali",
+      loadError: "Errore nel caricamento di data.json",
+    },
+    fr: {
+      tagline: "ibis & ibis Styles — France",
+      loading: "Chargement des données…",
+      ariaView: "Vue",
+      tabList: "Liste",
+      tabMap: "Carte",
+      searchPlaceholder: "Rechercher une ville…",
+      filtersLabel: "Filtres",
+      sortLabel: "Trier par",
+      sortPopDesc: "Population ↓",
+      sortPopAsc: "Population ↑",
+      sortNameAsc: "Nom A→Z",
+      sortHotelsDesc: "Nb. hôtels ↓",
+      regionLabel: "Région",
+      allRegions: "Toutes",
+      departmentLabel: "Département",
+      allDepartments: "Tous",
+      unescoLabel: "UNESCO",
+      unescoAll: "Toutes les villes",
+      unescoWith: "Uniquement avec site UNESCO",
+      unescoWithout: "Uniquement sans site UNESCO",
+      maxpopLabel: "Population maximale",
+      maxpopTickMin: "10 mille",
+      maxpopTickAll: "Toutes",
+      maxpopSteps: ["10 mille", "20 mille", "50 mille", "100 mille", "250 mille", "500 mille", "Toutes"],
+      ariaCityList: "Liste des villes",
+      close: "Fermer",
+      licenseWord: "Licence",
+      ariaUsefulLinks: "Liens utiles",
+      footerAbout: "Infos & mentions légales",
+      langAria: "Langue",
+      notAvailable: "n/d",
+      population: "Population :",
+      hotelsCount: "Hôtels :",
+      viewDetails: "Voir les détails",
+      cityFoundOne: "1 ville trouvée",
+      citiesFound: "{n} villes trouvées",
+      noCitiesMatch: "Aucune ville ne correspond aux filtres.",
+      cityMetaPop: "hab.",
+      cityMetaHotels: "hôtels",
+      inhabitants: "habitants",
+      wikipediaLink: "Wikipédia",
+      photosTitle: "Photos",
+      googleImagesLink: "Rechercher sur Google Images ↗",
+      loadingPhotos: "Chargement des photos…",
+      noPhotos: "Aucune photo trouvée sur Wikimedia Commons.",
+      galleryCredit: "Photos de Wikimedia Commons, licences diverses (voir chaque photo)",
+      historyTitle: "Histoire",
+      noExtract: "Aucun extrait disponible.",
+      monumentsTitle: "Monuments historiques",
+      unescoBadge: "Patrimoine UNESCO",
+      attractionsTitle: "Que voir en une journée",
+      noAttractions: "Aucune suggestion disponible sur Wikivoyage.",
+      hotelsTitle: "Hôtels ibis / ibis Styles ({n})",
+      addressUnavailable: "Adresse non disponible",
+      siteLink: "Site",
+      bookIbis: "Réserver sur ibis",
+      bookBooking: "Réserver sur Booking",
+      statsTemplate: "{cities} villes · {hotels} hôtels ({ibis} ibis, {styles} ibis Styles)",
+      sampleDataWarning: " — ⚠ DONNÉES D'EXEMPLE, exécutez le pipeline pour les données réelles",
+      loadError: "Erreur lors du chargement de data.json",
+    },
+    en: {
+      tagline: "ibis & ibis Styles — France",
+      loading: "Loading data…",
+      ariaView: "View",
+      tabList: "List",
+      tabMap: "Map",
+      searchPlaceholder: "Search for a city…",
+      filtersLabel: "Filters",
+      sortLabel: "Sort by",
+      sortPopDesc: "Population ↓",
+      sortPopAsc: "Population ↑",
+      sortNameAsc: "Name A→Z",
+      sortHotelsDesc: "No. hotels ↓",
+      regionLabel: "Region",
+      allRegions: "All",
+      departmentLabel: "Department",
+      allDepartments: "All",
+      unescoLabel: "UNESCO",
+      unescoAll: "All cities",
+      unescoWith: "Only with UNESCO site",
+      unescoWithout: "Only without UNESCO site",
+      maxpopLabel: "Maximum population",
+      maxpopTickMin: "10K",
+      maxpopTickAll: "All",
+      maxpopSteps: ["10K", "20K", "50K", "100K", "250K", "500K", "All"],
+      ariaCityList: "City list",
+      close: "Close",
+      licenseWord: "License",
+      ariaUsefulLinks: "Useful links",
+      footerAbout: "About & legal notes",
+      langAria: "Language",
+      notAvailable: "n/a",
+      population: "Population:",
+      hotelsCount: "Hotels:",
+      viewDetails: "View details",
+      cityFoundOne: "1 city found",
+      citiesFound: "{n} cities found",
+      noCitiesMatch: "No city matches the filters.",
+      cityMetaPop: "pop.",
+      cityMetaHotels: "hotels",
+      inhabitants: "inhabitants",
+      wikipediaLink: "Wikipedia",
+      photosTitle: "Photos",
+      googleImagesLink: "Search Google Images ↗",
+      loadingPhotos: "Loading photos…",
+      noPhotos: "No photos found on Wikimedia Commons.",
+      galleryCredit: "Photos from Wikimedia Commons, various licenses (see each photo)",
+      historyTitle: "History",
+      noExtract: "No extract available.",
+      monumentsTitle: "Historic monuments",
+      unescoBadge: "UNESCO heritage",
+      attractionsTitle: "What to see in a day",
+      noAttractions: "No suggestions available on Wikivoyage.",
+      hotelsTitle: "ibis / ibis Styles hotels ({n})",
+      addressUnavailable: "Address not available",
+      siteLink: "Website",
+      bookIbis: "Book on ibis",
+      bookBooking: "Book on Booking",
+      statsTemplate: "{cities} cities · {hotels} hotels ({ibis} ibis, {styles} ibis Styles)",
+      sampleDataWarning: " — ⚠ SAMPLE DATA, run the pipeline for real data",
+      loadError: "Error loading data.json",
+    },
+  };
+
+  function detectLang() {
+    const saved = localStorage.getItem(LANG_STORAGE_KEY);
+    if (saved && TRANSLATIONS[saved]) return saved;
+    return DEFAULT_LANG;
+  }
+
+  state.lang = detectLang();
+  state.lastData = null; // ultimo payload data.json, per ricalcolare le stats al cambio lingua
+
+  function t(key, vars) {
+    const dict = TRANSLATIONS[state.lang] || TRANSLATIONS[DEFAULT_LANG];
+    let str = dict[key] != null ? dict[key] : TRANSLATIONS[DEFAULT_LANG][key] || key;
+    if (vars) {
+      Object.entries(vars).forEach(([k, v]) => {
+        str = str.replace(new RegExp(`\\{${k}\\}`, "g"), v);
+      });
+    }
+    return str;
+  }
+
+  function applyStaticTranslations() {
+    document.documentElement.lang = state.lang;
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      el.textContent = t(el.dataset.i18n);
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+      el.setAttribute("placeholder", t(el.dataset.i18nPlaceholder));
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
+      el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel));
+    });
+  }
+
+  function renderStats() {
+    if (!state.lastData) return;
+    const data = state.lastData;
+    const sampleNote = data.sample ? t("sampleDataWarning") : "";
+    els.stats.textContent =
+      t("statsTemplate", {
+        cities: numberFmt(data.stats.cities),
+        hotels: numberFmt(data.stats.hotels),
+        ibis: numberFmt(data.stats.ibis),
+        styles: numberFmt(data.stats.ibis_styles),
+      }) + sampleNote;
+  }
+
+  function rebindPopups() {
+    state.markers.forEach((marker, id) => {
+      const city = state.cities.find((c) => c.id === id);
+      if (city) marker.setPopupContent(popupHtml(city));
+    });
+  }
+
+  function setLang(lang) {
+    if (!TRANSLATIONS[lang] || lang === state.lang) return;
+    state.lang = lang;
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+    document.querySelectorAll("#lang-switch button").forEach((btn) => {
+      btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
+    });
+    applyStaticTranslations();
+    updateMaxpopUI();
+    populateDepartments(state.cities, els.region.value || null, els.department.value);
+    renderStats();
+    applyFilters();
+    rebindPopups();
+    if (state.activeId != null) showDetail(state.activeId, false);
+  }
+
+  document.getElementById("lang-switch").addEventListener("click", (e) => {
+    const btn = e.target.closest("button[data-lang]");
+    if (btn) setLang(btn.dataset.lang);
+  });
+
   const DEPARTMENTS = {
     "01": "Ain", "02": "Aisne", "03": "Allier", "04": "Alpes-de-Haute-Provence",
     "05": "Hautes-Alpes", "06": "Alpes-Maritimes", "07": "Ardeche", "08": "Ardennes",
@@ -129,7 +402,7 @@
     els.department.innerHTML = "";
     const allOpt = document.createElement("option");
     allOpt.value = "";
-    allOpt.textContent = "Tutti";
+    allOpt.textContent = t("allDepartments");
     els.department.appendChild(allOpt);
     const frag = document.createDocumentFragment();
     sorted.forEach((code) => {
@@ -145,11 +418,11 @@
   // step non lineari: da un tetto basso fino a nessun limite ("Tutte") a destra,
   // cosi' trascinare verso destra allenta sempre il filtro (mai il contrario)
   const MAXPOP_STEPS = [10000, 20000, 50000, 100000, 250000, 500000, Infinity];
-  const MAXPOP_LABELS = ["10 Mila", "20 Mila", "50 Mila", "100 Mila", "250 Mila", "500 Mila", "Tutte"];
 
   function updateMaxpopUI() {
     const idx = Number(els.maxpop.value);
-    els.maxpopValue.textContent = MAXPOP_LABELS[idx];
+    const labels = TRANSLATIONS[state.lang].maxpopSteps;
+    els.maxpopValue.textContent = labels[idx];
     els.maxpopFill.style.width = `${(idx / (MAXPOP_STEPS.length - 1)) * 100}%`;
   }
 
@@ -193,7 +466,7 @@
   }).addTo(map);
 
   function numberFmt(n) {
-    return n == null ? "n/d" : new Intl.NumberFormat("it-IT").format(n);
+    return n == null ? t("notAvailable") : new Intl.NumberFormat(NUMBER_LOCALES[state.lang]).format(n);
   }
 
   function markerRadius(hotelCount) {
@@ -221,9 +494,9 @@
   function popupHtml(city) {
     return `
       <strong>${escapeHtml(city.name)}</strong><br>
-      Popolazione: ${numberFmt(city.population)}${city.population_year ? " (" + city.population_year + ")" : ""}<br>
-      Hotel: ${city.hotel_count}
-      <br><button id="open-${city.id}" type="button">Vedi dettagli</button>
+      ${t("population")} ${numberFmt(city.population)}${city.population_year ? " (" + city.population_year + ")" : ""}<br>
+      ${t("hotelsCount")} ${city.hotel_count}
+      <br><button id="open-${city.id}" type="button">${t("viewDetails")}</button>
     `;
   }
 
@@ -235,11 +508,11 @@
 
   function renderList() {
     els.listMeta.textContent = state.filtered.length === 1
-      ? "1 citta' trovata"
-      : `${numberFmt(state.filtered.length)} citta' trovate`;
+      ? t("cityFoundOne")
+      : t("citiesFound", { n: numberFmt(state.filtered.length) });
 
     if (!state.filtered.length) {
-      els.list.innerHTML = `<li class="empty-state" style="cursor:default">Nessuna citta' corrisponde ai filtri.</li>`;
+      els.list.innerHTML = `<li class="empty-state" style="cursor:default">${t("noCitiesMatch")}</li>`;
       return;
     }
 
@@ -251,7 +524,7 @@
       if (city.id === state.activeId) li.classList.add("active");
       li.innerHTML = `
         <span class="city-name">${escapeHtml(city.name)}</span>
-        <span class="city-meta">${numberFmt(city.population)} ab. · ${city.hotel_count} hotel</span>
+        <span class="city-meta">${numberFmt(city.population)} ${t("cityMetaPop")} · ${city.hotel_count} ${t("cityMetaHotels")}</span>
       `;
       li.addEventListener("click", () => showDetail(city.id, true));
       frag.appendChild(li);
@@ -314,7 +587,7 @@
     const el = document.getElementById("gallery");
     if (!el) return;
     if (!images || !images.length) {
-      el.innerHTML = `<p class="gallery-empty">Nessuna foto trovata su Wikimedia Commons.</p>`;
+      el.innerHTML = `<p class="gallery-empty">${t("noPhotos")}</p>`;
       return;
     }
     el.innerHTML = images
@@ -375,16 +648,16 @@
 
     const attractionsHtml = (city.attractions || []).length
       ? `<ul class="attractions">${city.attractions.map((a) => `<li>${escapeHtml(a)}</li>`).join("")}</ul>`
-      : `<p>Nessuna segnalazione disponibile su Wikivoyage.</p>`;
+      : `<p>${t("noAttractions")}</p>`;
 
     const unescoSites = city.unesco_sites || [];
     const monuments = city.monuments_historiques || [];
     const unescoBadge = unescoSites.length
-      ? ` <span class="badge unesco" title="${escapeHtml(unescoSites.map((s) => s.name).join(", "))}">Patrimonio UNESCO</span>`
+      ? ` <span class="badge unesco" title="${escapeHtml(unescoSites.map((s) => s.name).join(", "))}">${t("unescoBadge")}</span>`
       : "";
     const heritageHtml = monuments.length
       ? `<div class="detail-section">
-          <h3>Monumenti storici</h3>
+          <h3>${t("monumentsTitle")}</h3>
           <ul class="attractions monuments">${monuments.map((m) => `<li>${escapeHtml(m)}</li>`).join("")}</ul>
         </div>`
       : "";
@@ -394,16 +667,16 @@
         const badgeClass = h.brand === "ibis Styles" ? "styles" : "ibis";
         const searchQuery = encodeURIComponent(`${h.name} ${city.name}`);
         const links = [];
-        if (h.website) links.push(`<a href="${escapeHtml(h.website)}" target="_blank" rel="noopener">Sito</a>`);
+        if (h.website) links.push(`<a href="${escapeHtml(h.website)}" target="_blank" rel="noopener">${t("siteLink")}</a>`);
         if (h.phone) links.push(`<a href="tel:${escapeHtml(h.phone)}">${escapeHtml(h.phone)}</a>`);
         const bookLinks = [
-          `<a class="book-link" href="https://all.accor.com/search/index.en.shtml?destination=${searchQuery}" target="_blank" rel="noopener sponsored">Prenota su ibis</a>`,
-          `<a class="book-link" href="https://www.booking.com/searchresults.html?ss=${searchQuery}" target="_blank" rel="noopener sponsored">Prenota su Booking</a>`,
+          `<a class="book-link" href="https://all.accor.com/search/index.en.shtml?destination=${searchQuery}" target="_blank" rel="noopener sponsored">${t("bookIbis")}</a>`,
+          `<a class="book-link" href="https://www.booking.com/searchresults.html?ss=${searchQuery}" target="_blank" rel="noopener sponsored">${t("bookBooking")}</a>`,
         ];
         return `
           <div class="hotel-card">
             <div class="name">${escapeHtml(h.name)} <span class="badge ${badgeClass}">${escapeHtml(h.brand)}</span></div>
-            <div class="address">${escapeHtml(h.address || "Indirizzo non disponibile")}</div>
+            <div class="address">${escapeHtml(h.address || t("addressUnavailable"))}</div>
             ${links.length ? `<div class="links">${links.join("")}</div>` : ""}
             <div class="links book-links">${bookLinks.join("")}</div>
           </div>
@@ -411,38 +684,38 @@
       })
       .join("");
 
-    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(city.name + " Francia")}`;
+    const googleImagesUrl = `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(city.name + " France")}`;
 
     els.detailContent.innerHTML = `
       <h2>${escapeHtml(city.name)}${unescoBadge}</h2>
       <div class="subtitle">
-        ${numberFmt(city.population)} abitanti${city.population_year ? " (" + city.population_year + ")" : ""}
-        ${city.wikipedia_url ? ` · <a href="${city.wikipedia_url}" target="_blank" rel="noopener">Wikipedia</a>` : ""}
+        ${numberFmt(city.population)} ${t("inhabitants")}${city.population_year ? " (" + city.population_year + ")" : ""}
+        ${city.wikipedia_url ? ` · <a href="${city.wikipedia_url}" target="_blank" rel="noopener">${t("wikipediaLink")}</a>` : ""}
       </div>
 
       <div class="detail-section gallery-section">
         <div class="gallery-header">
-          <h3>Foto</h3>
-          <a href="${googleImagesUrl}" target="_blank" rel="noopener" class="gallery-google-link">Cerca su Google Images ↗</a>
+          <h3>${t("photosTitle")}</h3>
+          <a href="${googleImagesUrl}" target="_blank" rel="noopener" class="gallery-google-link">${t("googleImagesLink")}</a>
         </div>
-        <div class="gallery" id="gallery"><p class="gallery-loading">Caricamento foto…</p></div>
-        <p class="gallery-credit">Foto da <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>, licenze varie (vedi ogni foto)</p>
+        <div class="gallery" id="gallery"><p class="gallery-loading">${t("loadingPhotos")}</p></div>
+        <p class="gallery-credit">${t("galleryCredit").replace("Wikimedia Commons", '<a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>')}</p>
       </div>
 
       <div class="detail-section">
-        <h3>Cenni storici</h3>
-        <p>${escapeHtml(city.history_summary) || "Nessun estratto disponibile."}</p>
+        <h3>${t("historyTitle")}</h3>
+        <p>${escapeHtml(city.history_summary) || t("noExtract")}</p>
       </div>
 
       ${heritageHtml}
 
       <div class="detail-section">
-        <h3>Cosa visitare in un giorno</h3>
+        <h3>${t("attractionsTitle")}</h3>
         ${attractionsHtml}
       </div>
 
       <div class="detail-section">
-        <h3>Hotel ibis / ibis Styles (${city.hotel_count})</h3>
+        <h3>${t("hotelsTitle", { n: city.hotel_count })}</h3>
         ${hotelsHtml}
       </div>
     `;
@@ -485,6 +758,11 @@
   });
   updateMaxpopUI();
 
+  applyStaticTranslations();
+  document.querySelectorAll("#lang-switch button").forEach((btn) => {
+    btn.setAttribute("aria-pressed", String(btn.dataset.lang === state.lang));
+  });
+
   fetch("data.json")
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -492,17 +770,15 @@
     })
     .then((data) => {
       state.cities = data.cities || [];
-      const sampleNote = data.sample ? " — ⚠ DATI DI ESEMPIO, esegui la pipeline per i dati reali" : "";
-      els.stats.textContent =
-        `${numberFmt(data.stats.cities)} citta' · ${numberFmt(data.stats.hotels)} hotel ` +
-        `(${numberFmt(data.stats.ibis)} ibis, ${numberFmt(data.stats.ibis_styles)} ibis Styles)${sampleNote}`;
+      state.lastData = data;
+      renderStats();
       populateRegions(state.cities);
       populateDepartments(state.cities);
       buildMarkers();
       applyFilters();
     })
     .catch((err) => {
-      els.stats.textContent = "Errore nel caricamento di data.json";
+      els.stats.textContent = t("loadError");
       console.error(err);
     });
 
