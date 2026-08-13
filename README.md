@@ -17,6 +17,7 @@ mostrati popolazione, cenni storici e cosa visitare in un giorno.
 - **Monumenti storici classificati/iscritti**: Base Merimee, Ministero della Cultura francese, via [data.culture.gouv.fr](https://data.culture.gouv.fr/) — licenza Etalab Open Licence 2.0
 - **Siti UNESCO**: lista statica curata a mano (`data/unesco_sites_fr.json`, non esaustiva — solo i siti che corrispondono a un singolo comune), non una fonte live
 - **Frontend**: HTML/CSS/JS statico con mappa Leaflet (vendorizzata in `docs/vendor/`, nessuna dipendenza da CDN esterne), pubblicabile su GitHub Pages
+- **Lingua**: interfaccia disponibile in italiano/francese/inglese (selettore in alto, persistito in `localStorage`); i contenuti delle citta' (storia, attrazioni), essendo estratti da Wikipedia/Wikivoyage in francese, restano in francese in ogni lingua — vedi [Lingua dell'interfaccia](#lingua-dellinterfaccia)
 - **Licenza**: [MIT](LICENSE) per codice e sito. I dati restano soggetti alle licenze delle rispettive fonti (ODbL / Etalab / CC0 / CC BY-SA elencate sopra).
 
 ## Struttura del progetto
@@ -39,7 +40,9 @@ data/
                           (solo quelli mappabili a un singolo comune)
 docs/                    sito statico (GitHub Pages), installabile come PWA
   index.html / style.css / app.js
-  about.html               pagina "Info & note legali" (fonti dati, disclaimer di non affiliazione)
+  app.js                   include anche il dizionario di traduzione IT/FR/EN dell'interfaccia
+  about.html / about.js    pagina "Info & note legali" (fonti dati, disclaimer di non affiliazione)
+                            con il proprio dizionario di traduzione IT/FR/EN
   manifest.webmanifest     manifest PWA (nome, icone, colori)
   sw.js                    service worker (cache offline dell'app shell + dati)
   icons/                   favicon e icone dell'app (incl. varianti maskable)
@@ -131,6 +134,27 @@ le policy di Wikimedia/OSM).
 
 Nel frontend, la **popolazione** e' la colonna usata per ordinare/filtrare
 l'elenco citta' (campo "Popolazione massima" e ordinamento nella sidebar).
+
+## Lingua dell'interfaccia
+
+L'interfaccia (etichette, filtri, pannello di dettaglio, pagina Info) e'
+disponibile in italiano, francese e inglese tramite il selettore IT/FR/EN
+nella topbar; la scelta viene salvata in `localStorage` (`hexagone-lang`)
+ed e' condivisa tra `index.html` e `about.html`.
+
+I **contenuti** delle citta' (cenni storici, cosa visitare) restano invece
+sempre in francese, indipendentemente dalla lingua scelta: sono estratti
+cosi' come sono da Wikipedia/Wikivoyage in francese durante la pipeline
+(`enrich_wikimedia.py`), e tradurli richiederebbe query aggiuntive verso
+le wiki in italiano/inglese (con copertura scarsa o assente per i comuni
+francesi minori) oppure un servizio di traduzione automatica a pagamento —
+non sostenibile per un sito statico senza backend. I nomi propri geografici
+(regioni, dipartimenti, comuni) non vengono tradotti per convenzione.
+
+Le stringhe di traduzione vivono in due dizionari JS separati (uno per
+pagina, senza dipendenze esterne ne' passo di build):
+`docs/app.js` (oggetto `TRANSLATIONS`) per l'app principale e
+`docs/about.js` per la pagina Info & note legali.
 
 ## Limiti noti
 
