@@ -113,7 +113,19 @@ def fetch_monuments(insee: str, commune_name: str | None) -> list[str] | None:
             timeout=20,
         )
         resp.raise_for_status()
-        payload = resp.json()
+        try:
+            payload = resp.json()
+        except ValueError:
+            # Diagnostica per il prossimo tentativo: un errore "Expecting
+            # value" da resp.json() da solo non dice se il corpo era vuoto,
+            # HTML, o JSON troncato - lo status e un estratto del corpo si'.
+            print(
+                f"  [diagnostica] status={resp.status_code}, "
+                f"content-type={resp.headers.get('content-type')}, "
+                f"body[:200]={resp.text[:200]!r}",
+                file=sys.stderr,
+            )
+            raise
         # L'API Explore v2.1 ritorna i campi del record direttamente in
         # ogni elemento di "results" (non piu' annidati sotto "fields"
         # come nella v1 "records").
