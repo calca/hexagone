@@ -7,6 +7,15 @@ on:
     paths:
       - "docs/**"
   workflow_dispatch:
+  # Il refresh dataset settimanale (refresh-data.yml) fa push su docs/data.json
+  # usando il GITHUB_TOKEN di default: per policy di GitHub, i push fatti con
+  # quel token non attivano altri workflow, quindi il trigger "push" sopra non
+  # scatta mai da solo dopo un refresh automatico. Si aggancia invece al
+  # completamento di quel workflow (i workflow_run non hanno questa
+  # limitazione) cosi' il deploy riparte comunque.
+  workflow_run:
+    workflows: ["Refresh dataset (Overpass/Wikidata/Wikipedia)"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -19,12 +28,15 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
