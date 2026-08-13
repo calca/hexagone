@@ -41,8 +41,10 @@
       pDataSourcesIntro: "I dati mostrati provengono da fonti pubbliche di terze parti e vengono aggiornati periodicamente tramite una pipeline automatica:",
       liHotels: `<strong>Hotel</strong>: OpenStreetMap / Overpass API — licenza
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">ODbL</a>`,
-      liCity: `<strong>Comune di appartenenza e monumenti storici</strong>: geo.api.gouv.fr e
-        data.culture.gouv.fr (Ministero della Cultura francese) — licenza
+      liCity: `<strong>Comune di appartenenza</strong>: geo.api.gouv.fr — licenza
+        <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
+      liAddress: `<strong>Indirizzo (quando OpenStreetMap non lo ha)</strong>: reverse geocoding via
+        api-adresse.data.gouv.fr — licenza
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
       liPopulation: `<strong>Popolazione</strong>: Wikidata (SPARQL) — licenza
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
@@ -105,8 +107,10 @@
       pDataSourcesIntro: "Les données affichées proviennent de sources publiques tierces et sont mises à jour périodiquement via un pipeline automatique :",
       liHotels: `<strong>Hôtels</strong> : OpenStreetMap / Overpass API — licence
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">ODbL</a>`,
-      liCity: `<strong>Commune de rattachement et monuments historiques</strong> :
-        geo.api.gouv.fr et data.culture.gouv.fr (ministère de la Culture) — licence
+      liCity: `<strong>Commune de rattachement</strong> : geo.api.gouv.fr — licence
+        <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Licence Ouverte 2.0</a>`,
+      liAddress: `<strong>Adresse (quand OpenStreetMap ne l'a pas)</strong> : reverse geocoding via
+        api-adresse.data.gouv.fr — licence
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Licence Ouverte 2.0</a>`,
       liPopulation: `<strong>Population</strong> : Wikidata (SPARQL) — licence
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
@@ -170,8 +174,10 @@
       pDataSourcesIntro: "The data shown comes from public third-party sources and is refreshed periodically through an automated pipeline:",
       liHotels: `<strong>Hotels</strong>: OpenStreetMap / Overpass API —
         <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">ODbL</a> license`,
-      liCity: `<strong>Home commune and historic monuments</strong>: geo.api.gouv.fr
-        and data.culture.gouv.fr (French Ministry of Culture) —
+      liCity: `<strong>Home commune</strong>: geo.api.gouv.fr —
+        <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
+      liAddress: `<strong>Address (when OpenStreetMap doesn't have it)</strong>: reverse geocoding via
+        api-adresse.data.gouv.fr —
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
       liPopulation: `<strong>Population</strong>: Wikidata (SPARQL) —
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a> license`,

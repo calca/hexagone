@@ -86,10 +86,10 @@ def reverse_geocode(lat: float, lon: float, retries: int = 3) -> dict | None:
 
 class AddressCache:
     """Stesso pattern resumibile delle altre cache della pipeline (vedi
-    GeoLookupCache in resolve_cities.py e HeritageCache in enrich_heritage.py):
-    si cachano solo gli esiti validi (incluso "nessun indirizzo affidabile
-    qui", cioe' None), mai i fallimenti di query, altrimenti un fix o un
-    retry successivo non ritenterebbe gli hotel falliti."""
+    GeoLookupCache in resolve_cities.py): si cachano solo gli esiti validi
+    (incluso "nessun indirizzo affidabile qui", cioe' None), mai i
+    fallimenti di query, altrimenti un fix o un retry successivo non
+    ritenterebbe gli hotel falliti."""
 
     def __init__(self, path: Path):
         self.path = path

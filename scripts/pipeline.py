@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = Path(__file__).resolve().parent
 CACHE = ROOT / "data" / "cache"
 
-STEPS = ["hotels", "cities", "addresses", "wikidata", "heritage", "wikimedia", "build"]
+STEPS = ["hotels", "cities", "addresses", "wikidata", "unesco", "wikimedia", "build"]
 
 
 def run(step: str) -> None:
@@ -29,7 +29,7 @@ def run(step: str) -> None:
         "cities": SCRIPTS / "resolve_cities.py",
         "addresses": SCRIPTS / "enrich_addresses.py",
         "wikidata": SCRIPTS / "enrich_wikidata.py",
-        "heritage": SCRIPTS / "enrich_heritage.py",
+        "unesco": SCRIPTS / "enrich_unesco.py",
         "wikimedia": SCRIPTS / "enrich_wikimedia.py",
         "build": SCRIPTS / "build_dataset.py",
     }[step]

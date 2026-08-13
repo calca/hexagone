@@ -643,8 +643,6 @@ a { color: var(--accent); }
 .badge.styles { background: var(--accent-styles); }
 .badge.unesco { background: #a67c00; font-size: .62rem; cursor: help; }
 
-.attractions.monuments li { background: transparent; border-style: dashed; }
-
 /* ---------- Scrollbars (desktop, webkit) ---------- */
 
 .city-list::-webkit-scrollbar, .detail::-webkit-scrollbar { width: 8px; }

@@ -117,7 +117,6 @@ def main() -> int:
                 "history_summary": city.get("history_summary"),
                 "attractions": city.get("attractions", []),
                 "unesco_sites": city.get("unesco_sites", []),
-                "monuments_historiques": city.get("monuments_historiques", []),
                 "wikipedia_url": (
                     f"https://fr.wikipedia.org/wiki/{wiki_title.replace(' ', '_')}"
                     if city.get("wikipedia_title")
@@ -133,7 +132,7 @@ def main() -> int:
     dataset = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": (
-            "OpenStreetMap contributors (ODbL) · geo.api.gouv.fr / data.culture.gouv.fr "
+            "OpenStreetMap contributors (ODbL) · geo.api.gouv.fr / api-adresse.data.gouv.fr "
             "(Etalab) · Wikidata (CC0) · Wikipedia/Wikivoyage FR (CC BY-SA)"
         ),
         "stats": {
