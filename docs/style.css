@@ -235,6 +235,16 @@ a { color: var(--accent); }
 }
 .footer-link svg { flex-shrink: 0; }
 
+.footer-link.footer-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  color: var(--text-muted);
+  padding: 0;
+  cursor: pointer;
+}
+.footer-link.footer-btn:hover { color: var(--accent); text-decoration: underline; }
+
 .sidebar {
   border-right: 1px solid var(--border);
   background: var(--panel);
@@ -656,6 +666,72 @@ a { color: var(--accent); }
 
 .attractions.monuments li { background: transparent; border-style: dashed; }
 
+/* ---------- Welcome modal (intro al primo accesso) ---------- */
+
+.welcome-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .4);
+  z-index: 600;
+}
+.welcome-backdrop[hidden] { display: none; }
+
+.welcome-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(420px, 92vw);
+  max-height: calc(100% - 24px);
+  overflow-y: auto;
+  background: var(--panel);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 1.6rem 1.4rem 1.3rem;
+  z-index: 601;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+}
+
+.welcome-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto .9rem;
+  border-radius: 50%;
+  background: rgba(var(--accent-rgb), .12);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-icon svg { width: 28px; height: 28px; }
+
+.welcome-title { font-size: 1.12rem; margin: 0 0 .5rem; }
+.welcome-text { font-size: .9rem; line-height: 1.55; color: var(--text-muted); margin: 0; }
+
+.welcome-footer { margin-top: 1.4rem; display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+
+.welcome-dots { display: flex; gap: .4rem; }
+.welcome-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--border); }
+.welcome-dot.active { width: 18px; border-radius: 999px; background: var(--accent); transition: width .15s; }
+
+.welcome-nav { display: flex; gap: .6rem; width: 100%; }
+.welcome-btn {
+  border-radius: 999px;
+  padding: .6rem 1rem;
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--panel-alt);
+  color: var(--text);
+  flex: 1;
+}
+.welcome-btn.ghost:hover { background: var(--border); }
+.welcome-btn.ghost[hidden] { display: none; }
+.welcome-btn.primary { flex: 2; background: var(--accent); border-color: var(--accent); color: #fff; }
+.welcome-btn.primary:hover { opacity: .92; }
+
 /* ---------- Scrollbars (desktop, webkit) ---------- */
 
 .city-list::-webkit-scrollbar, .detail::-webkit-scrollbar { width: 8px; }
@@ -742,6 +818,7 @@ a { color: var(--accent); }
   .topbar h1 .fr { display: none; }
   .footer-links { gap: 1.2rem; }
   .footer-repo-text { display: none; }
+  .footer-welcome-text { display: none; }
   .topbar-right { gap: .4rem; }
   .lang-switch button { padding: .3rem .4rem; }
 }

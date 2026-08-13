@@ -151,6 +151,28 @@
       loadError: "Errore nel caricamento di data.json",
       pageTitleCity: "{name} — hotel ibis & ibis Styles | hexagone",
       metaDescriptionCity: "{count} hotel ibis e ibis Styles a {name} ({population} abitanti): indirizzi, prenotazione, storia e cosa visitare.",
+      welcomeReopen: "Cos'è hexagone?",
+      welcomePrev: "Indietro",
+      welcomeNext: "Avanti",
+      welcomeStart: "Inizia a esplorare",
+      welcomeSteps: [
+        {
+          title: "Benvenuto su hexagone",
+          body: "Una mappa gratuita e open source di tutti gli hotel ibis e ibis Styles in Francia — oltre 600 hotel in più di 380 città.",
+        },
+        {
+          title: "Cerca e filtra",
+          body: "Cerca una città o filtra per regione, dipartimento, popolazione massima e presenza di un sito UNESCO. Passa dalla vista elenco alla mappa quando vuoi.",
+        },
+        {
+          title: "Ogni città, in dettaglio",
+          body: "Per ogni città trovi popolazione, cenni storici, cosa visitare in un giorno, siti UNESCO e monumenti storici nelle vicinanze, con foto da Wikimedia Commons.",
+        },
+        {
+          title: "Prenota e portala con te",
+          body: "Apri l'hotel su Google Maps o prenota su ibis.com/Booking. Installa hexagone come app, funziona anche offline ed è disponibile in italiano, francese e inglese.",
+        },
+      ],
     },
     fr: {
       tagline: "ibis & ibis Styles — France",
@@ -219,6 +241,28 @@
       loadError: "Erreur lors du chargement de data.json",
       pageTitleCity: "{name} — hôtels ibis & ibis Styles | hexagone",
       metaDescriptionCity: "{count} hôtels ibis et ibis Styles à {name} ({population} habitants) : adresses, réservation, histoire et que voir.",
+      welcomeReopen: "Qu'est-ce que hexagone ?",
+      welcomePrev: "Précédent",
+      welcomeNext: "Suivant",
+      welcomeStart: "Commencer à explorer",
+      welcomeSteps: [
+        {
+          title: "Bienvenue sur hexagone",
+          body: "Une carte gratuite et open source de tous les hôtels ibis et ibis Styles en France — plus de 600 hôtels dans plus de 380 villes.",
+        },
+        {
+          title: "Recherchez et filtrez",
+          body: "Recherchez une ville ou filtrez par région, département, population maximale et présence d'un site UNESCO. Passez de la liste à la carte à tout moment.",
+        },
+        {
+          title: "Chaque ville, en détail",
+          body: "Pour chaque ville : population, histoire, que voir en une journée, sites UNESCO et monuments historiques à proximité, avec des photos de Wikimedia Commons.",
+        },
+        {
+          title: "Réservez et emportez-la avec vous",
+          body: "Ouvrez l'hôtel sur Google Maps ou réservez sur ibis.com/Booking. Installez hexagone comme application, elle fonctionne aussi hors ligne et existe en italien, français et anglais.",
+        },
+      ],
     },
     en: {
       tagline: "ibis & ibis Styles — France",
@@ -287,6 +331,28 @@
       loadError: "Error loading data.json",
       pageTitleCity: "{name} — ibis & ibis Styles hotels | hexagone",
       metaDescriptionCity: "{count} ibis and ibis Styles hotels in {name} ({population} inhabitants): addresses, booking, history and what to see.",
+      welcomeReopen: "What is hexagone?",
+      welcomePrev: "Back",
+      welcomeNext: "Next",
+      welcomeStart: "Start exploring",
+      welcomeSteps: [
+        {
+          title: "Welcome to hexagone",
+          body: "A free, open source map of every ibis and ibis Styles hotel in France — over 600 hotels in more than 380 cities.",
+        },
+        {
+          title: "Search and filter",
+          body: "Search for a city or filter by region, department, maximum population and UNESCO site. Switch between the list and map views whenever you want.",
+        },
+        {
+          title: "Every city, in detail",
+          body: "Each city page shows population, history, what to see in a day, nearby UNESCO sites and historic monuments, with photos from Wikimedia Commons.",
+        },
+        {
+          title: "Book and take it with you",
+          body: "Open the hotel on Google Maps or book on ibis.com/Booking. Install hexagone as an app, it works offline too, and it's available in Italian, French and English.",
+        },
+      ],
     },
   };
 
@@ -412,11 +478,91 @@
     applyFilters();
     rebindPopups();
     if (state.activeId != null) showDetail(state.activeId, false);
+    if (!elsWelcome.modal.hidden) renderWelcomeStep();
   }
 
   document.getElementById("lang-switch").addEventListener("click", (e) => {
     const btn = e.target.closest("button[data-lang]");
     if (btn) setLang(btn.dataset.lang);
+  });
+
+  // ---------- Modal di benvenuto (intro al primo accesso) ----------
+  // Mostrata in automatico solo la prima volta (flag in localStorage, stesso
+  // pattern usato per la lingua), e sempre riapribile dal link in footer.
+  const WELCOME_STORAGE_KEY = "hexagone-welcome-seen";
+  const WELCOME_ICONS = [
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20l-6-3V4l6 3 6-3 6 3v13l-6-3-6 3zM9 7v13M15 4v13"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M9 13h1M14 9h1M14 13h1M10 21v-4h4v4"/></svg>',
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>',
+  ];
+
+  const elsWelcome = {
+    backdrop: document.getElementById("welcome-backdrop"),
+    modal: document.getElementById("welcome-modal"),
+    steps: document.getElementById("welcome-steps"),
+    dots: document.getElementById("welcome-dots"),
+    prev: document.getElementById("welcome-prev"),
+    next: document.getElementById("welcome-next"),
+    close: document.getElementById("welcome-close"),
+    reopen: document.getElementById("welcome-reopen"),
+  };
+
+  let welcomeStepIndex = 0;
+
+  function welcomeSteps() {
+    return TRANSLATIONS[state.lang].welcomeSteps || TRANSLATIONS[DEFAULT_LANG].welcomeSteps;
+  }
+
+  function renderWelcomeStep() {
+    const steps = welcomeSteps();
+    const step = steps[welcomeStepIndex];
+    elsWelcome.steps.innerHTML = `
+      <div class="welcome-icon" aria-hidden="true">${WELCOME_ICONS[welcomeStepIndex]}</div>
+      <h2 class="welcome-title" id="welcome-title">${escapeHtml(step.title)}</h2>
+      <p class="welcome-text">${escapeHtml(step.body)}</p>
+    `;
+    elsWelcome.dots.innerHTML = steps
+      .map((_, i) => `<span class="welcome-dot${i === welcomeStepIndex ? " active" : ""}"></span>`)
+      .join("");
+    elsWelcome.prev.hidden = welcomeStepIndex === 0;
+    elsWelcome.next.textContent = welcomeStepIndex === steps.length - 1 ? t("welcomeStart") : t("welcomeNext");
+    elsWelcome.prev.textContent = t("welcomePrev");
+  }
+
+  function openWelcome() {
+    welcomeStepIndex = 0;
+    renderWelcomeStep();
+    elsWelcome.backdrop.hidden = false;
+    elsWelcome.modal.hidden = false;
+  }
+
+  function closeWelcome() {
+    elsWelcome.backdrop.hidden = true;
+    elsWelcome.modal.hidden = true;
+    localStorage.setItem(WELCOME_STORAGE_KEY, "1");
+  }
+
+  elsWelcome.next.addEventListener("click", () => {
+    const steps = welcomeSteps();
+    if (welcomeStepIndex < steps.length - 1) {
+      welcomeStepIndex++;
+      renderWelcomeStep();
+    } else {
+      closeWelcome();
+    }
+  });
+  elsWelcome.prev.addEventListener("click", () => {
+    if (welcomeStepIndex > 0) {
+      welcomeStepIndex--;
+      renderWelcomeStep();
+    }
+  });
+  elsWelcome.close.addEventListener("click", closeWelcome);
+  elsWelcome.backdrop.addEventListener("click", closeWelcome);
+  elsWelcome.reopen.addEventListener("click", openWelcome);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !elsWelcome.modal.hidden) closeWelcome();
   });
 
   const DEPARTMENTS = {
@@ -981,6 +1127,8 @@
       const initialCityId = parseCityIdFromLocation();
       if (initialCityId && state.cities.some((c) => c.id === initialCityId)) {
         showDetail(initialCityId, false, false);
+      } else if (!localStorage.getItem(WELCOME_STORAGE_KEY)) {
+        openWelcome();
       }
     })
     .catch((err) => {
