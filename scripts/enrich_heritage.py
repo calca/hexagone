@@ -29,8 +29,16 @@ from fetch_hotels import normalize
 
 UNESCO_FILE = Path(__file__).resolve().parent.parent / "data" / "unesco_sites_fr.json"
 
-MONUMENTS_API_URL = "https://data.culture.gouv.fr/api/records/1.0/search/"
 MONUMENTS_DATASET = "liste-des-immeubles-proteges-au-titre-des-monuments-historiques"
+# API Explore v2.1 di OpenDataSoft (data.culture.gouv.fr/api/explore/v2.1/console),
+# non piu' la v1 (api/records/1.0/search/) usata nei due tentativi precedenti:
+# quest'ultima e' quasi certamente stata dismessa dal portale (confermato
+# solo via ricerca, non con una chiamata live: il dominio resta bloccato
+# dalla policy di rete di questo ambiente di sviluppo), il che spiegherebbe
+# perche' entrambi i tentativi precedenti fallivano silenziosamente al 100%
+# invece che parzialmente (come ci si aspetterebbe da un semplice nome di
+# campo sbagliato).
+MONUMENTS_API_URL = f"https://data.culture.gouv.fr/api/explore/v2.1/catalog/datasets/{MONUMENTS_DATASET}/records"
 # Candidati per il campo nome/titolo del monumento nel record: lo schema
 # esatto di questo dataset (Base Merimee via Ministero della Cultura) non e'
 # stato verificabile con una chiamata live da questo ambiente di sviluppo
@@ -88,36 +96,36 @@ def fetch_monuments(insee: str, commune_name: str | None) -> list[str] | None:
     se la query e' fallita (network/formato) - da non confondere con "zero
     monumenti", per non scrivere in cache un falso "nessun monumento".
 
-    Usa una ricerca full-text (`q=`) sul nome del comune invece di un filtro
-    su un campo esatto (es. "insee"): lo schema preciso del dataset non e'
-    verificabile da questo ambiente, e una ricerca full-text e' piu' tollerante
-    a differenze di nomenclatura dei campi.
+    Usa una ricerca full-text semplice (`q=`) sul nome del comune, senza
+    scoping su un campo esatto (es. "commune:..."): lo schema preciso del
+    dataset non e' verificabile da questo ambiente, e una ricerca full-text
+    non scoped e' piu' tollerante sia a nomi di campo diversi da quello
+    atteso, sia a differenze tra le due sintassi legacy/v2.1 per il query
+    scoping sui campi.
     """
     if not commune_name:
         return None
     try:
         resp = requests.get(
             MONUMENTS_API_URL,
-            params={
-                "dataset": MONUMENTS_DATASET,
-                "q": f'commune:"{commune_name}"',
-                "rows": MAX_MONUMENTS,
-            },
+            params={"q": commune_name, "limit": MAX_MONUMENTS},
             headers={"User-Agent": USER_AGENT},
             timeout=20,
         )
         resp.raise_for_status()
         payload = resp.json()
-        records = payload.get("records", [])
+        # L'API Explore v2.1 ritorna i campi del record direttamente in
+        # ogni elemento di "results" (non piu' annidati sotto "fields"
+        # come nella v1 "records").
+        records = payload.get("results", [])
 
         global _schema_logged
         if not _schema_logged and records:
             _schema_logged = True
-            print(f"  [diagnostica] campi disponibili nel primo record: {sorted(records[0].get('fields', {}).keys())}", file=sys.stderr)
+            print(f"  [diagnostica] campi disponibili nel primo record: {sorted(records[0].keys())}", file=sys.stderr)
 
         names: list[str] = []
-        for record in records:
-            fields = record.get("fields", {})
+        for fields in records:
             name = next((fields[f] for f in MONUMENT_NAME_FIELDS if fields.get(f)), None)
             if name and name not in names:
                 names.append(name)
