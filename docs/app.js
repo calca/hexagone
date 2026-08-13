@@ -46,6 +46,7 @@
     filtered: [],
     markers: new Map(), // city.id -> L.Marker
     activeId: null,
+    userMarker: null, // L.CircleMarker per "la mia posizione", creato al primo uso
   };
 
   const els = {
@@ -89,6 +90,10 @@
       ariaView: "Vista",
       tabList: "Elenco",
       tabMap: "Mappa",
+      locateMe: "La mia posizione",
+      locateDenied: "Permesso di geolocalizzazione negato.",
+      locateError: "Impossibile ottenere la posizione.",
+      youAreHere: "Sei qui",
       searchPlaceholder: "Cerca citta'…",
       filtersLabel: "Filtri",
       sortLabel: "Ordina per",
@@ -153,6 +158,10 @@
       ariaView: "Vue",
       tabList: "Liste",
       tabMap: "Carte",
+      locateMe: "Ma position",
+      locateDenied: "Autorisation de géolocalisation refusée.",
+      locateError: "Impossible d'obtenir la position.",
+      youAreHere: "Vous êtes ici",
       searchPlaceholder: "Rechercher une ville…",
       filtersLabel: "Filtres",
       sortLabel: "Trier par",
@@ -217,6 +226,10 @@
       ariaView: "View",
       tabList: "List",
       tabMap: "Map",
+      locateMe: "My location",
+      locateDenied: "Location permission denied.",
+      locateError: "Couldn't get your location.",
+      youAreHere: "You are here",
       searchPlaceholder: "Search for a city…",
       filtersLabel: "Filters",
       sortLabel: "Sort by",
@@ -313,6 +326,9 @@
     });
     document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
       el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel));
+    });
+    document.querySelectorAll("[data-i18n-title]").forEach((el) => {
+      el.title = t(el.dataset.i18nTitle);
     });
     const manifestLink = document.getElementById("manifest-link");
     if (manifestLink) manifestLink.href = MANIFEST_BY_LANG[state.lang] || MANIFEST_BY_LANG[DEFAULT_LANG];
@@ -566,6 +582,67 @@
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
+
+  // Bottone "la mia posizione": geolocalizzazione del browser, nessuna
+  // libreria esterna (il sito non dipende da CDN). Icona a mirino disegnata
+  // inline in SVG per restare nitida a qualunque zoom/DPI, invece di
+  // un'emoji il cui rendering varia da un sistema operativo all'altro.
+  const LocateControl = L.Control.extend({
+    options: { position: "topleft" },
+    onAdd: function () {
+      const container = L.DomUtil.create("div", "leaflet-bar leaflet-control leaflet-control-locate");
+      const link = L.DomUtil.create("a", "locate-btn", container);
+      link.href = "#";
+      link.setAttribute("role", "button");
+      link.setAttribute("data-i18n-title", "locateMe");
+      link.setAttribute("data-i18n-aria-label", "locateMe");
+      link.title = t("locateMe");
+      link.setAttribute("aria-label", t("locateMe"));
+      link.innerHTML =
+        '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+        '<circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/>' +
+        '<line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/></svg>';
+      L.DomEvent.disableClickPropagation(container);
+      L.DomEvent.on(link, "click", L.DomEvent.stop);
+      L.DomEvent.on(link, "click", locateUser);
+      return container;
+    },
+  });
+  map.addControl(new LocateControl());
+
+  function locateUser() {
+    const link = document.querySelector(".leaflet-control-locate .locate-btn");
+    if (!("geolocation" in navigator)) {
+      alert(t("locateError"));
+      return;
+    }
+    link.classList.add("locating");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        link.classList.remove("locating");
+        const { latitude, longitude } = pos.coords;
+        if (state.userMarker) {
+          state.userMarker.setLatLng([latitude, longitude]);
+        } else {
+          state.userMarker = L.circleMarker([latitude, longitude], {
+            radius: 8,
+            color: "#1a73e8",
+            weight: 2,
+            fillColor: "#4285f4",
+            fillOpacity: 0.9,
+          })
+            .addTo(map)
+            .bindPopup(t("youAreHere"));
+        }
+        map.setView([latitude, longitude], 13);
+      },
+      (err) => {
+        link.classList.remove("locating");
+        alert(err.code === err.PERMISSION_DENIED ? t("locateDenied") : t("locateError"));
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  }
 
   function numberFmt(n) {
     return n == null ? t("notAvailable") : new Intl.NumberFormat(NUMBER_LOCALES[state.lang]).format(n);

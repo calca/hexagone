@@ -29,7 +29,8 @@ francese, Wikipedia/Wikivoyage, Wikidata) in un'unica mappa consultabile.
 ## Cosa puoi fare con hexagone
 
 - 🗺️ **Mappa interattiva** con tutti gli hotel ibis e ibis Styles di
-  Francia, raggruppati per città
+  Francia, raggruppati per città, con un bottone per centrarla sulla propria
+  posizione (geolocalizzazione del browser)
 - 🔍 **Filtri** per regione, dipartimento, popolazione massima e presenza
   di un sito UNESCO, più ricerca libera per nome
 - 🏛️ **Cenni storici, cosa visitare in un giorno, siti UNESCO e monumenti
