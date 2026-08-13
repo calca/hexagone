@@ -1,0 +1,1342 @@
+{
+  "node/206325024": {
+    "address": "94 Allée de Riottier, 69400 Limas",
+    "distance_km": 0.027486235439079645
+  },
+  "node/220322134": {
+    "address": "246 Rue Marcel Mérieux, 69007 Lyon",
+    "distance_km": 0.013233128482029842
+  },
+  "node/224711659": {
+    "address": "3 Passage Alexandre, 75015 Paris",
+    "distance_km": 0.003126696527380477
+  },
+  "node/254499721": {
+    "address": "169 Rue Paul Bert, 69003 Lyon",
+    "distance_km": 0.007377640914035718
+  },
+  "node/259043288": {
+    "address": "120 Rue Garance, 31670 Labège",
+    "distance_km": 0.060298865410790645
+  },
+  "node/267843295": {
+    "address": "83 Rue de Valencay, 34000 Montpellier",
+    "distance_km": 0.0065651666414884785
+  },
+  "node/269018590": {
+    "address": "2a Rue du Taillis, 35510 Cesson-Sévigné",
+    "distance_km": 0.029407382088600595
+  },
+  "node/279511406": {
+    "address": "1 Avenue de Chamboland, 21700 Nuits-Saint-Georges",
+    "distance_km": 0.04199718358302501
+  },
+  "node/280999683": {
+    "address": "32 Rue Louis Calmel, 92230 Gennevilliers",
+    "distance_km": 0.005077906652706728
+  },
+  "node/298829846": {
+    "address": "41 Rue Lamartine, 06000 Nice",
+    "distance_km": 0.0056437632778449254
+  },
+  "node/311838028": {
+    "address": "3 Rue de Miribel, 38000 Grenoble",
+    "distance_km": 0.006882365964569553
+  },
+  "node/314745388": {
+    "address": "68 Avenue Leclerc, 69007 Lyon",
+    "distance_km": 0.0024403156340586526
+  },
+  "node/368359669": {
+    "address": "19 Rue Jean Jaurès, 44000 Nantes",
+    "distance_km": 0.0064623221191771885
+  },
+  "node/399828551": {
+    "address": "8 Square Saint-John Perse, 36000 Châteauroux",
+    "distance_km": 0.0021909831628335367
+  },
+  "node/412299770": {
+    "address": "51 Rue de l'Université, 69007 Lyon",
+    "distance_km": 0.00707291254874947
+  },
+  "node/418214106": {
+    "address": "10 Avenue Camille Page, 86100 Châtellerault",
+    "distance_km": 0.014174774075147913
+  },
+  "node/435610065": {
+    "address": "Boulevard de Bonrepos, 31000 Toulouse",
+    "distance_km": 0.005674165080863616
+  },
+  "node/472351942": {
+    "address": "2 Rue Ernest Lacoste, 75012 Paris",
+    "distance_km": 0.004194533031738252
+  },
+  "node/472398315": {
+    "address": "Rue Jean Jaurés, 93170 Bagnolet",
+    "distance_km": 0.01070105180114854
+  },
+  "node/472940830": {
+    "address": "1 Place de la République, 64100 Bayonne",
+    "distance_km": 0.0037765213281724117
+  },
+  "node/560857303": {
+    "address": "35 Avenue Denfert Rochereau, 42000 Saint-Étienne",
+    "distance_km": 0.00614454361311658
+  },
+  "node/669876542": {
+    "address": "25 Avenue Félix Viallet, 38000 Grenoble",
+    "distance_km": 0.006839425390341403
+  },
+  "node/681555268": {
+    "address": "11a Boulevard du Champ de Mars, 68000 Colmar",
+    "distance_km": 0.019768136715104568
+  },
+  "node/692165406": {
+    "address": "8 Rue Salvador Allende, 62200 Boulogne-sur-Mer",
+    "distance_km": 0.02984584161316207
+  },
+  "node/739753900": {
+    "address": "1 rue Amiral Romain-Desfossés, 29200 Brest",
+    "distance_km": 0.02351856861468665
+  },
+  "node/779108255": {
+    "address": "6 Place Courtonne, 14000 Caen",
+    "distance_km": 0.006449606129649819
+  },
+  "node/842475310": {
+    "address": "5 Square Gambetta, 11000 Carcassonne",
+    "distance_km": 0.0028565800500345356
+  },
+  "node/882356125": {
+    "address": "92 Boulevard de la République, 92100 Boulogne-Billancourt",
+    "distance_km": 0.001656089992189132
+  },
+  "node/903539223": {
+    "address": "4 Place de la Liberté, 37000 Tours",
+    "distance_km": 0.006209599716612531
+  },
+  "node/924020743": {
+    "address": "159 Résidence de la Toison d'Or, 59200 Tourcoing",
+    "distance_km": 0.02149402847208994
+  },
+  "node/940377387": {
+    "address": "12 Avenue Thiers, 06000 Nice",
+    "distance_km": 0.01793603490044338
+  },
+  "node/949529537": {
+    "address": "78 Rue de Bonnel, 69003 Lyon",
+    "distance_km": 0.007412821770350141
+  },
+  "node/959625340": {
+    "address": "82 Avenue du Général Leclerc, 92340 Bourg-la-Reine",
+    "distance_km": 0.004652648486312666
+  },
+  "node/966027167": {
+    "address": "41 Rue des Frères Caudron, 80300 Albert",
+    "distance_km": 0.01001621548012818
+  },
+  "node/1015772245": {
+    "address": "359 Promenade des Anglais, 06200 Nice",
+    "distance_km": 0.019005112204735837
+  },
+  "node/1078806875": {
+    "address": "15 Rue de Chartres, 35400 Saint-Malo",
+    "distance_km": 0.002190601833510159
+  },
+  "node/1244411691": {
+    "address": "166 Boulevard de Grenelle, 75015 Paris",
+    "distance_km": 0.005406072634396796
+  },
+  "node/1247193372": {
+    "address": "13 Route de Neuf-Brisach, 68180 Horbourg-Wihr",
+    "distance_km": 0.006829568472920873
+  },
+  "node/1282625920": {
+    "address": "39 Quai Du Président Paul Doumer, 92400 Courbevoie",
+    "distance_km": 0.009007261431856435
+  },
+  "node/1348554962": {
+    "address": "6 Rue Saint-Laurent, 75010 Paris",
+    "distance_km": 0.002747303243772152
+  },
+  "node/1410954166": {
+    "address": "25 Boulevard de dunkerque, 13002 Marseille",
+    "distance_km": 0.010552417791058505
+  },
+  "node/1480282509": {
+    "address": "90 Rue Baudouin l'Edifieur, 59300 Valenciennes",
+    "distance_km": 0.010465485347208897
+  },
+  "node/1482812013": {
+    "address": "157 Route de Lyon, 03000 Moulins",
+    "distance_km": 0.03637338327027416
+  },
+  "node/1490602508": {
+    "address": "542 Route de Bapaume, 59400 Fontaine-Notre-Dame",
+    "distance_km": 0.06151693890250283
+  },
+  "node/1527088390": {
+    "address": "67 Avenue des Canadiens, 76800 Saint-Étienne-du-Rouvray",
+    "distance_km": 0.03604895228961696
+  },
+  "node/1534538447": {
+    "address": "29 Avenue Charles Saint-Venant, 59800 Lille",
+    "distance_km": 0.024584211162091116
+  },
+  "node/1584907258": {
+    "address": "26 Rue de la Fonderie, 59500 Douai",
+    "distance_km": 0.008832059833421098
+  },
+  "node/1596738663": {
+    "address": "96 Cours de Vincennes, 75012 Paris",
+    "distance_km": 0.0016261178860802763
+  },
+  "node/1642338514": {
+    "address": "19 Rue Edgar Quinet, 30100 Alès",
+    "distance_km": 0.02969026613719877
+  },
+  "node/1723256757": {
+    "address": "107 Rue Brancion, 75015 Paris",
+    "distance_km": 0.0013783352141669418
+  },
+  "node/1759435234": {
+    "address": "12 Rue Alexander Fleming, 37000 Tours",
+    "distance_km": 0.015559932311741777
+  },
+  "node/1785415633": {
+    "address": "19 Place des Vins de France, 75012 Paris",
+    "distance_km": 0.005786728788558461
+  },
+  "node/1808933786": {
+    "address": "17 Place au Feurre, 80000 Amiens",
+    "distance_km": 0.006727893193764322
+  },
+  "node/1849074941": {
+    "address": "4 Rue Gérard Gadiot, 13200 Arles",
+    "distance_km": 0.04447823152399737
+  },
+  "node/1860066933": {
+    "address": "Boulevard Perpreuil, 21200 Beaune",
+    "distance_km": 0.011785591940986448
+  },
+  "node/1869618567": {
+    "address": "9 Place Jean Moulin, 03000 Moulins",
+    "distance_km": 0.008904896475875465
+  },
+  "node/1887592439": {
+    "address": "46 Rue Saint Cyrice, 12000 Rodez",
+    "distance_km": 0.008897963551843514
+  },
+  "node/1917432082": {
+    "address": "17 Rue du Petit Bonneveau, 86000 Poitiers",
+    "distance_km": 0.002710818695390982
+  },
+  "node/1931241104": {
+    "address": "26a Route Départementale 201, 68390 Sausheim",
+    "distance_km": 0.022465221404016307
+  },
+  "node/1937473376": {
+    "address": "3 Rue du Couédic, 44000 Nantes",
+    "distance_km": 0.00749697300974844
+  },
+  "node/1954985287": {
+    "address": "38 Rue Franklin, 93100 Montreuil",
+    "distance_km": 0.017904638270481627
+  },
+  "node/1988526093": {
+    "address": "18 Place Bernard Stasi, 51200 Épernay",
+    "distance_km": 0.0006296484704896462
+  },
+  "node/1996975261": {
+    "address": "155 Route de Loriol, 07250 Le Pouzin",
+    "distance_km": 0.03866196596335345
+  },
+  "node/1997286723": {
+    "address": "33 Rue de Bras, 14000 Caen",
+    "distance_km": 0.004447358886835187
+  },
+  "node/2004013193": {
+    "address": "4 Avenue du General de Gaulle, 78000 Versailles",
+    "distance_km": 0.002223389811299547
+  },
+  "node/2022974893": {
+    "address": "9 Rue Yves Bertrand Burgalat, 21200 Beaune",
+    "distance_km": 0.04873858325867474
+  },
+  "node/2061506710": {
+    "address": "24 Rue Anatole France (Lille), 59800 Lille",
+    "distance_km": 0.0021048052455312086
+  },
+  "node/2061506751": {
+    "address": "576 Avenue de Dunkerque (Lomme), 59160 Lille",
+    "distance_km": 0.011256481081232252
+  },
+  "node/2111107939": {
+    "address": "3 Rue de la Fontaine au Brun, 44570 Trignac",
+    "distance_km": 0.0219549748104011
+  },
+  "node/2187139804": {
+    "address": "15 Rue de la Gare, 77144 Montévrain",
+    "distance_km": 0.02389924035057832
+  },
+  "node/2204804205": {
+    "address": "18 Rue du Faubourg National, 67000 Strasbourg",
+    "distance_km": 0.00628942802023381
+  },
+  "node/2241170118": {
+    "address": "13 Rue lafon, 13006 Marseille",
+    "distance_km": 0.0034080709507908658
+  },
+  "node/2286848096": {
+    "address": "52 Boulevard des Coquibus, 91000 Évry-Courcouronnes",
+    "distance_km": 0.00265267559840295
+  },
+  "node/2296383112": {
+    "address": "Voie d'accès hotel saint menet, 13011 Marseille",
+    "distance_km": 0.027364467488137957
+  },
+  "node/2301882942": {
+    "address": "15B Avenue d'Italie, 75013 Paris",
+    "distance_km": 0.008021464884728727
+  },
+  "node/2359964748": {
+    "address": "119 Avenue de Clichy, 75017 Paris",
+    "distance_km": 0.002076996294540249
+  },
+  "node/2394130298": {
+    "address": "45 Rue Chambière, 57000 Metz",
+    "distance_km": 0.011340735183225337
+  },
+  "node/2425250190": {
+    "address": "76 Rue Jean Moulin, 80100 Abbeville",
+    "distance_km": 0.14843690553138947
+  },
+  "node/2425765431": null,
+  "node/2444345565": {
+    "address": "2 Rue du Taur, 31000 Toulouse",
+    "distance_km": 0.024846594657047666
+  },
+  "node/2447114989": {
+    "address": "96 Allée Jules Milhau, 34000 Montpellier",
+    "distance_km": 0.004522343587447914
+  },
+  "node/2451414094": {
+    "address": "42 Avenue du Vingtième Corps, 54000 Nancy",
+    "distance_km": 0.010093999995383829
+  },
+  "node/2620323474": {
+    "address": "59 Avenue de Lourdes, 65310 Odos",
+    "distance_km": 0.03281098694226076
+  },
+  "node/2631246264": {
+    "address": "18 Rue Édouard Branly, 60200 Compiègne",
+    "distance_km": 0.046682760938685716
+  },
+  "node/2703935837": {
+    "address": "16 Boulevard de l'Hôpital Stell, 92500 Rueil-Malmaison",
+    "distance_km": 0.0058991569130387705
+  },
+  "node/2718671992": {
+    "address": "3 Rue Frochot, 75009 Paris",
+    "distance_km": 0.0023277900368008884
+  },
+  "node/2751053707": {
+    "address": "20 Rue des Droits de l’Homme, 17320 Marennes-Hiers-Brouage",
+    "distance_km": 0.039303609698731694
+  },
+  "node/2809969133": {
+    "address": "9 Rue Fernand Benoit, 13200 Arles",
+    "distance_km": 0.05637562230578942
+  },
+  "node/2901319301": {
+    "address": "805 Rue des Platanes, 45700 Pannes",
+    "distance_km": 0.0011955643021871805
+  },
+  "node/2901507201": {
+    "address": "Place Victor Hugo, 45200 Montargis",
+    "distance_km": 0.008219292881056129
+  },
+  "node/2982367094": {
+    "address": "2 Quai de Saint-Ouen, 93200 Saint-Denis",
+    "distance_km": 0.009932348086748345
+  },
+  "node/3200412591": {
+    "address": "43 Rue Jean Bleuzen, 92170 Vanves",
+    "distance_km": 0.00713778376997751
+  },
+  "node/3260726705": {
+    "address": "2 Rue du Maréchal Juin, 71400 Autun",
+    "distance_km": 0.05783616497351031
+  },
+  "node/3302081423": {
+    "address": "45 Avenue d'Angers, 49300 Cholet",
+    "distance_km": 0.037015307773117664
+  },
+  "node/3330368383": {
+    "address": "28 Avenue Favrel Et Lincy, 56000 Vannes",
+    "distance_km": 0.013825115513832779
+  },
+  "node/3352567807": {
+    "address": "22 Avenue du Maine, 75015 Paris",
+    "distance_km": 0.0014896985166061212
+  },
+  "node/3444688919": {
+    "address": "25 Quai Perrache, 69002 Lyon",
+    "distance_km": 0.012854955416432322
+  },
+  "node/3454934178": {
+    "address": "32 Allée Nathan Katz, 68100 Mulhouse",
+    "distance_km": 0.0151515354397512
+  },
+  "node/3468121487": {
+    "address": "1 Rue Jacques Goddet, 60000 Beauvais",
+    "distance_km": 0.036329803245813676
+  },
+  "node/3522465884": {
+    "address": "19 Allée Boissy d'Anglas, 30000 Nîmes",
+    "distance_km": 0.003348592760799668
+  },
+  "node/3572022711": {
+    "address": "2 Rue Millet, 49100 Angers",
+    "distance_km": 0.018976649046355785
+  },
+  "node/3660819947": {
+    "address": "Avenue Lionel Terray, 69330 Jonage",
+    "distance_km": 0.061008674176024284
+  },
+  "node/3772432526": {
+    "address": "1 Rue Nazare, 94130 Nogent-sur-Marne",
+    "distance_km": 0.012401848052286595
+  },
+  "node/3871575583": {
+    "address": "46 Boulevard Alsace-Lorraine, 64100 Bayonne",
+    "distance_km": 0.011556845930405188
+  },
+  "node/3943644377": {
+    "address": "8 Rue Emmanuel-Philibert, 06300 Nice",
+    "distance_km": 0.013471588481908702
+  },
+  "node/3960011710": {
+    "address": "82 Rue Regnault, 75013 Paris",
+    "distance_km": 0.006145420519098197
+  },
+  "node/4044625004": {
+    "address": "5 Allée des Moines, 77140 Nemours",
+    "distance_km": 0.05958793802338272
+  },
+  "node/4106674964": {
+    "address": "130 Boulevard du 11 Novembre 1918, 69100 Villeurbanne",
+    "distance_km": 0.0070356120712915474
+  },
+  "node/4119515567": {
+    "address": "Rue Vauban, 57000 Metz",
+    "distance_km": 0.007977075369992797
+  },
+  "node/4160120595": {
+    "address": "31 rue Jean-Marie Le Bris, 29200 Brest",
+    "distance_km": 0.011871441546812444
+  },
+  "node/4184087491": {
+    "address": "2 Rue raoul busquet, 13006 Marseille",
+    "distance_km": 0.00496088594250732
+  },
+  "node/4209223692": {
+    "address": "2a Rue de Paris, 78600 Maisons-Laffitte",
+    "distance_km": 0.0373852901289835
+  },
+  "node/4209868190": {
+    "address": "27 Quai Claude Bernard, 38000 Grenoble",
+    "distance_km": 0.01706465240087213
+  },
+  "node/4239360601": {
+    "address": "7 Allée Commandant Charcot, 44000 Nantes",
+    "distance_km": 0.006942734955644682
+  },
+  "node/4412206417": {
+    "address": "Rue Jean et Marguerite Belloni, 47300 Villeneuve-sur-Lot",
+    "distance_km": 0.00546935762976327
+  },
+  "node/4594259123": {
+    "address": "44 Avenue du Général Leclerc, 68100 Mulhouse",
+    "distance_km": 0.0061965027225720165
+  },
+  "node/4732532638": {
+    "address": "30 Cours de Verdun Perrache, 69002 Lyon",
+    "distance_km": 0.01349745362067719
+  },
+  "node/4837534977": {
+    "address": "47 Rue des Estuaires, 50220 Saint-Quentin-sur-le-Homme",
+    "distance_km": 0.018316272780447593
+  },
+  "node/4868217868": {
+    "address": "2 Impasse Actipolis, 34420 Villeneuve-lès-Béziers",
+    "distance_km": 0.023910780840373316
+  },
+  "node/4923949181": {
+    "address": "25 Chemin des Ceps, 33330 Saint-Émilion",
+    "distance_km": 0.0066893874446470325
+  },
+  "node/5245794547": {
+    "address": "9 Rue de Reuilly, 75012 Paris",
+    "distance_km": 0.002560874425667601
+  },
+  "node/5250915337": {
+    "address": "Place de la Paix Céleste, 78180 Montigny-le-Bretonneux",
+    "distance_km": 0.0003717463603430371
+  },
+  "node/5531520795": {
+    "address": "Rue François Groult, 56850 Caudan",
+    "distance_km": 0.11261261258563267
+  },
+  "node/5836210355": {
+    "address": "49 Rue de la Gare, 22000 Saint-Brieuc",
+    "distance_km": 0.004118917408912654
+  },
+  "node/6051383944": {
+    "address": "8 Rue de la Chesnaye, 22970 Ploumagoar",
+    "distance_km": 0.009395325920325662
+  },
+  "node/6090949532": {
+    "address": "2 Avenue Gilbert Vaillant, 44380 Pornichet",
+    "distance_km": 0.02446495850973908
+  },
+  "node/6148782415": {
+    "address": "5 Rue du Chapeau Rouge, 44000 Nantes",
+    "distance_km": 0.002978412130082911
+  },
+  "node/7098629350": {
+    "address": "95 Avenue du Général de Gaulle, 92800 Puteaux",
+    "distance_km": 0.01225618677456094
+  },
+  "node/7130352486": {
+    "address": "12 Avenue de la Boétie, 33160 Saint-Médard-en-Jalles",
+    "distance_km": 0.016994758311716113
+  },
+  "node/7196887991": {
+    "address": "48 Rue Jacques-Louis Hénon, 69004 Lyon",
+    "distance_km": 0.015026683241815803
+  },
+  "node/7265640837": {
+    "address": "2 Lieu dit Les Ruralies, 79230 Vouillé",
+    "distance_km": 0.014788797161782654
+  },
+  "node/7430438701": {
+    "address": "3bis Rue Porte- Cote, 41000 Blois",
+    "distance_km": 0.010518351286222758
+  },
+  "node/7445026234": {
+    "address": "5 Rue Eugène Orieux, 44400 Rezé",
+    "distance_km": 0.012211761001793213
+  },
+  "node/7548958153": {
+    "address": "39B Rue Saint-Yon, 17000 La Rochelle",
+    "distance_km": 0.00740600655600133
+  },
+  "node/8006447954": {
+    "address": "19 Place Auguste Poulet-Malassis, 61000 Alençon",
+    "distance_km": 0.008375356733596353
+  },
+  "node/8179030084": {
+    "address": "35 Place Massenet, 42000 Saint-Étienne",
+    "distance_km": 0.014932852463883123
+  },
+  "node/8595753014": {
+    "address": "3 Route de Collioure, 66660 Port-Vendres",
+    "distance_km": 0.026914191809277677
+  },
+  "node/8904462601": {
+    "address": "Impasse Jean Jaurès, 59810 Lesquin",
+    "distance_km": 0.04168320255400085
+  },
+  "node/9270340891": {
+    "address": "Passage Auguste Perret, 80000 Amiens",
+    "distance_km": 0.014069291985990376
+  },
+  "node/9446853812": {
+    "address": "24 Avenue Paul Michonneau, 62000 Arras",
+    "distance_km": 0.012321610458963255
+  },
+  "node/9455171488": {
+    "address": "19 Rue Buffault, 75009 Paris",
+    "distance_km": 0.0038817764855128925
+  },
+  "node/9549675053": {
+    "address": "326 Place Jacques Tati, 60880 Jaux",
+    "distance_km": 0.013416751949289147
+  },
+  "node/9804191175": {
+    "address": "97 avenue de la République, 63100 Clermont-Ferrand",
+    "distance_km": 0.014726564330538651
+  },
+  "node/9878535023": {
+    "address": "1 Allée du Domaine de Froideville, 80350 Mers-les-Bains",
+    "distance_km": 0.009803912440406038
+  },
+  "node/9943726088": {
+    "address": "54 Avenue Gaston Roussel, 93230 Romainville",
+    "distance_km": 0.023188010166903857
+  },
+  "node/10155550035": {
+    "address": "2bis Rue des Jonquieres, 06110 Le Cannet",
+    "distance_km": 0.009122059426223362
+  },
+  "node/10698188122": {
+    "address": "5 Rue Saint-Laurent, 75010 Paris",
+    "distance_km": 0.004588478832435155
+  },
+  "node/10718358114": {
+    "address": "2 Rue du Maréchal Foch, 67380 Lingolsheim",
+    "distance_km": 0.012061209746792267
+  },
+  "node/11112560377": {
+    "address": "770 Avenue Jean Moulin, 83400 Hyères",
+    "distance_km": 0.044154544210315845
+  },
+  "node/11256413823": {
+    "address": "17 Promenade d'Orly, 91550 Paray-Vieille-Poste",
+    "distance_km": 0.011971442687109608
+  },
+  "node/11453868066": {
+    "address": "45 Avenue Édith Cavell, 83400 Hyères",
+    "distance_km": 0.0034419042324886676
+  },
+  "node/11665979418": {
+    "address": "1 Rue Michel Begon, 17300 Rochefort",
+    "distance_km": 0.006318484907768807
+  },
+  "node/11681670323": {
+    "address": "21 Rue Franc Lapeyre, 17000 La Rochelle",
+    "distance_km": 0.01675094732412298
+  },
+  "node/11874203064": {
+    "address": "8 Rue Gabriel Tarde, 24200 Sarlat-la-Canéda",
+    "distance_km": 0.0018620094738544292
+  },
+  "node/11881577593": {
+    "address": "1 Place Charlotte Perriand, 78280 Guyancourt",
+    "distance_km": 0.002874746355692703
+  },
+  "node/12033476364": {
+    "address": "Rente de Beauregard, 21600 Longvic",
+    "distance_km": 0.0686836815516217
+  },
+  "node/12041587588": {
+    "address": "936 Côte des Ormeaux, 46000 Cahors",
+    "distance_km": 0.025806120777808316
+  },
+  "node/12112384580": {
+    "address": "79 Boulevard du Docteur Moutel, 44150 Ancenis-Saint-Géréon",
+    "distance_km": 0.006900128486103082
+  },
+  "node/12139409279": {
+    "address": "1 Chemin de la Paillerie, 86000 Poitiers",
+    "distance_km": 0.06133309268954461
+  },
+  "node/12149154404": {
+    "address": "5 Rue Gnoumakouni, 97615 Pamandzi",
+    "distance_km": 0.03305450165463961
+  },
+  "node/12164215548": {
+    "address": "38 Rue du Faubourg Montmartre, 75009 Paris",
+    "distance_km": 0.003704950908574049
+  },
+  "node/12214889616": {
+    "address": "7 Rue du Texel, 75014 Paris",
+    "distance_km": 0.007275494368903596
+  },
+  "node/12246833570": {
+    "address": "37 Rue des Dunes, 14150 Ouistreham",
+    "distance_km": 0.015220048919225598
+  },
+  "node/12369248801": {
+    "address": "235 Impasse des senteurs, 26130 Saint-Paul-Trois-Châteaux",
+    "distance_km": 0.1111322183775315
+  },
+  "node/12400211096": {
+    "address": "350 Route du Nant, 01280 Prévessin-Moëns",
+    "distance_km": 0.03652442198999364
+  },
+  "node/12463776361": {
+    "address": "1 Avenue Victoria, 03200 Vichy",
+    "distance_km": 0.002453810369826954
+  },
+  "node/12647823892": {
+    "address": "122 Rue la Fayette, 75010 Paris",
+    "distance_km": 0.006696254501666564
+  },
+  "node/12920941305": {
+    "address": "53 Boulevard Charles de Gaulle, 42120 Le Coteau",
+    "distance_km": 0.06059384402475135
+  },
+  "node/13036061797": {
+    "address": "Rente de Beauregard, 21600 Longvic",
+    "distance_km": 0.019899958065248583
+  },
+  "node/13116088544": {
+    "address": "26 rue Samonzet, 64000 Pau",
+    "distance_km": 0.007456307479763624
+  },
+  "node/13316573052": {
+    "address": "555 Route des Champagnières, 26140 Albon",
+    "distance_km": 0.05978211433948793
+  },
+  "node/13421942834": {
+    "address": "1 Place Duclos, 22100 Dinan",
+    "distance_km": 0.002405499159128409
+  },
+  "node/13603177001": {
+    "address": "26 Rue Trébois, 92300 Levallois-Perret",
+    "distance_km": 0.0019384849416396771
+  },
+  "node/14023843176": {
+    "address": "84 Rue du calvaire, 85800 Saint-Gilles-Croix-de-Vie",
+    "distance_km": 0.013732575646905599
+  },
+  "way/23980912": {
+    "address": "La Cour Rolland, 78350 Jouy-en-Josas",
+    "distance_km": 0.015930072446012997
+  },
+  "way/31717437": {
+    "address": "6 Avenue Antoine Becquerel, 33600 Pessac",
+    "distance_km": 0.03671017302267846
+  },
+  "way/31884127": {
+    "address": "1400 Aéroport Charles de Gaulle, 93290 Tremblay-en-France",
+    "distance_km": 0.042580882895452615
+  },
+  "way/41123899": {
+    "address": "10 Place de la Gare, 67000 Strasbourg",
+    "distance_km": 0.01214701989644422
+  },
+  "way/43666858": {
+    "address": "226 Avenue de Colmar, 67100 Strasbourg",
+    "distance_km": 0.016468881671184224
+  },
+  "way/48585649": {
+    "address": "10 Rue Saint Eloi, 68000 Colmar",
+    "distance_km": 0.010267920867651737
+  },
+  "way/51206730": {
+    "address": "47 Avenue de la Foire aux Vins, 68000 Colmar",
+    "distance_km": 0.010214061894211545
+  },
+  "way/52130814": {
+    "address": "13 Rue Ferdinand Braun, 67540 Ostwald",
+    "distance_km": 0.007101986977718976
+  },
+  "way/52403594": {
+    "address": "2b Chemin de la Sandlach, 67500 Haguenau",
+    "distance_km": 0.028157463047827676
+  },
+  "way/52464150": {
+    "address": "91 Rue Victor Hugo, 71000 Mâcon",
+    "distance_km": 0.007330696182881533
+  },
+  "way/53815583": {
+    "address": "21 rue gambetta, 25000 Besançon",
+    "distance_km": 0.013132865456643788
+  },
+  "way/62649400": {
+    "address": "38 Avenue de la République, 74960 Annecy",
+    "distance_km": 0.004803865081626415
+  },
+  "way/63195932": {
+    "address": "181 Rue du Faubourg Saint-Martin, 75010 Paris",
+    "distance_km": 0.0033361130861273096
+  },
+  "way/63198280": {
+    "address": "12 Rue Louis Blanc, 75010 Paris",
+    "distance_km": 0.009522283973635757
+  },
+  "way/63202044": {
+    "address": "1 Rue Yves Toudic, 75010 Paris",
+    "distance_km": 0.007104523778593693
+  },
+  "way/63202200": {
+    "address": "31 Rue de Saint-Quentin, 75010 Paris",
+    "distance_km": 0.006373561235947428
+  },
+  "way/63237481": {
+    "address": "4 Rue Petit, 75019 Paris",
+    "distance_km": 0.007489312225327194
+  },
+  "way/63495702": {
+    "address": "126 Boulevard Charles De Gaulle, 64140 Lons",
+    "distance_km": 0.02242778030658207
+  },
+  "way/63641010": {
+    "address": "12 Rue Froment, 75011 Paris",
+    "distance_km": 0.024081337444231844
+  },
+  "way/63896860": {
+    "address": "6 Boulevard de la Robiquette, 35760 Saint-Grégoire",
+    "distance_km": 0.04361967793344884
+  },
+  "way/63959300": {
+    "address": "6 Avenue du Général de Gaulle, 92230 Gennevilliers",
+    "distance_km": 0.020214250891965088
+  },
+  "way/63980435": {
+    "address": "20 Rue Jules Saulnier, 93210 Saint-Denis",
+    "distance_km": 0.012646323001512014
+  },
+  "way/64600414": {
+    "address": "2 Rue Vladimir Jankelevitch, 18000 Bourges",
+    "distance_km": 0.01567130850427327
+  },
+  "way/64738648": {
+    "address": "4 Avenue des Sources, 06370 Mouans-Sartoux",
+    "distance_km": 0.011201290566872139
+  },
+  "way/65131680": {
+    "address": "Rue Clément Marot, 72100 Le Mans",
+    "distance_km": 0.04797268770556124
+  },
+  "way/65192522": {
+    "address": "1643 Avenue de Geneve, 74700 Sallanches",
+    "distance_km": 0.004694607505380704
+  },
+  "way/65454392": {
+    "address": "Rue Jean Jaurès, 32000 Auch",
+    "distance_km": 0.007297530171360659
+  },
+  "way/65526939": {
+    "address": "24 Rue Elisee Mousnier, 16100 Cognac",
+    "distance_km": 0.012878428574030114
+  },
+  "way/65785617": {
+    "address": "82b Avenue d’Angouleme, 16100 Châteaubernard",
+    "distance_km": 0.01356424014739041
+  },
+  "way/66119197": {
+    "address": "3 Rue Jean Bigot, 63500 Issoire",
+    "distance_km": 0.013950906681783592
+  },
+  "way/67373188": {
+    "address": "53 avenue de l'Union Soviétique, 63100 Clermont-Ferrand",
+    "distance_km": 0.006571834064674118
+  },
+  "way/67954368": {
+    "address": "2 Rue des Griottes, 07200 Aubenas",
+    "distance_km": 0.0007236506284838966
+  },
+  "way/68340939": {
+    "address": "26 Rue du Lac de Montbel, 11000 Carcassonne",
+    "distance_km": 0.0774221728006812
+  },
+  "way/68860233": {
+    "address": "2 Avenue Hélios, 65100 Lourdes",
+    "distance_km": 0.022713519196786894
+  },
+  "way/69551216": {
+    "address": "247 Rue Giraudeau, 37000 Tours",
+    "distance_km": 0.008192085253179047
+  },
+  "way/70677447": {
+    "address": "6 boulevard Victor Hugo, 87000 Limoges",
+    "distance_km": 0.018574681310901394
+  },
+  "way/70787838": {
+    "address": "10bis Rue du Château, 92600 Asnières-sur-Seine",
+    "distance_km": 0.012053921196565957
+  },
+  "way/73132258": {
+    "address": "1 Rue des Saules, 27100 Val-de-Reuil",
+    "distance_km": 0.027654140319264796
+  },
+  "way/74145617": {
+    "address": "12 Rue de la Ferme, 92100 Boulogne-Billancourt",
+    "distance_km": 0.008729216709693404
+  },
+  "way/74469035": {
+    "address": "Rue Marcellin Berthelot, 92110 Clichy",
+    "distance_km": 0.004989963131006552
+  },
+  "way/74473458": {
+    "address": "2 Rue Villeneuve, 92110 Clichy",
+    "distance_km": 0.0065497012342862326
+  },
+  "way/78145490": {
+    "address": "40 Avenue Daumesnil, 75012 Paris",
+    "distance_km": 0.007299662853246499
+  },
+  "way/78148653": {
+    "address": "41 Avenue Ledru-Rollin, 75012 Paris",
+    "distance_km": 0.021259902992457055
+  },
+  "way/78148957": {
+    "address": "52 Avenue Ledru-Rollin, 75012 Paris",
+    "distance_km": 0.003976579043658882
+  },
+  "way/78493738": {
+    "address": "2 Passage Foubert, 75013 Paris",
+    "distance_km": 0.005381012416151948
+  },
+  "way/78534480": {
+    "address": "4 Voie X/13, 75013 Paris",
+    "distance_km": 0.006652826591781929
+  },
+  "way/79049491": {
+    "address": "11b Rue du Vercors, 59650 Villeneuve-d'Ascq",
+    "distance_km": 0.026996324626637765
+  },
+  "way/79688152": {
+    "address": "30 Rue des Plantes, 75014 Paris",
+    "distance_km": 0.003261836879139626
+  },
+  "way/79719355": {
+    "address": "29 Rue Antoine Chantin, 75014 Paris",
+    "distance_km": 0.008449101043529169
+  },
+  "way/79764048": {
+    "address": "5 Rue Gaston Defferre, 90000 Belfort",
+    "distance_km": 0.0012683028333724934
+  },
+  "way/81285124": {
+    "address": "15 Rue Hector Berlioz, 93000 Bobigny",
+    "distance_km": 0.016351391613656986
+  },
+  "way/81415868": {
+    "address": "39 route du Lac, 19300 Égletons",
+    "distance_km": 0.017997173710772838
+  },
+  "way/81662806": {
+    "address": "66 Avenue de Rome, 66000 Perpignan",
+    "distance_km": 0.012264422624882115
+  },
+  "way/81668652": {
+    "address": "66 Avenue de Rome, 66000 Perpignan",
+    "distance_km": 0.0427560663143537
+  },
+  "way/81779869": {
+    "address": "62 Rue de la Rigourdière, 35510 Cesson-Sévigné",
+    "distance_km": 0.017096351979658694
+  },
+  "way/81787682": {
+    "address": "1ter Route de Fougères, 35510 Cesson-Sévigné",
+    "distance_km": 0.032742249769798164
+  },
+  "way/82063006": {
+    "address": "49 Boulevard de Buffon, 53810 Changé",
+    "distance_km": 0.007129014937808196
+  },
+  "way/83233811": {
+    "address": "41 Avenue Aristide Briand, 92120 Montrouge",
+    "distance_km": 0.009963741507209255
+  },
+  "way/84281774": {
+    "address": "21 Rue Anatole Sigonneau, 93150 Le Blanc-Mesnil",
+    "distance_km": 0.0997255851491133
+  },
+  "way/86361482": {
+    "address": "1 Avenue d'Aiguilhe, 43000 Le Puy-en-Velay",
+    "distance_km": 0.017234229730828037
+  },
+  "way/86602217": {
+    "address": "50 Route de Soissons, 51430 Tinqueux",
+    "distance_km": 0.04286580072223869
+  },
+  "way/88129413": {
+    "address": "21 Rue du Bois Dousset, 86000 Poitiers",
+    "distance_km": 0.04396519874900897
+  },
+  "way/89057170": {
+    "address": "2 Allée de Bourgogne, 54500 Vandœuvre-lès-Nancy",
+    "distance_km": 0.03738582604521992
+  },
+  "way/89669940": {
+    "address": "418 Avenue de la Division Leclerc, 92290 Châtenay-Malabry",
+    "distance_km": 0.02257448228173541
+  },
+  "way/90603028": {
+    "address": "11 Avenue Pierre Coulon, 03200 Vichy",
+    "distance_km": 0.004694260342265516
+  },
+  "way/93349343": {
+    "address": "711 Chemin de l'Hermitage St Baudile, 34690 Fabrègues",
+    "distance_km": 0.02244221677601027
+  },
+  "way/94679611": {
+    "address": "12 Impasse de la Peupleraie, 35400 Saint-Malo",
+    "distance_km": 0.022637386024616415
+  },
+  "way/97618227": {
+    "address": "15 Rue d’Imling, 57400 Sarrebourg",
+    "distance_km": 0.07283687200115965
+  },
+  "way/100335016": {
+    "address": "752 Avenue du 18 Juin 1940, 13300 Salon-de-Provence",
+    "distance_km": 0.04483403989173967
+  },
+  "way/101025028": {
+    "address": "62 Avenue Etienne Rabattu, 13170 Les Pennes-Mirabeau",
+    "distance_km": 0.06121125658596781
+  },
+  "way/101285036": {
+    "address": "24 Rue de Madrid, 13127 Vitrolles",
+    "distance_km": 0.02969545855141973
+  },
+  "way/102563405": {
+    "address": "500 Route de 40 sous, 78630 Orgeval",
+    "distance_km": 0.0020131527111382067
+  },
+  "way/102986261": {
+    "address": "28 Avenue des Grouettes, 95000 Cergy",
+    "distance_km": 0.00029872385372861784
+  },
+  "way/105727379": {
+    "address": "2 Avenue du Val de Fontenay, 94120 Fontenay-sous-Bois",
+    "distance_km": 0.02087620959759151
+  },
+  "way/106058522": {
+    "address": "21 Avenue Montaigne, 60000 Beauvais",
+    "distance_km": 0.013935875924148024
+  },
+  "way/108214172": {
+    "address": "4 Rue des Frères Michaut, 14700 Falaise",
+    "distance_km": 0.05289705809788663
+  },
+  "way/110600529": {
+    "address": "100 Rue Eugène Ducretet, 73000 Chambéry",
+    "distance_km": 0.06327727554856426
+  },
+  "way/111733764": {
+    "address": "50f Rue Charles Baudelaire, 26000 Valence",
+    "distance_km": 0.04878159913234541
+  },
+  "way/112362932": {
+    "address": "1 Rue André Malraux, 77000 Melun",
+    "distance_km": 0.032397057182518785
+  },
+  "way/114030130": {
+    "address": "Le Grand Misselot, 70000 Vesoul",
+    "distance_km": 0.010023185344821836
+  },
+  "way/114156205": {
+    "address": "6 Rue du Perré, 77950 Rubelles",
+    "distance_km": 0.060604836774615416
+  },
+  "way/114995223": {
+    "address": "80 Rue de la Folie-Regnault, 75011 Paris",
+    "distance_km": 0.006342790411764538
+  },
+  "way/115346435": {
+    "address": "145 Rue Pasteur, 38670 Chasse-sur-Rhône",
+    "distance_km": 0.00048138470474481444
+  },
+  "way/116039724": {
+    "address": "5 Rue du Forum, 28630 Le Coudray",
+    "distance_km": 0.02602089439952407
+  },
+  "way/116124938": {
+    "address": "2 Place Jean Monnet, 77144 Montévrain",
+    "distance_km": 0.02145500125686882
+  },
+  "way/116979402": {
+    "address": "1 Avenue du Lac, 91080 Évry-Courcouronnes",
+    "distance_km": 0.014051454413538039
+  },
+  "way/117478436": {
+    "address": "1363 Avenue Frédéric Mistral, 38670 Chasse-sur-Rhône",
+    "distance_km": 0.016232101676019402
+  },
+  "way/119814788": {
+    "address": "Rue de la Fabrique, 17000 La Rochelle",
+    "distance_km": 0.01843754838267273
+  },
+  "way/120960209": {
+    "address": "768 Chemin des Adrets, 83170 Brignoles",
+    "distance_km": 0.05829638349882139
+  },
+  "way/121573053": {
+    "address": "Rue Paul Vachet, 71100 Chalon-sur-Saône",
+    "distance_km": 0.02592249397114674
+  },
+  "way/124567032": {
+    "address": "3 Rue Armand Sourie, 19100 Brive-la-Gaillarde",
+    "distance_km": 0.04670740808303749
+  },
+  "way/125155785": {
+    "address": "17 Avenue du Clos Labedoyère, 76700 Harfleur",
+    "distance_km": 0.04913715295135314
+  },
+  "way/125396804": {
+    "address": "63 Rue des Pins, 72230 Mulsanne",
+    "distance_km": 0.051841911255424734
+  },
+  "way/126727231": {
+    "address": "Place de la Porte de Lyon, 69570 Dardilly",
+    "distance_km": 0.04725946186892408
+  },
+  "way/127059135": {
+    "address": "14 Rue de la Basse Quinte, 94000 Créteil",
+    "distance_km": 0.015618214524652996
+  },
+  "way/128235194": {
+    "address": "Rue Camille Claudel, 10000 Troyes",
+    "distance_km": 0.019931028878465065
+  },
+  "way/128235196": {
+    "address": "13 Rue des Bas Trevois, 10000 Troyes",
+    "distance_km": 0.027177520134329905
+  },
+  "way/134684876": {
+    "address": "345 Boulevard Marcel Paul, 44800 Saint-Herblain",
+    "distance_km": 0.02990341363890476
+  },
+  "way/135742603": {
+    "address": "4 Avenue de la Gare, 26300 Alixan",
+    "distance_km": 0.02349880374977218
+  },
+  "way/135878203": {
+    "address": "4 Rue du Port de l'Ecu, 38200 Vienne",
+    "distance_km": 0.02286182058737725
+  },
+  "way/136641915": {
+    "address": "1 Rue de la Côte de Beauté, 17100 Saintes",
+    "distance_km": 0.05036946449993546
+  },
+  "way/136810690": {
+    "address": "65 Rue Michel Ange, 93600 Aulnay-sous-Bois",
+    "distance_km": 0.03579281387935595
+  },
+  "way/139675877": {
+    "address": "10 Avenue du Maréchal Leclerc, 33140 Villenave-d'Ornon",
+    "distance_km": 0.07170873507776056
+  },
+  "way/142258167": {
+    "address": "70 Avenue du Général de Gaulle, 60300 Senlis",
+    "distance_km": 0.009243792533837603
+  },
+  "way/144793614": {
+    "address": "33 Rue des Chênes, 22190 Plérin",
+    "distance_km": 0.03369743912683158
+  },
+  "way/146518940": null,
+  "way/146673444": {
+    "address": "1134 Avenue Georges Pompidou, 02000 Laon",
+    "distance_km": 0.021266485184661173
+  },
+  "way/152125220": {
+    "address": "23 Avenue des chasseurs alpins, 73200 Albertville",
+    "distance_km": 0.07672959024626913
+  },
+  "way/153897287": {
+    "address": "619 Rue Jules Vallès, 50000 Saint-Lô",
+    "distance_km": 0.05589522616326263
+  },
+  "way/154148377": {
+    "address": "Rue du Petit Barail, 33300 Bordeaux",
+    "distance_km": 0.07668798791304236
+  },
+  "way/156678475": null,
+  "way/159723247": {
+    "address": "7c Rue de la Clairie, 88250 La Bresse",
+    "distance_km": 0.007569462668338555
+  },
+  "way/164117655": {
+    "address": "217 Chemin des Parelles, 73190 Challes-les-Eaux",
+    "distance_km": 0.014850924837051879
+  },
+  "way/164484529": {
+    "address": "2 Rue de Marengo, 49300 Cholet",
+    "distance_km": 0.04631522863037893
+  },
+  "way/167432778": {
+    "address": "1 Avenue Apollo, 33700 Mérignac",
+    "distance_km": 0.02344012967722422
+  },
+  "way/169480681": {
+    "address": "16 ZAE CORA Rue de Fourney, 39100 Choisey",
+    "distance_km": 0.023552194418611543
+  },
+  "way/170763622": {
+    "address": "35 Rue du Murier, 83000 Toulon",
+    "distance_km": 0.03071315379161935
+  },
+  "way/174099087": {
+    "address": "251 Rue saint pierre, 13005 Marseille",
+    "distance_km": 0.022557645291326416
+  },
+  "way/182885995": {
+    "address": "76 Les Petites Combes, 01700 Beynost",
+    "distance_km": 0.01178162449046857
+  },
+  "way/231842147": {
+    "address": "238 Rue de Gourre d’Aure, 84120 Pertuis",
+    "distance_km": 0.04589651984709059
+  },
+  "way/237131134": {
+    "address": "371a Rue du Maconnais, 71570 Chaintré",
+    "distance_km": 0.019343265470596137
+  },
+  "way/241052754": {
+    "address": "22b rue de trey, 25000 Besançon",
+    "distance_km": 0.05362808422554486
+  },
+  "way/299684704": {
+    "address": "29 Avenue Aristide Briand, 67100 Strasbourg",
+    "distance_km": 0.009039924873435709
+  },
+  "way/303292240": {
+    "address": "1 Rue Louis Armstrong, 63200 Riom",
+    "distance_km": 0.03099884235001392
+  },
+  "way/306707394": {
+    "address": "36 Rue Julien Quintin, 22120 Yffiniac",
+    "distance_km": 0.028703800771169678
+  },
+  "way/312391501": {
+    "address": "36 Avenue des Champs Pierreux, 92000 Nanterre",
+    "distance_km": 0.005687116968958709
+  },
+  "way/315548187": null,
+  "way/328139499": {
+    "address": "5 Rue d'Aquitaine, 45380 La Chapelle-Saint-Mesmin",
+    "distance_km": 0.0845999553973547
+  },
+  "way/362269159": {
+    "address": "33 Rue de la Bergerie, 89200 Magny",
+    "distance_km": 0.07278140878165526
+  },
+  "way/372489206": {
+    "address": "12 Quai Baron Gérard, 14520 Port-en-Bessin-Huppain",
+    "distance_km": 0.005698759854753457
+  },
+  "way/389798557": {
+    "address": "93 Avenue de la Libération, 56300 Pontivy",
+    "distance_km": 0.01744936819898818
+  },
+  "way/404298384": {
+    "address": "10 Rue de la Saone, 54520 Laxou",
+    "distance_km": 0.0362023720797354
+  },
+  "way/456853140": {
+    "address": "11 Avenue de l'Arborescente, 85500 Les Herbiers",
+    "distance_km": 0.06943566554536462
+  },
+  "way/495943574": {
+    "address": "1 Avenue du Fresne, 14760 Bretteville-sur-Odon",
+    "distance_km": 0.04657252207405514
+  },
+  "way/518594247": {
+    "address": "Route de Vieilfond, 18100 Vierzon",
+    "distance_km": 0.1119766779622319
+  },
+  "way/549808125": {
+    "address": "4 rue Claude Guichard, 63000 Clermont-Ferrand",
+    "distance_km": 0.02994441827332366
+  },
+  "way/550505493": {
+    "address": "30 rue Georges Besse, 63100 Clermont-Ferrand",
+    "distance_km": 0.01943104093198389
+  },
+  "way/589578674": {
+    "address": "11bis Rue du Clos Montholon, 92140 Clamart",
+    "distance_km": 0.014593433799023477
+  },
+  "way/656243972": {
+    "address": "20 Avenue des Canuts, 69120 Vaulx-en-Velin",
+    "distance_km": 0.010831464762929113
+  },
+  "way/659025466": {
+    "address": "600bis Avenue de Paris, 79000 Niort",
+    "distance_km": 0.013521688229657512
+  },
+  "way/683253624": {
+    "address": "ZI Athelia IV, 13600 La Ciotat",
+    "distance_km": 0.04508205145347594
+  },
+  "way/738039169": {
+    "address": "1 Avenue du 18 Juin 1940, 93800 Épinay-sur-Seine",
+    "distance_km": 0.012813405293377409
+  },
+  "way/745733838": {
+    "address": "14 Avenue de la Porte d'Italie, 75013 Paris",
+    "distance_km": 0.011670385056471378
+  },
+  "way/752856886": {
+    "address": "3bis Rue Joseph Aristide Auxenfans, 18000 Bourges",
+    "distance_km": 0.045018072701471984
+  },
+  "way/760418070": {
+    "address": "600bis Avenue de Paris, 79000 Niort",
+    "distance_km": 0.03262146123332374
+  },
+  "way/827640522": {
+    "address": "33 Rue des Chênes, 22190 Plérin",
+    "distance_km": 0.038167056073096305
+  },
+  "way/838949258": {
+    "address": "12 Parc d’Activites Point du Jour, 35610 Saint-Georges-de-Gréhaigne",
+    "distance_km": 0.01405398500911976
+  },
+  "way/941944705": {
+    "address": "5 Rue Crucy, 44000 Nantes",
+    "distance_km": 0.030461534612041857
+  },
+  "way/943584857": {
+    "address": "20 Rue Martha Desrumaux, 33310 Lormont",
+    "distance_km": 0.015942949958136624
+  },
+  "way/956949867": {
+    "address": "5bis Rue Antoine de Saint-exupery, 54180 Houdemont",
+    "distance_km": 0.07806346321841683
+  },
+  "way/958116859": {
+    "address": "62 Route d’Orléans, 91310 Montlhéry",
+    "distance_km": 0.018770023580300988
+  },
+  "way/998123667": {
+    "address": "8 Quai du Val, 35400 Saint-Malo",
+    "distance_km": 0.010726954359563976
+  },
+  "way/1057106370": {
+    "address": "1 Strada di i Furruli, 20137 Porto-Vecchio",
+    "distance_km": 0.05912875070966282
+  },
+  "way/1124390622": {
+    "address": "Rue de la Lavande, 13140 Miramas",
+    "distance_km": 0.08029464960836406
+  },
+  "way/1185694666": {
+    "address": "4 Rue Gustave Eiffel, 49500 Segré-en-Anjou Bleu",
+    "distance_km": 0.06841744072624693
+  },
+  "way/1190420787": {
+    "address": "5 Chemin des Macreuses, 13700 Marignane",
+    "distance_km": 0.07226414216324607
+  },
+  "way/1214635702": {
+    "address": "16ter Avenue de la Grangette, 74200 Thonon-les-Bains",
+    "distance_km": 0.01852220022406606
+  },
+  "way/1358149112": {
+    "address": "1 Rue Alexis de Tocqueville, 92160 Antony",
+    "distance_km": 0.027745990816026904
+  },
+  "way/1443081719": {
+    "address": "4 Rue Sibour, 75010 Paris",
+    "distance_km": 0.005427736502847578
+  },
+  "way/1499101025": {
+    "address": "1 Chemin d’Emmanuelle, 17340 Châtelaillon-Plage",
+    "distance_km": 0.020520693499134
+  },
+  "relation/975141": {
+    "address": "Rue de Worms, 89000 Auxerre",
+    "distance_km": 0.014780165331484456
+  },
+  "relation/983994": {
+    "address": "87 Boulevard de Strasbourg, 75010 Paris",
+    "distance_km": 0.007271767040168343
+  },
+  "relation/1141676": {
+    "address": "19 Avenue Ferdinand Buisson, 92100 Boulogne-Billancourt",
+    "distance_km": 0.02147031474414335
+  },
+  "relation/10404673": {
+    "address": "1 Rue Charlemagne, 57000 Metz",
+    "distance_km": 0.006507953360876862
+  }
+}
