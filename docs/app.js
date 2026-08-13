@@ -1,6 +1,46 @@
 (() => {
   "use strict";
 
+  // ---------- Routing (URL puliti /citta/{id}) ----------
+  // Decodifica il redirect di docs/404.html (?p=/citta/lyon -> /citta/lyon)
+  // PRIMA di leggere la posizione altrove in questo file: deve girare
+  // subito, altrimenti il resto del codice vedrebbe ancora l'URL con la
+  // query string invece del path pulito.
+  (function decodeRedirectFromNotFoundPage() {
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get("p");
+    if (p == null) return;
+    params.delete("p");
+    const qs = params.toString();
+    const newUrl =
+      window.location.pathname.replace(/\/$/, "") + p + (qs ? "?" + qs : "") + window.location.hash;
+    window.history.replaceState(null, "", newUrl);
+  })();
+
+  // Base path del sito: "/hexagone" su GitHub Pages, "" in locale (servito
+  // dalla root). Stessa logica (hardcoded sul nome del repo, non dedotta
+  // dal path) di docs/404.html: deve restare identica li' e qui, altrimenti
+  // le URL costruite da app.js e quelle decodificate da 404.html divergono.
+  function computeBasePath() {
+    const REPO_BASE = "/hexagone";
+    const pathname = window.location.pathname;
+    return pathname === REPO_BASE || pathname.indexOf(REPO_BASE + "/") === 0 ? REPO_BASE : "";
+  }
+  const BASE_PATH = computeBasePath();
+
+  function cityPath(cityId) {
+    return `${BASE_PATH}/citta/${cityId}`;
+  }
+
+  function homePath() {
+    return `${BASE_PATH}/`;
+  }
+
+  function parseCityIdFromLocation() {
+    const match = window.location.pathname.match(/\/citta\/([^/]+)\/?$/);
+    return match ? decodeURIComponent(match[1]) : null;
+  }
+
   const state = {
     cities: [],
     filtered: [],
@@ -104,6 +144,8 @@
       statsTemplate: "{cities} citta' · {hotels} hotel ({ibis} ibis, {styles} ibis Styles)",
       sampleDataWarning: " — ⚠ DATI DI ESEMPIO, esegui la pipeline per i dati reali",
       loadError: "Errore nel caricamento di data.json",
+      pageTitleCity: "{name} — hotel ibis & ibis Styles | hexagone",
+      metaDescriptionCity: "{count} hotel ibis e ibis Styles a {name} ({population} abitanti): indirizzi, prenotazione, storia e cosa visitare.",
     },
     fr: {
       tagline: "ibis & ibis Styles — France",
@@ -166,6 +208,8 @@
       statsTemplate: "{cities} villes · {hotels} hôtels ({ibis} ibis, {styles} ibis Styles)",
       sampleDataWarning: " — ⚠ DONNÉES D'EXEMPLE, exécutez le pipeline pour les données réelles",
       loadError: "Erreur lors du chargement de data.json",
+      pageTitleCity: "{name} — hôtels ibis & ibis Styles | hexagone",
+      metaDescriptionCity: "{count} hôtels ibis et ibis Styles à {name} ({population} habitants) : adresses, réservation, histoire et que voir.",
     },
     en: {
       tagline: "ibis & ibis Styles — France",
@@ -228,6 +272,8 @@
       statsTemplate: "{cities} cities · {hotels} hotels ({ibis} ibis, {styles} ibis Styles)",
       sampleDataWarning: " — ⚠ SAMPLE DATA, run the pipeline for real data",
       loadError: "Error loading data.json",
+      pageTitleCity: "{name} — ibis & ibis Styles hotels | hexagone",
+      metaDescriptionCity: "{count} ibis and ibis Styles hotels in {name} ({population} inhabitants): addresses, booking, history and what to see.",
     },
   };
 
@@ -290,6 +336,50 @@
       const city = state.cities.find((c) => c.id === id);
       if (city) marker.setPopupContent(popupHtml(city));
     });
+  }
+
+  // ---------- Meta tag dinamici per pagina citta' ----------
+  // Approccio "client-side routing": niente pagine HTML separate per
+  // citta' (che sarebbero il modo piu' affidabile per la SEO, indicizzabili
+  // anche senza eseguire JS), ma URL puliti + history API + meta tag
+  // aggiornati dopo il render, cosi' un link diretto/condiviso a una citta'
+  // e' comunque leggibile e Google puo' indicizzarlo se esegue il JS della
+  // pagina (cosa che fa nella maggior parte dei casi, non garantita al 100%).
+  const SITE_ORIGIN = "https://calca.github.io";
+  const DEFAULT_META = {
+    title: document.title,
+    description: document.querySelector('meta[name="description"]')?.content || "",
+    url: document.querySelector('meta[property="og:url"]')?.content || `${SITE_ORIGIN}${homePath()}`,
+  };
+
+  function setMeta(title, description, url) {
+    document.title = title;
+    const setContent = (selector, value) => {
+      const el = document.querySelector(selector);
+      if (el) el.content = value;
+    };
+    setContent('meta[name="description"]', description);
+    setContent('meta[property="og:title"]', title);
+    setContent('meta[property="og:description"]', description);
+    setContent('meta[property="og:url"]', url);
+    setContent('meta[name="twitter:title"]', title);
+    setContent('meta[name="twitter:description"]', description);
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.href = url;
+  }
+
+  function setCityMeta(city) {
+    const title = t("pageTitleCity", { name: city.name });
+    const description = t("metaDescriptionCity", {
+      name: city.name,
+      count: city.hotel_count,
+      population: numberFmt(city.population),
+    });
+    setMeta(title, description, `${SITE_ORIGIN}${cityPath(city.id)}`);
+  }
+
+  function resetMeta() {
+    setMeta(DEFAULT_META.title, DEFAULT_META.description, DEFAULT_META.url);
   }
 
   function setLang(lang) {
@@ -457,14 +547,18 @@
     if (btn) setView(btn.dataset.view);
   });
 
-  function closeDetail() {
+  function closeDetail(updateHistory = true) {
     els.detail.hidden = true;
     els.detailBackdrop.hidden = true;
     state.activeId = null;
     renderList();
+    resetMeta();
+    if (updateHistory && window.location.pathname !== homePath()) {
+      window.history.pushState({ cityId: null }, "", homePath());
+    }
   }
 
-  els.detailBackdrop.addEventListener("click", closeDetail);
+  els.detailBackdrop.addEventListener("click", () => closeDetail());
 
   const map = L.map("map", { zoomControl: true }).setView([46.6, 2.4], 6);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -649,7 +743,7 @@
     }
   }
 
-  function showDetail(cityId, panMap) {
+  function showDetail(cityId, panMap, updateHistory = true) {
     const city = state.cities.find((c) => c.id === cityId);
     if (!city) return;
     state.activeId = cityId;
@@ -661,6 +755,11 @@
     }
     const marker = state.markers.get(cityId);
     if (marker) marker.openPopup();
+
+    setCityMeta(city);
+    if (updateHistory && window.location.pathname !== cityPath(cityId)) {
+      window.history.pushState({ cityId }, "", cityPath(cityId));
+    }
 
     const attractionsHtml = (city.attractions || []).length
       ? `<ul class="attractions">${city.attractions.map((a) => `<li>${escapeHtml(a)}</li>`).join("")}</ul>`
@@ -740,7 +839,7 @@
     loadCityGallery(city);
   }
 
-  els.detailClose.addEventListener("click", closeDetail);
+  els.detailClose.addEventListener("click", () => closeDetail());
 
   // Chiude i filtri appena si scorre la lista, per non sottrarle spazio.
   els.list.addEventListener(
@@ -779,7 +878,11 @@
     btn.setAttribute("aria-pressed", String(btn.dataset.lang === state.lang));
   });
 
-  fetch("data.json")
+  // Path assoluto (BASE_PATH), non relativo: su un URL /citta/{id} (dopo il
+  // redirect di 404.html + history.replaceState) un fetch relativo si
+  // risolverebbe contro quella directory virtuale invece che contro la
+  // root del sito, restituendo il 404.html al posto del JSON.
+  fetch(`${BASE_PATH}/data.json`)
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       return r.json();
@@ -792,15 +895,44 @@
       populateDepartments(state.cities);
       buildMarkers();
       applyFilters();
+
+      // Se l'URL di arrivo e' gia' /citta/{id} (link diretto, condiviso, o
+      // arrivo da 404.html), apri subito quella scheda invece della vista
+      // di default. Niente pan della mappa qui: su mobile il flyTo prima
+      // che il layout sia stabile puo' correre contro dimensioni non
+      // ancora corrette (vedi il fix in setView).
+      const initialCityId = parseCityIdFromLocation();
+      if (initialCityId && state.cities.some((c) => c.id === initialCityId)) {
+        showDetail(initialCityId, false, false);
+      }
     })
     .catch((err) => {
       els.stats.textContent = t("loadError");
       console.error(err);
     });
 
+  // Tasto indietro/avanti del browser: riapre o chiude la scheda citta'
+  // senza spingere una nuova voce nella history (altrimenti si rompe la
+  // navigazione avanti/indietro stessa).
+  window.addEventListener("popstate", () => {
+    const cityId = parseCityIdFromLocation();
+    if (cityId && state.cities.some((c) => c.id === cityId)) {
+      showDetail(cityId, false, false);
+    } else if (state.activeId != null) {
+      closeDetail(false);
+    }
+  });
+
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("sw.js").catch((err) => console.error("SW registration failed", err));
+      // Stesso motivo di BASE_PATH sopra, piu' uno scope esplicito: senza,
+      // se il primo accesso mai fatto e' un link diretto /citta/{id}, il SW
+      // si registrerebbe con scope "/citta/" (la directory dello script)
+      // invece che sulla root del sito, e non controllerebbe mai le pagine
+      // reali dell'app.
+      navigator.serviceWorker
+        .register(`${BASE_PATH}/sw.js`, { scope: `${BASE_PATH}/` })
+        .catch((err) => console.error("SW registration failed", err));
     });
   }
 })();

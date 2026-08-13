@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "hexagone-v2";
+const CACHE_VERSION = "hexagone-v3";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const DATA_CACHE = `${CACHE_VERSION}-data`;
 
@@ -8,6 +8,7 @@ const SHELL_ASSETS = [
   "./",
   "index.html",
   "about.html",
+  "404.html",
   "style.css",
   "app.js",
   "about.js",
@@ -73,6 +74,18 @@ self.addEventListener("fetch", (event) => {
         }
         return response;
       })
-      .catch(() => caches.match(request))
+      .catch(() =>
+        caches.match(request).then((cached) => {
+          if (cached) return cached;
+          // Fallback per le navigazioni offline verso un URL non in cache:
+          // succede per un link diretto a /citta/{id} (route solo
+          // client-side, nessun file corrispondente esiste davvero) aperto
+          // mentre offline. Si serve comunque l'app shell: e' app.js stesso
+          // (leggendo l'URL) ad aprire la scheda della citta' giusta una
+          // volta partito, se quella citta' e' nel data.json gia' in cache.
+          if (request.mode === "navigate") return caches.match("index.html");
+          return undefined;
+        })
+      )
   );
 });

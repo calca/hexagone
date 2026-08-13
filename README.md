@@ -36,6 +36,7 @@ francese, Wikipedia/Wikivoyage, Wikidata) in un'unica mappa consultabile.
   storici** per ogni città, con foto da Wikimedia Commons
 - 🔗 **Link diretti** per prenotare su ibis.com o Booking.com, o per
   aprire l'hotel su Google Maps
+- 🔗 **Un URL per ogni città** (`/citta/lyon`), condivisibile e con anteprima link
 - 🌍 **Interfaccia in italiano, francese e inglese**
 - 📱 **Installabile come app (PWA)**, funziona anche offline
 - 📊 **Dati sempre aggiornati**: una pipeline automatica rigenera il
@@ -83,13 +84,15 @@ data/
                           (solo quelli mappabili a un singolo comune)
 docs/                    sito statico (GitHub Pages), installabile come PWA
   index.html / style.css / app.js
-  app.js                   include anche il dizionario di traduzione IT/FR/EN dell'interfaccia
+  app.js                   include anche il dizionario di traduzione IT/FR/EN e il routing per citta'
   about.html / about.js    pagina "Info & note legali" (fonti dati, disclaimer di non affiliazione)
                             con il proprio dizionario di traduzione IT/FR/EN
+  404.html                 redirect per gli URL /citta/{id} (vedi "URL per citta'" sotto)
   manifest.webmanifest     manifest PWA (nome, icone, colori)
   sw.js                    service worker (cache offline dell'app shell + dati)
   icons/                   favicon e icone dell'app (incl. varianti maskable)
   data.json               dataset consumato dal frontend, rigenerato periodicamente dalla pipeline
+  sitemap.xml              generata da build_dataset.py, un URL per citta' + home + about
   vendor/leaflet/          libreria Leaflet vendorizzata
 .github/workflows/
   refresh-data.yml        rigenera docs/data.json (schedulato + manuale) e lo committa
@@ -194,6 +197,35 @@ Le stringhe di traduzione vivono in due dizionari JS separati (uno per
 pagina, senza dipendenze esterne ne' passo di build):
 `docs/app.js` (oggetto `TRANSLATIONS`) per l'app principale e
 `docs/about.js` per la pagina Info & note legali.
+
+### URL per città
+
+Ogni città ha un URL proprio, condivisibile: `https://calca.github.io/hexagone/citta/{id}`
+(es. `/citta/lyon`) apre direttamente la scheda di quella città. E' un
+routing **client-side** (niente pagine HTML separate per città): l'app
+resta una SPA, ma usa la History API per URL puliti invece di un hash o
+un parametro di query, aggiornando titolo/meta description/canonical/OG
+via JavaScript quando si apre una scheda.
+
+Poiché GitHub Pages non supporta un vero routing lato server, un
+accesso diretto a `/citta/lyon` (link condiviso, refresh della pagina)
+passa dal trucco standard delle SPA su GitHub Pages: `docs/404.html`
+(servito per qualunque path senza un file corrispondente) ricodifica il
+path in una query string e rimanda a `index.html`, che la decodifica e
+la riscrive pulita con `history.replaceState()` prima di avviare l'app
+(vedi i commenti in cima a `docs/app.js` e in `docs/404.html`).
+
+**Limite noto**: la risposta HTTP iniziale per `/citta/lyon` è comunque
+uno status 404 (il redirect avviene lato client, dopo), quindi
+l'indicizzazione da parte di Google dipende dal fatto che esegua il
+JavaScript della pagina — cosa che fa nella maggior parte dei casi, ma
+non è garantita al 100%. L'alternativa più robusta (pagine HTML statiche
+pre-generate per città, con contenuto già nel markup e uno status 200
+diretto) è stata scartata per ora a favore di questo approccio, più
+semplice da mantenere su un sito senza build step.
+
+La sitemap (`docs/sitemap.xml`) è generata da `build_dataset.py` ad ogni
+refresh del dataset, con un URL per ogni città oltre a home e about.
 
 ### Limiti noti
 

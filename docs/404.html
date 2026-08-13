@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>hexagone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages non supporta un vero routing lato server: per URL puliti
+  // tipo /hexagone/citta/lyon (aperti direttamente, o condivisi) serve il
+  // trucco standard delle SPA su GitHub Pages. Questa e' la pagina 404 che
+  // GH Pages serve per qualunque path senza un file corrispondente: invece
+  // di mostrare un errore, ricodifica il path in una query string e
+  // rimanda a index.html, che lo decodifica e lo riscrive pulito con
+  // history.replaceState() prima di avviare l'app (vedi l'inizio di
+  // docs/app.js).
+  (function () {
+    var loc = window.location;
+    // Base path hardcoded sul nome del repo (invece che dedotto dal primo
+    // segmento del path): dedurlo genericamente si rompe per qualunque path
+    // che non abbia davvero un prefisso di sito (es. in locale, servito
+    // dalla root) - il primo segmento verrebbe scambiato per il base path,
+    // producendo un redirect che punta di nuovo a un path inesistente e
+    // rientra in questo stesso script all'infinito.
+    var REPO_BASE = "/hexagone";
+    var pathname = loc.pathname;
+    var base = pathname === REPO_BASE || pathname.indexOf(REPO_BASE + "/") === 0 ? REPO_BASE : "";
+    var rest = pathname.slice(base.length);
+    loc.replace(base + "/?p=" + encodeURIComponent(rest) + loc.search.replace(/^\?/, "&") + loc.hash);
+  })();
+</script>
+</head>
+<body></body>
+</html>

@@ -14,9 +14,34 @@ import json
 import re
 import sys
 import unicodedata
+import xml.sax.saxutils
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+
+SITE_URL = "https://calca.github.io/hexagone"
+
+
+def build_sitemap(city_ids: list[str]) -> str:
+    """Genera la sitemap con un URL per citta' (/citta/{id}), oltre alla
+    home e alla pagina Info: prima del routing client-side (vedi
+    docs/app.js) la sitemap aveva solo questi ultimi due, perche' le
+    schede citta' non avevano un URL proprio da indicizzare."""
+    urls = [
+        (f"{SITE_URL}/", "weekly", "1.0"),
+        (f"{SITE_URL}/about.html", "monthly", "0.3"),
+    ]
+    urls += [(f"{SITE_URL}/citta/{city_id}", "weekly", "0.7") for city_id in city_ids]
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, changefreq, priority in urls:
+        lines.append("  <url>")
+        lines.append(f"    <loc>{xml.sax.saxutils.escape(loc)}</loc>")
+        lines.append(f"    <changefreq>{changefreq}</changefreq>")
+        lines.append(f"    <priority>{priority}</priority>")
+        lines.append("  </url>")
+    lines.append("</urlset>")
+    return "\n".join(lines) + "\n"
 
 
 def slugify(text: str) -> str:
@@ -31,6 +56,7 @@ def main() -> int:
     parser.add_argument("--hotels", default="data/cache/hotels_resolved.json")
     parser.add_argument("--cities", default="data/cache/cities.json")
     parser.add_argument("--out", default="docs/data.json")
+    parser.add_argument("--sitemap", default="docs/sitemap.xml")
     args = parser.parse_args()
 
     hotels = json.loads(Path(args.hotels).read_text(encoding="utf-8"))
@@ -121,10 +147,15 @@ def main() -> int:
 
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(dataset, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    Path(args.sitemap).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.sitemap).write_text(build_sitemap([c["id"] for c in out_cities]), encoding="utf-8")
+
     print(
         f"docs/data.json scritto: {dataset['stats']['cities']} citta', "
         f"{dataset['stats']['hotels']} hotel "
-        f"({dataset['stats']['ibis']} ibis, {dataset['stats']['ibis_styles']} ibis Styles).",
+        f"({dataset['stats']['ibis']} ibis, {dataset['stats']['ibis_styles']} ibis Styles). "
+        f"Sitemap scritta con {len(out_cities) + 2} URL.",
         file=sys.stderr,
     )
     return 0
