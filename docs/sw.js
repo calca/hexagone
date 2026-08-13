@@ -10,6 +10,7 @@ const SHELL_ASSETS = [
   "about.html",
   "style.css",
   "app.js",
+  "about.js",
   "manifest.webmanifest",
   "vendor/leaflet/leaflet.css",
   "vendor/leaflet/leaflet.js",
