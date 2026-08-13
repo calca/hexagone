@@ -12,6 +12,8 @@ const SHELL_ASSETS = [
   "app.js",
   "about.js",
   "manifest.webmanifest",
+  "manifest.fr.webmanifest",
+  "manifest.en.webmanifest",
   "vendor/leaflet/leaflet.css",
   "vendor/leaflet/leaflet.js",
   "vendor/leaflet/images/layers.png",

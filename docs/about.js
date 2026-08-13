@@ -217,6 +217,8 @@
     return dict[key] != null ? dict[key] : TRANSLATIONS[DEFAULT_LANG][key] || key;
   }
 
+  const MANIFEST_BY_LANG = { it: "manifest.webmanifest", fr: "manifest.fr.webmanifest", en: "manifest.en.webmanifest" };
+
   function applyTranslations() {
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -231,6 +233,8 @@
     document.querySelectorAll("#lang-switch button").forEach((btn) => {
       btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
     });
+    const manifestLink = document.getElementById("manifest-link");
+    if (manifestLink) manifestLink.href = MANIFEST_BY_LANG[lang] || MANIFEST_BY_LANG[DEFAULT_LANG];
   }
 
   function setLang(newLang) {

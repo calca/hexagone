@@ -251,6 +251,12 @@
     return str;
   }
 
+  // Il manifest PWA viene letto dal browser soprattutto al momento
+  // dell'installazione: cambiarlo a runtime non aggiorna un'app gia'
+  // installata, ma assicura che chi installa dopo aver scelto la lingua
+  // veda nome/descrizione nella lingua corretta.
+  const MANIFEST_BY_LANG = { it: "manifest.webmanifest", fr: "manifest.fr.webmanifest", en: "manifest.en.webmanifest" };
+
   function applyStaticTranslations() {
     document.documentElement.lang = state.lang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -262,6 +268,8 @@
     document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
       el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel));
     });
+    const manifestLink = document.getElementById("manifest-link");
+    if (manifestLink) manifestLink.href = MANIFEST_BY_LANG[state.lang] || MANIFEST_BY_LANG[DEFAULT_LANG];
   }
 
   function renderStats() {
