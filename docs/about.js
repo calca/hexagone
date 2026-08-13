@@ -48,6 +48,8 @@
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
       liPopulation: `<strong>Popolazione</strong>: Wikidata (SPARQL) — licenza
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
+      liMonuments: `<strong>Monumenti storici</strong>: Wikidata (SPARQL) — licenza
+        <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
       liHistory: `<strong>Storia e attrazioni</strong>: Wikipedia e Wikivoyage in francese — licenza
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA</a>`,
       liUnesco: `<strong>Siti UNESCO</strong>: lista curata manualmente, non esaustiva`,
@@ -113,6 +115,8 @@
         api-adresse.data.gouv.fr — licence
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Licence Ouverte 2.0</a>`,
       liPopulation: `<strong>Population</strong> : Wikidata (SPARQL) — licence
+        <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
+      liMonuments: `<strong>Monuments historiques</strong> : Wikidata (SPARQL) — licence
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a>`,
       liHistory: `<strong>Histoire et attractions</strong> : Wikipédia et Wikivoyage en
         français — licence
@@ -180,6 +184,8 @@
         api-adresse.data.gouv.fr —
         <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence/" target="_blank" rel="noopener">Etalab Open Licence 2.0</a>`,
       liPopulation: `<strong>Population</strong>: Wikidata (SPARQL) —
+        <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a> license`,
+      liMonuments: `<strong>Historic monuments</strong>: Wikidata (SPARQL) —
         <a href="https://www.wikidata.org/wiki/Wikidata:Licensing" target="_blank" rel="noopener">CC0</a> license`,
       liHistory: `<strong>History and attractions</strong>: French Wikipedia and
         Wikivoyage —

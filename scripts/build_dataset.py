@@ -117,6 +117,7 @@ def main() -> int:
                 "history_summary": city.get("history_summary"),
                 "attractions": city.get("attractions", []),
                 "unesco_sites": city.get("unesco_sites", []),
+                "monuments_historiques": city.get("monuments_historiques", []),
                 "wikipedia_url": (
                     f"https://fr.wikipedia.org/wiki/{wiki_title.replace(' ', '_')}"
                     if city.get("wikipedia_title")

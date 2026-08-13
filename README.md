@@ -8,8 +8,8 @@
 **hexagone** è una mappa interattiva, gratuita e open source, di tutti gli
 hotel **ibis** e **ibis Styles** in Francia — oltre 600 hotel in più di 380
 città. Per ogni città mostra popolazione, cenni storici, cosa visitare in
-un giorno ed eventuali siti UNESCO nelle vicinanze, cosi' puoi decidere
-dove dormire sapendo anche cosa c'e' intorno all'hotel.
+un giorno ed eventuali siti UNESCO o monumenti storici nelle vicinanze,
+cosi' puoi decidere dove dormire sapendo anche cosa c'e' intorno all'hotel.
 
 Non è un sito ufficiale Accor/ibis: è un progetto indipendente che
 raccoglie ed espone dati pubblici (OpenStreetMap, dati del governo
@@ -32,8 +32,8 @@ francese, Wikipedia/Wikivoyage, Wikidata) in un'unica mappa consultabile.
   Francia, raggruppati per città
 - 🔍 **Filtri** per regione, dipartimento, popolazione massima e presenza
   di un sito UNESCO, più ricerca libera per nome
-- 🏛️ **Cenni storici, cosa visitare in un giorno e siti UNESCO** per ogni
-  città, con foto da Wikimedia Commons
+- 🏛️ **Cenni storici, cosa visitare in un giorno, siti UNESCO e monumenti
+  storici** per ogni città, con foto da Wikimedia Commons
 - 🔗 **Link diretti** per prenotare su ibis.com o Booking.com, o per
   aprire l'hotel su Google Maps
 - 🔗 **Un URL per ogni città** (`/citta/lyon`), condivisibile e con anteprima link
@@ -55,6 +55,7 @@ piu' fonti pubbliche, il sito statico li consuma da un unico file
 - **Indirizzo degli hotel senza `addr:street` su OSM**: reverse geocoding via [api-adresse.data.gouv.fr](https://api-adresse.data.gouv.fr/) (Base Adresse Nationale) — licenza Etalab Open Licence 2.0
 - **Popolazione**: Wikidata (SPARQL) — licenza CC0
 - **Storia e attrazioni**: Wikipedia e Wikivoyage in francese — licenza CC BY-SA
+- **Monumenti storici classificati/iscritti**: Wikidata (SPARQL, proprieta' P1435) — licenza CC0
 - **Siti UNESCO**: lista statica curata a mano (`data/unesco_sites_fr.json`, non esaustiva — solo i siti che corrispondono a un singolo comune), non una fonte live
 - **Frontend**: HTML/CSS/JS statico con mappa Leaflet (vendorizzata in `docs/vendor/`, nessuna dipendenza da CDN esterne), pubblicabile su GitHub Pages
 - **Lingua**: interfaccia disponibile in italiano/francese/inglese (selettore in alto, persistito in `localStorage`); i contenuti delle citta' (storia, attrazioni), essendo estratti da Wikipedia/Wikivoyage in francese, restano in francese in ogni lingua — vedi [Lingua dell'interfaccia](#lingua-dellinterfaccia)
@@ -74,8 +75,9 @@ scripts/
                           resumibile su disco
   enrich_wikidata.py     step 4: popolazione via SPARQL (batch)
   enrich_unesco.py       step 5: siti UNESCO (lista statica locale, nessuna chiamata di rete)
-  enrich_wikimedia.py    step 6: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
-  build_dataset.py       step 7: genera docs/data.json (il "DB" del sito)
+  enrich_monuments.py    step 6: monumenti storici via Wikidata SPARQL (batch)
+  enrich_wikimedia.py    step 7: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
+  build_dataset.py       step 8: genera docs/data.json (il "DB" del sito)
   pipeline.py            esegue tutti gli step in sequenza
 data/
   unesco_sites_fr.json   lista statica curata a mano dei siti UNESCO francesi
@@ -159,6 +161,7 @@ le policy di Wikimedia/OSM).
       "history_summary": "...",
       "attractions": ["Torre Eiffel", "..."],
       "unesco_sites": [{ "name": "Rive della Senna a Parigi", "year": 1991 }],
+      "monuments_historiques": ["Notre-Dame de Paris", "..."],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Paris",
       "hotel_count": 12,
       "hotels": [
@@ -242,13 +245,17 @@ refresh del dataset, con un URL per ogni città oltre a home e about.
   non esaustiva: copre solo i siti che corrispondono chiaramente a un
   singolo comune (niente siti seriali su decine di comuni ne' siti
   naturali), e non e' garantita aggiornata alle ultime iscrizioni UNESCO.
-- **Monumenti storici**: in pausa. Erano previsti via l'API open data del
-  Ministero della Cultura francese (data.culture.gouv.fr, Base Merimee),
-  ma dopo tre tentativi falliti in produzione (endpoint dismesso, poi
-  risposte con corpo vuoto su ogni chiamata) senza un modo di verificare
-  l'API dal vivo da questo ambiente di sviluppo, la feature e' stata
-  rimossa in attesa di poterla verificare correttamente (vedi la history
-  di `scripts/enrich_unesco.py`, ex `enrich_heritage.py`).
+- **Monumenti storici** (`enrich_monuments.py`, via Wikidata P131/P1435):
+  legati al comune tramite "localita' amministrativa di appartenenza"
+  (P131). Per le grandi citta' che in Wikidata hanno gli arrondissement
+  come entita' amministrativa propria (Paris, Lyon, Marseille), i
+  monumenti potrebbero essere collegati all'arrondissement invece che
+  alla citta': per queste il dato puo' risultare incompleto. Se un
+  comune ne ha piu' di 8, si tengono i piu' documentati (per numero di
+  voci Wikipedia in altre lingue). Sostituisce un precedente tentativo
+  via l'API del Ministero della Cultura francese (data.culture.gouv.fr),
+  abbandonato dopo tre fallimenti in produzione senza un modo di
+  verificare quell'API dal vivo da questo ambiente di sviluppo.
 
 ## Licenza
 

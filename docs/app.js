@@ -132,6 +132,7 @@
       galleryCredit: "Foto da Wikimedia Commons, licenze varie (vedi ogni foto)",
       historyTitle: "Cenni storici",
       noExtract: "Nessun estratto disponibile.",
+      monumentsTitle: "Monumenti storici",
       unescoBadge: "Patrimonio UNESCO",
       attractionsTitle: "Cosa visitare in un giorno",
       noAttractions: "Nessuna segnalazione disponibile su Wikivoyage.",
@@ -195,6 +196,7 @@
       galleryCredit: "Photos de Wikimedia Commons, licences diverses (voir chaque photo)",
       historyTitle: "Histoire",
       noExtract: "Aucun extrait disponible.",
+      monumentsTitle: "Monuments historiques",
       unescoBadge: "Patrimoine UNESCO",
       attractionsTitle: "Que voir en une journée",
       noAttractions: "Aucune suggestion disponible sur Wikivoyage.",
@@ -258,6 +260,7 @@
       galleryCredit: "Photos from Wikimedia Commons, various licenses (see each photo)",
       historyTitle: "History",
       noExtract: "No extract available.",
+      monumentsTitle: "Historic monuments",
       unescoBadge: "UNESCO heritage",
       attractionsTitle: "What to see in a day",
       noAttractions: "No suggestions available on Wikivoyage.",
@@ -763,8 +766,15 @@
       : `<p>${t("noAttractions")}</p>`;
 
     const unescoSites = city.unesco_sites || [];
+    const monuments = city.monuments_historiques || [];
     const unescoBadge = unescoSites.length
       ? ` <span class="badge unesco" title="${escapeHtml(unescoSites.map((s) => s.name).join(", "))}">${t("unescoBadge")}</span>`
+      : "";
+    const heritageHtml = monuments.length
+      ? `<div class="detail-section">
+          <h3>${t("monumentsTitle")}</h3>
+          <ul class="attractions monuments">${monuments.map((m) => `<li>${escapeHtml(m)}</li>`).join("")}</ul>
+        </div>`
       : "";
 
     const hotelsHtml = city.hotels
@@ -811,6 +821,8 @@
         <h3>${t("historyTitle")}</h3>
         <p>${escapeHtml(city.history_summary) || t("noExtract")}</p>
       </div>
+
+      ${heritageHtml}
 
       <div class="detail-section">
         <h3>${t("attractionsTitle")}</h3>

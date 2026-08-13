@@ -19,7 +19,7 @@ jobs:
     # Ceiling esplicito: se qualcosa si blocca, il job fallisce in modo
     # visibile invece di consumare in silenzio le 6h di default di GitHub
     # Actions (come successo il 12/08/2026).
-    timeout-minutes: 110
+    timeout-minutes: 130
     steps:
       - uses: actions/checkout@v4
         with:
@@ -75,12 +75,17 @@ jobs:
       - name: "Step: wikidata (popolazione)"
         run: python scripts/pipeline.py --only wikidata
 
-      # Solo siti UNESCO (lista statica locale, nessuna chiamata di rete):
-      # i monumenti storici (data.culture.gouv.fr) sono in pausa dopo tre
-      # tentativi falliti di far funzionare quell'API - vedi la history di
-      # scripts/enrich_unesco.py (ex enrich_heritage.py).
+      # Siti UNESCO: lista statica locale, nessuna chiamata di rete.
       - name: "Step: siti UNESCO"
         run: python scripts/pipeline.py --only unesco
+
+      # Monumenti storici via Wikidata SPARQL (query.wikidata.org, lo stesso
+      # endpoint dello step "wikidata" sopra) invece dell'API del Ministero
+      # della Cultura (data.culture.gouv.fr, abbandonata dopo tre tentativi
+      # falliti - vedi la history di scripts/enrich_unesco.py).
+      - name: "Step: monumenti storici (Wikidata)"
+        timeout-minutes: 20
+        run: python scripts/pipeline.py --only monuments
 
       - name: "Step: wikimedia (storia/attrazioni)"
         if: ${{ github.event.inputs.skip_wikimedia != 'true' }}
