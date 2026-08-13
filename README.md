@@ -1,14 +1,53 @@
-# hexagone — mappa ibis & ibis Styles in Francia
+# hexagone — mappa degli hotel ibis e ibis Styles in Francia
 
 [![Sito pubblicato](https://img.shields.io/badge/demo-GitHub%20Pages-d0006f)](https://calca.github.io/hexagone/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**🌐 Sito live: https://calca.github.io/hexagone/**
-**📦 Repository: https://github.com/calca/hexagone**
+### 🌐 [calca.github.io/hexagone](https://calca.github.io/hexagone/) — 📦 [github.com/calca/hexagone](https://github.com/calca/hexagone)
 
-Pipeline Python + sito statico che mostra tutti gli hotel **ibis** e **ibis
-Styles** in Francia, raggruppati per citta'. Per ogni citta' vengono
-mostrati popolazione, cenni storici e cosa visitare in un giorno.
+**hexagone** è una mappa interattiva, gratuita e open source, di tutti gli
+hotel **ibis** e **ibis Styles** in Francia — oltre 600 hotel in più di 380
+città. Per ogni città mostra popolazione, cenni storici, cosa visitare in
+un giorno ed eventuali siti UNESCO o monumenti storici nelle vicinanze,
+cosi' puoi decidere dove dormire sapendo anche cosa c'e' intorno all'hotel.
+
+Non è un sito ufficiale Accor/ibis: è un progetto indipendente che
+raccoglie ed espone dati pubblici (OpenStreetMap, dati del governo
+francese, Wikipedia/Wikivoyage, Wikidata) in un'unica mappa consultabile.
+
+<table>
+<tr>
+<td width="50%">
+<img src=".github/readme-assets/shot-list.png" alt="Elenco delle città con hotel ibis e ibis Styles in Francia, con filtri per regione, dipartimento, popolazione e siti UNESCO" width="100%">
+</td>
+<td width="50%">
+<img src=".github/readme-assets/shot-detail.png" alt="Scheda di dettaglio di una città con cenni storici, cosa visitare e la lista degli hotel ibis/ibis Styles disponibili" width="100%">
+</td>
+</tr>
+</table>
+
+## Cosa puoi fare con hexagone
+
+- 🗺️ **Mappa interattiva** con tutti gli hotel ibis e ibis Styles di
+  Francia, raggruppati per città
+- 🔍 **Filtri** per regione, dipartimento, popolazione massima e presenza
+  di un sito UNESCO, più ricerca libera per nome
+- 🏛️ **Cenni storici, cosa visitare in un giorno, siti UNESCO e monumenti
+  storici** per ogni città, con foto da Wikimedia Commons
+- 🔗 **Link diretti** per prenotare su ibis.com o Booking.com, o per
+  aprire l'hotel su Google Maps
+- 🌍 **Interfaccia in italiano, francese e inglese**
+- 📱 **Installabile come app (PWA)**, funziona anche offline
+- 📊 **Dati sempre aggiornati**: una pipeline automatica rigenera il
+  dataset ogni settimana
+
+---
+
+## 🛠️ Documentazione tecnica
+
+Pipeline Python + sito statico. La pipeline scarica ed elabora i dati da
+piu' fonti pubbliche, il sito statico li consuma da un unico file
+`docs/data.json`.
 
 - **Dati hotel**: OpenStreetMap (Overpass API) — licenza ODbL
 - **Risoluzione del comune di appartenenza di ogni hotel** (per nome o per coordinate): API geografica del governo francese ([geo.api.gouv.fr](https://geo.api.gouv.fr/)) — dati pubblici INSEE/IGN, licenza Etalab Open Licence 2.0
@@ -20,7 +59,7 @@ mostrati popolazione, cenni storici e cosa visitare in un giorno.
 - **Lingua**: interfaccia disponibile in italiano/francese/inglese (selettore in alto, persistito in `localStorage`); i contenuti delle citta' (storia, attrazioni), essendo estratti da Wikipedia/Wikivoyage in francese, restano in francese in ogni lingua — vedi [Lingua dell'interfaccia](#lingua-dellinterfaccia)
 - **Licenza**: [MIT](LICENSE) per codice e sito. I dati restano soggetti alle licenze delle rispettive fonti (ODbL / Etalab / CC0 / CC BY-SA elencate sopra).
 
-## Struttura del progetto
+### Struttura del progetto
 
 ```
 scripts/
@@ -46,23 +85,19 @@ docs/                    sito statico (GitHub Pages), installabile come PWA
   manifest.webmanifest     manifest PWA (nome, icone, colori)
   sw.js                    service worker (cache offline dell'app shell + dati)
   icons/                   favicon e icone dell'app (incl. varianti maskable)
-  data.json               dataset consumato dal frontend (contiene DATI DI ESEMPIO finche' non esegui la pipeline)
+  data.json               dataset consumato dal frontend, rigenerato periodicamente dalla pipeline
   vendor/leaflet/          libreria Leaflet vendorizzata
 .github/workflows/
   refresh-data.yml        rigenera docs/data.json (schedulato + manuale) e lo committa
   pages.yml               pubblica docs/ su GitHub Pages ad ogni push su main
 ```
 
-## ⚠️ Nota sui dati inclusi nel repo
+### Eseguire la pipeline in locale
 
-Il file `docs/data.json` committato per default contiene **7 citta' di
-esempio** con dati illustrativi (indirizzi hotel segnaposto), solo per
-mostrare subito l'interfaccia funzionante. Per generare il dataset reale
-con tutti gli hotel ibis/ibis Styles di Francia devi eseguire la pipeline
-(in locale o tramite la GitHub Action), che ha bisogno di accesso a
-internet verso Overpass API, Wikidata, Wikipedia e Wikivoyage.
-
-## Eseguire la pipeline in locale
+Il file `docs/data.json` gia' presente nel repo contiene il dataset reale
+(non dati di esempio), rigenerato automaticamente ogni settimana dalla
+GitHub Action `refresh-data.yml`. Devi eseguire la pipeline tu stesso solo
+se vuoi rigenerarlo manualmente o personalizzarlo:
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -87,7 +122,7 @@ Wikipedia/Wikivoyage (uno per citta') e' la piu' lenta — con ~250-350
 citta' puo' richiedere 5-15 minuti (rate limiting incluso per rispettare
 le policy di Wikimedia/OSM).
 
-## Pubblicare su GitHub Pages
+### Pubblicare su GitHub Pages
 
 1. Fai push del branch su GitHub e fai merge su `main`.
 2. In **Settings → Pages**, imposta *Source: GitHub Actions* (il workflow
@@ -101,7 +136,7 @@ le policy di Wikimedia/OSM).
    lo committa su `main`, il che fa scattare automaticamente un nuovo
    deploy di Pages.
 
-## Schema di `docs/data.json`
+### Schema di `docs/data.json`
 
 ```jsonc
 {
@@ -135,7 +170,7 @@ le policy di Wikimedia/OSM).
 Nel frontend, la **popolazione** e' la colonna usata per ordinare/filtrare
 l'elenco citta' (campo "Popolazione massima" e ordinamento nella sidebar).
 
-## Lingua dell'interfaccia
+### Lingua dell'interfaccia
 
 L'interfaccia (etichette, filtri, pannello di dettaglio, pagina Info) e'
 disponibile in italiano, francese e inglese tramite il selettore IT/FR/EN
@@ -156,7 +191,7 @@ pagina, senza dipendenze esterne ne' passo di build):
 `docs/app.js` (oggetto `TRANSLATIONS`) per l'app principale e
 `docs/about.js` per la pagina Info & note legali.
 
-## Limiti noti
+### Limiti noti
 
 - La corrispondenza citta' → comune ufficiale (per popolazione/INSEE) si
   basa sul nome (`addr:city` dell'hotel) disambiguato per dipartimento e,
