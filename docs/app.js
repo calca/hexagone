@@ -359,6 +359,11 @@
   function detectLang() {
     const saved = localStorage.getItem(LANG_STORAGE_KEY);
     if (saved && TRANSLATIONS[saved]) return saved;
+    const browserLangs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (const raw of browserLangs) {
+      const code = raw.slice(0, 2).toLowerCase();
+      if (TRANSLATIONS[code]) return code;
+    }
     return DEFAULT_LANG;
   }
 
