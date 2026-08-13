@@ -18,8 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     # Ceiling esplicito: se qualcosa si blocca, il job fallisce in modo
     # visibile invece di consumare in silenzio le 6h di default di GitHub
-    # Actions (come successo il 12/08/2026).
-    timeout-minutes: 90
+    # Actions (come successo il 12/08/2026). Alzato da 90 a 130 dopo
+    # l'aggiunta dello step "indirizzi" (fino a 20 min in piu').
+    timeout-minutes: 130
     steps:
       - uses: actions/checkout@v4
         with:
@@ -55,6 +56,20 @@ jobs:
             echo "Nessuna modifica alla cache di geocodifica."
           else
             git commit -m "chore: aggiorna cache geocodifica hotel (refresh dataset)"
+            git push origin main
+          fi
+
+      - name: "Step: indirizzi (reverse geocoding BAN per gli hotel senza addr:street)"
+        timeout-minutes: 20
+        run: python scripts/pipeline.py --only addresses
+
+      - name: "Commit: cache indirizzi"
+        run: |
+          git add data/cache/address_cache.json
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica alla cache indirizzi."
+          else
+            git commit -m "chore: aggiorna cache indirizzi hotel (refresh dataset)"
             git push origin main
           fi
 

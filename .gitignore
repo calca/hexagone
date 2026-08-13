@@ -8,3 +8,4 @@ data/cache/*
 !data/cache/geo_lookup_cache.json
 !data/cache/wiki_cache.json
 !data/cache/heritage_cache.json
+!data/cache/address_cache.json

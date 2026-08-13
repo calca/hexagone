@@ -51,6 +51,7 @@ piu' fonti pubbliche, il sito statico li consuma da un unico file
 
 - **Dati hotel**: OpenStreetMap (Overpass API) — licenza ODbL
 - **Risoluzione del comune di appartenenza di ogni hotel** (per nome o per coordinate): API geografica del governo francese ([geo.api.gouv.fr](https://geo.api.gouv.fr/)) — dati pubblici INSEE/IGN, licenza Etalab Open Licence 2.0
+- **Indirizzo degli hotel senza `addr:street` su OSM**: reverse geocoding via [api-adresse.data.gouv.fr](https://api-adresse.data.gouv.fr/) (Base Adresse Nationale) — licenza Etalab Open Licence 2.0
 - **Popolazione**: Wikidata (SPARQL) — licenza CC0
 - **Storia e attrazioni**: Wikipedia e Wikivoyage in francese — licenza CC BY-SA
 - **Monumenti storici classificati/iscritti**: Base Merimee, Ministero della Cultura francese, via [data.culture.gouv.fr](https://data.culture.gouv.fr/) — licenza Etalab Open Licence 2.0
@@ -68,11 +69,14 @@ scripts/
   resolve_cities.py      step 2: raggruppa per comune, risolve INSEE via geo.api.gouv.fr
                           (per nome, o per coordinate per hotel senza addr:city, con
                           cache resumibile su disco)
-  enrich_wikidata.py     step 3: popolazione via SPARQL (batch)
-  enrich_heritage.py     step 4: siti UNESCO (lista statica) e monumenti storici
+  enrich_addresses.py    step 3: riempie l'indirizzo degli hotel senza addr:street su OSM
+                          via reverse geocoding (api-adresse.data.gouv.fr), con cache
+                          resumibile su disco
+  enrich_wikidata.py     step 4: popolazione via SPARQL (batch)
+  enrich_heritage.py     step 5: siti UNESCO (lista statica) e monumenti storici
                           (data.culture.gouv.fr), con cache resumibile su disco
-  enrich_wikimedia.py    step 5: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
-  build_dataset.py       step 6: genera docs/data.json (il "DB" del sito)
+  enrich_wikimedia.py    step 6: storia (Wikipedia) e attrazioni (Wikivoyage), con cache
+  build_dataset.py       step 7: genera docs/data.json (il "DB" del sito)
   pipeline.py            esegue tutti gli step in sequenza
 data/
   unesco_sites_fr.json   lista statica curata a mano dei siti UNESCO francesi
