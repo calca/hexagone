@@ -143,7 +143,6 @@
       noAttractions: "Nessuna segnalazione disponibile su Wikivoyage.",
       hotelsTitle: "Hotel ibis / ibis Styles ({n})",
       addressUnavailable: "Indirizzo non disponibile",
-      siteLink: "Sito",
       bookIbis: "Prenota su ibis",
       bookBooking: "Prenota su Booking",
       statsTemplate: "{cities} citta' · {hotels} hotel ({ibis} ibis, {styles} ibis Styles)",
@@ -233,7 +232,6 @@
       noAttractions: "Aucune suggestion disponible sur Wikivoyage.",
       hotelsTitle: "Hôtels ibis / ibis Styles ({n})",
       addressUnavailable: "Adresse non disponible",
-      siteLink: "Site",
       bookIbis: "Réserver sur ibis",
       bookBooking: "Réserver sur Booking",
       statsTemplate: "{cities} villes · {hotels} hôtels ({ibis} ibis, {styles} ibis Styles)",
@@ -323,7 +321,6 @@
       noAttractions: "No suggestions available on Wikivoyage.",
       hotelsTitle: "ibis / ibis Styles hotels ({n})",
       addressUnavailable: "Address not available",
-      siteLink: "Website",
       bookIbis: "Book on ibis",
       bookBooking: "Book on Booking",
       statsTemplate: "{cities} cities · {hotels} hotels ({ibis} ibis, {styles} ibis Styles)",
@@ -1010,12 +1007,16 @@
         const badgeClass = h.brand === "ibis Styles" ? "styles" : "ibis";
         const searchQuery = encodeURIComponent(`${h.name} ${city.name}`);
         const links = [];
-        if (h.website) links.push(`<a href="${escapeHtml(h.website)}" target="_blank" rel="noopener">${t("siteLink")}</a>`);
         if (h.phone) links.push(`<a href="tel:${escapeHtml(h.phone)}">${escapeHtml(h.phone)}</a>`);
-        const bookLinks = [
-          `<a class="book-link" href="https://all.accor.com/search/index.en.shtml?destination=${searchQuery}" target="_blank" rel="noopener sponsored">${t("bookIbis")}</a>`,
-          `<a class="book-link" href="https://www.booking.com/searchresults.html?ss=${searchQuery}" target="_blank" rel="noopener sponsored">${t("bookBooking")}</a>`,
-        ];
+        const bookLinks = [];
+        // La ricerca generica su all.accor.com/search non restituisce risultati
+        // affidabili (spesso pagina vuota o non pertinente): usiamo solo il
+        // link diretto alla pagina dell'hotel su accor (h.website), quando
+        // disponibile, che invece funziona sempre.
+        if (h.website) {
+          bookLinks.push(`<a class="book-link" href="${escapeHtml(h.website)}" target="_blank" rel="noopener sponsored">${t("bookIbis")}</a>`);
+        }
+        bookLinks.push(`<a class="book-link" href="https://www.booking.com/searchresults.html?ss=${searchQuery}" target="_blank" rel="noopener sponsored">${t("bookBooking")}</a>`);
         return `
           <div class="hotel-card">
             <div class="name">${escapeHtml(h.name)} <span class="badge ${badgeClass}">${escapeHtml(h.brand)}</span></div>
