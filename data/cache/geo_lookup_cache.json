@@ -3422,5 +3422,21 @@
     "wikidata": null,
     "lat": 49.1048,
     "lon": 6.1962
+  },
+  "node/2070345398": {
+    "name": "Marseille",
+    "name_norm": "Marseille",
+    "insee": "13055",
+    "wikidata": null,
+    "lat": 43.2803,
+    "lon": 5.3806
+  },
+  "node/14130785279": {
+    "name": "Noisy-le-Grand",
+    "name_norm": "Noisy-le-Grand",
+    "insee": "93051",
+    "wikidata": null,
+    "lat": 48.8327,
+    "lon": 2.556
   }
 }
