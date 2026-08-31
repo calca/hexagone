@@ -1686,5 +1686,12 @@
     "Conservatoire du Bégonia"
   ],
   "history:Saint-Denis": "Saint-Denis est le nom de plusieurs localités et toponymes de pays ou régions francophones, donné d'après saint Denis (Denis de Paris), premier évêque de Paris.\nGénéralement, dans les textes anciens ou historiques, « Saint-Denis », sans autre précision, désigne le plus souvent la ville française de Saint-Denis, au nord de Paris, dans le département de la Seine-Saint-Denis (qui en tire une partie de son nom). La ville est connue pour sa basilique où saint Denis lui-même et la majorité des rois de France ont été inhumés. Cependant la ville actuellement la plus peuplée portant ce nom est la ville de Saint-Denis, chef-lieu de l'île de La Réunion.",
-  "voir:Saint-Denis": []
+  "voir:Saint-Denis": [],
+  "history:Noisy-le-Grand": "La ville de Noisy-le-Grand, située sur un promontoire qui domine et permet de contrôler la vallée de la Marne, est une ville très ancienne. Une légende reprise par l'abbé Lebeuf veut que les Romains dès la Gaule conquise aient planté de nombreux noyers dans cette région, d'où le nom de Noisy en partant de la racine latine nux, nucis (noix). En réalité, les Romains n'ont fait que passer dans la région au moment de la révolte des peuples gaulois et ils ne se sont bien sûr pas arrêtés pour planter des noyers. Comme mentionné plus haut, il n'est même pas certain que l'étymologie du nom de la ville ait quelque chose à voir avec le noyer.\n\nNoisy-le-Grand qui était connu au VIe siècle, était une résidence des rois mérovingiens. Le roi Chilpéric y avait une maison de plaisance.\nAu lieu-dit les Mastraits, une fouille préventive réalisée par l'Inrap et le Bureau d’archéologie de…",
+  "voir:Noisy-le-Grand": [
+    "Bois Saint-Martin",
+    "Chapelle Notre-Dame-des-sans-Logis-et-de-tout-le-Monde",
+    "Église Saint-Sulpice-et-Notre-Dame",
+    "Fort de Villiers"
+  ]
 }
