@@ -1338,5 +1338,13 @@
   "relation/10404673": {
     "address": "1 Rue Charlemagne, 57000 Metz",
     "distance_km": 0.006507953360876862
+  },
+  "node/2070345398": {
+    "address": "162 Boulevard rabatau daniel matalon, 13010 Marseille",
+    "distance_km": 0.018389119867791518
+  },
+  "node/14130785279": {
+    "address": "4 Allee Bienvenue, 93160 Noisy-le-Grand",
+    "distance_km": 0.051334257671181396
   }
 }
