@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T03:33:45.812364+00:00",
+  "generated_at": "2026-09-07T03:31:57.960277+00:00",
   "source": "OpenStreetMap contributors (ODbL) · geo.api.gouv.fr / api-adresse.data.gouv.fr (Etalab) · Wikidata (CC0) · Wikipedia/Wikivoyage FR (CC BY-SA)",
   "stats": {
     "cities": 382,
@@ -47,7 +47,7 @@
           "lat": 50.0975468,
           "lon": 1.860551,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0741/index.fr.shtml"
         }
       ]
     },
@@ -114,7 +114,7 @@
           "lat": 44.2039914,
           "lon": 0.6226362,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1192/index.fr.shtml"
         }
       ]
     },
@@ -238,11 +238,11 @@
         "musée de la Maison Bonaparte",
         "cathédrale Notre-Dame-de-l'Assomption d'Ajaccio",
         "citadelle d'Ajaccio",
-        "maison des Milelli",
-        "bibliothèque Fesch",
         "chapelle Impériale d'Ajaccio",
         "phare des îles Sanguinaires",
-        "palais Lantivy"
+        "palais Lantivy",
+        "tour de la Parata",
+        "maison des Milelli"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Ajaccio",
       "hotel_count": 1,
@@ -335,7 +335,7 @@
           "lat": 45.6642091,
           "lon": 6.3892648,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B808/index.fr.shtml"
         }
       ]
     },
@@ -383,7 +383,7 @@
           "lat": 43.9238562,
           "lon": 2.1475019,
           "phone": "+33 5 63 43 03 03",
-          "website": null
+          "website": "https://all.accor.com/hotel/5914/index.fr.shtml"
         },
         {
           "osm_id": "way/75173537",
@@ -498,10 +498,10 @@
         "hôtel de ville d'Alès",
         "fort d'Alès",
         "oppidum d'Alès",
-        "orgue de tribune de la cathédrale Saint-Jean-Baptiste d'Alès",
-        "monument aux morts d'Alès",
         "casernes Thoiras",
-        "palais épiscopal d'Alès"
+        "palais épiscopal d'Alès",
+        "orgue de tribune de la cathédrale Saint-Jean-Baptiste d'Alès",
+        "monument aux morts d'Alès"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Alès",
       "hotel_count": 1,
@@ -515,7 +515,7 @@
           "lat": 44.1240417,
           "lon": 4.0819505,
           "phone": "+33 4 66 52 27 07",
-          "website": null
+          "website": "https://all.accor.com/hotel/0338/index.fr.shtml"
         }
       ]
     },
@@ -555,7 +555,7 @@
           "lat": 46.1931795,
           "lon": 6.2251543,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7055/index.fr.shtml"
         }
       ]
     },
@@ -605,7 +605,7 @@
           "lat": 49.8915172,
           "lon": 2.3051253,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B5R0/index.fr.shtml"
         },
         {
           "osm_id": "node/1808933786",
@@ -654,7 +654,7 @@
           "lat": 47.3711174,
           "lon": -1.1777256,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B5Z9/index.fr.shtml"
         }
       ]
     },
@@ -699,7 +699,7 @@
           "lat": 47.472835,
           "lon": -0.5558815,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0848/index.fr.shtml"
         },
         {
           "osm_id": "node/7027885482",
@@ -773,7 +773,7 @@
           "lat": 45.8983121,
           "lon": 6.1227271,
           "phone": "+33 4 50 45 43 21",
-          "website": null
+          "website": "https://all.accor.com/hotel/0538/index.fr.shtml"
         },
         {
           "osm_id": "way/62649400",
@@ -795,7 +795,7 @@
           "lat": 45.8990861,
           "lon": 6.1145282,
           "phone": "+33 450455174",
-          "website": null
+          "website": "https://all.accor.com/hotel/8722/index.fr.shtml"
         }
       ]
     },
@@ -838,7 +838,7 @@
           "lat": 43.6008588,
           "lon": 7.0941226,
           "phone": null,
-          "website": "https://all.accor.com/hotel/7973/index.en.shtml"
+          "website": "https://all.accor.com/hotel/7973/index.fr.shtml"
         }
       ]
     },
@@ -879,7 +879,7 @@
           "lat": 48.7331899,
           "lon": 2.3137077,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A087/index.fr.shtml"
         }
       ]
     },
@@ -908,7 +908,7 @@
           "lat": 46.1366942,
           "lon": 6.1219047,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1178/index.fr.shtml"
         }
       ]
     },
@@ -969,7 +969,7 @@
           "lat": 43.6709187,
           "lon": 4.6196339,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2738/index.fr.shtml"
         }
       ]
     },
@@ -1015,7 +1015,7 @@
           "lat": 50.2955445,
           "lon": 2.7833632,
           "phone": null,
-          "website": "https://all.accor.com/hotel/B5E7/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B5E7/index.fr.shtml"
         }
       ]
     },
@@ -1053,7 +1053,7 @@
           "lat": 48.9064784,
           "lon": 2.2875697,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7351/index.fr.shtml"
         }
       ]
     },
@@ -1106,13 +1106,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "château d'Aubenas",
+        "maison Delichères",
         "chapelle Saint-Benoît d'Aubenas",
         "grange du Cheylard",
         "hôtel Goudard-Ruelle",
         "hôtel Missolz de Ferrières",
         "maison Michel-Veyrenc",
-        "église Saint-Laurent d'Aubenas",
-        "maison Delichères"
+        "église Saint-Laurent d'Aubenas"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Aubenas",
       "hotel_count": 1,
@@ -1149,11 +1149,11 @@
         "cathédrale Sainte-Marie d'Auch",
         "musée des Amériques - Auch",
         "hôtel de ville d'Auch",
-        "Maison Fedel",
         "prieuré de Saint-Orens d'Auch",
         "allées d'Étigny",
         "carmel d'Auch",
-        "couvent des Carmélites d'Auch"
+        "couvent des Carmélites d'Auch",
+        "couvent des Cordeliers d'Auch"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auch",
       "hotel_count": 1,
@@ -1167,7 +1167,7 @@
           "lat": 43.6638073,
           "lon": 0.5975029,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3449/index.fr.shtml"
         }
       ]
     },
@@ -1205,7 +1205,7 @@
           "lat": 48.9526215,
           "lon": 2.485969,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0776/index.fr.shtml"
         }
       ]
     },
@@ -1246,7 +1246,7 @@
           "lat": 47.6625176,
           "lon": -3.0129542,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3435/index.fr.shtml"
         }
       ]
     },
@@ -1305,10 +1305,10 @@
         "abbaye royale de Saint-Germain d'Auxerre",
         "tour de l'Horloge",
         "église Saint-Eusèbe d'Auxerre",
-        "théâtre d'Auxerre",
-        "palais épiscopal d'Auxerre",
-        "ancien centre hospitalier spécialisé de l'Yonne",
-        "passage couvert Manifacier"
+        "monument aux morts d'Auxerre",
+        "passage couvert Manifacier",
+        "église Saint-Pierre d'Auxerre",
+        "théâtre d'Auxerre"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auxerre",
       "hotel_count": 2,
@@ -1333,7 +1333,7 @@
           "lat": 47.815107,
           "lon": 3.5621805,
           "phone": "+33386949494",
-          "website": null
+          "website": "https://all.accor.com/hotel/A1B9/index.fr.shtml"
         }
       ]
     },
@@ -1454,7 +1454,7 @@
           "lat": 48.8665731,
           "lon": 2.4168062,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0633/index.fr.shtml"
         }
       ]
     },
@@ -1584,7 +1584,7 @@
           "lat": 43.4954048,
           "lon": -1.4709077,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8716/index.fr.shtml"
         }
       ]
     },
@@ -1617,7 +1617,7 @@
           "lat": 48.3439262,
           "lon": -1.1730457,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B816/index.fr.shtml"
         }
       ]
     },
@@ -1712,7 +1712,7 @@
           "lat": 47.0210834,
           "lon": 4.8399409,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7572/index.fr.shtml"
         },
         {
           "osm_id": "node/2022974893",
@@ -1759,7 +1759,7 @@
           "lat": 49.4377357,
           "lon": 2.1126168,
           "phone": "+33 3 44 03 49 49",
-          "website": null
+          "website": "https://all.accor.com/hotel/6889/index.fr.shtml"
         },
         {
           "osm_id": "way/106058522",
@@ -1770,7 +1770,7 @@
           "lat": 49.4101543,
           "lon": 2.1114185,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0350/index.fr.shtml"
         }
       ]
     },
@@ -1872,7 +1872,7 @@
           "lat": 47.2540056,
           "lon": 6.0212495,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0400/index.fr.shtml"
         },
         {
           "osm_id": "node/1757393312",
@@ -1965,7 +1965,7 @@
           "lat": 43.6379405,
           "lon": 1.3751523,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A5I1/index.fr.shtml"
         },
         {
           "osm_id": "node/2672617954",
@@ -2023,7 +2023,7 @@
           "lat": 47.5870932,
           "lon": 1.3314484,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0920/index.fr.shtml"
         },
         {
           "osm_id": "node/6716166248",
@@ -2034,7 +2034,7 @@
           "lat": 47.5835498,
           "lon": 1.3223432,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8141/index.fr.shtml"
         }
       ]
     },
@@ -2158,7 +2158,7 @@
           "lat": 44.8338936,
           "lon": -0.5913694,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7368/index.fr.shtml"
         },
         {
           "osm_id": "node/632635038",
@@ -2169,7 +2169,7 @@
           "lat": 44.8431364,
           "lon": -0.5591933,
           "phone": "+33 5 57300090",
-          "website": null
+          "website": "https://all.accor.com/hotel/6177/index.fr.shtml"
         },
         {
           "osm_id": "node/2186003096",
@@ -2180,7 +2180,7 @@
           "lat": 44.8363088,
           "lon": -0.5829385,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0950/index.fr.shtml"
         },
         {
           "osm_id": "way/154148377",
@@ -2191,7 +2191,7 @@
           "lat": 44.8901745,
           "lon": -0.5653965,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0356/index.fr.shtml"
         },
         {
           "osm_id": "node/12065151805",
@@ -2202,7 +2202,7 @@
           "lat": 44.8265424,
           "lon": -0.5569301,
           "phone": "+33556915452",
-          "website": null
+          "website": "https://all.accor.com/hotel/A547/index.fr.shtml"
         },
         {
           "osm_id": "node/10902320234",
@@ -2258,7 +2258,7 @@
           "lat": 48.8308671,
           "lon": 2.2384009,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6245/index.fr.shtml"
         },
         {
           "osm_id": "node/882356125",
@@ -2269,7 +2269,7 @@
           "lat": 48.8335201,
           "lon": 2.2443014,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A039/index.fr.shtml"
         },
         {
           "osm_id": "relation/1141676",
@@ -2394,7 +2394,7 @@
         "hôtel de la Teyssonnière",
         "maison du 30 rue de la République",
         "hôtel de Bohan",
-        "château de Pennesuyt"
+        "statue de Xavier Bichat"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Bourg-en-Bresse",
       "hotel_count": 2,
@@ -2408,7 +2408,7 @@
           "lat": 46.2003469,
           "lon": 5.2399912,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0603/index.fr.shtml"
         },
         {
           "osm_id": "relation/19598457",
@@ -2419,7 +2419,7 @@
           "lat": 46.2087356,
           "lon": 5.2251398,
           "phone": "+33 4 74 45 34 34",
-          "website": "https://all.accor.com/hotel/7975/index.en.shtml"
+          "website": "https://all.accor.com/hotel/7975/index.fr.shtml"
         }
       ]
     },
@@ -2443,7 +2443,7 @@
         "hôtel de ville de Bourg-la-Reine",
         "église de la Pentecôte de Bourg-la-Reine",
         "château Notre-Dame du Calvaire",
-        "maison, 16 boulevard Carnot"
+        "maison, 120bis-122, avenue du Général-Leclerc"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Bourg-la-Reine",
       "hotel_count": 1,
@@ -2457,7 +2457,7 @@
           "lat": 48.7807719,
           "lon": 2.3157496,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/C034/index.fr.shtml"
         }
       ]
     },
@@ -2516,7 +2516,7 @@
           "lat": 47.0818256,
           "lon": 2.388046,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0819/index.fr.shtml"
         }
       ]
     },
@@ -2545,7 +2545,7 @@
           "lat": 45.5966891,
           "lon": 5.2419541,
           "phone": "+33 4 27 54 40 61",
-          "website": "https://all.accor.com/hotel/B742/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B742/index.fr.shtml"
         }
       ]
     },
@@ -2583,7 +2583,7 @@
           "lat": 48.3848747,
           "lon": -4.4928639,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1369/index.fr.shtml"
         },
         {
           "osm_id": "node/739753900",
@@ -2594,7 +2594,7 @@
           "lat": 48.4266208,
           "lon": -4.476212,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3433/index.fr.shtml"
         },
         {
           "osm_id": "node/4160120595",
@@ -2605,7 +2605,7 @@
           "lat": 48.383733,
           "lon": -4.4839373,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7369/index.fr.shtml"
         }
       ]
     },
@@ -2685,7 +2685,7 @@
           "lat": 43.420591,
           "lon": 6.0672722,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1051/index.fr.shtml"
         }
       ]
     },
@@ -2716,7 +2716,7 @@
         "maison dite Tour des Échevins",
         "hôtel de ville de Brive-la-Gaillarde",
         "maison Renaudie",
-        "centre d'études et musée Edmond-Michelet"
+        "maison Treilhard"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Brive-la-Gaillarde",
       "hotel_count": 2,
@@ -2741,7 +2741,7 @@
           "lat": 45.1451187,
           "lon": 1.4748881,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7474/index.fr.shtml"
         }
       ]
     },
@@ -2799,7 +2799,7 @@
           "lat": 50.494396,
           "lon": 2.5811195,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9188/index.fr.shtml"
         }
       ]
     },
@@ -2876,7 +2876,7 @@
           "lat": 43.3424582,
           "lon": 3.2206825,
           "phone": "+33 4 67 00 19 96",
-          "website": "https://all.accor.com/hotel/5639/index.en.shtml"
+          "website": "https://all.accor.com/hotel/5639/index.fr.shtml"
         }
       ]
     },
@@ -2966,11 +2966,11 @@
         "cathédrale Saint-Étienne de Cahors",
         "pont Valentré",
         "arc de Diane",
+        "grenier du chapitre",
         "lycée Gambetta",
         "hôtel de Roaldès",
         "musée de Cahors Henri-Martin",
-        "Sainte Coiffe de Cahors",
-        "église Saint-Barthélemy de Cahors"
+        "Sainte Coiffe de Cahors"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Cahors",
       "hotel_count": 1,
@@ -2984,7 +2984,7 @@
           "lat": 44.4667418,
           "lon": 1.4287625,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B2C7/index.fr.shtml"
         }
       ]
     },
@@ -3029,7 +3029,7 @@
           "lat": 50.9468472,
           "lon": 1.879603,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0715/index.fr.shtml"
         },
         {
           "osm_id": "node/2279433467",
@@ -3181,7 +3181,7 @@
           "lat": 43.2099502,
           "lon": 2.385948,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0607/index.fr.shtml"
         }
       ]
     },
@@ -3219,7 +3219,7 @@
           "lat": 43.2937072,
           "lon": 1.9529426,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B6J1/index.fr.shtml"
         }
       ]
     },
@@ -3245,12 +3245,12 @@
       "monuments_historiques": [
         "cathédrale Saint-Benoît de Castres",
         "palais épiscopal de Castres",
+        "château du Causse",
         "couvent des Cordeliers de Castres",
         "jardin de l'Évêché de Castres",
         "église Notre-Dame-de-la-Platé de Castres",
         "hôtel de Nayrac",
-        "château d'Hauterive",
-        "hôtel de Viviès"
+        "château d'Hauterive"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Castres",
       "hotel_count": 1,
@@ -3302,7 +3302,7 @@
           "lat": 47.788378,
           "lon": -3.3303863,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0434/index.fr.shtml"
         }
       ]
     },
@@ -3340,7 +3340,7 @@
           "lat": 49.0311585,
           "lon": 2.0692425,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0928/index.fr.shtml"
         }
       ]
     },
@@ -3378,7 +3378,7 @@
           "lat": 48.1146422,
           "lon": -1.6215775,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0689/index.fr.shtml"
         },
         {
           "osm_id": "way/81787682",
@@ -3400,7 +3400,7 @@
           "lat": 48.1159385,
           "lon": -1.576824,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0471/index.fr.shtml"
         }
       ]
     },
@@ -3530,7 +3530,7 @@
           "lat": 46.7999179,
           "lon": 4.83238,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0368/index.fr.shtml"
         }
       ]
     },
@@ -3575,7 +3575,7 @@
           "lat": 47.33609,
           "lon": 0.6985436,
           "phone": "+33 2 47 80 18 10",
-          "website": null
+          "website": "https://all.accor.com/hotel/0453/index.fr.shtml"
         }
       ]
     },
@@ -3620,7 +3620,7 @@
           "lat": 45.595433,
           "lon": 5.89555,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0609/index.fr.shtml"
         },
         {
           "osm_id": "node/2002504590",
@@ -3631,7 +3631,7 @@
           "lat": 45.5698719,
           "lon": 5.9204784,
           "phone": "+33 4 79 62 37 26",
-          "website": null
+          "website": "https://all.accor.com/hotel/9541/index.fr.shtml"
         }
       ]
     },
@@ -3743,7 +3743,7 @@
           "lat": 48.0897396,
           "lon": -0.7486949,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0613/index.fr.shtml"
         }
       ]
     },
@@ -3814,7 +3814,7 @@
           "lat": 45.5871628,
           "lon": 4.7878505,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2169/index.fr.shtml"
         }
       ]
     },
@@ -3843,7 +3843,7 @@
           "lat": 46.6678531,
           "lon": 0.3613309,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1193/index.fr.shtml"
         }
       ]
     },
@@ -3863,13 +3863,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "basilique Saint-Jean-Baptiste de Chaumont",
-        "hôtel de la Caisse d'épargne de Chaumont",
         "chapelle Notre-Dame-en-son-Assomption de Buxereuilles",
         "château de Chaumont",
         "collège des Jésuites de Chaumont",
         "couvent des Carmélites de Chaumont",
         "croix Gratien",
-        "église Saint-Martin de Brottes"
+        "église Saint-Martin de Brottes",
+        "hôtel de ville de Chaumont"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Chaumont_(Haute-Marne)",
       "hotel_count": 1,
@@ -3883,7 +3883,7 @@
           "lat": 48.1104059,
           "lon": 5.1387772,
           "phone": "+33325030111",
-          "website": null
+          "website": "https://all.accor.com/hotel/8283/index.fr.shtml"
         }
       ]
     },
@@ -3966,7 +3966,7 @@
           "lat": 48.776241,
           "lon": 2.3669545,
           "phone": "+33 1 45 12 92 20",
-          "website": "https://all.accor.com/hotel/5040/index.en.shtml"
+          "website": "https://all.accor.com/hotel/5040/index.fr.shtml"
         }
       ]
     },
@@ -4051,7 +4051,7 @@
           "lat": 47.0682885,
           "lon": 5.4539055,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1759/index.fr.shtml"
         }
       ]
     },
@@ -4096,7 +4096,7 @@
           "lat": 47.0431375,
           "lon": -0.899584,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3357/index.fr.shtml"
         },
         {
           "osm_id": "node/3302081423",
@@ -4107,7 +4107,7 @@
           "lat": 47.0765257,
           "lon": -0.8387584,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6924/index.fr.shtml"
         }
       ]
     },
@@ -4134,11 +4134,11 @@
         "cathédrale Saint-Étienne",
         "collégiale Notre-Dame-en-Vaux",
         "synagogue de Châlons-en-Champagne",
+        "temple de Châlons-en-Champagne",
         "musée des Beaux-Arts et d'Archéologie de Châlons-en-Champagne",
         "hôtel de ville de Châlons-en-Champagne",
         "porte Sainte-Croix",
-        "temple de Châlons-en-Champagne",
-        "centre national des arts du cirque"
+        "hôtel-Dieu-Saint-Étienne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Châlons-en-Champagne",
       "hotel_count": 2,
@@ -4195,7 +4195,7 @@
           "lat": 45.6817461,
           "lon": -0.2945146,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5167/index.fr.shtml"
         }
       ]
     },
@@ -4392,7 +4392,7 @@
           "lat": 43.3835912,
           "lon": -1.6652322,
           "phone": "+33 5 59 41 76 80",
-          "website": null
+          "website": "https://all.accor.com/hotel/6553/index.fr.shtml"
         }
       ]
     },
@@ -4441,7 +4441,7 @@
           "lat": 48.8145141,
           "lon": 2.2745613,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A6Q1/index.fr.shtml"
         }
       ]
     },
@@ -4519,7 +4519,7 @@
           "lat": 45.7798259,
           "lon": 3.1010622,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B2W8/index.fr.shtml"
         },
         {
           "osm_id": "way/550505493",
@@ -4530,7 +4530,7 @@
           "lat": 45.7853803,
           "lon": 3.1410123,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9262/index.fr.shtml"
         }
       ]
     },
@@ -4579,7 +4579,7 @@
           "lat": 48.9031186,
           "lon": 2.3051132,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A3C7/index.fr.shtml"
         },
         {
           "osm_id": "node/797963541",
@@ -4590,7 +4590,7 @@
           "lat": 48.8971582,
           "lon": 2.3097355,
           "phone": "+33 1 41 40 18 90",
-          "website": "https://all.accor.com/hotel/3298/index.en.shtml"
+          "website": "https://all.accor.com/hotel/3298/index.fr.shtml"
         }
       ]
     },
@@ -4628,7 +4628,7 @@
           "lat": 45.691591,
           "lon": -0.3294935,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1108/index.fr.shtml"
         }
       ]
     },
@@ -4727,7 +4727,7 @@
           "lat": 48.1104888,
           "lon": 7.362437,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0416/index.fr.shtml"
         },
         {
           "osm_id": "node/681555268",
@@ -4758,11 +4758,11 @@
         "stade départemental Yves-du-Manoir",
         "Colombes",
         "Le Stade",
-        "hôtel de ville de Colombes",
         "ancienne église Saint-Pierre-Saint-Paul de Colombes",
         "parc Pierre-Lagravère",
-        "cimetière Gabriel-Péri",
-        "parfumerie Kerkoff"
+        "hôtel de ville de Colombes",
+        "chapelle Saint-Bernard",
+        "église Sainte-Marie-des-Vallées"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Colombes",
       "hotel_count": 1,
@@ -4859,7 +4859,7 @@
           "lat": 48.8879557,
           "lon": 2.2525585,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0771/index.fr.shtml"
         },
         {
           "osm_id": "node/1282625920",
@@ -4870,7 +4870,7 @@
           "lat": 48.8956795,
           "lon": 2.2620676,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3296/index.fr.shtml"
         },
         {
           "osm_id": "way/463892924",
@@ -4881,7 +4881,7 @@
           "lat": 48.8974374,
           "lon": 2.2470582,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9293/index.fr.shtml"
         }
       ]
     },
@@ -4921,7 +4921,7 @@
           "lat": 47.5107076,
           "lon": 6.800258,
           "phone": "+33 3 81 31 27 80",
-          "website": null
+          "website": "https://all.accor.com/hotel/8187/index.fr.shtml"
         }
       ]
     },
@@ -4994,7 +4994,7 @@
           "lat": 48.7744187,
           "lon": 2.4419329,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0851/index.fr.shtml"
         }
       ]
     },
@@ -5066,7 +5066,7 @@
           "lat": 45.8199345,
           "lon": 4.76254,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0779/index.fr.shtml"
         }
       ]
     },
@@ -5172,14 +5172,14 @@
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [
-        "église Saint-Jacques de Dieppe",
         "château de Dieppe",
+        "église Saint-Jacques de Dieppe",
+        "pont Colbert",
+        "maison Miffant",
         "église Saint-Rémy de Dieppe",
         "hôtel de l'Amirauté",
         "porte de Dieppe",
-        "collège des Oratoriens de Dieppe",
-        "temple protestant de Dieppe",
-        "hôtel de la Vicomté"
+        "collège des Oratoriens de Dieppe"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Dieppe_(Seine-Maritime)",
       "hotel_count": 1,
@@ -5330,7 +5330,7 @@
           "lat": 50.3684369,
           "lon": 3.0741275,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0956/index.fr.shtml"
         },
         {
           "osm_id": "node/619005680",
@@ -5526,7 +5526,7 @@
           "lat": 48.9060496,
           "lon": -0.2068605,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1678/index.fr.shtml"
         }
       ]
     },
@@ -5638,7 +5638,7 @@
           "lat": 48.4042568,
           "lon": 2.6983485,
           "phone": "+33 1 64 23 45 25",
-          "website": "https://all.accor.com/hotel/1028/index.en.shtml"
+          "website": "https://all.accor.com/hotel/1028/index.fr.shtml"
         }
       ]
     },
@@ -5656,13 +5656,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "église Saint-Germain-l'Auxerrois de Fontenay-sous-Bois",
-        "monument aux morts de Fontenay-sous-Bois",
-        "ancienne mairie de Fontenay-sous-Bois",
-        "groupe scolaire Victor-Duruy",
-        "tombeau d'Hector Malot",
-        "monument aux morts de 1870 de Fontenay-sous-Bois",
-        "marché Roublot",
-        "salle des fêtes de Fontenay-sous-Bois"
+        "usine Gaveau",
+        "immeuble, 169 avenue de la République, Fontenay-sous-Bois",
+        "maison, 11 rue Yvonne",
+        "chapelle funéraire de la famille Barthélemy-Tissaire",
+        "chapelle funéraire de la famille Delarivière",
+        "chapelle funéraire de la famille Feolde-Scheltien",
+        "chapelle funéraire de la famille Greuillot"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontenay-sous-Bois",
       "hotel_count": 1,
@@ -5676,7 +5676,7 @@
           "lat": 48.8528003,
           "lon": 2.4869458,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6923/index.fr.shtml"
         }
       ]
     },
@@ -5709,7 +5709,7 @@
           "lat": 50.007893,
           "lon": 4.0640149,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0707/index.fr.shtml"
         }
       ]
     },
@@ -5751,7 +5751,7 @@
           "lat": 44.5594225,
           "lon": 6.0844815,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1120/index.fr.shtml"
         }
       ]
     },
@@ -5769,13 +5769,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "pont d'Argenteuil",
-        "église Sainte-Jeanne-d'Arc de Gennevilliers",
-        "cimetière de Gennevilliers",
-        "château de Gennevilliers",
         "ancienne gare de Gennevilliers",
         "centrale thermique du quai de Gennevilliers",
         "parc des Chanteraines",
-        "pont d'Épinay"
+        "pont d'Épinay",
+        "pont de Saint-Ouen-les-Docks",
+        "église Sainte-Marie-Madeleine de Gennevilliers",
+        "église Sainte-Jeanne-d'Arc de Gennevilliers"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Gennevilliers",
       "hotel_count": 2,
@@ -5789,7 +5789,7 @@
           "lat": 48.9258658,
           "lon": 2.290851,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1966/index.fr.shtml"
         },
         {
           "osm_id": "way/63959300",
@@ -5907,7 +5907,7 @@
           "lat": 48.9691929,
           "lon": 2.4631751,
           "phone": "+33139337851",
-          "website": null
+          "website": "https://all.accor.com/hotel/B0X3/index.fr.shtml"
         }
       ]
     },
@@ -5997,7 +5997,7 @@
           "lat": 45.1927938,
           "lon": 5.7172084,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2737/index.fr.shtml"
         },
         {
           "osm_id": "node/311838028",
@@ -6008,7 +6008,7 @@
           "lat": 45.1904221,
           "lon": 5.7258889,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0612/index.fr.shtml"
         },
         {
           "osm_id": "node/669876542",
@@ -6019,7 +6019,7 @@
           "lat": 45.190826,
           "lon": 5.7196593,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7953/index.fr.shtml"
         }
       ]
     },
@@ -6113,12 +6113,12 @@
       "monuments_historiques": [
         "basilique Notre-Dame de Marienthal de Haguenau",
         "église Saint-Georges de Haguenau",
+        "théâtre municipal de Haguenau",
+        "église Saint-Nicolas de Haguenau",
         "porte des Chevaliers",
         "synagogue de Haguenau",
         "porte de Wissembourg",
-        "théâtre municipal de Haguenau",
-        "église Saint-Nicolas de Haguenau",
-        "grenier Saint-Georges"
+        "grenier de l'hôpital"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Haguenau",
       "hotel_count": 1,
@@ -6132,7 +6132,7 @@
           "lat": 48.8279696,
           "lon": 7.7569679,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2029/index.fr.shtml"
         }
       ]
     },
@@ -6170,7 +6170,7 @@
           "lat": 49.503333,
           "lon": 0.195367,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0951/index.fr.shtml"
         }
       ]
     },
@@ -6244,7 +6244,7 @@
           "lat": 48.0779121,
           "lon": 7.4029882,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1034/index.fr.shtml"
         }
       ]
     },
@@ -6339,7 +6339,7 @@
           "lat": 43.1131929,
           "lon": 6.1309732,
           "phone": null,
-          "website": "https://all.accor.com/hotel/1172/index.en.shtml"
+          "website": "https://all.accor.com/hotel/1172/index.fr.shtml"
         },
         {
           "osm_id": "node/11453868066",
@@ -6350,7 +6350,7 @@
           "lat": 43.1092778,
           "lon": 6.1247793,
           "phone": null,
-          "website": "https://all.accor.com/hotel/A0A9/index.en.shtml"
+          "website": "https://all.accor.com/hotel/A0A9/index.fr.shtml"
         }
       ]
     },
@@ -6388,7 +6388,7 @@
           "lat": 49.1959445,
           "lon": -0.335323,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0605/index.fr.shtml"
         }
       ]
     },
@@ -6432,7 +6432,7 @@
           "lat": 45.5477966,
           "lon": 3.2679003,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5615/index.fr.shtml"
         }
       ]
     },
@@ -6455,8 +6455,8 @@
         "manufacture des tabacs",
         "château d'Issy",
         "parc Henri-Barbusse",
-        "hôpital Corentin-Celton",
-        "tour aux figures"
+        "blanchisserie de Grenelle",
+        "hôpital Corentin-Celton"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Issy-les-Moulineaux",
       "hotel_count": 3,
@@ -6481,7 +6481,7 @@
           "lat": 48.8222495,
           "lon": 2.2577885,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7848/index.fr.shtml"
         },
         {
           "osm_id": "way/114654243",
@@ -6537,7 +6537,7 @@
           "lat": 43.5022817,
           "lon": 4.9668196,
           "phone": "+33 4 90451560",
-          "website": null
+          "website": "https://all.accor.com/hotel/8196/index.fr.shtml"
         }
       ]
     },
@@ -6575,7 +6575,7 @@
           "lat": 46.2047198,
           "lon": 5.2961982,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1761/index.fr.shtml"
         }
       ]
     },
@@ -6676,7 +6676,7 @@
           "lat": 48.777604,
           "lon": 2.177446,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1687/index.fr.shtml"
         }
       ]
     },
@@ -6705,7 +6705,7 @@
           "lat": 48.004006,
           "lon": 6.876335,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5039/index.fr.shtml"
         }
       ]
     },
@@ -6778,7 +6778,7 @@
           "lat": 43.2054959,
           "lon": 5.6018289,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5484/index.fr.shtml"
         }
       ]
     },
@@ -6844,10 +6844,10 @@
         "La Rochelle-Ville",
         "château Vauclair",
         "Vieux-Port de La Rochelle",
+        "Grande-maison de Lhommée",
         "hôtel de ville de La Rochelle",
         "musée des Beaux-Arts de La Rochelle",
-        "tour Saint-Nicolas",
-        "tour de la Chaîne"
+        "tour Saint-Nicolas"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Rochelle",
       "hotel_count": 4,
@@ -6861,7 +6861,7 @@
           "lat": 46.1612714,
           "lon": -1.1508082,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1424/index.fr.shtml"
         },
         {
           "osm_id": "way/119814788",
@@ -6872,7 +6872,7 @@
           "lat": 46.155976,
           "lon": -1.148245,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0638/index.fr.shtml"
         },
         {
           "osm_id": "node/11063316988",
@@ -6894,7 +6894,7 @@
           "lat": 46.1576017,
           "lon": -1.1404272,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B8C7/index.fr.shtml"
         }
       ]
     },
@@ -6932,7 +6932,7 @@
           "lat": 44.6169925,
           "lon": -1.1398715,
           "phone": "+33 5 57 15 20 00",
-          "website": null
+          "website": "https://all.accor.com/hotel/3576/index.fr.shtml"
         }
       ]
     },
@@ -6963,7 +6963,7 @@
           "lat": 43.5499239,
           "lon": 1.4998214,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A0A2/index.fr.shtml"
         }
       ]
     },
@@ -7008,7 +7008,7 @@
           "lat": 48.7283454,
           "lon": -3.4606124,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3401/index.fr.shtml"
         }
       ]
     },
@@ -7038,7 +7038,7 @@
         "commanderie de Laon",
         "église Saint-Martin de Laon",
         "enceinte de Laon",
-        "hôtel de la Caisse d'épargne de Laon"
+        "église Saint-Rémy-au-Velours"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Laon",
       "hotel_count": 1,
@@ -7052,7 +7052,7 @@
           "lat": 49.5500998,
           "lon": 3.6193066,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2059/index.fr.shtml"
         }
       ]
     },
@@ -7135,7 +7135,7 @@
           "lat": 43.6987557,
           "lon": 1.8089216,
           "phone": "+33563830808",
-          "website": null
+          "website": "https://all.accor.com/hotel/5230/index.fr.shtml"
         }
       ]
     },
@@ -7234,7 +7234,7 @@
           "lat": 43.5672413,
           "lon": 7.016119,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8957/index.fr.shtml"
         }
       ]
     },
@@ -7272,7 +7272,7 @@
           "lat": 47.4332692,
           "lon": 1.4376567,
           "phone": "+33246710221",
-          "website": null
+          "website": "https://all.accor.com/hotel/B8E1/index.fr.shtml"
         }
       ]
     },
@@ -7334,7 +7334,7 @@
           "lat": 48.427035,
           "lon": 1.5135445,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9569/index.fr.shtml"
         }
       ]
     },
@@ -7551,7 +7551,7 @@
           "lat": 45.0475778,
           "lon": 3.8799843,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0972/index.fr.shtml"
         },
         {
           "osm_id": "node/3716655235",
@@ -7562,7 +7562,7 @@
           "lat": 45.0429134,
           "lon": 3.8882603,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1197/index.fr.shtml"
         }
       ]
     },
@@ -7641,7 +7641,7 @@
           "lat": 46.8892731,
           "lon": -1.0346933,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7379/index.fr.shtml"
         }
       ]
     },
@@ -7674,7 +7674,7 @@
           "lat": 45.8891122,
           "lon": 6.7918269,
           "phone": "+33 4 86 80 27 17",
-          "website": "https://all.accor.com/hotel/B9P8/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B9P8/index.fr.shtml"
         }
       ]
     },
@@ -7820,7 +7820,7 @@
           "lat": 48.891444,
           "lon": 2.2897068,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5479/index.fr.shtml"
         }
       ]
     },
@@ -7849,8 +7849,8 @@
         "cathédrale Notre-Dame-de-la-Treille",
         "citadelle de Lille",
         "église Saint-Maurice",
-        "hôtel de ville de Lille",
         "synagogue de Lille",
+        "hôtel de ville de Lille",
         "collégiale Saint-Pierre de Lille"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Lille",
@@ -7865,7 +7865,7 @@
           "lat": 50.6346891,
           "lon": 3.0711944,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9309/index.fr.shtml"
         },
         {
           "osm_id": "node/2061506763",
@@ -7887,7 +7887,7 @@
           "lat": 50.6464242,
           "lon": 3.0093619,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7238/index.fr.shtml"
         },
         {
           "osm_id": "node/2061506710",
@@ -7909,7 +7909,7 @@
           "lat": 50.6330275,
           "lon": 3.0745293,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9309/index.fr.shtml"
         },
         {
           "osm_id": "node/1770433160",
@@ -7953,7 +7953,7 @@
           "lat": 45.9764995,
           "lon": 4.7383612,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0646/index.fr.shtml"
         }
       ]
     },
@@ -7981,9 +7981,9 @@
         "Limoges-Bénédictins",
         "abbaye Saint-Martial de Limoges",
         "basilique Saint-Michel-des-Lions de Limoges",
-        "musée national Adrien-Dubouché",
         "pont Saint-Martial",
         "pont Saint-Étienne",
+        "musée national Adrien-Dubouché",
         "église Saint-Pierre-du-Queyroix"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Limoges",
@@ -7998,7 +7998,7 @@
           "lat": 45.8325962,
           "lon": 1.2551159,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0881/index.fr.shtml"
         },
         {
           "osm_id": "node/1836911059",
@@ -8126,7 +8126,7 @@
           "lat": 48.6047291,
           "lon": 2.4309078,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1968/index.fr.shtml"
         }
       ]
     },
@@ -8204,7 +8204,7 @@
           "lat": 43.3184417,
           "lon": -0.4236769,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1643/index.fr.shtml"
         }
       ]
     },
@@ -8249,7 +8249,7 @@
           "lat": 47.7550433,
           "lon": -3.363778,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5221/index.fr.shtml"
         }
       ]
     },
@@ -8287,7 +8287,7 @@
           "lat": 44.8716887,
           "lon": -0.5068706,
           "phone": "+33 5 56 44 02 02",
-          "website": null
+          "website": "https://all.accor.com/hotel/C3U7/index.fr.shtml"
         }
       ]
     },
@@ -8422,7 +8422,7 @@
           "lat": 45.7434747,
           "lon": 4.8257123,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9659/index.fr.shtml"
         },
         {
           "osm_id": "node/4732532638",
@@ -8477,7 +8477,7 @@
           "lat": 45.761715,
           "lon": 4.851319,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1388/index.fr.shtml"
         },
         {
           "osm_id": "node/2117622714",
@@ -8488,7 +8488,7 @@
           "lat": 45.759311,
           "lon": 4.8614129,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7373/index.fr.shtml"
         },
         {
           "osm_id": "node/7196887991",
@@ -8531,7 +8531,7 @@
           "lat": 47.5017637,
           "lon": 3.9832633,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1740/index.fr.shtml"
         }
       ]
     },
@@ -8569,7 +8569,7 @@
           "lat": 48.944809,
           "lon": 2.1547134,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3437/index.fr.shtml"
         }
       ]
     },
@@ -8600,7 +8600,7 @@
           "lat": 43.545704,
           "lon": 6.9404251,
           "phone": null,
-          "website": "https://all.accor.com/hotel/6518/index.en.shtml"
+          "website": "https://all.accor.com/hotel/6518/index.fr.shtml"
         }
       ]
     },
@@ -8716,7 +8716,7 @@
           "lat": 45.824127,
           "lon": -1.089773,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9493/index.fr.shtml"
         }
       ]
     },
@@ -8754,7 +8754,7 @@
           "lat": 43.4070785,
           "lon": 5.2050395,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B8B1/index.fr.shtml"
         },
         {
           "osm_id": "node/2199519269",
@@ -8792,10 +8792,10 @@
         "Marseille-Saint-Charles",
         "palais du Pharo",
         "tunnel du Rove",
-        "musée Grobet-Labadié",
         "Ballet national de Marseille",
-        "phare du Planier",
+        "musée Grobet-Labadié",
         "palais de la Bourse",
+        "phare du Planier",
         "école supérieure d'art et de design Marseille-Méditerranée"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Marseille",
@@ -8821,7 +8821,7 @@
           "lat": 43.2925436,
           "lon": 5.4017008,
           "phone": null,
-          "website": "https://all.accor.com/hotel/1200/index.en.shtml"
+          "website": "https://all.accor.com/hotel/1200/index.fr.shtml"
         },
         {
           "osm_id": "way/67698773",
@@ -8843,7 +8843,7 @@
           "lat": 43.3079702,
           "lon": 5.3676485,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6190/index.fr.shtml"
         },
         {
           "osm_id": "node/2241170118",
@@ -8854,7 +8854,7 @@
           "lat": 43.2916887,
           "lon": 5.3820584,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B3B1/index.fr.shtml"
         },
         {
           "osm_id": "node/2296383112",
@@ -8887,7 +8887,7 @@
           "lat": 43.3011242,
           "lon": 5.3808095,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A1J8/index.fr.shtml"
         }
       ]
     },
@@ -8932,7 +8932,7 @@
           "lat": 43.4062422,
           "lon": 5.0479823,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6552/index.fr.shtml"
         }
       ]
     },
@@ -9048,7 +9048,7 @@
           "lat": 48.9568009,
           "lon": 2.8773431,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9657/index.fr.shtml"
         }
       ]
     },
@@ -9125,7 +9125,7 @@
           "lat": 48.5512325,
           "lon": 2.6661445,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0620/index.fr.shtml"
         }
       ]
     },
@@ -9228,8 +9228,8 @@
         "église Saint-Pierre-aux-Nonnains de Metz",
         "synagogue de Metz",
         "opéra-théâtre de Metz",
-        "temple Neuf de Metz",
-        "hôtel de ville de Metz"
+        "hôtel de ville de Metz",
+        "temple Neuf de Metz"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Metz",
       "hotel_count": 4,
@@ -9276,7 +9276,7 @@
           "lat": 49.1163501,
           "lon": 6.1811818,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/C276/index.fr.shtml"
         }
       ]
     },
@@ -9350,7 +9350,7 @@
           "lat": 49.500887,
           "lon": 5.7883138,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2051/index.fr.shtml"
         }
       ]
     },
@@ -9413,7 +9413,7 @@
           "lat": 43.5890987,
           "lon": 4.9935348,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/C0D8/index.fr.shtml"
         }
       ]
     },
@@ -9451,7 +9451,7 @@
           "lat": 47.994841,
           "lon": 2.73202,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0861/index.fr.shtml"
         }
       ]
     },
@@ -9496,7 +9496,7 @@
           "lat": 44.0052573,
           "lon": 1.3837779,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1769/index.fr.shtml"
         },
         {
           "osm_id": "node/10676196635",
@@ -9507,7 +9507,7 @@
           "lat": 44.005094,
           "lon": 1.3832902,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B8Y9/index.fr.shtml"
         }
       ]
     },
@@ -9545,7 +9545,7 @@
           "lat": 48.7891481,
           "lon": 2.0354681,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9462/index.fr.shtml"
         }
       ]
     },
@@ -9583,7 +9583,7 @@
           "lat": 48.6456943,
           "lon": 2.2709073,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A345/index.fr.shtml"
         }
       ]
     },
@@ -9614,7 +9614,7 @@
         "tour de la Babotte",
         "basilique Notre-Dame des Tables",
         "Faculté de médecine de Montpellier",
-        "promenade du Peyrou"
+        "citadelle de Montpellier"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Montpellier",
       "hotel_count": 3,
@@ -9827,7 +9827,7 @@
           "lat": 48.8544997,
           "lon": 2.7704367,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5646/index.fr.shtml"
         },
         {
           "osm_id": "way/116124938",
@@ -9838,7 +9838,7 @@
           "lat": 48.8544,
           "lon": 2.770626,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5646/index.fr.shtml"
         }
       ]
     },
@@ -9869,7 +9869,7 @@
           "lat": 43.620196,
           "lon": 6.9746604,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6866/index.fr.shtml"
         }
       ]
     },
@@ -9936,7 +9936,7 @@
           "lat": 46.5428398,
           "lon": 3.342443,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0625/index.fr.shtml"
         },
         {
           "osm_id": "node/1869618567",
@@ -9992,7 +9992,7 @@
           "lat": 47.754818,
           "lon": 7.3497794,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1640/index.fr.shtml"
         },
         {
           "osm_id": "node/4594259123",
@@ -10003,7 +10003,7 @@
           "lat": 47.744005,
           "lon": 7.3458397,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A069/index.fr.shtml"
         }
       ]
     },
@@ -10034,7 +10034,7 @@
           "lat": 47.91267,
           "lon": 0.2447206,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A8Q1/index.fr.shtml"
         }
       ]
     },
@@ -10128,7 +10128,7 @@
           "lat": 44.8358945,
           "lon": -0.68903,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2079/index.fr.shtml"
         }
       ]
     },
@@ -10283,7 +10283,7 @@
           "lat": 47.2538155,
           "lon": -1.5156895,
           "phone": "+33240932222",
-          "website": null
+          "website": "https://all.accor.com/hotel/0855/index.fr.shtml"
         },
         {
           "osm_id": "way/941944705",
@@ -10305,7 +10305,7 @@
           "lat": 47.2190496,
           "lon": -1.5604106,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1394/index.fr.shtml"
         },
         {
           "osm_id": "node/4239360601",
@@ -10316,7 +10316,7 @@
           "lat": 47.2176797,
           "lon": -1.5443569,
           "phone": "+33 2 40 74 14 54",
-          "website": null
+          "website": "https://all.accor.com/hotel/A8V4/index.fr.shtml"
         },
         {
           "osm_id": "node/6148782415",
@@ -10382,7 +10382,7 @@
           "lat": 43.167704,
           "lon": 2.9868825,
           "phone": "+33 4 68 41 14 41",
-          "website": null
+          "website": "https://all.accor.com/hotel/0671/index.fr.shtml"
         }
       ]
     },
@@ -10424,7 +10424,7 @@
           "lat": 48.2651975,
           "lon": 2.7192489,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0628/index.fr.shtml"
         }
       ]
     },
@@ -10526,11 +10526,11 @@
         "observatoire de Nice",
         "hôtel Negresco",
         "cathédrale Sainte-Réparate de Nice",
-        "musée des Beaux-Arts Jules Chéret",
         "cathédrale Saint-Nicolas",
+        "musée des Beaux-Arts Jules Chéret",
         "musée Marc-Chagall",
-        "église Sainte-Jeanne-d'Arc de Nice",
-        "opéra de Nice"
+        "opéra de Nice",
+        "église Sainte-Jeanne-d'Arc de Nice"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Nice",
       "hotel_count": 6,
@@ -10544,7 +10544,7 @@
           "lat": 43.7050221,
           "lon": 7.2670323,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3724/index.fr.shtml"
         },
         {
           "osm_id": "node/1015772245",
@@ -10599,7 +10599,7 @@
           "lat": 43.7003551,
           "lon": 7.2830971,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6991/index.fr.shtml"
         }
       ]
     },
@@ -10692,7 +10692,7 @@
           "lat": 48.8333951,
           "lon": 2.4923358,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3406/index.fr.shtml"
         }
       ]
     },
@@ -10735,7 +10735,7 @@
           "lat": 48.8376732,
           "lon": 2.5415391,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1545/index.fr.shtml"
         }
       ]
     },
@@ -10773,7 +10773,7 @@
           "lat": 47.131445,
           "lon": 4.9476471,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5478/index.fr.shtml"
         }
       ]
     },
@@ -10829,7 +10829,7 @@
           "lat": 43.8316764,
           "lon": 4.3669327,
           "phone": "+33 4 66 05 54 30",
-          "website": "https://all.accor.com/hotel/7574/index.en.shtml"
+          "website": "https://all.accor.com/hotel/7574/index.fr.shtml"
         }
       ]
     },
@@ -10860,7 +10860,7 @@
           "lat": 43.2106931,
           "lon": 0.0485585,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5973/index.fr.shtml"
         }
       ]
     },
@@ -11043,11 +11043,11 @@
         "cathédrale Sainte-Croix d'Orléans",
         "pont George-V",
         "collégiale Saint-Aignan d'Orléans",
-        "Jeanne d'Arc guerrière",
         "hôtel Groslot",
         "jardin des plantes d'Orléans",
         "palais de justice d'Orléans",
-        "parc Floral de la Source"
+        "parc Floral de la Source",
+        "pont de l'Europe"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Orléans",
       "hotel_count": 2,
@@ -11108,7 +11108,7 @@
           "lat": 48.533594,
           "lon": 7.6916141,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2905/index.fr.shtml"
         }
       ]
     },
@@ -11383,7 +11383,7 @@
           "lat": 48.8257632,
           "lon": 2.3526361,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0923/index.fr.shtml"
         },
         {
           "osm_id": "node/596074206",
@@ -11394,7 +11394,7 @@
           "lat": 48.8921778,
           "lon": 2.314997,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/2189/index.fr.shtml"
         },
         {
           "osm_id": "way/63649278",
@@ -11471,7 +11471,7 @@
           "lat": 48.8517596,
           "lon": 2.3787578,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3577/index.fr.shtml"
         },
         {
           "osm_id": "node/5286240821",
@@ -11504,7 +11504,7 @@
           "lat": 48.8350411,
           "lon": 2.4053733,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5038/index.fr.shtml"
         },
         {
           "osm_id": "node/1785415633",
@@ -11526,7 +11526,7 @@
           "lat": 48.8293227,
           "lon": 2.3566885,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1803/index.fr.shtml"
         },
         {
           "osm_id": "node/5245794547",
@@ -11537,7 +11537,7 @@
           "lat": 48.8494019,
           "lon": 2.3853786,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8643/index.fr.shtml"
         },
         {
           "osm_id": "node/9455171488",
@@ -11647,7 +11647,7 @@
           "lat": 48.8302757,
           "lon": 2.3020508,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1936/index.fr.shtml"
         },
         {
           "osm_id": "node/10698188122",
@@ -11713,7 +11713,7 @@
           "lat": 48.8283394,
           "lon": 2.3473619,
           "phone": "+33 1 45 80 67 67",
-          "website": null
+          "website": "https://all.accor.com/hotel/A4A6/index.fr.shtml"
         },
         {
           "osm_id": "node/4198884492",
@@ -11746,7 +11746,7 @@
           "lat": 48.8728034,
           "lon": 2.3448929,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B8G7/index.fr.shtml"
         },
         {
           "osm_id": "way/78148957",
@@ -11779,7 +11779,7 @@
           "lat": 48.8235903,
           "lon": 2.3715242,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9525/index.fr.shtml"
         },
         {
           "osm_id": "way/63237481",
@@ -11790,7 +11790,7 @@
           "lat": 48.8845178,
           "lon": 2.3793649,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9586/index.fr.shtml"
         },
         {
           "osm_id": "way/1443081719",
@@ -11812,7 +11812,7 @@
           "lat": 48.8173028,
           "lon": 2.3594869,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B2U6/index.fr.shtml"
         },
         {
           "osm_id": "node/1596738663",
@@ -11823,7 +11823,7 @@
           "lat": 48.8469348,
           "lon": 2.4080026,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B1P0/index.fr.shtml"
         },
         {
           "osm_id": "node/2718671992",
@@ -11856,7 +11856,7 @@
           "lat": 48.8479906,
           "lon": 2.3005923,
           "phone": "+33 1 44 49 63 63",
-          "website": "https://all.accor.com/hotel/A028/index.en.shtml"
+          "website": "https://all.accor.com/hotel/A028/index.fr.shtml"
         },
         {
           "osm_id": "way/63198280",
@@ -11889,7 +11889,7 @@
           "lat": 48.8326346,
           "lon": 2.3593458,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1803/index.fr.shtml"
         },
         {
           "osm_id": "way/114995223",
@@ -11933,7 +11933,7 @@
           "lat": 48.8898808,
           "lon": 2.3211159,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B9M1/index.fr.shtml"
         },
         {
           "osm_id": "node/11266764596",
@@ -11944,7 +11944,7 @@
           "lat": 48.8782896,
           "lon": 2.3474895,
           "phone": null,
-          "website": "https://all.accor.com/hotel/7952/index.en.shtml"
+          "website": "https://all.accor.com/hotel/7952/index.fr.shtml"
         },
         {
           "osm_id": "node/534908405",
@@ -11977,7 +11977,7 @@
           "lat": 48.8316922,
           "lon": 2.3218269,
           "phone": "+33140445151",
-          "website": "https://all.accor.com/hotel/8282/index.en.shtml"
+          "website": "https://all.accor.com/hotel/8282/index.fr.shtml"
         }
       ]
     },
@@ -12008,7 +12008,7 @@
         "église anglicane Saint-Andrew de Pau",
         "hôtel de ville de Pau",
         "église Saint-Joseph de Pau",
-        "hôtel de Gassion"
+        "palais Sorrento"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Pau",
       "hotel_count": 1,
@@ -12159,7 +12159,7 @@
           "lat": 43.676004,
           "lon": 5.497077,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7010/index.fr.shtml"
         }
       ]
     },
@@ -12197,7 +12197,7 @@
           "lat": 44.7884146,
           "lon": -0.6455789,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0850/index.fr.shtml"
         }
       ]
     },
@@ -12226,7 +12226,7 @@
           "lat": 50.3776915,
           "lon": 3.4730869,
           "phone": "+33327295555",
-          "website": "https://all.accor.com/hotel/B6A1/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B6A1/index.fr.shtml"
         }
       ]
     },
@@ -12261,7 +12261,7 @@
           "lat": 48.5505987,
           "lon": -3.1471611,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7427/index.fr.shtml"
         }
       ]
     },
@@ -12283,9 +12283,9 @@
         "viaduc du Parfond du Gouët",
         "croix mérovingienne de Plérin",
         "four à boulets de la Pointe du Roselier",
-        "maison dite 'maison du port', capitainerie et maison éclusière, L'île Sèche ; la Presqu'île",
         "saint Sébastien et saint Roch",
-        "2 chandeliers à Plérin"
+        "2 chandeliers à Plérin",
+        "groupe d'objets à Plérin"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Plérin",
       "hotel_count": 2,
@@ -12377,7 +12377,7 @@
           "lat": 45.9202513,
           "lon": 6.0835747,
           "phone": "0 892 68 08 77",
-          "website": "https://all.accor.com/hotel/B1H7/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B1H7/index.fr.shtml"
         }
       ]
     },
@@ -12422,7 +12422,7 @@
           "lat": 46.5505489,
           "lon": 0.3034975,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0659/index.fr.shtml"
         },
         {
           "osm_id": "way/88129413",
@@ -12433,7 +12433,7 @@
           "lat": 46.5772485,
           "lon": 0.3790465,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0695/index.fr.shtml"
         },
         {
           "osm_id": "node/1917432082",
@@ -12444,7 +12444,7 @@
           "lat": 46.5783934,
           "lon": 0.3388373,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1420/index.fr.shtml"
         },
         {
           "osm_id": "node/2399490959",
@@ -12455,7 +12455,7 @@
           "lat": 46.5806417,
           "lon": 0.3381292,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9119/index.fr.shtml"
         },
         {
           "osm_id": "node/1097753765",
@@ -12586,7 +12586,7 @@
           "lat": 47.2656579,
           "lon": -2.3439154,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1171/index.fr.shtml"
         }
       ]
     },
@@ -12626,7 +12626,7 @@
           "lat": 42.5228856,
           "lon": 3.1009643,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A0D4/index.fr.shtml"
         }
       ]
     },
@@ -12697,7 +12697,7 @@
           "lat": 41.6072805,
           "lon": 9.2791441,
           "phone": "+33 4 20 00 69 59",
-          "website": null
+          "website": "https://all.accor.com/hotel/B7M0/index.fr.shtml"
         }
       ]
     },
@@ -12747,7 +12747,7 @@
           "lat": 48.5574909,
           "lon": 3.281585,
           "phone": "+33160676667",
-          "website": null
+          "website": "https://all.accor.com/hotel/0856/index.fr.shtml"
         }
       ]
     },
@@ -12776,7 +12776,7 @@
           "lat": 46.2487447,
           "lon": 6.0887402,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/C2F5/index.fr.shtml"
         }
       ]
     },
@@ -12803,11 +12803,11 @@
         "Tour Ariane",
         "pont de Neuilly",
         "Puteaux",
-        "église Notre-Dame-de-Pitié de Puteaux",
         "hôtel de ville de Puteaux",
-        "église Sainte-Mathilde de Puteaux",
+        "église Notre-Dame-de-Pitié de Puteaux",
         "cimetière nouveau de Neuilly-sur-Seine",
-        "Rose de Cherbourg"
+        "Rose de Cherbourg",
+        "église Sainte-Mathilde de Puteaux"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Puteaux",
       "hotel_count": 1,
@@ -12821,7 +12821,7 @@
           "lat": 48.8858697,
           "lon": 2.230112,
           "phone": "+33 1 41 02 07 45",
-          "website": null
+          "website": "https://all.accor.com/hotel/A9I7/index.fr.shtml"
         }
       ]
     },
@@ -12866,7 +12866,7 @@
           "lat": 45.1831945,
           "lon": 0.7234483,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0636/index.fr.shtml"
         }
       ]
     },
@@ -12942,11 +12942,11 @@
         "cathédrale Saint-Corentin de Quimper",
         "château de Lanniron",
         "maison des Cariatides",
-        "lycée Chaptal",
         "musée départemental breton",
         "chapelle de Ti Mamm Doué",
         "remparts de Quimper",
-        "théâtre Max-Jacob"
+        "théâtre Max-Jacob",
+        "église Saint-Alor d'Ergué-Armel"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Quimper",
       "hotel_count": 2,
@@ -12996,11 +12996,11 @@
         "château de Rambouillet",
         "église Saint-Lubin-et-Saint-Jean-Baptiste",
         "hôtel de ville de Rambouillet",
-        "hôtel de la Caisse d'épargne de Rambouillet",
         "pavillon du Roi de Rome",
         "pavillon de Toulouse",
         "hôtel des Postes de Rambouillet",
-        "monument aux morts de Rambouillet"
+        "monument aux morts de Rambouillet",
+        "hôtel de la Caisse d'épargne de Rambouillet"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Rambouillet",
       "hotel_count": 1,
@@ -13194,13 +13194,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "musée Mandet",
-        "fontaine du Crapaud",
         "basilique Saint-Amable de Riom",
         "fontaine Desaix",
-        "musée des arts et traditions populaires de Riom",
-        "abbaye Saint-Amable de Riom",
-        "beffroi de Riom",
-        "chapelle Saint-Don de Riom"
+        "fontaine du Crapaud",
+        "Sainte-Chapelle de Riom",
+        "centre de détention de Riom",
+        "maison d'Antoine Pandier",
+        "musée des arts et traditions populaires de Riom"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Riom",
       "hotel_count": 1,
@@ -13214,7 +13214,7 @@
           "lat": 45.8958751,
           "lon": 3.1378411,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7293/index.fr.shtml"
         }
       ]
     },
@@ -13402,7 +13402,7 @@
           "lat": 49.0108999,
           "lon": 2.5618375,
           "phone": "+33 1 70 03 14 00",
-          "website": "https://all.accor.com/hotel/8231/index.en.shtml"
+          "website": "https://all.accor.com/hotel/8231/index.fr.shtml"
         }
       ]
     },
@@ -13449,7 +13449,7 @@
           "lat": 49.010525,
           "lon": 2.5606198,
           "phone": "+33 1 49 19 19 19",
-          "website": "https://all.accor.com/hotel/1404/index.en.shtml"
+          "website": "https://all.accor.com/hotel/1404/index.fr.shtml"
         },
         {
           "osm_id": "way/104936214",
@@ -13460,7 +13460,7 @@
           "lat": 49.0070785,
           "lon": 2.520367,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0815/index.fr.shtml"
         }
       ]
     },
@@ -13536,7 +13536,7 @@
           "lat": 48.7271933,
           "lon": -3.985994,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1109/index.fr.shtml"
         }
       ]
     },
@@ -13563,11 +13563,11 @@
         "cathédrale Notre-Dame de Rouen",
         "abbatiale de Saint-Ouen de Rouen",
         "Rouen-Rive-Droite",
-        "Gros-Horloge",
         "église Saint-Maclou de Rouen",
-        "église Sainte-Jeanne-d'Arc de Rouen",
+        "Gros-Horloge",
         "château de Rouen",
-        "jardin des plantes de Rouen"
+        "église Sainte-Jeanne-d'Arc de Rouen",
+        "Rouen-Orléans"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Rouen",
       "hotel_count": 5,
@@ -13603,7 +13603,7 @@
           "lat": 49.424976,
           "lon": 1.0685848,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B6G1/index.fr.shtml"
         },
         {
           "osm_id": "node/7086161715",
@@ -13657,7 +13657,7 @@
           "lat": 48.552455,
           "lon": 2.6701835,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7972/index.fr.shtml"
         }
       ]
     },
@@ -13702,7 +13702,7 @@
           "lat": 48.8800553,
           "lon": 2.185089,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1407/index.fr.shtml"
         }
       ]
     },
@@ -13747,7 +13747,7 @@
           "lat": 48.5084684,
           "lon": -2.7638307,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7475/index.fr.shtml"
         }
       ]
     },
@@ -13825,7 +13825,7 @@
           "lat": 48.9257301,
           "lon": 2.3545516,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1940/index.fr.shtml"
         },
         {
           "osm_id": "node/2982367094",
@@ -13847,7 +13847,7 @@
           "lat": 48.914159,
           "lon": 2.3584268,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8538/index.fr.shtml"
         }
       ]
     },
@@ -13971,7 +13971,7 @@
           "lat": 46.2353105,
           "lon": 6.0265305,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7377/index.fr.shtml"
         }
       ]
     },
@@ -14005,7 +14005,7 @@
           "lat": 48.5680997,
           "lon": -1.5429108,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B261/index.fr.shtml"
         }
       ]
     },
@@ -14030,8 +14030,8 @@
         "château Neuf de Saint-Germain-en-Laye",
         "pavillon de la Muette",
         "église Saint-Germain de Saint-Germain-en-Laye",
-        "viaduc du Val Saint-Léger",
-        "croix de Noailles"
+        "temple protestant de Saint-Germain-en-Laye",
+        "hôtel de la Caisse d'épargne de Saint-Germain-en-Laye"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Germain-en-Laye",
       "hotel_count": 1,
@@ -14045,7 +14045,7 @@
           "lat": 48.8961904,
           "lon": 2.0901634,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A1R5/index.fr.shtml"
         }
       ]
     },
@@ -14074,7 +14074,7 @@
           "lat": 46.6964858,
           "lon": -1.9297848,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8951/index.fr.shtml"
         }
       ]
     },
@@ -14109,7 +14109,7 @@
           "lat": 48.965585,
           "lon": 2.283005,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5542/index.fr.shtml"
         },
         {
           "osm_id": "way/79390143",
@@ -14120,7 +14120,7 @@
           "lat": 48.9639174,
           "lon": 2.2858805,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5542/index.fr.shtml"
         }
       ]
     },
@@ -14138,13 +14138,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "croix du cimetière",
+        "monument aux morts de Saint-Grégoire",
         "écluse de Robinson",
         "église Saint-Grégoire-le-Grand de Saint-Grégoire",
-        "monument aux morts de Saint-Grégoire",
+        "maison éclusière n° 3, canal d'Ille-et-Rance, Saint-Grégoire",
         "bénitier à Saint-Grégoire",
         "manoir de la Ville-Asselin",
-        "borne de la Liberté №8",
-        "maison éclusière n° 3, canal d'Ille-et-Rance, Saint-Grégoire"
+        "borne de la Liberté №8"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Grégoire_(Ille-et-Vilaine)",
       "hotel_count": 1,
@@ -14158,7 +14158,7 @@
           "lat": 48.1334869,
           "lon": -1.6922584,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7422/index.fr.shtml"
         }
       ]
     },
@@ -14196,7 +14196,7 @@
           "lat": 47.22447,
           "lon": -1.6380825,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/3436/index.fr.shtml"
         }
       ]
     },
@@ -14294,12 +14294,12 @@
       "monuments_historiques": [
         "Marbre de Thorigny",
         "église Notre-Dame de Saint-Lô",
+        "poste de commandement du général Marcks",
         "centre hospitalier mémorial France - États-Unis",
         "chapelle de la Madeleine",
         "haras de Saint-Lô",
         "église Sainte-Croix de Saint-Lô",
-        "manoir de Bosdel",
-        "château de la Vaucelle"
+        "manoir de Bosdel"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Lô",
       "hotel_count": 1,
@@ -14313,7 +14313,7 @@
           "lat": 49.101466,
           "lon": -1.074292,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0930/index.fr.shtml"
         }
       ]
     },
@@ -14358,7 +14358,7 @@
           "lat": 48.6254071,
           "lon": -1.98986,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0728/index.fr.shtml"
         },
         {
           "osm_id": "way/51926314",
@@ -14369,7 +14369,7 @@
           "lat": 48.6531113,
           "lon": -2.0121459,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1105/index.fr.shtml"
         },
         {
           "osm_id": "node/1078806875",
@@ -14468,7 +14468,7 @@
           "lat": 50.7483476,
           "lon": 2.2515607,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0723/index.fr.shtml"
         }
       ]
     },
@@ -14538,9 +14538,9 @@
         "hôtel de ville de Saint-Quentin",
         "orgue de la basilique Saint-Quentin",
         "cimetière militaire allemand de Saint-Quentin",
-        "chapelle de la Charité",
-        "porte des Canonniers",
-        "puits de Saint-Quentin"
+        "usine Sidoux",
+        "chapelle Sainte-Thérèse-de-l'Enfant-Jésus de Neuville",
+        "anciennes nouvelles Galeries de Saint-Quentin"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Quentin",
       "hotel_count": 1,
@@ -14554,7 +14554,7 @@
           "lat": 49.8471898,
           "lon": 3.2890284,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1641/index.fr.shtml"
         }
       ]
     },
@@ -14592,7 +14592,7 @@
           "lat": 48.6490279,
           "lon": -1.3477074,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0882/index.fr.shtml"
         }
       ]
     },
@@ -14666,7 +14666,7 @@
           "lat": 44.8926873,
           "lon": -0.1960587,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8510/index.fr.shtml"
         }
       ]
     },
@@ -14769,9 +14769,9 @@
         "basilique Saint-Eutrope de Saintes",
         "amphithéâtre de Saintes",
         "abbaye aux Dames de Saintes",
-        "bénitier à Saintes",
-        "hôtel Monconseil",
-        "couvent des Jacobins de Saintes"
+        "aqueduc de Saintes",
+        "couvent des Jacobins de Saintes",
+        "haras national de Saintes"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saintes",
       "hotel_count": 1,
@@ -14827,7 +14827,7 @@
           "lat": 45.9554653,
           "lon": 6.6296012,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B2Q5/index.fr.shtml"
         },
         {
           "osm_id": "way/65192522",
@@ -14838,7 +14838,7 @@
           "lat": 45.9511815,
           "lon": 6.629223,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0639/index.fr.shtml"
         }
       ]
     },
@@ -14867,9 +14867,9 @@
         "église Saint-Michel de Salon-de-Provence",
         "église Saint-Laurent de Salon-de-Provence",
         "tour de l'Horloge",
-        "maison de Nostradamus",
         "porte de Bourgneuf",
-        "monument aux morts de Salon-de-Provence"
+        "monument aux morts de Salon-de-Provence",
+        "maison de Nostradamus"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Salon-de-Provence",
       "hotel_count": 1,
@@ -14883,7 +14883,7 @@
           "lat": 43.6277222,
           "lon": 5.1147473,
           "phone": null,
-          "website": "https://all.accor.com/hotel/0797/index.en.shtml"
+          "website": "https://all.accor.com/hotel/0797/index.fr.shtml"
         }
       ]
     },
@@ -14953,7 +14953,7 @@
           "lat": 44.8812478,
           "lon": 1.2154977,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6868/index.fr.shtml"
         }
       ]
     },
@@ -14990,7 +14990,7 @@
           "lat": 48.7212015,
           "lon": 7.0373809,
           "phone": "+33 387035555",
-          "website": "https://all.accor.com/hotel/9439/index.en.shtml"
+          "website": "https://all.accor.com/hotel/9439/index.fr.shtml"
         }
       ]
     },
@@ -15069,7 +15069,7 @@
           "lat": 47.2690685,
           "lon": -0.07091,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8820/index.fr.shtml"
         }
       ]
     },
@@ -15101,7 +15101,7 @@
           "lat": 47.7816167,
           "lon": 7.3878035,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0627/index.fr.shtml"
         }
       ]
     },
@@ -15132,14 +15132,14 @@
       "hotels": [
         {
           "osm_id": "way/1185694666",
-          "name": "IBIS Styles",
+          "name": "Ibis Styles",
           "brand": "ibis Styles",
           "address": "4 Rue Gustave Eiffel, 49500 Segré-en-Anjou Bleu",
           "postcode": null,
           "lat": 47.6980005,
           "lon": -0.867143,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7006/index.fr.shtml"
         }
       ]
     },
@@ -15282,7 +15282,7 @@
           "lat": 43.12097,
           "lon": 5.8503945,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0828/index.fr.shtml"
         },
         {
           "osm_id": "way/186626649",
@@ -15293,7 +15293,7 @@
           "lat": 43.121386,
           "lon": 5.849781,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0443/index.fr.shtml"
         }
       ]
     },
@@ -15331,7 +15331,7 @@
           "lat": 49.365467,
           "lon": 3.3121607,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9238/index.fr.shtml"
         }
       ]
     },
@@ -15425,7 +15425,7 @@
           "lat": 48.5844106,
           "lon": 7.7367067,
           "phone": "+33 3 88 23 98 98",
-          "website": null
+          "website": "https://all.accor.com/hotel/0640/index.fr.shtml"
         },
         {
           "osm_id": "node/1248867872",
@@ -15458,7 +15458,7 @@
           "lat": 48.5693298,
           "lon": 7.7774561,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9568/index.fr.shtml"
         }
       ]
     },
@@ -15568,7 +15568,7 @@
           "lat": 46.3630542,
           "lon": 6.4661762,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/B5X9/index.fr.shtml"
         }
       ]
     },
@@ -15599,7 +15599,7 @@
           "lat": 49.2521648,
           "lon": 3.9775912,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0811/index.fr.shtml"
         }
       ]
     },
@@ -15744,7 +15744,7 @@
           "lat": 43.610869,
           "lon": 1.4202364,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1430/index.fr.shtml"
         },
         {
           "osm_id": "node/5696915984",
@@ -15999,7 +15999,7 @@
           "lat": 47.3002987,
           "lon": -2.2082678,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0858/index.fr.shtml"
         }
       ]
     },
@@ -16048,7 +16048,7 @@
           "lat": 48.2923449,
           "lon": 4.0802199,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/7496/index.fr.shtml"
         }
       ]
     },
@@ -16080,7 +16080,7 @@
           "lat": 49.2477933,
           "lon": 1.1869241,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A3N2/index.fr.shtml"
         }
       ]
     },
@@ -16115,7 +16115,7 @@
           "lat": 43.6197061,
           "lon": 7.0563991,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0711/index.fr.shtml"
         }
       ]
     },
@@ -16193,7 +16193,7 @@
           "lat": 50.3504243,
           "lon": 3.5258687,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6549/index.fr.shtml"
         }
       ]
     },
@@ -16271,7 +16271,7 @@
           "lat": 47.6700298,
           "lon": -2.7680581,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0650/index.fr.shtml"
         },
         {
           "osm_id": "node/3330368383",
@@ -16282,7 +16282,7 @@
           "lat": 47.6645347,
           "lon": -2.7529522,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/8651/index.fr.shtml"
         }
       ]
     },
@@ -16320,7 +16320,7 @@
           "lat": 48.8222717,
           "lon": 2.2940161,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1827/index.fr.shtml"
         }
       ]
     },
@@ -16465,12 +16465,12 @@
       "monuments_historiques": [
         "synagogue de Vesoul",
         "église Saint-Georges de Vesoul",
+        "monument aux morts des Allées",
         "collège de Marteroy",
         "couvent des Ursulines de Vesoul",
         "hôtel Baressols",
         "hôtel Lyautey de Genevreuille",
-        "hôtel Pétremand",
-        "hôtel Simon Renard"
+        "hôtel Pétremand"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vesoul",
       "hotel_count": 1,
@@ -16529,7 +16529,7 @@
           "lat": 46.1278012,
           "lon": 3.4201228,
           "phone": "+33 4 70 30 53 53",
-          "website": null
+          "website": "https://all.accor.com/hotel/1514/index.fr.shtml"
         },
         {
           "osm_id": "way/90603028",
@@ -16540,7 +16540,7 @@
           "lat": 46.1280525,
           "lon": 3.416596,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/A6Q5/index.fr.shtml"
         }
       ]
     },
@@ -16569,9 +16569,9 @@
         "église Saint-Pierre de Vienne",
         "cirque romain de Vienne",
         "théâtre antique de Vienne",
-        "abbaye de Saint-André-le-Haut",
-        "jardins de Cybèle",
-        "chapelle Saint-Théodore de Vienne"
+        "chapelle Saint-Théodore de Vienne",
+        "château de la Bâtie",
+        "enceinte romaine de Vienne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vienne_(Isère)",
       "hotel_count": 1,
@@ -16585,7 +16585,7 @@
           "lat": 45.528624,
           "lon": 4.87415,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6867/index.fr.shtml"
         }
       ]
     },
@@ -16629,7 +16629,7 @@
           "lat": 47.2461827,
           "lon": 2.0670841,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/9782/index.fr.shtml"
         }
       ]
     },
@@ -16666,7 +16666,7 @@
           "lat": 44.7795065,
           "lon": -0.5692115,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1996/index.fr.shtml"
         },
         {
           "osm_id": "node/7266720041",
@@ -16744,7 +16744,7 @@
           "lat": 43.3348514,
           "lon": 3.2781533,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0683/index.fr.shtml"
         }
       ]
     },
@@ -16818,7 +16818,7 @@
           "lat": 48.9665357,
           "lon": 2.5171797,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0976/index.fr.shtml"
         },
         {
           "osm_id": "way/146527056",
@@ -16829,7 +16829,7 @@
           "lat": 48.9723443,
           "lon": 2.5129794,
           "phone": "+33148632610",
-          "website": null
+          "website": "https://www.courtepaille.com/restaurant/courtepaille-villepinte/"
         }
       ]
     },
@@ -16867,7 +16867,7 @@
           "lat": 49.288715,
           "lon": 2.4995735,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/5951/index.fr.shtml"
         }
       ]
     },
@@ -16960,8 +16960,8 @@
         "hôtel de ville de Villeurbanne",
         "Gratte-ciel",
         "villa Lafont",
-        "monument aux morts de Villeurbanne",
         "résidence La Perralière",
+        "monument aux morts de Villeurbanne",
         "minoterie de la Société des Grands Moulins Electriques de Villeurbanne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villeurbanne",
@@ -17014,7 +17014,7 @@
           "lat": 43.4267983,
           "lon": 5.2581066,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0442/index.fr.shtml"
         }
       ]
     },
@@ -17036,9 +17036,9 @@
         "Vitré",
         "remparts de Vitré",
         "église Notre-Dame de Vitré",
-        "maison Batteux",
-        "hôtel du Bât",
-        "hôtel de la Botte Dorée"
+        "chapelle Saint-Nicolas de Vitré",
+        "prieuré Notre-Dame de Vitré",
+        "église Saint-Martin de Vitré"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vitré_(Ille-et-Vilaine)",
       "hotel_count": 1,
@@ -17052,7 +17052,7 @@
           "lat": 48.1195105,
           "lon": -1.2097766,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/6233/index.fr.shtml"
         }
       ]
     },
@@ -17082,8 +17082,8 @@
           "postcode": null,
           "lat": 46.2977305,
           "lon": -0.3756621,
-          "phone": null,
-          "website": null
+          "phone": "+33 5 49 75 67 66",
+          "website": "https://all.accor.com/hotel/9122/index.fr.shtml"
         }
       ]
     },
@@ -17175,7 +17175,7 @@
           "lat": 48.480236,
           "lon": -2.6640672,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1755/index.fr.shtml"
         }
       ]
     },
@@ -17212,7 +17212,7 @@
           "lat": 45.4173885,
           "lon": 2.0581103,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0816/index.fr.shtml"
         }
       ]
     },
@@ -17277,8 +17277,8 @@
         "Coteaux, maisons et caves de Champagne",
         "Champagne de Castellane",
         "avenue de Champagne",
-        "synagogue d'Épernay",
         "hôtel de ville d'Épernay",
+        "synagogue d'Épernay",
         "Maison Belle Époque",
         "fort Chabrol",
         "hôtel de la Caisse d'épargne d'Épernay"
@@ -17295,7 +17295,7 @@
           "lat": 49.0424214,
           "lon": 3.9527906,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0852/index.fr.shtml"
         }
       ]
     },
@@ -17374,7 +17374,7 @@
           "lat": 48.9540675,
           "lon": 2.3083365,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0733/index.fr.shtml"
         }
       ]
     },
@@ -17412,7 +17412,7 @@
           "lat": 48.4361317,
           "lon": 2.1647511,
           "phone": "+33 1 69 92 16 50",
-          "website": null
+          "website": "https://all.accor.com/hotel/7285/index.fr.shtml"
         }
       ]
     },
@@ -17450,7 +17450,7 @@
           "lat": 48.6197855,
           "lon": 2.4209705,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/0752/index.fr.shtml"
         },
         {
           "osm_id": "way/63756806",
@@ -17472,7 +17472,7 @@
           "lat": 48.6248426,
           "lon": 2.4294394,
           "phone": null,
-          "website": null
+          "website": "https://all.accor.com/hotel/1986/index.fr.shtml"
         }
       ]
     }
