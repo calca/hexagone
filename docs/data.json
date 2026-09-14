@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-07T03:31:57.960277+00:00",
+  "generated_at": "2026-09-14T03:34:02.315797+00:00",
   "source": "OpenStreetMap contributors (ODbL) · geo.api.gouv.fr / api-adresse.data.gouv.fr (Etalab) · Wikidata (CC0) · Wikipedia/Wikivoyage FR (CC BY-SA)",
   "stats": {
     "cities": 382,
-    "hotels": 624,
+    "hotels": 625,
     "ibis": 397,
-    "ibis_styles": 227
+    "ibis_styles": 228
   },
   "cities": [
     {
@@ -33,7 +33,7 @@
         "église Saint-Gilles d'Abbeville",
         "église Notre-Dame de la Chapelle",
         "abbaye Notre-Dame de Willencourt",
-        "carmel d'Abbeville"
+        "beffroi d'Abbeville"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbeville",
       "hotel_count": 1,
@@ -639,8 +639,8 @@
         "couvent des Ursulines de la Davrays",
         "villa de la Douvelière",
         "église Saint-Pierre d'Ancenis",
-        "bannière de procession de Saint-Géréon",
-        "ornement liturgique à Ancenis"
+        "croix-reliquaire à Ancenis",
+        "La Foi et l'Espérance"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Ancenis-Saint-Géréon",
       "hotel_count": 1,
@@ -1106,13 +1106,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "château d'Aubenas",
+        "église Saint-Laurent d'Aubenas",
         "maison Delichères",
         "chapelle Saint-Benoît d'Aubenas",
         "grange du Cheylard",
         "hôtel Goudard-Ruelle",
         "hôtel Missolz de Ferrières",
-        "maison Michel-Veyrenc",
-        "église Saint-Laurent d'Aubenas"
+        "maison Michel-Veyrenc"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Aubenas",
       "hotel_count": 1,
@@ -1149,11 +1149,11 @@
         "cathédrale Sainte-Marie d'Auch",
         "musée des Amériques - Auch",
         "hôtel de ville d'Auch",
+        "hôpital Pasteur-Saint-Augustin",
+        "Maison Fedel",
+        "square Jérôme-Cuzin",
         "prieuré de Saint-Orens d'Auch",
-        "allées d'Étigny",
-        "carmel d'Auch",
-        "couvent des Carmélites d'Auch",
-        "couvent des Cordeliers d'Auch"
+        "allées d'Étigny"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auch",
       "hotel_count": 1,
@@ -1305,10 +1305,10 @@
         "abbaye royale de Saint-Germain d'Auxerre",
         "tour de l'Horloge",
         "église Saint-Eusèbe d'Auxerre",
-        "monument aux morts d'Auxerre",
-        "passage couvert Manifacier",
-        "église Saint-Pierre d'Auxerre",
-        "théâtre d'Auxerre"
+        "théâtre d'Auxerre",
+        "palais épiscopal d'Auxerre",
+        "ancien centre hospitalier spécialisé de l'Yonne",
+        "monument aux morts d'Auxerre"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auxerre",
       "hotel_count": 2,
@@ -1684,10 +1684,10 @@
         "hospices de Beaune",
         "basilique Notre-Dame de Beaune",
         "église Saint-Nicolas de Beaune",
+        "porte Saint-Nicolas",
         "hôtel des ducs de Bourgogne de Beaune",
         "maison du Colombier",
-        "tour de l'horloge de Beaune",
-        "porte Saint-Nicolas"
+        "tour de l'horloge de Beaune"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaune",
       "hotel_count": 3,
@@ -2394,7 +2394,7 @@
         "hôtel de la Teyssonnière",
         "maison du 30 rue de la République",
         "hôtel de Bohan",
-        "statue de Xavier Bichat"
+        "château de Pennesuyt"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Bourg-en-Bresse",
       "hotel_count": 2,
@@ -2966,11 +2966,11 @@
         "cathédrale Saint-Étienne de Cahors",
         "pont Valentré",
         "arc de Diane",
+        "remparts de Cahors",
+        "amphithéâtre romain de Cahors",
+        "maison, 46 rue Donzelle",
         "grenier du chapitre",
-        "lycée Gambetta",
-        "hôtel de Roaldès",
-        "musée de Cahors Henri-Martin",
-        "Sainte Coiffe de Cahors"
+        "lycée Gambetta"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Cahors",
       "hotel_count": 1,
@@ -3245,12 +3245,12 @@
       "monuments_historiques": [
         "cathédrale Saint-Benoît de Castres",
         "palais épiscopal de Castres",
+        "maison natale de Jean Jaurès",
+        "maison, 31 rue de l'Hôtel-de-Ville",
         "château du Causse",
         "couvent des Cordeliers de Castres",
         "jardin de l'Évêché de Castres",
-        "église Notre-Dame-de-la-Platé de Castres",
-        "hôtel de Nayrac",
-        "château d'Hauterive"
+        "église Notre-Dame-de-la-Platé de Castres"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Castres",
       "hotel_count": 1,
@@ -3488,13 +3488,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "cathédrale Saint-Vincent de Chalon-sur-Saône",
-        "Musée Denon",
-        "église Saint-Pierre de Chalon-sur-Saône",
-        "abbaye Saint-Pierre de Chalon-sur-Saône",
-        "bureau des coches et des diligences",
-        "cloître capitulaire de Saint-Vincent",
-        "palais épiscopal de Chalon-sur-Saône",
-        "fontaine de Neptune"
+        "théâtre Piccolo – Théatre municipal de Chalon-sur-Saône",
+        "tour du Beffroi",
+        "tour de Coco-l'ouvrier",
+        "tour du Doyenné",
+        "tour de Saudon",
+        "chapelle de la Colombière",
+        "abbaye médiévale Saint-Pierre de Chalon-sur-Saône"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Chalon-sur-Saône",
       "hotel_count": 3,
@@ -4134,11 +4134,11 @@
         "cathédrale Saint-Étienne",
         "collégiale Notre-Dame-en-Vaux",
         "synagogue de Châlons-en-Champagne",
-        "temple de Châlons-en-Champagne",
         "musée des Beaux-Arts et d'Archéologie de Châlons-en-Champagne",
+        "abbaye Saint-Pierre-aux-Monts",
         "hôtel de ville de Châlons-en-Champagne",
         "porte Sainte-Croix",
-        "hôtel-Dieu-Saint-Étienne"
+        "temple de Châlons-en-Champagne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Châlons-en-Champagne",
       "hotel_count": 2,
@@ -4226,7 +4226,7 @@
         "église Saint-Martial de Châteauroux",
         "couvent des Cordeliers de Châteauroux",
         "porte de Châteauroux",
-        "chambre de commerce et d'industrie de l'Indre"
+        "maison du Peuple"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Châteauroux",
       "hotel_count": 1,
@@ -4337,10 +4337,10 @@
         "arboretum de la Vallée-aux-Loups",
         "cité-jardin de la Butte-Rouge",
         "hôtel La Faulotte",
+        "L'Île Verte",
         "église Saint-Germain-l'Auxerrois de Châtenay-Malabry",
         "château de la Petite Roseraie",
-        "parc de la Vallée-aux-Loups",
-        "pavillon Colbert"
+        "château la Boursidière"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Châtenay-Malabry",
       "hotel_count": 1,
@@ -4475,7 +4475,7 @@
         "sanctuaire de Trémonteix"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Clermont-Ferrand",
-      "hotel_count": 5,
+      "hotel_count": 6,
       "hotels": [
         {
           "osm_id": "way/549808125",
@@ -4531,6 +4531,17 @@
           "lon": 3.1410123,
           "phone": null,
           "website": "https://all.accor.com/hotel/9262/index.fr.shtml"
+        },
+        {
+          "osm_id": "way/66670944",
+          "name": "Ibis Styles Clermont-Ferrand Le Brezet Aeroport",
+          "brand": "ibis Styles",
+          "address": "30 rue Georges Besse, 63100 Clermont-Ferrand",
+          "postcode": null,
+          "lat": 45.78523,
+          "lon": 3.1409482,
+          "phone": null,
+          "website": null
         }
       ]
     },
@@ -4560,17 +4571,6 @@
       "hotel_count": 3,
       "hotels": [
         {
-          "osm_id": "way/74469035",
-          "name": "Ibis",
-          "brand": "ibis",
-          "address": "Rue Marcellin Berthelot, 92110 Clichy",
-          "postcode": null,
-          "lat": 48.903655,
-          "lon": 2.3040011,
-          "phone": null,
-          "website": null
-        },
-        {
           "osm_id": "way/74473458",
           "name": "Ibis Styles",
           "brand": "ibis Styles",
@@ -4580,6 +4580,17 @@
           "lon": 2.3051132,
           "phone": null,
           "website": "https://all.accor.com/hotel/A3C7/index.fr.shtml"
+        },
+        {
+          "osm_id": "way/74469035",
+          "name": "ibis Clichy Centre Mairie",
+          "brand": "ibis",
+          "address": "4 Rue Marcelin Berthelot, 92110 Clichy",
+          "postcode": "92110",
+          "lat": 48.903655,
+          "lon": 2.3040011,
+          "phone": null,
+          "website": null
         },
         {
           "osm_id": "node/797963541",
@@ -4700,9 +4711,9 @@
         "collégiale Saint-Martin de Colmar",
         "maison Pfister",
         "Koïfhus",
-        "synagogue de Colmar",
         "maison des Têtes de Colmar",
-        "couvent des Dominicains de Colmar"
+        "synagogue de Colmar",
+        "église Saint-Matthieu de Colmar"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Colmar",
       "hotel_count": 3,
@@ -4841,11 +4852,11 @@
         "tour Areva",
         "Tour CB21",
         "Courbevoie",
-        "Bécon-les-Bruyères",
         "Tour CGI",
+        "Bécon-les-Bruyères",
         "hôtel de ville de Courbevoie",
-        "caserne Charras",
-        "musée Roybet-Fould"
+        "église Saint-Pierre-Saint-Paul de Courbevoie",
+        "pavillon des Indes britanniques"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Courbevoie",
       "hotel_count": 3,
@@ -4980,7 +4991,7 @@
         "palais de justice de Créteil",
         "pont de Créteil",
         "hôtel de préfecture du Val-de-Marne",
-        "maison du Combattant"
+        "château des Buttes"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Créteil",
       "hotel_count": 1,
@@ -5135,10 +5146,10 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "Trouville - Deauville",
+        "villa Strassburger",
         "port de Deauville",
         "hippodrome de Deauville-La Touques",
         "Normandy Barrière",
-        "villa Strassburger",
         "Les Franciscaines Deauville",
         "casino de Deauville",
         "église Saint-Laurent de Deauville"
@@ -5172,14 +5183,14 @@
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [
-        "château de Dieppe",
         "église Saint-Jacques de Dieppe",
-        "pont Colbert",
-        "maison Miffant",
+        "château de Dieppe",
         "église Saint-Rémy de Dieppe",
         "hôtel de l'Amirauté",
         "porte de Dieppe",
-        "collège des Oratoriens de Dieppe"
+        "collège des Oratoriens de Dieppe",
+        "temple protestant de Dieppe",
+        "hôtel de la Vicomté"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Dieppe_(Seine-Maritime)",
       "hotel_count": 1,
@@ -5619,12 +5630,12 @@
       "monuments_historiques": [
         "château de Fontainebleau",
         "lycée François-Ier",
-        "galerie François-Ier",
         "synagogue de Fontainebleau",
-        "quartier du Carrousel",
-        "prieuré Notre-Dame de Franchard",
-        "église Saint-Louis de Fontainebleau",
-        "bâtiment de la Mission"
+        "galerie François-Ier",
+        "hôtel du Tambour",
+        "hôtel de France et d'Angleterre",
+        "hôtel d'Orléans",
+        "hôtel de Pompadour"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontainebleau",
       "hotel_count": 1,
@@ -5656,13 +5667,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "église Saint-Germain-l'Auxerrois de Fontenay-sous-Bois",
-        "usine Gaveau",
-        "immeuble, 169 avenue de la République, Fontenay-sous-Bois",
-        "maison, 11 rue Yvonne",
-        "chapelle funéraire de la famille Barthélemy-Tissaire",
-        "chapelle funéraire de la famille Delarivière",
-        "chapelle funéraire de la famille Feolde-Scheltien",
-        "chapelle funéraire de la famille Greuillot"
+        "Saint Germain",
+        "Christ en croix",
+        "Saint Vincent",
+        "La Visitation",
+        "Évêque coupant la chevelure d'un homme agenouillé",
+        "plaque de commémoration de la donation faite par Marie Lefèbvre",
+        "Daniel dans la fosse aux lions"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontenay-sous-Bois",
       "hotel_count": 1,
@@ -5831,7 +5842,7 @@
       "hotels": [
         {
           "osm_id": "node/1081151262",
-          "name": "ibis Paris Porte D'Italie",
+          "name": "Ibis Paris Porte d'Italie (rouge)",
           "brand": "ibis",
           "address": "13 Rue du Val de Marne, 94250",
           "postcode": "94250",
@@ -6000,19 +6011,8 @@
           "website": "https://all.accor.com/hotel/2737/index.fr.shtml"
         },
         {
-          "osm_id": "node/311838028",
-          "name": "Ibis Grenoble Centre",
-          "brand": "ibis",
-          "address": "3 Rue de Miribel, 38000 Grenoble",
-          "postcode": null,
-          "lat": 45.1904221,
-          "lon": 5.7258889,
-          "phone": null,
-          "website": "https://all.accor.com/hotel/0612/index.fr.shtml"
-        },
-        {
           "osm_id": "node/669876542",
-          "name": "Ibis Styles",
+          "name": "Ibis Styles Grenoble Centre Gare",
           "brand": "ibis Styles",
           "address": "25 Avenue Félix Viallet, 38000 Grenoble",
           "postcode": null,
@@ -6020,6 +6020,17 @@
           "lon": 5.7196593,
           "phone": null,
           "website": "https://all.accor.com/hotel/7953/index.fr.shtml"
+        },
+        {
+          "osm_id": "node/311838028",
+          "name": "ibis Grenoble Centre Bastille",
+          "brand": "ibis",
+          "address": "3 Rue de Miribel, 38000 Grenoble",
+          "postcode": null,
+          "lat": 45.1904221,
+          "lon": 5.7258889,
+          "phone": null,
+          "website": "https://all.accor.com/hotel/0612/index.fr.shtml"
         }
       ]
     },
@@ -6118,7 +6129,7 @@
         "porte des Chevaliers",
         "synagogue de Haguenau",
         "porte de Wissembourg",
-        "grenier de l'hôpital"
+        "fontaine place Saint-Georges à Haguenau"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Haguenau",
       "hotel_count": 1,
@@ -6455,8 +6466,8 @@
         "manufacture des tabacs",
         "château d'Issy",
         "parc Henri-Barbusse",
-        "blanchisserie de Grenelle",
-        "hôpital Corentin-Celton"
+        "hôpital Corentin-Celton",
+        "tour aux figures"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Issy-les-Moulineaux",
       "hotel_count": 3,
@@ -6845,9 +6856,9 @@
         "château Vauclair",
         "Vieux-Port de La Rochelle",
         "Grande-maison de Lhommée",
+        "temple protestant de La Rochelle",
         "hôtel de ville de La Rochelle",
-        "musée des Beaux-Arts de La Rochelle",
-        "tour Saint-Nicolas"
+        "musée des Beaux-Arts de La Rochelle"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Rochelle",
       "hotel_count": 4,
@@ -7082,8 +7093,8 @@
         "jardin de la Perrine",
         "basilique Notre-Dame d'Avesnières",
         "viaduc de Laval",
-        "chapelle Notre-Dame à Pritz",
-        "collégiale Saint-Tugal de Laval"
+        "pont d'Avesnières",
+        "fontaine de Saint-Tugal"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Laval_(Mayenne)",
       "hotel_count": 1,
@@ -7532,12 +7543,12 @@
       "monuments_historiques": [
         "cathédrale Notre-Dame du Puy-en-Velay",
         "statue de Notre-Dame de France",
+        "hôtel-Dieu du Puy-en-Velay",
         "église Saint-Laurent du Puy-en-Velay",
         "baptistère Saint-Jean du Puy-en-Velay",
         "couvent Sainte-Claire",
         "église des Carmes du Puy-en-Velay",
-        "église du Collège du Puy-en-Velay",
-        "église Saint-Georges du Puy-en-Velay"
+        "église du Collège du Puy-en-Velay"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Puy-en-Velay",
       "hotel_count": 2,
@@ -7804,9 +7815,9 @@
         "hôtel de ville de Levallois-Perret",
         "institut hospitalier franco-britannique",
         "pont ferroviaire d'Asnières",
+        "villa Chaptal",
         "pont de Levallois",
-        "temple protestant de la Petite Étoile",
-        "église Saint-Justin de Levallois-Perret"
+        "temple protestant de la Petite Étoile"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Levallois-Perret",
       "hotel_count": 1,
@@ -7849,8 +7860,8 @@
         "cathédrale Notre-Dame-de-la-Treille",
         "citadelle de Lille",
         "église Saint-Maurice",
-        "synagogue de Lille",
         "hôtel de ville de Lille",
+        "synagogue de Lille",
         "collégiale Saint-Pierre de Lille"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Lille",
@@ -7981,9 +7992,9 @@
         "Limoges-Bénédictins",
         "abbaye Saint-Martial de Limoges",
         "basilique Saint-Michel-des-Lions de Limoges",
+        "musée national Adrien-Dubouché",
         "pont Saint-Martial",
         "pont Saint-Étienne",
-        "musée national Adrien-Dubouché",
         "église Saint-Pierre-du-Queyroix"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Limoges",
@@ -8349,8 +8360,8 @@
       "monuments_historiques": [
         "maison de Philippe le Bel",
         "château des Gaucelm",
-        "orgue de tribune de l'église Notre-Dame-du-Lac à Lunel",
         "Monument de la liberté",
+        "orgue de tribune de l'église Notre-Dame-du-Lac à Lunel",
         "Bienheureux Gérard de Lunel",
         "la Visitation",
         "la Présentation au Temple",
@@ -8792,8 +8803,8 @@
         "Marseille-Saint-Charles",
         "palais du Pharo",
         "tunnel du Rove",
-        "Ballet national de Marseille",
         "musée Grobet-Labadié",
+        "Ballet national de Marseille",
         "palais de la Bourse",
         "phare du Planier",
         "école supérieure d'art et de design Marseille-Méditerranée"
@@ -9030,11 +9041,11 @@
         "cathédrale Saint-Étienne de Meaux",
         "mémorial américain",
         "halle du marché de Meaux",
+        "remparts de Meaux",
+        "hôtel de la Caisse d'épargne de Meaux",
+        "immeuble des Nouvelles Galeries de Meaux",
         "église Saint-Christophe de Meaux",
-        "hôtel Macé de Montoury",
-        "hôtel Marquelet de la Noue",
-        "immeuble, 14 rue de la Cordonnerie",
-        "monastère de la Visitation"
+        "hôtel Macé de Montoury"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Meaux",
       "hotel_count": 1,
@@ -9228,8 +9239,8 @@
         "église Saint-Pierre-aux-Nonnains de Metz",
         "synagogue de Metz",
         "opéra-théâtre de Metz",
-        "hôtel de ville de Metz",
-        "temple Neuf de Metz"
+        "temple Neuf de Metz",
+        "hôtel de ville de Metz"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Metz",
       "hotel_count": 4,
@@ -9614,7 +9625,7 @@
         "tour de la Babotte",
         "basilique Notre-Dame des Tables",
         "Faculté de médecine de Montpellier",
-        "citadelle de Montpellier"
+        "promenade du Peyrou"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Montpellier",
       "hotel_count": 3,
@@ -9671,10 +9682,10 @@
         "murs à pêches",
         "église Saint-Pierre-et-Saint-Paul de Montreuil",
         "hôtel de ville de Montreuil",
+        "cimetière ancien de Montreuil",
         "bâtiment industriel Mozinor",
         "Pianos Klein",
-        "église Saint-André du Bas-Montreuil",
-        "chapelle Saint-Charles des Ruffins"
+        "église Saint-André du Bas-Montreuil"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Montreuil_(Seine-Saint-Denis)",
       "hotel_count": 2,
@@ -11043,11 +11054,11 @@
         "cathédrale Sainte-Croix d'Orléans",
         "pont George-V",
         "collégiale Saint-Aignan d'Orléans",
+        "Jeanne d'Arc guerrière",
         "hôtel Groslot",
         "jardin des plantes d'Orléans",
         "palais de justice d'Orléans",
-        "parc Floral de la Source",
-        "pont de l'Europe"
+        "parc Floral de la Source"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Orléans",
       "hotel_count": 2,
@@ -11688,8 +11699,8 @@
           "brand": "ibis",
           "address": "Rue Cambronne, 75015",
           "postcode": "75015",
-          "lat": 48.8471379,
-          "lon": 2.3013512,
+          "lat": 48.8469701,
+          "lon": 2.301305,
           "phone": null,
           "website": "https://www.accorhotels.com/fr/hotel-1400-ibis-paris-tour-eiffel-cambronne-15eme/index.shtml"
         },
@@ -12008,7 +12019,7 @@
         "église anglicane Saint-Andrew de Pau",
         "hôtel de ville de Pau",
         "église Saint-Joseph de Pau",
-        "palais Sorrento"
+        "hôtel de Gassion"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Pau",
       "hotel_count": 1,
@@ -12803,11 +12814,11 @@
         "Tour Ariane",
         "pont de Neuilly",
         "Puteaux",
-        "hôtel de ville de Puteaux",
         "église Notre-Dame-de-Pitié de Puteaux",
+        "hôtel de ville de Puteaux",
+        "église Sainte-Mathilde de Puteaux",
         "cimetière nouveau de Neuilly-sur-Seine",
-        "Rose de Cherbourg",
-        "église Sainte-Mathilde de Puteaux"
+        "Rose de Cherbourg"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Puteaux",
       "hotel_count": 1,
@@ -13477,8 +13488,8 @@
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [
-        "Le Trianon",
         "église Saint-Germain-l'Auxerrois de Romainville",
+        "Le Trianon",
         "décoration de la salle des mariages de l'hôtel de ville de Romainville",
         "La Famille",
         "Le Mariage",
@@ -14030,8 +14041,8 @@
         "château Neuf de Saint-Germain-en-Laye",
         "pavillon de la Muette",
         "église Saint-Germain de Saint-Germain-en-Laye",
-        "temple protestant de Saint-Germain-en-Laye",
-        "hôtel de la Caisse d'épargne de Saint-Germain-en-Laye"
+        "viaduc du Val Saint-Léger",
+        "croix de Noailles"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Germain-en-Laye",
       "hotel_count": 1,
@@ -14138,13 +14149,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "croix du cimetière",
-        "monument aux morts de Saint-Grégoire",
         "écluse de Robinson",
         "église Saint-Grégoire-le-Grand de Saint-Grégoire",
-        "maison éclusière n° 3, canal d'Ille-et-Rance, Saint-Grégoire",
+        "monument aux morts de Saint-Grégoire",
         "bénitier à Saint-Grégoire",
         "manoir de la Ville-Asselin",
-        "borne de la Liberté №8"
+        "borne de la Liberté №8",
+        "maison éclusière n° 3, canal d'Ille-et-Rance, Saint-Grégoire"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Grégoire_(Ille-et-Vilaine)",
       "hotel_count": 1,
@@ -14294,12 +14305,12 @@
       "monuments_historiques": [
         "Marbre de Thorigny",
         "église Notre-Dame de Saint-Lô",
-        "poste de commandement du général Marcks",
         "centre hospitalier mémorial France - États-Unis",
         "chapelle de la Madeleine",
         "haras de Saint-Lô",
         "église Sainte-Croix de Saint-Lô",
-        "manoir de Bosdel"
+        "manoir de Bosdel",
+        "château de la Vaucelle"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Lô",
       "hotel_count": 1,
@@ -14538,9 +14549,9 @@
         "hôtel de ville de Saint-Quentin",
         "orgue de la basilique Saint-Quentin",
         "cimetière militaire allemand de Saint-Quentin",
-        "usine Sidoux",
-        "chapelle Sainte-Thérèse-de-l'Enfant-Jésus de Neuville",
-        "anciennes nouvelles Galeries de Saint-Quentin"
+        "chapelle de la Charité",
+        "porte des Canonniers",
+        "puits de Saint-Quentin"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Quentin",
       "hotel_count": 1,
@@ -15813,7 +15824,7 @@
         "hôtel de ville de Tourcoing",
         "église Saint-Christophe de Tourcoing",
         "église Saint-Louis de Tourcoing",
-        "palais Vaissier",
+        "Q22961082",
         "hospice général de Tourcoing",
         "église Notre-Dame-des-Anges de Tourcoing",
         "église du Sacré-Cœur de Tourcoing"
@@ -16214,10 +16225,10 @@
         "château Anthoine",
         "chapelle de Brabois",
         "église Saint-Melaine de Vandœuvre-lès-Nancy",
-        "plaque commémorative (création de messe) à Vandœuvre-lès-Nancy",
-        "Vierge de Pitié",
         "Vierge à l'Enfant",
-        "Saint Mélaine"
+        "Saint Mélaine",
+        "plaque commémorative (création de messe) à Vandœuvre-lès-Nancy",
+        "Vierge de Pitié"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vandœuvre-lès-Nancy",
       "hotel_count": 1,
@@ -16829,7 +16840,7 @@
           "lat": 48.9723443,
           "lon": 2.5129794,
           "phone": "+33148632610",
-          "website": "https://www.courtepaille.com/restaurant/courtepaille-villepinte/"
+          "website": null
         }
       ]
     },
@@ -16960,8 +16971,8 @@
         "hôtel de ville de Villeurbanne",
         "Gratte-ciel",
         "villa Lafont",
-        "résidence La Perralière",
         "monument aux morts de Villeurbanne",
+        "résidence La Perralière",
         "minoterie de la Société des Grands Moulins Electriques de Villeurbanne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villeurbanne",
