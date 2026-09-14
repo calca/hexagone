@@ -1346,5 +1346,9 @@
   "node/14130785279": {
     "address": "4 Allee Bienvenue, 93160 Noisy-le-Grand",
     "distance_km": 0.051334257671181396
+  },
+  "way/66670944": {
+    "address": "30 rue Georges Besse, 63100 Clermont-Ferrand",
+    "distance_km": 0.023562691771486514
   }
 }
