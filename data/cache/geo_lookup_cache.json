@@ -3438,5 +3438,13 @@
     "wikidata": null,
     "lat": 48.8327,
     "lon": 2.556
+  },
+  "way/66670944": {
+    "name": "Clermont-Ferrand",
+    "name_norm": "Clermont-Ferrand",
+    "insee": "63113",
+    "wikidata": null,
+    "lat": 45.787,
+    "lon": 3.1127
   }
 }
