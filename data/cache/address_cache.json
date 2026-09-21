@@ -1350,5 +1350,9 @@
   "way/66670944": {
     "address": "30 rue Georges Besse, 63100 Clermont-Ferrand",
     "distance_km": 0.023562691771486514
+  },
+  "way/67722468": {
+    "address": "3 Avenue René Cassin, 23000 Guéret",
+    "distance_km": 0.021401975081100772
   }
 }
