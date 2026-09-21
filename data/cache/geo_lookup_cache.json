@@ -3446,5 +3446,21 @@
     "wikidata": null,
     "lat": 45.787,
     "lon": 3.1127
+  },
+  "way/67722468": {
+    "name": "Guéret",
+    "name_norm": "Gueret",
+    "insee": "23096",
+    "wikidata": null,
+    "lat": 46.1585,
+    "lon": 1.8705
+  },
+  "way/159270870": {
+    "name": "Bègles",
+    "name_norm": "Begles",
+    "insee": "33039",
+    "wikidata": null,
+    "lat": 44.803,
+    "lon": -0.5485
   }
 }
