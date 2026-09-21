@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-14T03:34:02.315797+00:00",
+  "generated_at": "2026-09-21T03:38:31.307951+00:00",
   "source": "OpenStreetMap contributors (ODbL) · geo.api.gouv.fr / api-adresse.data.gouv.fr (Etalab) · Wikidata (CC0) · Wikipedia/Wikivoyage FR (CC BY-SA)",
   "stats": {
-    "cities": 382,
-    "hotels": 625,
+    "cities": 384,
+    "hotels": 627,
     "ibis": 397,
-    "ibis_styles": 228
+    "ibis_styles": 230
   },
   "cities": [
     {
@@ -31,9 +31,9 @@
         "bains-douches d'Abbeville",
         "château de Bagatelle",
         "église Saint-Gilles d'Abbeville",
-        "église Notre-Dame de la Chapelle",
-        "abbaye Notre-Dame de Willencourt",
-        "beffroi d'Abbeville"
+        "carmel d'Abbeville",
+        "beffroi d'Abbeville",
+        "manufacture des Rames"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Abbeville",
       "hotel_count": 1,
@@ -84,25 +84,16 @@
       "id": "agen",
       "name": "Agen",
       "insee": "47001",
-      "wikidata": "Q6625",
+      "wikidata": null,
       "lat": 44.201,
       "lon": 0.6302,
-      "population": 32801,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Le site d'Agen fut vraisemblablement peuplé au moins dès le Néolithique. Un peuplement d'origine ibère aux VIIIe et VIIe siècles av. J.-C. est attesté sur le plateau de l'Ermitage par les vestiges actuellement à notre disposition. Cette situation sur un éperon rocheux donne la clé de la toponymie de la cité.\nLe site, bien que se trouvant à la confluence de la vallée de la Masse et de la Garonne, n'est pas l'endroit le plus stratégique de la vallée. Il est donc difficile d'expliquer par la seule géographie la raison pour laquelle les Nitiobroges (peuple celte arrivé vers 400 avant Jésus-Christ) ont choisi cet endroit pour en faire la capitale de leur royaume. Ils avaient édifié sur ce site une place forte d'environ 50 hectares, située à 100 mètres au-dessus du lit de la Garonne. On a trouvé des traces de cette occupation du sol au XIXe siècle et plus récemment, grâce au travail de…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Caprais d'Agen",
-        "pont-canal d'Agen",
-        "église Saint-Hilaire",
-        "palais épiscopal d'Agen",
-        "archives départementales de Lot-et-Garonne",
-        "ancienne église Saint-Hilaire d'Agen",
-        "amphithéâtre d'Agen",
-        "chapelle Notre-Dame du Bourg"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Agen",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -238,11 +229,11 @@
         "musée de la Maison Bonaparte",
         "cathédrale Notre-Dame-de-l'Assomption d'Ajaccio",
         "citadelle d'Ajaccio",
-        "chapelle Impériale d'Ajaccio",
         "phare des îles Sanguinaires",
         "palais Lantivy",
         "tour de la Parata",
-        "maison des Milelli"
+        "maison des Milelli",
+        "bibliothèque Fesch"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Ajaccio",
       "hotel_count": 1,
@@ -639,8 +630,8 @@
         "couvent des Ursulines de la Davrays",
         "villa de la Douvelière",
         "église Saint-Pierre d'Ancenis",
-        "croix-reliquaire à Ancenis",
-        "La Foi et l'Espérance"
+        "bannière de procession de Saint-Géréon",
+        "ornement liturgique à Ancenis"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Ancenis-Saint-Géréon",
       "hotel_count": 1,
@@ -662,11 +653,11 @@
       "id": "angers",
       "name": "Angers",
       "insee": "49007",
-      "wikidata": "Q38380",
+      "wikidata": null,
       "lat": 47.4819,
       "lon": -0.5629,
-      "population": 159022,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La plus ancienne trace d’occupation humaine remonte à 400 000 ans av. J.-C. et a été découverte rue de Frémur. Le site est occupé dès le néolithique (vers 4500-3000 av. J.-C.) puisqu’un cairn a été retrouvé sur le site actuel du château. Des rejets de silex ont également été découverts sous le logis royal.\n\nAu Ve siècle av. J.-C., le peuple celte des Andes ou Andécaves s’établit dans la région d’Angers, surtout au nord de la Loire, et lui donne son nom. Après la conquête de la Gaule par les armées de César, la ville se romanise. Cependant, le nom gallo-romain de Juliomagus (« le marché / le champ de Julius ») n’est attesté qu’au IIe siècle.\nJuliomagus est délimitée à l'ouest par la Maine et à l'est par un amphithéâtre. C'était une petite ville qui ne dépassait pas les 80 ha dans son extension maximale, à comparer aux 200 ha de Nemausus (Nîmes) et aux 220 ha d'Augustudunum (Autun) et…",
       "attractions": [
         "Île Saint Aubin",
@@ -677,17 +668,8 @@
         "Muséum des sciences naturelles"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Château d'Angers",
-        "cathédrale Saint-Maurice d'Angers",
-        "Tenture de l'Apocalypse",
-        "abbaye Saint-Aubin d'Angers",
-        "abbaye Saint-Nicolas d'Angers",
-        "hôpital Saint-Jean",
-        "Maison d'Adam",
-        "abbaye Saint-Serge d'Angers"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Angers",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -1106,13 +1088,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "château d'Aubenas",
-        "église Saint-Laurent d'Aubenas",
-        "maison Delichères",
         "chapelle Saint-Benoît d'Aubenas",
         "grange du Cheylard",
         "hôtel Goudard-Ruelle",
         "hôtel Missolz de Ferrières",
-        "maison Michel-Veyrenc"
+        "maison Michel-Veyrenc",
+        "église Saint-Laurent d'Aubenas",
+        "maison Delichères"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Aubenas",
       "hotel_count": 1,
@@ -1149,11 +1131,11 @@
         "cathédrale Sainte-Marie d'Auch",
         "musée des Amériques - Auch",
         "hôtel de ville d'Auch",
-        "hôpital Pasteur-Saint-Augustin",
-        "Maison Fedel",
-        "square Jérôme-Cuzin",
         "prieuré de Saint-Orens d'Auch",
-        "allées d'Étigny"
+        "allées d'Étigny",
+        "carmel d'Auch",
+        "couvent des Carmélites d'Auch",
+        "couvent des Cordeliers d'Auch"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auch",
       "hotel_count": 1,
@@ -1213,28 +1195,19 @@
       "id": "auray",
       "name": "Auray",
       "insee": "56007",
-      "wikidata": "Q62958",
+      "wikidata": null,
       "lat": 47.6684,
       "lon": -2.9901,
-      "population": 14207,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Auray a été classée par le Ministère de la Culture ville d'art et d'histoire jusqu'au printemps 2006.\nAuray est un nom de lieu, ayant pour origine un nom breton de personne, mentionné pour la première fois en 1069, Alrae, puis en 1168 Alrai, en breton Alré[source insuffisante].\n\nLa seigneurie d'Auray relevait de Guingamp avant de passer en 1034 dans la maison des ducs. En 1168, Auray est pris par le roi d'Angleterre Henri II.\nL'emplacement primitif d'Auray et de son ancien château est un promontoire situé au bord d'un plateau dominant le fond d'une ria avec un port et un gué sur une rivière côtière.\nAuray a donné naissance à deux bourgs situés de chaque côté du château :\n\nl'un établi sur le plateau autour du prieuré de Saint-Gildas, succursale de l'abbaye Saint-Gildas de Rhuys ;\nl'autre « bourg ou ville » appelé Saint Goustan (patron des pêcheurs), établi près du port (le port…",
       "attractions": [
         "Église Saint-Gildas",
         "Port Saint-Goustan"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "château d'Auray",
-        "église Saint-Gildas",
-        "monument de Cadoudal",
-        "église Saint-Sauveur",
-        "chapelle du Saint-Esprit",
-        "croix de Saint-Fiacre",
-        "hôtel de ville d'Auray",
-        "pont de Saint-Goustan"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Auray",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -1305,10 +1278,10 @@
         "abbaye royale de Saint-Germain d'Auxerre",
         "tour de l'Horloge",
         "église Saint-Eusèbe d'Auxerre",
-        "théâtre d'Auxerre",
-        "palais épiscopal d'Auxerre",
-        "ancien centre hospitalier spécialisé de l'Yonne",
-        "monument aux morts d'Auxerre"
+        "monument aux morts d'Auxerre",
+        "passage couvert Manifacier",
+        "église Saint-Pierre d'Auxerre",
+        "théâtre d'Auxerre"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Auxerre",
       "hotel_count": 2,
@@ -1684,10 +1657,10 @@
         "hospices de Beaune",
         "basilique Notre-Dame de Beaune",
         "église Saint-Nicolas de Beaune",
-        "porte Saint-Nicolas",
         "hôtel des ducs de Bourgogne de Beaune",
         "maison du Colombier",
-        "tour de l'horloge de Beaune"
+        "tour de l'horloge de Beaune",
+        "porte Saint-Nicolas"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Beaune",
       "hotel_count": 3,
@@ -1701,7 +1674,7 @@
           "lat": 47.019864,
           "lon": 4.8347659,
           "phone": null,
-          "website": "https://all.accor.com/hotel/1363/index.de.shtml?dateIn=&nights=&compositions=2&stayplus=false&snu=false#origin=accor"
+          "website": "https://all.accor.com/hotel/1363/index.fr.shtml"
         },
         {
           "osm_id": "node/1860066933",
@@ -1791,8 +1764,8 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "Lion de Belfort",
-        "Belfort-Ville",
         "cathédrale Saint-Christophe de Belfort",
+        "Belfort-Ville",
         "synagogue de Belfort",
         "citadelle de Belfort",
         "hôtel de ville de Belfort",
@@ -2091,8 +2064,8 @@
         "Bobigny",
         "cimetière musulman de Bobigny",
         "bourse départementale du travail Clara Zetkin",
-        "église de Tous-les-Saints de Bobigny",
         "hôtel de préfecture et du département de la Seine-Saint-Denis",
+        "église de Tous-les-Saints de Bobigny",
         "cité de l'Abreuvoir",
         "Ancienne imprimerie de L'Illustration"
       ],
@@ -2370,7 +2343,7 @@
           "lat": 46.6226254,
           "lon": 3.7535923,
           "phone": "+33385893737",
-          "website": "https://all.accor.com/hotel/8123/index.fr.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps"
+          "website": "https://all.accor.com/hotel/8123/index.fr.shtml"
         }
       ]
     },
@@ -2670,8 +2643,8 @@
         "hôtel Clavier",
         "maison Romane",
         "palais des comtes de Provence",
-        "chapelle Sainte-Catherine de Brignoles",
-        "dolmens n° 1 et 2 des Adrets"
+        "chapelle des Cordeliers de Brignoles",
+        "chapelle Sainte-Catherine de Brignoles"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Brignoles",
       "hotel_count": 1,
@@ -2716,7 +2689,7 @@
         "maison dite Tour des Échevins",
         "hôtel de ville de Brive-la-Gaillarde",
         "maison Renaudie",
-        "maison Treilhard"
+        "centre d'études et musée Edmond-Michelet"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Brive-la-Gaillarde",
       "hotel_count": 2,
@@ -2800,6 +2773,44 @@
           "lon": 2.5811195,
           "phone": null,
           "website": "https://all.accor.com/hotel/9188/index.fr.shtml"
+        }
+      ]
+    },
+    {
+      "id": "begles",
+      "name": "Bègles",
+      "insee": "33039",
+      "wikidata": "Q192438",
+      "lat": 44.803,
+      "lon": -0.5485,
+      "population": 31831,
+      "population_year": "2023",
+      "history_summary": "La plus ancienne trace humaine sur le territoire de Bègles est estimée à environ 150 000 ans avant notre ère, depuis la découverte en 1966, rue des Quatre Castéra, d’un silex biface datant de l’époque paléolithique. Des vestiges mégalithiques, environ −5 000 ans, sont visibles dans la commune limitrophe de Villenave-d'Ornon.\n\nUn fragment d'aqueduc a été dégagé en octobre 1953 à la barrière de Bègles : la couverture était assurée par des plaques de calcaire dur. Vu la pente du conduit, l'eau n'était pas acheminée vers Bordeaux mais vers le sud de Bègles. Cette portion de conduit ressemble au fragment décrit par Camille Jullian et déposé au Musée des Antiques.\n\nHistoriquement enserrée entre la « Route de Langon à Bordeaux », aujourd'hui Route de Toulouse, et la Garonne, le territoire se fragmentait en plusieurs sites de populations isolées les unes des autres. Sur la partie ouest, un…",
+      "attractions": [],
+      "unesco_sites": [],
+      "monuments_historiques": [
+        "château de Francs",
+        "piscine municipale de Bègles",
+        "église Saint-Pierre de Bègles",
+        "domaine de Lachaise",
+        "saint Roch, saint Etienne à Bègles",
+        "groupe d'objets à Bègles",
+        "cloche à Bègles",
+        "plaques commémoratives (2) à Bègles"
+      ],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Bègles",
+      "hotel_count": 1,
+      "hotels": [
+        {
+          "osm_id": "way/159270870",
+          "name": "Ibis Styles Bordeaux Beglès Arena",
+          "brand": "ibis Styles",
+          "address": "3 Marcel Sambat",
+          "postcode": null,
+          "lat": 44.8200255,
+          "lon": -0.5402695,
+          "phone": "+33556494300",
+          "website": "https://all.accor.com/hotel/B9L1/index.fr.shtml"
         }
       ]
     },
@@ -2942,7 +2953,7 @@
           "postcode": "14000",
           "lat": 49.1787929,
           "lon": -0.3493285,
-          "phone": null,
+          "phone": "+33 2 31 34 20 00",
           "website": "http://www.ibis.com"
         }
       ]
@@ -2951,28 +2962,19 @@
       "id": "cahors",
       "name": "Cahors",
       "insee": "46042",
-      "wikidata": "Q23047",
+      "wikidata": null,
       "lat": 44.4565,
       "lon": 1.439,
-      "population": 20050,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Le Quercy, dont le département du Lot est un des composants, était habité il y a 335 000 ans, comme le montrent les grottes de Pradayrol à Caniac-du-Causse ou celles de la vallée du Célé comme la grotte du Pech Merle à Cabrerets.\nUn des peuples gaulois du Sud-Ouest, les Cadurques, vint s'installer par la suite sur les hauteurs où il subsiste des vestiges de leurs oppida fortifiés. Une de leurs places-fortes, Uxellodunum, est en 51 av. J.-C., l'un des derniers bastions résistant à la conquête de César. Il fait d'ailleurs référence à ce peuple dans ses Commentaires sur la guerre des Gaules. Bien qu'il ait pu exister un sanctuaire celte à l'emplacement de Cahors à l'époque gauloise, il semble que la ville n'ait été fondée qu'après la conquête romaine. La principale place des Cadurques avant la conquête aurait été l'oppidum de Murcens.\n\nLa ville, enserrée dans une large boucle du Lot…",
       "attractions": [
         "Pont Valentré",
         "Cathédrale Saint-Étienne"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Étienne de Cahors",
-        "pont Valentré",
-        "arc de Diane",
-        "remparts de Cahors",
-        "amphithéâtre romain de Cahors",
-        "maison, 46 rue Donzelle",
-        "grenier du chapitre",
-        "lycée Gambetta"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cahors",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -3245,12 +3247,12 @@
       "monuments_historiques": [
         "cathédrale Saint-Benoît de Castres",
         "palais épiscopal de Castres",
-        "maison natale de Jean Jaurès",
-        "maison, 31 rue de l'Hôtel-de-Ville",
-        "château du Causse",
         "couvent des Cordeliers de Castres",
         "jardin de l'Évêché de Castres",
-        "église Notre-Dame-de-la-Platé de Castres"
+        "église Notre-Dame-de-la-Platé de Castres",
+        "hôtel de Nayrac",
+        "château d'Hauterive",
+        "hôtel de Viviès"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Castres",
       "hotel_count": 1,
@@ -3272,25 +3274,16 @@
       "id": "caudan",
       "name": "Caudan",
       "insee": "56036",
-      "wikidata": "Q69533",
+      "wikidata": null,
       "lat": 47.8099,
       "lon": -3.3383,
-      "population": 7206,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Plusieurs monuments mégalithiques ont été répertoriés :\n\nun tumulus et un dolmen à couloir et à chambre circulaire de 5 m de diamètre au Nelhouët. Les dimensions du monument sont basées sur des multiples de 0,30 m. On y a mis au jour en 1898 une plaque d'ardoise de 11 cm sur 2,6 cm percée aux deux extrémités et six poteries d'argile de forme sphérique, apodes et à une oreille-bouton. De teinte généralement rouge-brun à acajou, l'une d'elles est ornée de quatre bandes à six rayures exécutées à la roulette dentée ;\nun dolmen à éléments de quartz appelé Ty Neuziganed  au Lainmat, fouillé en 1822, qui comportait une sépulture adventice de la période du Hallstatt recelant une ciste (récipient contenant des objets de soin et de toilette ou des offrandes destinées aux dieux) en bronze à cordons avec poignée en fer. Cet objet dort dans une collection privée. Le dolmen n'existe plus ;\n\nun dolmen…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "croix de Scouhel",
-        "chapelle Notre-Dame-de-Trescoët",
-        "chapelle Notre-Dame-de-Vérité",
-        "dolmen de Nelhouët",
-        "fontaine de Trescoët",
-        "église Saint-Pierre de Caudan",
-        "château du Diable",
-        "château de Bois-Joly"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Caudan",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -3488,13 +3481,13 @@
       "unesco_sites": [],
       "monuments_historiques": [
         "cathédrale Saint-Vincent de Chalon-sur-Saône",
-        "théâtre Piccolo – Théatre municipal de Chalon-sur-Saône",
-        "tour du Beffroi",
-        "tour de Coco-l'ouvrier",
-        "tour du Doyenné",
-        "tour de Saudon",
-        "chapelle de la Colombière",
-        "abbaye médiévale Saint-Pierre de Chalon-sur-Saône"
+        "Musée Denon",
+        "église Saint-Pierre de Chalon-sur-Saône",
+        "abbaye Saint-Pierre de Chalon-sur-Saône",
+        "bureau des coches et des diligences",
+        "cloître capitulaire de Saint-Vincent",
+        "palais épiscopal de Chalon-sur-Saône",
+        "fontaine de Neptune"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Chalon-sur-Saône",
       "hotel_count": 3,
@@ -3716,22 +3709,16 @@
       "id": "change",
       "name": "Changé",
       "insee": "53054",
-      "wikidata": "Q1060889",
+      "wikidata": null,
       "lat": 48.1131,
       "lon": -0.7961,
-      "population": 6502,
-      "population_year": "2023",
-      "history_summary": "Changé absorbe la commune Changé-Oriental entre 1806 et 1820, et partiellement (avec Laval) la commune de Grenoux en 1863.\nChangé accueille le siège de l'hebdomadaire indépendant L'Avenir agricole de 1944 jusqu'à l'arrêt de sa diffusion en 2020.",
+      "population": null,
+      "population_year": null,
+      "history_summary": "Changé est un toponyme qui peut désigner :",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "écluse de Belle-Poule",
-        "Vierge à l'Enfant",
-        "Christ en croix",
-        "cloche à Changé",
-        "Le Songe de saint Joseph"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Changé_(Mayenne)",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -3851,27 +3838,16 @@
       "id": "chaumont",
       "name": "Chaumont",
       "insee": "52121",
-      "wikidata": "Q193880",
+      "wikidata": null,
       "lat": 48.0965,
       "lon": 5.1566,
-      "population": 20827,
-      "population_year": "2023",
-      "history_summary": "La ville est issue d'une fondation féodale dans une campagne peuplée. Le site est une ancienne résidence carolingienne des comtes du pays de Champagne surveillée par un château érigé pendant l'époque ottonienne. La puissance des comtes de Champagne rayonnant sur toute la région permet le choix de leur domaine ou villa qu'ils transforment en leur bonne ville. Chaumont bénéficie ainsi très tôt d’une position politique stratégique, mais elle est aussi soumise aux aléas des dynasties régnantes de Champagne.\n\nLe territoire de l'actuelle ville de Chaumont relevait de celui des Lingons. Des fouilles archéologiques menées de 1989 à 1992 dans la forêt du Corgebin ont permis de mettre en évidence les bases d'un petit fanum de surface rectangulaire, divers objets et monnaies frappées sous le règne de Marc Aurèle.\nDans les secteurs des faubourgs de Saint-Aignan et du Moulin Neuf, des fouilles ont…",
-      "attractions": [
-        "Viaduc des chemins de fer {{Abréviation"
-      ],
+      "population": null,
+      "population_year": null,
+      "history_summary": "Chaumont est un terme d'ancien français, fixé dans des toponymes, devenu également patronyme.\nIl correspond au type toponymique picard, normand et occitan méridional Caumont. C'est un composé des éléments romans chals (Wace, Roman de Rou) / caux (Karle li Caux, Chanson de Roland) issus du latin calvus qui signifie « chauve » (forme jadis féminine, le masculin ayant été refait sur le féminin) et de mont issu du latin mons et qui signifie « colline, hauteur, éminence, mont. ». Soit le « Mont Chauve ».",
+      "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "basilique Saint-Jean-Baptiste de Chaumont",
-        "chapelle Notre-Dame-en-son-Assomption de Buxereuilles",
-        "château de Chaumont",
-        "collège des Jésuites de Chaumont",
-        "couvent des Carmélites de Chaumont",
-        "croix Gratien",
-        "église Saint-Martin de Brottes",
-        "hôtel de ville de Chaumont"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Chaumont_(Haute-Marne)",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -3891,11 +3867,11 @@
       "id": "cherbourg-en-cotentin",
       "name": "Cherbourg-en-Cotentin",
       "insee": "50129",
-      "wikidata": "Q21008210",
+      "wikidata": null,
       "lat": 49.6277,
       "lon": -1.6356,
-      "population": 78258,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Cherbourg-en-Cotentin est une commune française située dans le département de la Manche en région Normandie, au nord de la péninsule du Cotentin. Peuplée de 78 258 habitants, elle est une ville portuaire, possédant la plus grande rade artificielle d'Europe et la deuxième au monde. Elle est aussi, avec les villes d'Avranches et de Coutances, l'une des trois sous-préfectures du département de la Manche et également la préfecture maritime de la Manche et la mer du Nord. La commune est généralement appelée Cherbourg, du nom de son principal et plus ancien pôle urbain.\nElle est constituée en tant que commune le 1er janvier 2016, par la réunion des cinq communes membres de la communauté urbaine de Cherbourg, sous le statut de commune nouvelle : Cherbourg-Octeville (elle-même issue de la fusion des communes de Cherbourg et Octeville le 1er mars 2000), Équeurdreville-Hainneville (issue de la…",
       "attractions": [
         "Cité de la mer",
@@ -3906,17 +3882,8 @@
         "Théâtre à l’italienne"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "basilique Sainte-Trinité de Cherbourg",
-        "gare transatlantique de Cherbourg",
-        "monument à Napoléon",
-        "jardin botanique de la Roche-Fauconnière",
-        "fort du Roule",
-        "base de lancement de V1 de Brécourt",
-        "mairie déléguée de Cherbourg-Octeville",
-        "abbaye Notre-Dame du Vœu"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cherbourg-en-Cotentin",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -4059,11 +4026,11 @@
       "id": "cholet",
       "name": "Cholet",
       "insee": "49099",
-      "wikidata": "Q185066",
+      "wikidata": null,
       "lat": 47.0358,
       "lon": -0.875,
-      "population": 54404,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "De nombreuses découvertes permettent de prouver l'existence d'une présence préhistorique sur le territoire de la commune. Y ont été retrouvés, notamment, plusieurs polissoirs et trente-trois haches de pierre polie. De l'époque néolithique, il ne reste plus que trois menhirs à Cholet : un situé au lieu-dit la Garde, un second (la Pierre Plate) au lieu-dit la Pochetière et un troisième (le Grand menhir de la Garde) déplacé au jardin du Mail à Cholet en 1885. Quatre autres menhirs au lieu-dit Gué-au-Boin et un cinquième à La Bréchoire ont été détruits ou sont disparus.\nDes époques celtique et gallo-romaine, il ne reste que peu de vestiges :\n\nune nécropole, allant du néolithique à l'antiquité, mise au jour dans le quartier Montruonde et regroupant des tombes à inhumations et à incinérations ;\nune voie romaine reliant Poitiers à Nantes par Segora, traversant le territoire, près de la gare…",
       "attractions": [
         "Musée du Textile et de la Mode",
@@ -4074,17 +4041,8 @@
         "Tour du Grenier à sel"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "petit menhir du Champ de la Garde",
-        "pierre Plate de la Pochetière",
-        "tour du Grenier à sel",
-        "église Notre-Dame de Cholet",
-        "église du Sacré-Cœur de Cholet",
-        "hôtel de la Caisse d'épargne de Cholet",
-        "hôtel Cesbron de la Roche",
-        "hôtel Tharreau"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Cholet",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -4115,11 +4073,11 @@
       "id": "chalons-en-champagne",
       "name": "Châlons-en-Champagne",
       "insee": "51108",
-      "wikidata": "Q47135",
+      "wikidata": null,
       "lat": 48.9656,
       "lon": 4.3801,
-      "population": 42971,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Châlons est bordée à l’ouest par la Marne, rivière qui se jette dans la Seine à la hauteur de Charenton-le-Pont. Anciennement, elle charriait jusqu’à Paris, pour la ravitailler, bois et grains, vins et moutons, transportant les hommes aussi. Durant tout le Moyen Âge, les habitants des villages alentour travaillèrent à élever une enceinte de pierre enfermant les cent six hectares de la ville. Cette limite séparait deux mondes qui le jour seulement entraient en contact pour une survie réciproque. Autour de la ville emmurée, la Champagne offrait à la vue de l’observateur ses vastes surfaces planes, blanches de la craie de son sol, ses légères ondulations, ses rivières faiblement encaissées. Ses pentes étaient encore au XVIIIe siècle recouvertes de pieds de vigne.\nCarrefour des échanges ; étape du commerce lointain ; relais des pouvoirs royaux et seigneuriaux en pays avancé près de l’ennemi…",
       "attractions": [
         "Cathédrale Saint-Étienne",
@@ -4130,17 +4088,8 @@
         "Notre-Dame en Vaux"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Étienne",
-        "collégiale Notre-Dame-en-Vaux",
-        "synagogue de Châlons-en-Champagne",
-        "musée des Beaux-Arts et d'Archéologie de Châlons-en-Champagne",
-        "abbaye Saint-Pierre-aux-Monts",
-        "hôtel de ville de Châlons-en-Champagne",
-        "porte Sainte-Croix",
-        "temple de Châlons-en-Champagne"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Châlons-en-Champagne",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -4413,10 +4362,10 @@
         "EHPAD Ferrari",
         "La Petite Bibliothèque ronde",
         "hôtel de ville de Clamart",
+        "square de la Maison-Blanche",
         "fondation Arp",
         "pierre aux Moines",
-        "Orphelinat Saint Philippe",
-        "chapelle funéraire de Jules Hunebelle"
+        "Orphelinat Saint Philippe"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Clamart",
       "hotel_count": 2,
@@ -4470,9 +4419,9 @@
         "jardin botanique de la Charme",
         "statue de Vercingétorix",
         "hôtel Cote-Blatin",
-        "menhir de Sainte-Anne",
-        "maison d'Adam et Ève",
-        "sanctuaire de Trémonteix"
+        "fontaine de la Pyramide",
+        "lycée Jeanne-d'Arc",
+        "menhir de Sainte-Anne"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Clermont-Ferrand",
       "hotel_count": 6,
@@ -4711,8 +4660,8 @@
         "collégiale Saint-Martin de Colmar",
         "maison Pfister",
         "Koïfhus",
-        "maison des Têtes de Colmar",
         "synagogue de Colmar",
+        "maison des Têtes de Colmar",
         "église Saint-Matthieu de Colmar"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Colmar",
@@ -4772,8 +4721,8 @@
         "ancienne église Saint-Pierre-Saint-Paul de Colombes",
         "parc Pierre-Lagravère",
         "hôtel de ville de Colombes",
-        "chapelle Saint-Bernard",
-        "église Sainte-Marie-des-Vallées"
+        "parfumerie Kerkoff",
+        "square Edgar-Quinet"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Colombes",
       "hotel_count": 1,
@@ -4852,11 +4801,11 @@
         "tour Areva",
         "Tour CB21",
         "Courbevoie",
-        "Tour CGI",
         "Bécon-les-Bruyères",
+        "Tour CGI",
         "hôtel de ville de Courbevoie",
-        "église Saint-Pierre-Saint-Paul de Courbevoie",
-        "pavillon des Indes britanniques"
+        "caserne Charras",
+        "musée Roybet-Fould"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Courbevoie",
       "hotel_count": 3,
@@ -4991,7 +4940,7 @@
         "palais de justice de Créteil",
         "pont de Créteil",
         "hôtel de préfecture du Val-de-Marne",
-        "château des Buttes"
+        "colombier de Créteil"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Créteil",
       "hotel_count": 1,
@@ -5304,11 +5253,11 @@
       "id": "douai",
       "name": "Douai",
       "insee": "59178",
-      "wikidata": "Q193826",
+      "wikidata": null,
       "lat": 50.3785,
       "lon": 3.1004,
-      "population": 40250,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Douai est une création médiévale découlant de conditions naturelles singulières mais surtout de sa position de charnière entre le royaume de France et le comté de Flandre. Sur un ilot de la Scarpe, près du gué qui permettait le franchissement, deux noyaux constituèrent les points de développement de la ville.\n\nLa période médiévale fut pour Douai une période de grande prospérité découlant de ses activités commerciales (la vente des grains) et artisanales (la draperie) mais aussi de l'autonomie octroyée par le Comte de Flandre qui donnait à la ville le pouvoir de se gérer elle-même. La cité comptait à son apogée de 10 000 à 15 000 habitants.\nAu XIe siècle, une dérivation du cours de la Sensée vers la Scarpe aménagée à Vitry-en-Artois façonne jusqu'à aujourd'hui sa physionomie. Gagnant en débit, il fut dès lors possible d'augmenter son trafic. De fait, située au cœur d'un terroir agricole…",
       "attractions": [
         "Beffroi et Hôtel de ville",
@@ -5319,17 +5268,8 @@
         "Porte de Valenciennes"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "beffroi de Douai",
-        "hôpital général de Douai",
-        "collégiale Saint-Pierre de Douai",
-        "église Saint-Jacques de Douai",
-        "maison des Templiers de Douai",
-        "place du Marché-au-Poisson",
-        "porte d'Arras",
-        "théâtre à l'italienne de Douai"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Douai",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -5390,7 +5330,7 @@
           "lat": 48.7312711,
           "lon": 1.3686295,
           "phone": "+33 2 30 32 14 56",
-          "website": "https://all.accor.com/hotel/B5E8/index.fr.shtml?utm_campaign=qwant+maps&utm_medium=seo+maps&utm_source=OpenStreetMap"
+          "website": "https://all.accor.com/hotel/B5E8/index.fr.shtml"
         }
       ]
     },
@@ -5398,7 +5338,7 @@
       "id": "dunkerque",
       "name": "Dunkerque",
       "insee": "59183",
-      "wikidata": "Q112289487",
+      "wikidata": null,
       "lat": 51.0183,
       "lon": 2.3431,
       "population": null,
@@ -5564,14 +5504,14 @@
       "hotels": [
         {
           "osm_id": "node/7906958406",
-          "name": "Ibis Styles",
+          "name": "ibis Styles Flers",
           "brand": "ibis Styles",
           "address": "23 Rue Jacques Durrmeyer, 61100 Flers",
           "postcode": "61100",
           "lat": 48.7437761,
           "lon": -0.5733374,
-          "phone": null,
-          "website": "https://all.accor.com/hotel/8440/index.fr.shtml#section-description"
+          "phone": "+33 2 33 98 45 45",
+          "website": "https://all.accor.com/hotel/8440/index.fr.shtml"
         }
       ]
     },
@@ -5579,16 +5519,16 @@
       "id": "fontaine-notre-dame",
       "name": "Fontaine-Notre-Dame",
       "insee": "59244",
-      "wikidata": "Q771030",
+      "wikidata": null,
       "lat": 50.1662,
       "lon": 3.1728,
-      "population": 1754,
-      "population_year": "2023",
-      "history_summary": "En 2005, lors de la construction d'un lotissement les fouilles ont permis de découvrir une série de tombes à incinération gallo-romaines datant du IIe siècle de notre ère.\nLa commune, située sur le front-ouest et près de la ligne Hindenburg, est quasiment rasée lors de la première guerre mondiale.\nElle fera partie de la zone rouge et il faudra plusieurs années après l'armistice de 1918 et une longue période de déminage pour que la vie reprenne son cours peu avant qu'une nouvelle guerre mondiale n'éclate et secoue également cette région.\nL'église sera reconstruite dans un style « moderne » par l'architecte cambrésien Ernest Gaillard qui s'inspirera pour son clocher ajouré de l'église Notre-Dame du Raincy des frères Perret. Elle est consacrée en 1928.",
+      "population": null,
+      "population_year": null,
+      "history_summary": "Fontaine-Notre-Dame, commune française de l'Aisne\nFontaine-Notre-Dame, commune française du Nord",
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontaine-Notre-Dame_(Nord)",
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -5630,12 +5570,12 @@
       "monuments_historiques": [
         "château de Fontainebleau",
         "lycée François-Ier",
-        "synagogue de Fontainebleau",
         "galerie François-Ier",
-        "hôtel du Tambour",
-        "hôtel de France et d'Angleterre",
-        "hôtel d'Orléans",
-        "hôtel de Pompadour"
+        "synagogue de Fontainebleau",
+        "quartier du Carrousel",
+        "prieuré Notre-Dame de Franchard",
+        "église Saint-Louis de Fontainebleau",
+        "bâtiment de la Mission"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Fontainebleau",
       "hotel_count": 1,
@@ -5695,20 +5635,18 @@
       "id": "fourmies",
       "name": "Fourmies",
       "insee": "59249",
-      "wikidata": "Q305007",
+      "wikidata": null,
       "lat": 50.0064,
       "lon": 4.0594,
-      "population": 11449,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Des traces d'occupation gallo-romaine ont été mises au jour à Fourmies au XIXe siècle, mais sans qu'il soit donné de localisation précise.\n\nConcernant l'histoire de la ville de Fourmies au Moyen Âge :\n\n843 : avec le traité de Verdun, le partage de l'empire carolingien entre les trois petits-fils de Charlemagne octroie à Lothaire I la Francie médiane qui comprend le Hainaut dont fait partie le village.\n855 : avec le Traité de Prüm qui partage la Francie médiane entre les trois fils de Lothaire I, le Hainaut est rattaché à la Lotharingie dont hérite Lothaire II.\n870 : avec le traité de Meerssen après la mort de Lothaire II, une partie de la Lotharingie dont fait partie le Hainaut est rattachée à la Francie occidentale.\n880 : avec le traité de Ribemont en 880, le Hainaut est rattaché à la Francie orientale qui deviendra le Saint-Empire romain germanique en 962.\nXIIe siècle : Le village,…",
       "attractions": [
         "Musée du textile et de la vie sociale"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Pierre de Fourmies"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Fourmies",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -5926,11 +5864,11 @@
       "id": "granville",
       "name": "Granville",
       "insee": "50218",
-      "wikidata": "Q333559",
+      "wikidata": null,
       "lat": 48.8724,
       "lon": -1.7657,
-      "population": 12510,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La baie du Mont-Saint-Michel, Granville et le quartier insulaire de Chausey se seraient trouvés englobés dans la mythique forêt de Scissy, selon la légende engloutie en 709. Granville, au cœur des terres, serait alors devenue comme Dinard ou Saint-Malo une ville côtière sous le nom de Roque de Lihou.\nQuelques historiens et géographes du passé ont tenté de relier Granville à Grannonum - Grannona, toponyme attesté dans la Notitia dignitatum relative au Litus Saxonicum du Bas-Empire romain : tribunus cohortis primae novae Armoricanae, Grannona in litore Saxonico. Ceci explique que certaines cartes du XVIIIe siècle décrivant l’ancienne Gaule romaine font apparaître le nom de Grannonum à l’emplacement de Granville (cf. carte ci-dessus). Cette hypothèse est aujourd'hui abandonnée par les spécialistes contemporains, qui placent la station de Grannonum à Port-en-Bessin ou ailleurs.\nSelon…",
       "attractions": [
         "Vieille ville",
@@ -5941,17 +5879,8 @@
         "musée d'art moderne Richard Anacréon"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "musée Christian-Dior",
-        "église Notre-Dame du Cap Lihou",
-        "forme de radoub du port de Granville",
-        "phare de Chausey",
-        "château de Grainville",
-        "phare de Granville",
-        "phare du Sénéquet",
-        "enceinte de Granville"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Granville",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -5990,11 +5919,11 @@
         "palais des Sports Pierre Mendès France",
         "cathédrale Notre-Dame de Grenoble",
         "Bastille",
-        "palais du parlement du Dauphiné",
         "tour Perret",
         "bibliothèque municipale de Grenoble",
         "collégiale Saint-André de Grenoble",
-        "musée de l'Ancien Evêché"
+        "musée de l'Ancien Evêché",
+        "palais du parlement du Dauphiné"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Grenoble",
       "hotel_count": 3,
@@ -6103,6 +6032,51 @@
       ]
     },
     {
+      "id": "gueret",
+      "name": "Guéret",
+      "insee": "23096",
+      "wikidata": "Q188511",
+      "lat": 46.1585,
+      "lon": 1.8705,
+      "population": 12955,
+      "population_year": "2023",
+      "history_summary": "C'est sur le Puy-de-Gaudy, qui surplombe la commune de Guéret du haut de ses 651 m au sud-ouest, que l'oppidum protohistorique a été installé sur la commune de Sainte-Feyre limitrophe. Occupé jusqu'au moyen-âge, l'Oppidum du Puy de Gaudy à Sainte-Feyre est inscrit comme Monument Historique pour une part par arrêté du 3 août 1982 et pour une autre part classé par arrêté du 23 décembre 1982, sous la référence de la Base Mérimée : PA00100156.\n\nC'est au VIIe siècle que Lantarius (Lanterius, vers 670), comte de Limoges, persuade le moine Pardulphe (qui deviendra saint Pardoux) de rejoindre son domaine rural de Waractus. Pardulphe, jusqu'alors ermite réputé pour ses pouvoirs de thaumaturge, y devient abbé d'un monastère autour duquel un village se construit. L'ensemble est rasé par les Vikings au IXe siècle, mais une modeste cité y est reconstruite, donnant naissance à Guéret.\n\nEn 1514, la…",
+      "attractions": [
+        "Hôtel des Moneyroux",
+        "Présidial",
+        "Musée de la Sénatorerie",
+        "Hôtel de ville",
+        "Palais de justice",
+        "Salle polyvalente"
+      ],
+      "unesco_sites": [],
+      "monuments_historiques": [
+        "hôtel des Moneyroux",
+        "présidial de Guéret",
+        "petit théâtre de Guéret",
+        "maison Rocaille",
+        "Christ en croix à Guéret",
+        "groupe d'objets à Guéret",
+        "saint Jérôme",
+        "autel, 2 gradins d'autel, tabernacle à ailes et ses 6 statuettes (autel secondaire sud) à Guéret"
+      ],
+      "wikipedia_url": "https://fr.wikipedia.org/wiki/Guéret",
+      "hotel_count": 1,
+      "hotels": [
+        {
+          "osm_id": "way/67722468",
+          "name": "Ibis Styles Gueret",
+          "brand": "ibis Styles",
+          "address": "3 Avenue René Cassin, 23000 Guéret",
+          "postcode": null,
+          "lat": 46.180656,
+          "lon": 1.8762071,
+          "phone": "+33555801160",
+          "website": "https://all.accor.com/hotel/C254/index.fr.shtml"
+        }
+      ]
+    },
+    {
       "id": "haguenau",
       "name": "Haguenau",
       "insee": "67180",
@@ -6124,12 +6098,12 @@
       "monuments_historiques": [
         "basilique Notre-Dame de Marienthal de Haguenau",
         "église Saint-Georges de Haguenau",
-        "théâtre municipal de Haguenau",
-        "église Saint-Nicolas de Haguenau",
         "porte des Chevaliers",
         "synagogue de Haguenau",
         "porte de Wissembourg",
-        "fontaine place Saint-Georges à Haguenau"
+        "théâtre municipal de Haguenau",
+        "église Saint-Nicolas de Haguenau",
+        "grenier Saint-Georges"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Haguenau",
       "hotel_count": 1,
@@ -6263,19 +6237,16 @@
       "id": "houdemont",
       "name": "Houdemont",
       "insee": "54265",
-      "wikidata": "Q213305",
+      "wikidata": null,
       "lat": 48.6409,
       "lon": 6.1718,
-      "population": 2066,
-      "population_year": "2023",
-      "history_summary": "Présences préhistorique et franque.\nPossessions des moines de Clairlieu, citées au XIIe.\nMoulin mentionné au XIVe.\nBataille de Nancy 5 janvier 1477 Charles le Téméraire  et les Bourguignons dans les forêts d'Houdemont.\nPeste au XVIe.\nLe château appartint à la veuve du graveur Jacques Callot.\nEn 1711, le duc Léopold Ier de Lorraine vient se réfugier à Houdemont après avoir perdu trois de ses enfants de la petite vérole.\nOuverture d'une mine de fer en 1867.",
+      "population": null,
+      "population_year": null,
+      "history_summary": "Houdemont est un village de la commune belge de Habay.\nHoudemont est une commune française de Meurthe-et-Moselle.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Saint Evêque",
-        "chaire à prêcher à Houdemont"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Houdemont_(Meurthe-et-Moselle)",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -6425,11 +6396,11 @@
         "église Saint-Austremoine d'Issoire",
         "château d'Hauterive",
         "pont suspendu sur l'Allier",
-        "hôtel Charrier",
-        "hôtel Bohier",
-        "maison Bartin",
-        "maison à arcades d'Issoire",
-        "hôtel Clément"
+        "Le Jugement dernier",
+        "halle aux blés d'Issoire",
+        "gymnase l'Issoirienne",
+        "pavillon « Direction-dessins » de l'usine AFC de la SCAL",
+        "hôtel Charrier"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Issoire",
       "hotel_count": 1,
@@ -6527,8 +6498,8 @@
       ],
       "unesco_sites": [],
       "monuments_historiques": [
-        "porte d'Arles",
         "église Notre-Dame-de-Beauvoir",
+        "porte d'Arles",
         "chapelle Saint-Sulpice d'Istres",
         "chapelle d'Entressen",
         "abri préhistorique Cornille",
@@ -6724,22 +6695,16 @@
       "id": "la-chapelle-saint-mesmin",
       "name": "La Chapelle-Saint-Mesmin",
       "insee": "45075",
-      "wikidata": "Q1157701",
+      "wikidata": null,
       "lat": 47.8861,
       "lon": 1.8324,
-      "population": 11017,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "En 1856, la grotte du dragon de Béraire, cavité souterraine naturelle apparue au cours de l'Holocène, est découverte par l'archéologue Ernest Pillon.\nAu cours du XXe siècle, plusieurs sites préhistoriques (Paléolithique supérieur, culture magdalénienne) sont découverts au lieu-dit Monteloup. Le site a livré des vestiges humains magdaléniens. Une série d'occupations livre de l'industrie lithique typique du Badegoulien à raclettes, avec des pièces de facture plus récente (Magdalénien). Monteloup est prospecté par l'abbé A. Nouel en 1937, puis par Jacques Allain en 1970. Dans le même temps, Allain prospecte aussi le site badegoulien « Le Coteau », qui est également visité par Guy Richard en 1972.\nDes travaux d'agrandissement d'une cave dans le hameau des Neuf-Arpents réalisés en 1988 ont en particulier mis au jour une double sépulture datant du néolithique : « La Dame de Monteloup », une…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Mesmin de La Chapelle-Saint-Mesmin",
-        "Adoration des Mages",
-        "Christ en croix",
-        "Vierge à l'Enfant",
-        "Christ guérissant les malades"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Chapelle-Saint-Mesmin",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -6772,10 +6737,10 @@
         "chapelle des Pénitents bleus de La Ciotat",
         "hôtel de Grimaldi-Régusse",
         "bastide Marin",
+        "musée Ciotaden",
         "maison, 6 rue Adolphe-Abeille, 12 quai Ganteaume",
         "église Notre-Dame de La Ciotat",
-        "chapelle Notre-Dame-de-la-Garde de La Ciotat",
-        "chapelle Sainte-Anne de La Ciotat"
+        "chapelle Notre-Dame-de-la-Garde de La Ciotat"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Ciotat",
       "hotel_count": 1,
@@ -6855,10 +6820,10 @@
         "La Rochelle-Ville",
         "château Vauclair",
         "Vieux-Port de La Rochelle",
-        "Grande-maison de Lhommée",
+        "musée des Beaux-Arts de La Rochelle",
         "temple protestant de La Rochelle",
-        "hôtel de ville de La Rochelle",
-        "musée des Beaux-Arts de La Rochelle"
+        "Grande-maison de Lhommée",
+        "hôtel de ville de La Rochelle"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/La_Rochelle",
       "hotel_count": 4,
@@ -7045,9 +7010,9 @@
         "cathédrale Notre-Dame de Laon",
         "Laon",
         "abbaye Saint-Vincent de Laon",
+        "église Saint-Martin de Laon",
         "abbaye Saint-Jean de Laon",
         "commanderie de Laon",
-        "église Saint-Martin de Laon",
         "enceinte de Laon",
         "église Saint-Rémy-au-Velours"
       ],
@@ -7071,32 +7036,16 @@
       "id": "laval",
       "name": "Laval",
       "insee": "53130",
-      "wikidata": "Q184154",
+      "wikidata": null,
       "lat": 48.0578,
       "lon": -0.7692,
-      "population": 49400,
-      "population_year": "2023",
-      "history_summary": "Avant la construction du château au XIe siècle, Laval n'existe pas. Néanmoins, le site est déjà un lieu de passage puisqu'il est situé sur une voie romaine reliant Le Mans à Corseul, capitale gallo-romaine des Coriosolites et aujourd'hui située dans les Côtes-d'Armor. Par ailleurs, des parties du territoire actuel de la commune montrent des traces d'occupation anciennes, comme la chapelle Notre-Dame de Pritz, située au bord de la Mayenne sur la limite nord de Laval et mentionnée dès 710. Une stèle gauloise y a par ailleurs été découverte. Saint Gault s'établira près de l'emplacement de la ville au sixième siècle. Le corps de Saint Tugdual, évêque de Tréguier, aurait été apporté à Laval par des clercs fuyant des raids vikings sur la Bretagne en 870 ou 878. C’est l’un des successeurs de saint Tugdual, Gorennan qui est alors chargé d’amener les restes de son prédécesseur à Chartres. Mais…",
-      "attractions": [
-        "Château",
-        "Jardin de la Perrine",
-        "Basilique Notre-Dame d'Avesnières",
-        "Musée d'Art naïf et d'Arts singuliers (MANAS)",
-        "Bâtiment des bains-douches",
-        "Cathédrale de la Sainte-Trinité"
-      ],
+      "population": null,
+      "population_year": null,
+      "history_summary": "Laval est un nom de famille et le nom ou partie du nom de plusieurs villes.",
+      "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Laval",
-        "cathédrale de la Sainte-Trinité de Laval",
-        "château de Laval",
-        "jardin de la Perrine",
-        "basilique Notre-Dame d'Avesnières",
-        "viaduc de Laval",
-        "pont d'Avesnières",
-        "fontaine de Saint-Tugal"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Laval_(Mayenne)",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -7129,10 +7078,10 @@
         "pont de Lavaur",
         "tour des Rondes",
         "église Saint-François de Lavaur",
-        "château de Ragnies",
-        "buffet d'orgue à Lavaur",
         "table d'autel à Lavaur",
-        "maison Pradier"
+        "maison Pradier",
+        "château de Ragnies",
+        "buffet d'orgue à Lavaur"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Lavaur_(Tarn)",
       "hotel_count": 1,
@@ -7154,20 +7103,16 @@
       "id": "laxou",
       "name": "Laxou",
       "insee": "54304",
-      "wikidata": "Q752544",
+      "wikidata": null,
       "lat": 48.6839,
       "lon": 6.1183,
-      "population": 14771,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Avant le développement de l’agglomération, le village de Laxou était situé à environ quatre kilomètres de Nancy. Il dépendait de la généralité et du bailliage de cette ville, et était régi par la coutume de Lorraine.\n\nDéjà occupée à l’époque mérovingienne, Laxou est citée pour la première fois en 1130 sous le nom de Larzuls.\nL'abbaye de Clairlieu, sur la commune voisine de Villers-lès-Nancy, possédait également quelques droits à Laxou, surtout des vignes qui lui furent cédées lors de son installation vers 1150. Les Laxoviens avaient coutume de se rendre à Clairlieu les jours de fêtes.\n\nMathieu Ier de Lorraine favorisa l’installation d’une commanderie hospitalière de l’ordre de Saint-Jean de Jérusalem dans son duché. La commanderie est édifiée en 1140, en pleine campagne à proximité du faubourg Saint-Jean. Il en subsiste la tour de la commanderie Saint-Jean-du-Vieil-Aître, le plus vieil…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "buffet de l'orgue de choeur à Laxou",
-        "clôture liturgique (grille de communion) à Laxou",
-        "atelier de fabrication de la confiserie Lefèvre-Lemoine"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Laxou",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -7434,10 +7379,10 @@
         "église Notre-Dame de la Couture",
         "enceinte romaine du Mans",
         "jardin des plantes du Mans",
-        "église Notre-Dame-du-Pré",
-        "pierre Saint-Julien",
         "abbaye Saint-Pierre de la Couture",
-        "abbaye Saint-Vincent du Mans"
+        "abbaye Saint-Vincent du Mans",
+        "hôpital Etoc-Demazy",
+        "église Notre-Dame-du-Pré"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Le_Mans",
       "hotel_count": 4,
@@ -7711,14 +7656,14 @@
       "hotels": [
         {
           "osm_id": "way/101025028",
-          "name": "Ibis Styles",
+          "name": "Ibis Styles Marseille Plan de Campagne",
           "brand": "ibis Styles",
           "address": "62 Avenue Etienne Rabattu, 13170 Les Pennes-Mirabeau",
           "postcode": null,
           "lat": 43.4170146,
           "lon": 5.3507186,
           "phone": "+33 4 42 74 74 74",
-          "website": "https://all.accor.com/hotel/B2C6/index.en.shtml"
+          "website": "https://all.accor.com/hotel/B2C6/index.fr.shtml"
         }
       ]
     },
@@ -7767,21 +7712,16 @@
       "id": "lesquin",
       "name": "Lesquin",
       "insee": "59343",
-      "wikidata": "Q696996",
+      "wikidata": null,
       "lat": 50.5904,
       "lon": 3.1132,
-      "population": 9600,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Une nécropole mérovingienne y a été découverte.\nLechin est mentionné en 1066 dans l'acte de fondation du chapitre Saint-Pierre de Lille, que le comte de Flandre dota d'une résidence située dans le village.\nAvant la Révolution française, Lesquin était le siège de plusieurs seigneuries.\nLa seigneurie principale de Lesquin est achetée au XVe siècle par Daniel Thieulaine, issu d'une famille de bourgeois de Lille. Daniel Thieulaine est le fils de Gérard Thieulaine, bourgeois de Lille, juré, échevin de la ville, et de Sainte de Tenremonde (famille de Tenremonde). Il est lui-même bourgeois de Lille le 27 octobre 1431, juré puis échevin à quelques reprises. Il est nommé le 22 juin 1438 conseiller et maitre général des monnaies du duc de Bourgogne Charles le Téméraire. Charles VII l'anoblit par lettres patentes données à Angers le 23 janvier 1440. Il meurt à Lille le 15 octobre 1458, est inhumé…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "banc (banc de communion) à Lesquin",
-        "boîte à hosties à Lesquin",
-        "chasuble à Lesquin",
-        "groupe d'objets à Lesquin"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lesquin",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -7815,9 +7755,9 @@
         "hôtel de ville de Levallois-Perret",
         "institut hospitalier franco-britannique",
         "pont ferroviaire d'Asnières",
-        "villa Chaptal",
         "pont de Levallois",
-        "temple protestant de la Petite Étoile"
+        "temple protestant de la Petite Étoile",
+        "église Saint-Justin de Levallois-Perret"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Levallois-Perret",
       "hotel_count": 1,
@@ -7839,11 +7779,11 @@
       "id": "lille",
       "name": "Lille",
       "insee": "59350",
-      "wikidata": "Q648",
+      "wikidata": null,
       "lat": 50.6311,
       "lon": 3.0468,
-      "population": 238246,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Selon une légende élaborée entre les XIe et XVIe siècles dans le contexte de crises successorales à des fins la légitimation de la continuité successorale des Comtes de Flandre, Lille aurait été fondée en 640 par Lydéric.\nLe site actuel de la ville recèle des traces d’occupation antérieure (préhistoire, époque gallo-romaine, mérovingienne, carolingienne) mais les vestiges retrouvés ne disent rien de l'urbanisation à ces époques, même s'il semble probable qu'un hameau existait au moins à l'époque romaine en territoire Ménapiens. Il porta peut-être le nom de Treola (Treille en latin), domaine viticole mentionné à l'époque carolingienne et vocable sous lequel la Vierge est honorée à Lille. Des traces d’un premier port seraient par ailleurs probables dès le milieu du VIIIe siècle. Située à la rencontre des bras de la Deûle, du Becquerel et du Bucquet, où celle-ci connait une légère rupture…",
       "attractions": [
         "Vieille Bourse",
@@ -7854,17 +7794,8 @@
         "Immeuble de la Voix du Nord"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Office national d'études et de recherches aérospatiales",
-        "palais des Beaux-Arts de Lille",
-        "cathédrale Notre-Dame-de-la-Treille",
-        "citadelle de Lille",
-        "église Saint-Maurice",
-        "hôtel de ville de Lille",
-        "synagogue de Lille",
-        "collégiale Saint-Pierre de Lille"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lille",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 6,
       "hotels": [
         {
@@ -7908,7 +7839,7 @@
           "postcode": null,
           "lat": 50.6374698,
           "lon": 3.0668239,
-          "phone": null,
+          "phone": "+33 3 20 55 25 11",
           "website": "https://all.accor.com/hotel/9420/index.fr.shtml"
         },
         {
@@ -8223,11 +8154,11 @@
       "id": "lorient",
       "name": "Lorient",
       "insee": "56121",
-      "wikidata": "Q71724",
+      "wikidata": null,
       "lat": 47.7494,
       "lon": -3.3799,
-      "population": 58329,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La présence de monuments mégalithiques confirme le peuplement du pays de Lorient à partir de 3 000 ans av. J.-C.[réf. nécessaire]\n\nDes vestiges de voies romaines (reliant Vannes à Quimper et Port-louis à Carhaix-Plouguer) confirment l’occupation des gallo-romains.\n\nLa Compagnie française pour le commerce des Indes orientales est créée par Colbert en 1664. Elle reçoit par une ordonnance de Louis XIV de juin 1666, des terres à Port-Louis ainsi que de l'autre côté de la rade au lieu-dit du Faouédic. L'un des directeurs de celle-ci, Denis Langlois, y achète en août 1666 des terres au fond de la rade, au confluent du Scorff et du Blavet, et y fait construire des cales. Le lieu ne fonctionne dans un premier temps que comme une annexe des installations de Port-Louis où se trouvent les bureaux et les magasins de la compagnie. L'implantation est plusieurs fois menacée d'abandon les années…",
       "attractions": [
         "Cité de la voile Eric Tabarly",
@@ -8238,17 +8169,8 @@
         "Église Notre-Dame-de-Victoire de Lorient"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "stade du Moustoir",
-        "base sous-marine de Lorient",
-        "église Notre-Dame-de-Victoire",
-        "tour de la Découverte",
-        "hôtel Gabriel",
-        "chapelle Saint-Christophe de Lorient",
-        "Pen Duick",
-        "maison au 18 rue Jules Legrand à Lorient"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Lorient",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -8360,8 +8282,8 @@
       "monuments_historiques": [
         "maison de Philippe le Bel",
         "château des Gaucelm",
-        "Monument de la liberté",
         "orgue de tribune de l'église Notre-Dame-du-Lac à Lunel",
+        "Monument de la liberté",
         "Bienheureux Gérard de Lunel",
         "la Visitation",
         "la Présentation au Temple",
@@ -8687,7 +8609,7 @@
           "lat": 47.3272251,
           "lon": 6.126254,
           "phone": "+33 381579246",
-          "website": "https://all.accor.com/hotel/1147/index.fr.shtml?dateIn=2022-08-17&nights=1&compositions=2&stayplus=false&snu=false#origin=accor"
+          "website": "https://all.accor.com/hotel/1147/index.fr.shtml"
         }
       ]
     },
@@ -8805,8 +8727,8 @@
         "tunnel du Rove",
         "musée Grobet-Labadié",
         "Ballet national de Marseille",
-        "palais de la Bourse",
         "phare du Planier",
+        "palais de la Bourse",
         "école supérieure d'art et de design Marseille-Méditerranée"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Marseille",
@@ -9041,11 +8963,11 @@
         "cathédrale Saint-Étienne de Meaux",
         "mémorial américain",
         "halle du marché de Meaux",
-        "remparts de Meaux",
-        "hôtel de la Caisse d'épargne de Meaux",
-        "immeuble des Nouvelles Galeries de Meaux",
         "église Saint-Christophe de Meaux",
-        "hôtel Macé de Montoury"
+        "hôtel Macé de Montoury",
+        "hôtel Marquelet de la Noue",
+        "immeuble, 14 rue de la Cordonnerie",
+        "monastère de la Visitation"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Meaux",
       "hotel_count": 1,
@@ -9217,11 +9139,11 @@
       "id": "metz",
       "name": "Metz",
       "insee": "57463",
-      "wikidata": "Q22690",
+      "wikidata": null,
       "lat": 49.1048,
       "lon": 6.1962,
-      "population": 122572,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Une situation de qualité et un site favorable expliquent le passé trois fois millénaire de Metz, qui naît et se développe au confluent de deux rivières, la Moselle et la Seille au rôle économique déterminant. À l’intérieur de cette zone de confluence, la butte du Haut de Sainte-Croix constitue le berceau de la ville.\n\nEn 1882, un biface datant de 200 000 ans av. J.-C. a été découvert dans une sablière de Montigny-lès-Metz. Les hommes vivant à cette période étaient des chasseurs-cueilleurs, vivant selon le mode de vie non sédentaire propre aux nomades et dont les déplacements étaient liés en partie à leur approvisionnement en nourriture.\nLes Hauts-de-Sainte-Croix ont livré quelques tessons du IVe millénaire av. J.-C., mais l’occupation attestée du site ne commence qu’au Ier siècle av. J.-C. avec la présence de fonds de cabane et des emplacements de maisons de bois et de torchis ainsi…",
       "attractions": [
         "Cathédrale Saint-Étienne",
@@ -9232,17 +9154,8 @@
         "Église Sainte-Ségolène"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Étienne de Metz",
-        "porte des Allemands",
-        "Metz-Ville",
-        "église Saint-Pierre-aux-Nonnains de Metz",
-        "synagogue de Metz",
-        "opéra-théâtre de Metz",
-        "temple Neuf de Metz",
-        "hôtel de ville de Metz"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Metz",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 4,
       "hotels": [
         {
@@ -9338,18 +9251,16 @@
       "id": "mexy",
       "name": "Mexy",
       "insee": "54367",
-      "wikidata": "Q212972",
+      "wikidata": null,
       "lat": 49.5025,
       "lon": 5.7877,
-      "population": 2300,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Présence gallo-romaine[réf. nécessaire].\nL'église paroissiale Saint-Barthélémy construite en 1736, tour clocher ajoutée en 1827. À la suite des visites de l'évêque de Metz en 1847 et 1859, et compte tenu du très mauvais état de l'édifice, il est décidé de reconstruire le chœur et la nef. Église bénite en 1890. L'édifice, situé au cœur du vieux village et devenu tout a fait excentré à la suite de l'accroissement de la commune, est détruit en 1973. Seuls les vitraux sont conservés et replacés dans la nouvelle église[réf. nécessaire].\nLa commune, institue par la Révolution française, est intégrée de 1812 à 1879 à celle de Réhon, année où elle retrouve son autonomie.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Barthélemy de Mexy"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Mexy",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -9432,25 +9343,16 @@
       "id": "montargis",
       "name": "Montargis",
       "insee": "45208",
-      "wikidata": "Q212352",
+      "wikidata": null,
       "lat": 47.9998,
       "lon": 2.7388,
-      "population": 14825,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Montargis est une commune française située dans le département du Loiret, en région Centre-Val de Loire.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église de la Madeleine de Montargis",
-        "caserne Gudin",
-        "château de Lorris",
-        "couvent des Ursulines de Montargis",
-        "passerelle de la Marolle",
-        "maison double",
-        "borne de jonction du canal de Briare",
-        "maison Feuillette"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Montargis",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -9682,10 +9584,10 @@
         "murs à pêches",
         "église Saint-Pierre-et-Saint-Paul de Montreuil",
         "hôtel de ville de Montreuil",
-        "cimetière ancien de Montreuil",
         "bâtiment industriel Mozinor",
         "Pianos Klein",
-        "église Saint-André du Bas-Montreuil"
+        "église Saint-André du Bas-Montreuil",
+        "chapelle Saint-Charles des Ruffins"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Montreuil_(Seine-Saint-Denis)",
       "hotel_count": 2,
@@ -10147,11 +10049,11 @@
       "id": "nancy",
       "name": "Nancy",
       "insee": "54395",
-      "wikidata": "Q40898",
+      "wikidata": null,
       "lat": 48.6881,
       "lon": 6.1734,
-      "population": 103671,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Bien que de nombreux sites préhistoriques (sites néolithiques dans la côte de Boudonville, les carrières de Monbois, à Vandœuvre-lès-Nancy et Villers-lès-Nancy) aient été découverts sur les plateaux entourant la ville, comme la Cité d'Affrique (Ve siècle av. J.-C.) au sud-ouest et des habitats celtiques des Leuques sur la butte Sainte-Geneviève, le site historique de la ville ne semble pas avoir été vraiment occupé avant l'époque mérovingienne, vers la fin du VIIe siècle. On mentionne l'existence d'un gué sur la Meurthe au VIIIe siècle.\n\nLa naissance de Nancy est liée à l'édification d'un château féodal, au cours du XIe siècle, par Gérard d'Alsace qui y fonde une petite cité qui deviendra la capitale du duché de Lorraine sous ses successeurs au XIVe siècle. En 1218, au cours de la Guerre de Succession de Champagne, sous le règne du duc Thiébaud Ier, la ville est totalement incendiée par…",
       "attractions": [
         "La Place St-Epvre",
@@ -10167,17 +10069,8 @@
           "year": 1983
         }
       ],
-      "monuments_historiques": [
-        "place Stanislas",
-        "musée des Beaux-Arts de Nancy",
-        "place de la Carrière",
-        "place d'Alliance",
-        "cathédrale Notre-Dame-de-l'Annonciation de Nancy",
-        "église Notre-Dame-de-Bonsecours de Nancy",
-        "opéra national de Lorraine",
-        "basilique Saint-Epvre de Nancy"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Nancy",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 3,
       "hotels": [
         {
@@ -10232,10 +10125,10 @@
         "tours Aillaud",
         "cathédrale Sainte-Geneviève-et-Saint-Maurice de Nanterre",
         "hôtel de préfecture des Hauts-de-Seine",
-        "cimetière-parc du Mont-Valérien",
-        "chapelle Saint-Joseph-des-Fontenelles de Nanterre",
-        "chapelle Sainte-Catherine-de-Sienne de Nanterre",
-        "église Sainte-Marie-des-Fontenelles de Nanterre"
+        "cimetière nouveau de Neuilly-sur-Seine",
+        "cimetière du Centre",
+        "parc des Anciennes Mairies",
+        "cimetière-parc du Mont-Valérien"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Nanterre",
       "hotel_count": 1,
@@ -10278,8 +10171,8 @@
         "musée d'Arts de Nantes",
         "Belem",
         "théâtre Graslin",
-        "La Cigale",
         "basilique Saint-Nicolas de Nantes",
+        "La Cigale",
         "passage Pommeraye"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Nantes",
@@ -10443,25 +10336,16 @@
       "id": "nevers",
       "name": "Nevers",
       "insee": "58194",
-      "wikidata": "Q166997",
+      "wikidata": null,
       "lat": 46.9852,
       "lon": 3.1598,
-      "population": 33085,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Il n'est pas certain que la place forte Noviodunum Aeduorum citée par César, place forte des Eduens, corresponde à Nevers. On cite souvent plutôt à ce sujet Neuvy-sur-Loire, à 80 km de là, également dans la Nièvre. On parle aussi de Nevirnum ou encore de Nebernum. Le nom vient de celui de la rivière Nièvre (Nivara, Nevara).\nNéanmoins, on note la présence de vestiges gallo-romains sous le palais ducal.\nCette cité est évangélisée au IIIe siècle, puis devient le siège de l'évêché au VIe siècle.\n\nCapitale du comté héréditaire de Nevers en 992, la ville se fortifie sous l'influence de Pierre II de Courtenay en 1194. La ville appartient successivement aux familles de Courtenay, de Bourbon, aux maisons de Flandre, de Bourgogne, de Clèves et de Gonzague. L'abbaye de Saint-Martin d'Autun, possède en 1347 quelques murailles et places de maisons dans la rue de la Parcheminerie, qu'elle donne à…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers",
-        "église Saint-Étienne de Nevers",
-        "palais ducal de Nevers",
-        "hôtel de ville de Nevers",
-        "chapelle Saint-Sylvain de Nevers",
-        "abbaye Saint-Genest de Nevers",
-        "abbaye de Fontmorigny à Nevers",
-        "ancien lycée Mirangron"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Nevers",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -11035,11 +10919,11 @@
       "id": "orleans",
       "name": "Orléans",
       "insee": "45234",
-      "wikidata": "Q6548",
+      "wikidata": null,
       "lat": 47.8734,
       "lon": 1.9122,
-      "population": 116357,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Cenabum a été fondée pendant l'Antiquité. Elle fut une place forte gauloise, l'une des villes principales de la tribu des Carnutes dont l'assemblée annuelle des druides est restée célèbre. La métropole des Carnutes était alors Chartres. Port de commerce majeur pour la corporation des nautes de la Loire, Orléans fut le lieu d'un célèbre massacre des marchands romains par un parti autochtone. Cet évènement donna un prétexte à César, alors en campagne pour la conquête de la Gaule : il extermina les habitants et incendia la ville en 52 av. J.-C.\nUne nouvelle ville fut bâtie sur les ruines de Cenabum par l'empereur romain Aurélien qui l'a refondée comme capitale d'une nouvelle civitas détachée des Carnutes. Elle fut nommée urbs Aurelianorum ou civitas Aurelianorum (en français : cité des Aurelii ou Orléanais), puis au neuvième siècle, Aurelianum, et enfin, Orléans par simplification et…",
       "attractions": [
         "Place du Martroi",
@@ -11050,17 +10934,8 @@
         "Musée des Beaux-Arts"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Sainte-Croix d'Orléans",
-        "pont George-V",
-        "collégiale Saint-Aignan d'Orléans",
-        "Jeanne d'Arc guerrière",
-        "hôtel Groslot",
-        "jardin des plantes d'Orléans",
-        "palais de justice d'Orléans",
-        "parc Floral de la Source"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Orléans",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -11234,21 +11109,16 @@
       "id": "pannes",
       "name": "Pannes",
       "insee": "45247",
-      "wikidata": "Q1377387",
+      "wikidata": null,
       "lat": 48.0119,
       "lon": 2.6708,
-      "population": 3740,
-      "population_year": "2023",
-      "history_summary": "En 1996-1997, des fouilles préventives pour la construction de l'autoroute A77 ont mis au jour au Clos du Détour la fosse d'un sanctuaire, qui a livré entre autres un ex-voto oculaire exceptionnel réunissant quatre points remarquables : il est en argent, sa forme est inédite, il est gravé d'une formule dédicatoire, et il a été offert par une femme et citoyenne romaine (appelée Prisceia Aviola) - les dévots sont plus souvent des hommes. Le tout indique que ce sanctuaire était relativement important. Le site étudié inclut une enceinte murée d'une surface de 220 × 130 m avec entre autres structures 6 puits, 3 fours à chaux (et un autre au nord de l'enceinte), trois temples (fanum) et des structures balnéaires. Le tout est daté du Ier siècle jusqu'au milieu du IIIe siècle.\n250 m plus à l'ouest, six (ou peut-être 7) fosses ont été découvertes, contenant un squelette de chien et un de mouton …",
+      "population": null,
+      "population_year": null,
+      "history_summary": "Pannes, commune française du Loiret ;\nvoir aussi : Démographie de Pannes (Loiret)\nPannes, commune française de Meurthe-et-Moselle.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Pierre-ès-Liens de Pannes",
-        "groupe d'objets à Pannes",
-        "Ange adorateur à Pannes",
-        "banc d'œuvre et banc d'œuvre transformé en autel à Pannes"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Pannes_(Loiret)",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -12026,14 +11896,14 @@
       "hotels": [
         {
           "osm_id": "node/13116088544",
-          "name": "Ibis",
+          "name": "Ibis Pau Centre",
           "brand": "ibis",
           "address": "26 rue Samonzet, 64000 Pau",
           "postcode": null,
           "lat": 43.2983198,
           "lon": -0.3676999,
           "phone": null,
-          "website": "https://ibis.accorhotels.com/"
+          "website": "https://all.accor.com/hotel/1398/index.fr.shtml"
         }
       ]
     },
@@ -12216,16 +12086,16 @@
       "id": "petite-foret",
       "name": "Petite-Forêt",
       "insee": "59459",
-      "wikidata": "Q612724",
+      "wikidata": null,
       "lat": 50.3761,
       "lon": 3.4773,
-      "population": 5054,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Autrefois simple hameau, le village est érigé en commune en 1801.\nIl s'est formé sous les murs d'un couvent de Carmes, dit de Bonne-Espérance, fondé par le Duc d'Arschot et dont la chapelle fut consacrée en 1629",
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Petite-Forêt",
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -12359,7 +12229,7 @@
           "lat": 48.9332255,
           "lon": 2.0426316,
           "phone": "+33139655610",
-          "website": null
+          "website": "https://all.accor.com/hotel/1406/index.fr.shtml"
         }
       ]
     },
@@ -12526,11 +12396,11 @@
       "id": "pontivy",
       "name": "Pontivy",
       "insee": "56178",
-      "wikidata": "Q55905",
+      "wikidata": null,
       "lat": 48.0663,
       "lon": -2.9697,
-      "population": 14640,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Le Paléolithique n'a pas laissé de trace dans la région de Pontivy. Le Mésolithique également, cette période étant marquée par une faible pénétration humaine en Bretagne du fait de la prédominance des forêts et de l'absence de possibilités de déplacements. L'agriculture et l'élevage naissants au Néolithique favorisent une véritable implantation humaine dans la région, attestée par la présence de sites mégalithiques (région de Cléguérec, tumulus de Nillizien).\nLe territoire connaît dès l'âge du Fer, puis dans l'Antiquité, une occupation humaine liée à la présence d'un gué naturel : « situé sur le Blavet à quelques kilomètres en amont de Castennec, le site de Pontivy présente une configuration favorable qui permet de franchir facilement la rivière…. L'existence d’un menhir, daté du Néolithique\net se trouvant dans le cimetière municipal en est un premier indice. La présence d'un cimetière…",
       "attractions": [
         "Château des Rohan",
@@ -12541,17 +12411,8 @@
         "Château de la Villeneuve"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "château de Pontivy",
-        "Pontivy",
-        "basilique Notre-Dame-de-la-Joie de Pontivy",
-        "tumulus de Nillizien",
-        "fontaine de Saint-Mériadec",
-        "chapelle Sainte-Tréphine de Pontivy",
-        "chapelle Notre-Dame de la Houssaye",
-        "croix de la Houssaye"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Pontivy",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -12885,25 +12746,16 @@
       "id": "quiberon",
       "name": "Quiberon",
       "insee": "56186",
-      "wikidata": "Q128783",
+      "wikidata": null,
       "lat": 47.4848,
       "lon": -3.109,
-      "population": 4876,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Les premières sépultures et squelettes humains retrouvés sur la Presqu'île (et plus précisément sur l’îlot de Téviec) datent du Mésolithique, vers 5 000 ans av. J.-C. Pendant la période du Néolithique armoricain, entre 4500 et 2 000 ans av. J.-C., les hommes ont dressé des mégalithes : menhirs, dolmens et allées couvertes sont bâtis sur Quiberon et ses alentours. Ces dolmens sont d'ailleurs encore visibles de nos jours.\n\nLe site préhistorique de Beg-er-Vil est situé à l'extrémité sud de la presqu'île de Quiberon, dans la baie de Port-Maria. Il a été occupé par des chasseurs-cueilleurs du Mésolithique de 6 200 à 6 000 av. J.-C., selon la datation au carbone 14. Beg-er-Vil est le plus ancien habitat côtier de cette période fouillé en France. Un os de clavicule, trouvé en 1985 par l'archéologue Olivier Kayser lors d'une fouille, a pu être daté en 2022, grâce aux progrès d'analyses…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "phare de la Teignouse",
-        "phare de Port-Maria",
-        "allée couverte de la Pointe-de-Guéritte",
-        "menhir de la Pointe-de-Guéritte",
-        "îlot de Toul-Bras",
-        "dolmen du Conguel",
-        "menhir de Goulvarc'h",
-        "menhir de la pointe d'Er-Limouzen"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Quiberon",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -13033,11 +12885,11 @@
       "id": "reims",
       "name": "Reims",
       "insee": "51454",
-      "wikidata": "Q41876",
+      "wikidata": null,
       "lat": 49.2535,
       "lon": 4.0551,
-      "population": 177674,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Les premières traces d'implantation humaine dans les environs de Reims remontent au Néolithique et au Chalcolithique (fin du IIIe millénaire av. J.-C.). Des champs d'urnes de l'âge du bronze y ont été retrouvés. La vallée de la Vesle a connu une occupation assez dense durant l'âge du fer. Il ne reste cependant que très peu de vestiges de ces époques sur le site de l'actuelle Reims.\n\nIl n'existe que peu d'informations sur ce qu'était Durocortorum avant l'arrivée des Romains puisque les Gaulois se transmettaient oralement le savoir. Elle était cependant considérée comme la « dernière cité civilisée » au nord.\nSi on a cru un temps que le site du « Vieux Reims », situé sur les actuelles communes de Variscourt et Condé-sur-Suippe, était le chef-lieu des Rèmes et fut déplacé ensuite sur le site de Reims, les dernières recherches infirment cette hypothèse. En effet, l'emplacement actuel de…",
       "attractions": [
         "Cathédrale Notre-Dame",
@@ -13057,17 +12909,8 @@
           "year": 2015
         }
       ],
-      "monuments_historiques": [
-        "cathédrale Notre-Dame de Reims",
-        "palais du Tau",
-        "basilique Saint-Remi de Reims",
-        "abbaye Royale de Saint-Remi de Reims",
-        "Coteaux, maisons et caves de Champagne",
-        "porte de Mars",
-        "bibliothèque Carnegie",
-        "synagogue de Reims"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Reims",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -13089,7 +12932,7 @@
           "postcode": "51100",
           "lat": 49.2501583,
           "lon": 4.0259235,
-          "phone": null,
+          "phone": "+33 3 26 79 88 50",
           "website": "https://all.accor.com/hotel/8714/index.fr.shtml"
         }
       ]
@@ -13119,8 +12962,8 @@
         "basilique Saint-Sauveur de Rennes",
         "palais du parlement de Bretagne",
         "parc du Thabor",
-        "palais Saint-Georges",
         "hôtel de ville de Rennes",
+        "palais Saint-Georges",
         "basilique Notre-Dame-de-Bonne-Nouvelle de Rennes"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Rennes",
@@ -13488,8 +13331,8 @@
       "attractions": [],
       "unesco_sites": [],
       "monuments_historiques": [
-        "église Saint-Germain-l'Auxerrois de Romainville",
         "Le Trianon",
+        "église Saint-Germain-l'Auxerrois de Romainville",
         "décoration de la salle des mariages de l'hôtel de ville de Romainville",
         "La Famille",
         "Le Mariage",
@@ -13740,11 +13583,11 @@
         "cathédrale Saint-Étienne de Saint-Brieuc",
         "viaduc de Douvenant",
         "église Saint-Michel de Saint-Brieuc",
-        "gare de Saint-Brieuc-Centrale",
-        "pont des Courses",
-        "viaduc de Souzain",
-        "viaduc de Toupin",
-        "hôtel des Ducs de Bretagne"
+        "hôtel des Ducs de Bretagne",
+        "manoir de Qui-Qu'en-Grogne",
+        "tour du Saint-Esprit",
+        "tour de Cesson",
+        "hôtel de la Caisse d'épargne de Saint-Brieuc"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Brieuc",
       "hotel_count": 1,
@@ -13821,8 +13664,8 @@
         "musée d'art et d'histoire Paul Éluard",
         "abbaye royale de Saint-Denis",
         "Tombeau de Louis XII et d’Anne de Bretagne",
-        "maison de François Coignet",
-        "pont de l'île Saint-Denis"
+        "ancien siège de l'Humanité",
+        "maison de François Coignet"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Denis_(Seine-Saint-Denis)",
       "hotel_count": 3,
@@ -13866,11 +13709,11 @@
       "id": "saint-dizier",
       "name": "Saint-Dizier",
       "insee": "52448",
-      "wikidata": "Q208310",
+      "wikidata": null,
       "lat": 48.6319,
       "lon": 4.9399,
-      "population": 22858,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Bien que la première mention du nom de la commune n'apparaisse que vers la fin du IXe siècle, l'occupation en est fort ancienne (des traces d'occupation à partir du néolithique).[réf. nécessaire]\n\nLa ville s'est substituée progressivement à la place forte gallo-romaine d'Olonna, où d'après la légende, des rescapés de la destruction d'Andemantunnum auraient rapporté la dépouille de leur évêque, Dizier, et en auraient fait un sanctuaire.\nOn a découvert dans le site archéologique des Crassées, occupé à l’époque gallo-romaine (Ier – Ve siècles) et alto-médiévale (VIe – XIIe siècles), les vestiges d'une villa gallo-romaine qui appartenait à des riches aristocrates.\n\nDans le secteur des Crassées se trouvaient également une nécropole mérovingienne et, dans la deuxième zone, un cimetière carolingien avec son église.\nDes fouilles préventives ont permis de mettre au jour des tombes dont trois de…",
       "attractions": [
         "Musée municipal",
@@ -13879,17 +13722,8 @@
         "Mémorial Napoléon"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Notre-Dame de Saint-Dizier",
-        "château de Saint-Dizier",
-        "maison du Petit-Paris",
-        "Ciné Quai",
-        "maison Parcollet",
-        "théâtre municipal de Saint-Dizier",
-        "église Saint-Martin de Gigny",
-        "église Saint-Martin de la Noue"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Dizier",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -14291,28 +14125,19 @@
       "id": "saint-lo",
       "name": "Saint-Lô",
       "insee": "50502",
-      "wikidata": "Q181704",
+      "wikidata": null,
       "lat": 49.1123,
       "lon": -1.0812,
-      "population": 19471,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Saint-Lô, anciennement Briovera (« pont sur la Vire »), fut de tout temps un lieu de passage comme l'atteste son nom celtique.\nLongtemps centre important de l'économie normande, elle a attiré la convoitise des peuples voisins, notamment des anglo-normands installés depuis plusieurs générations en Angleterre, ayant pour conséquence des nombreuses invasions successives. Elle a perdu sa position dominante vers la fin du XIXe siècle, n'ayant pas su profiter de la première révolution industrielle qui a au contraire beaucoup touché la population majoritairement paysanne. La politique de décentralisation permet cependant à la ville de revenir au premier plan.\n\nIl existe une forme d’habitat dès l’époque gallo-romaine. Occupée par la tribu gauloise des Unelles du Cotentin, Briovère fut conquise par les Romains dirigés par Quintus Titurius Sabinus en 56 av. J.-C., après la défaite de leur chef…",
       "attractions": [
         "Chapelle de la Madeleine Mémorial US",
         "Musée d’art et d’histoire de Saint-Lô"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Marbre de Thorigny",
-        "église Notre-Dame de Saint-Lô",
-        "centre hospitalier mémorial France - États-Unis",
-        "chapelle de la Madeleine",
-        "haras de Saint-Lô",
-        "église Sainte-Croix de Saint-Lô",
-        "manoir de Bosdel",
-        "château de la Vaucelle"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Lô",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -14505,9 +14330,9 @@
         "maison, monseigneur-Sibourg",
         "porte Notre-Dame",
         "hôtel Payan",
-        "hôtel de Bimard",
-        "îlot de la Tour Juiverie",
-        "orgue de tribune de la cathédrale Notre-Dame de Saint-Paul-Trois-Châteaux"
+        "orgue de tribune de la cathédrale Notre-Dame de Saint-Paul-Trois-Châteaux",
+        "partie instrumentale de l'orgue à Saint-Paul-Trois-Châteaux",
+        "groupe d'objets à Saint-Paul-Trois-Châteaux"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Paul-Trois-Châteaux",
       "hotel_count": 1,
@@ -14573,25 +14398,16 @@
       "id": "saint-quentin-sur-le-homme",
       "name": "Saint-Quentin-sur-le-Homme",
       "insee": "50543",
-      "wikidata": "Q248091",
+      "wikidata": null,
       "lat": 48.6475,
       "lon": -1.3029,
-      "population": 1338,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Saint-Quentin-sur-le-Homme est une commune française, située dans le département de la Manche en région Normandie, peuplée de 1 338 habitants.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "autel à Saint-Quentin-sur-le-Homme",
-        "groupe d'objets à Saint-Quentin-sur-le-Homme",
-        "Vierge à l'Enfant",
-        "Le Rosaire",
-        "retable de l'autel du Rosaire à Saint-Quentin-sur-le-Homme",
-        "Scènes de la vie de la Vierge",
-        "tour eucharistique à Saint-Quentin-sur-le-Homme",
-        "baie du mont Saint-Michel"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Saint-Quentin-sur-le-Homme",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -14781,8 +14597,8 @@
         "amphithéâtre de Saintes",
         "abbaye aux Dames de Saintes",
         "aqueduc de Saintes",
-        "couvent des Jacobins de Saintes",
-        "haras national de Saintes"
+        "bénitier à Saintes",
+        "hôtel Monconseil"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Saintes",
       "hotel_count": 1,
@@ -14902,19 +14718,16 @@
       "id": "saran",
       "name": "Saran",
       "insee": "45302",
-      "wikidata": "Q585690",
+      "wikidata": null,
       "lat": 47.9479,
       "lon": 1.8806,
-      "population": 17316,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Des restes d'un atelier de poterie, datant du Moyen Âge, ont été retrouvés. Une occupation plus ancienne (âge du fer, période de Hallstatt, jusqu'au haut Moyen Âge) est attestée par des fouilles sur la ZAC des vergers.\n\nLe décret de l'Assemblée Nationale du 12 novembre 1789 décrète « il y aura une municipalité dans chaque ville, bourg, paroisse ou communauté de campagne ». En 1790, dans le cadre de la création des départements, le Loiret compte alors 367 municipalités, rattachées à 59 cantons et 7 districts. La municipalité de Saran est rattachée au canton de Gidy et au district d'Orléans. Le terme « commune », au sens de l’administration territoriale actuelle, est imposé par le décret de la Convention nationale du 10 brumaire an II (31 octobre 1793) : « La Convention nationale, sur la proposition d’un membre, décrète que toutes les dénominations de ville, bourg ou village sont…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "retable à Saran",
-        "retable (encadrement de retable) à Saran"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Saran",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -14972,24 +14785,16 @@
       "id": "sarrebourg",
       "name": "Sarrebourg",
       "insee": "57630",
-      "wikidata": "Q22544",
+      "wikidata": null,
       "lat": 48.7329,
       "lon": 7.0476,
-      "population": 12170,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Pons Saravi, une agglomération gallo-romaine secondaire de la Gaule belgique.\nLa première mention d'une occupation à l'emplacement actuel de la ville de Sarrebourg se trouve dans la Table de Peutinger, copie du XIIIe siècle d'une ancienne carte romaine où figurent les principales villes et routes de l'Empire romain qui constituaient le cursus publicus du Ier siècle de notre ère. La ville y est désignée sous le nom de Ponte Saravi, située entre les stations de Ad Decem Pagos (Tarquimpol) et Tabernis (Saverne) en bordure de la Silva Vosagus, l'actuel massif des Vosges. L'Itinéraire d'Antonin, une seconde source romaine plus tardive, évoque le lieu sous le nom de Ponte Sarvix.\nD'un point de vue toponymique, le sens renvoyé par les désignations de « Ponte Saravi » et « Ponte Sarvix » est celui d'un pont sur la Sarre. Aussi les érudits ont-ils donné comme nom à la cité antique de Sarrebourg…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "chapelle des Cordeliers de Sarrebourg",
-        "synagogue de Sarrebourg",
-        "musée du pays de Sarrebourg",
-        "nécropole nationale des prisonniers de guerre de Sarrebourg",
-        "fortifications de Sarrebourg",
-        "bibliothèque municipale de Sarrebourg",
-        "villa Weiherstein"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Sarrebourg",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15040,11 +14845,11 @@
       "id": "saumur",
       "name": "Saumur",
       "insee": "49328",
-      "wikidata": "Q193821",
+      "wikidata": null,
       "lat": 47.2645,
       "lon": -0.0837,
-      "population": 26241,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La présence de monuments mégalithiques comme le dolmen de Bagneux montre l’existence d'une présence humaine dès le néolithique.\n\nEn 845, Saumur est pillée par le chef viking Hasting.\nVers 960, Thibaut le Tricheur fait construire le château de Saumur.\nÀ la fin du Xe siècle, Gelduin, seigneur de Saumur, est vassal des comtes de Blois, ce qui en fait un ennemi du puissant comte d'Anjou, Foulques III Nerra. Alors que Foulque est sur le point d'assiéger Saumur, Gelduin obtient une trêve. C'est à cette occasion que Foulque, prenant son adversaire au mot, entame la construction d'une tour sur la rive gauche de la Loire qu'il aurait baptisée Trève. En 1026, Foulque Nerra s'empare de Saumur. Le monastère Saint-Florent est détruit. Un nouveau monastère est consacré cinq ans plus tard par l'évêque d'Angers.\nLa ville est prise en 1203 par Philippe Auguste, qui l'incorpore au domaine royal. Saint…",
       "attractions": [
         "Musée des blindés",
@@ -15058,17 +14863,8 @@
           "year": 2000
         }
       ],
-      "monuments_historiques": [
-        "château de Saumur",
-        "dolmen de Bagneux",
-        "église Notre-Dame de Nantilly",
-        "abbaye Saint-Florent de Saumur",
-        "chapelle Notre-Dame-des-Ardilliers",
-        "hôtel de ville de Saumur",
-        "chapelle Saint-Jean de Saumur",
-        "château Bouvet-Ladubay"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Saumur",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15120,25 +14916,16 @@
       "id": "segre-en-anjou-bleu",
       "name": "Segré-en-Anjou Bleu",
       "insee": "49331",
-      "wikidata": "Q24939763",
+      "wikidata": null,
       "lat": 47.7111,
       "lon": -0.854,
-      "population": 17667,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La commune nouvelle de Segré-en-Anjou Bleu naît le 15 décembre 2016 à la suite d'un arrêté préfectoral de création en date du 30 septembre 2016. Elle regroupe les communes d'Aviré, du Bourg-d'Iré, de La Chapelle-sur-Oudon, de Châtelais, de La Ferrière-de-Flée, de L'Hôtellerie-de-Flée, de Louvaines, de Marans, de Montguillon, de Noyant-la-Gravoyère, de Nyoiseau, de Sainte-Gemmes-d'Andigné, de Saint-Martin-du-Bois, de Saint-Sauveur-de-Flée et de Segré, qui deviennent des communes déléguées et dont Segré est le chef-lieu.\nPour l'histoire antérieure à 2016, il convient de se reporter aux articles consacrés aux anciennes communes fusionnées.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "dolmen de la Petifaie",
-        "église Sainte-Madeleine de Segré",
-        "abbaye de Nyoiseau",
-        "Château de la Faucille",
-        "château de la Lorie",
-        "fortifications de Châtelais",
-        "logis de la Fleuriaie",
-        "manoir Le Grand Rossignol"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Segré-en-Anjou_Bleu",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15378,7 +15165,7 @@
         "maison Kammerzell",
         "église Saint-Paul de Strasbourg",
         "église Saint-Pierre-le-Vieux de Strasbourg",
-        "église protestante Saint-Pierre-le-Jeune de Strasbourg"
+        "horloge astronomique de Strasbourg"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Strasbourg",
       "hotel_count": 8,
@@ -15587,18 +15374,16 @@
       "id": "tinqueux",
       "name": "Tinqueux",
       "insee": "51573",
-      "wikidata": "Q593503",
+      "wikidata": null,
       "lat": 49.2488,
       "lon": 3.9895,
-      "population": 10771,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Les premières traces d’occupation humaine à Tinqueux remontent à l’âge néolithique, sur un site qui servait alors de cimetière. Ceci fut découvert par les fouilles préventives durant la construction du quartier Champ Paveau dans les années 1980.\nDurant l'époque gallo-romaine, la ville n’est qu’un petit regroupement de fermes sur la voie romaine prolongeant l'axe est-ouest (decumanus) de la grande cité voisine de Durocortorum (Reims).\nLes archives publiques font mention de Tinqueux pour la première fois en 975, la commune appartenait au seigneur Manasses.\nAu XIIe siècle, Tinqueux appartient au comte de Champagne, puis en 1789, à l'abbaye Saint-Denis de Reims.\nSituée en bordure de Reims, la ville voit passer les rois de France lors de leur sacre.\n\nXIXe siècle\n\nÀ la fin de l'épopée napoléonienne, la commune subit les ravages de la guerre lors de la bataille de Reims (1814), un mémorial se…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "stand de tir de Tinqueux"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Tinqueux",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15640,8 +15425,8 @@
         "tour royale",
         "église Saint-François-de-Paule de Toulon",
         "église Saint-Louis de Toulon",
-        "fort Saint-Louis",
-        "mémorial du débarquement en Provence"
+        "fort du Grand Saint-Antoine",
+        "porte d'Italie"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Toulon",
       "hotel_count": 3,
@@ -15807,11 +15592,11 @@
       "id": "tourcoing",
       "name": "Tourcoing",
       "insee": "59599",
-      "wikidata": "Q182481",
+      "wikidata": null,
       "lat": 50.721,
       "lon": 3.1577,
-      "population": 98772,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "En 1130, la première église, dédiée à saint Vaast (qui deviendra par la suite l'église Saint-Christophe), est construite. La seigneurie de Tourcoing, qui se compose d'un bourg agricole dont les habitants augmentent leurs revenus en faisant de la draperie, surmonte difficilement les ravages de la guerre de Cent Ans et des guerres de Religion. En 1360, ses habitants obtiennent un sceau royal attestant la qualité de leurs draps. En 1491, Maximilien d'Autriche, qui domine alors le comté de Flandre, lui accorde une foire franche.\n\nEn 1668, la châtellenie de Lille, dont fait partie Tourcoing, est définitivement rattachée à la France.\n\nÀ la Révolution française, la ville compte près de 15 000 habitants.\nLa ville est occupée par les ennemis coalisés de la France en 1792 et subit de nombreux dégâts.\nLe 29 floréal an II (18 mai 1794), Tourcoing est le lieu de l'importante bataille de Tourcoing,…",
       "attractions": [
         "Église Saint-Christophe",
@@ -15819,17 +15604,8 @@
         "Canal de Tourcoing"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Tourcoing",
-        "hôtel de ville de Tourcoing",
-        "église Saint-Christophe de Tourcoing",
-        "église Saint-Louis de Tourcoing",
-        "Q22961082",
-        "hospice général de Tourcoing",
-        "église Notre-Dame-des-Anges de Tourcoing",
-        "église du Sacré-Cœur de Tourcoing"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Tourcoing",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15918,18 +15694,16 @@
       "id": "treillieres",
       "name": "Treillières",
       "insee": "44209",
-      "wikidata": "Q259624",
+      "wikidata": null,
       "lat": 47.3146,
       "lon": -1.6312,
-      "population": 10600,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Une charte de Louis le Gros mentionne le bourg de Treillières en 1123.\nEn 1613, Guillaume Mouton, recteur de la paroisse, fait reconstruire l'église paroissiale de Treillières. L'église est démolie et remplacée par une autre en 1839, à l'exception du chœur qui est conservé jusqu'en 1895, date de son remplacement.\nÀ la fin du XVIIIe siècle, lors de la création des départements français, la population de Treillières oscille autour de 1 200 habitants.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Christ en croix"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Treillières",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -15957,16 +15731,7 @@
       "history_summary": "Le territoire de la commune a connu une occupation humaine dès le paléolithique puis durant le néolithique comme l'attestent de nombreux objets trouvés par des cultivateurs ou durant le creusement du canal de l'Ourcq. Le village actuel s'établit autour de la source du Sausset, petite rivière de la plaine de France.\n\nLa ville tire son nom du latin Tremuletum, le bois de trembles ou peupliers blancs. La France évoquée est le Pays de France, plaine agricole du nord-est de Paris où se situe la ville.\n\nTremblay entre dans les possessions de la puissante abbaye de Saint-Denis en 834 à la suite d'un don de Louis le Pieux. L'abbé Suger y bâtit un château et affranchit les habitants.\nLe village se répartit entre Petit Tremblay et Grand Tremblay. À cette époque, les habitants vivent de la grande culture céréalière ou de la vente de laine de mouton, vendue en particulier lors de la foire du Lendit…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Médard de Tremblay-en-France",
-        "grange aux dîmes de Tremblay-en-France",
-        "dalle funéraire armoriée à Tremblay-en-France",
-        "cloche à Tremblay-en-France",
-        "fonts baptismaux à Tremblay-en-France",
-        "maître-autel à Tremblay-en-France",
-        "Saint Médard couronnant la rosière",
-        "dalle commémorant une fondation de Pasquier Gosse, curé de Tremblay à Tremblay-en-France"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Tremblay-en-France",
       "hotel_count": 1,
       "hotels": [
@@ -15987,18 +15752,16 @@
       "id": "trignac",
       "name": "Trignac",
       "insee": "44210",
-      "wikidata": "Q1064376",
+      "wikidata": null,
       "lat": 47.3116,
       "lon": -2.2052,
-      "population": 8397,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Au sein de la commune de Montoir, Trignac s'est comporté longtemps comme un petit bourg à part. A la fin du xixe siècle Trignac possède déjà son école et son facteur. Ce qui montre déjà un début d'autonomie. Au conseil municipal un certain nombre de conseillers habitants Trignac défendent ses intérêts. Un bureau de vote y est créé en 1894. Le 1er mars 1912 le dossier de séparation est remis par le percepteur à la sous préfecture. Au départ un petit hameau d'à peine plus de 300 habitants la commune se développe à partir de la fin du XIXe siècle autour des Forges de Saint-Nazaire fondées par la « Société des Mines de Fer de l’Anjou » en 1879. La commune de Trignac fut créée le 1er janvier 1914.\nÀ la fin de la Seconde Guerre mondiale, à cause de l'existence de la Poche de Saint-Nazaire, l'occupation allemande se prolongea à Trignac comme sur l'ensemble des localités voisines de l'estuaire…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "marais de Grande Brière et du Brivet"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Trignac",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -16026,16 +15789,7 @@
       "history_summary": "La ville de Troyes, capitale historique des comtes de Champagne, et forte d'un grand passé historique et d'un riche patrimoine architectural et urbain, a été désignée Ville d’art et d’histoire le 5 juin 2009. La convention a été signée en février 2010.\n\nLes premiers habitants ayant laissé des traces tangibles de leur présence sont les Tricasses, tribu de la Gaule lyonnaise mentionnée à partir du Ier siècle av. J.-C. dans les écrits de géographes grecs, même si quelques mégalithes témoignent d'un peuplement plus ancien. La ville est mentionnée notamment lors de la guerre des Gaules à partir de l’année 58 av. J.-C., puis sous le nom de Augustobona à partir du IIe siècle, mais la dénomination dérivée du nom des Tricasses s'impose progressivement sous le Bas-Empire. Les Lingons, voisins de cette tribu, ont aussi habité dans la moitié sud-est de la ville. À l'époque de sa fondation, au cours…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Pierre-et-Saint-Paul de Troyes",
-        "basilique Saint-Urbain de Troyes",
-        "hôtel de ville de Troyes",
-        "abbaye Saint-Loup de Troyes",
-        "église Saint-Nizier de Troyes",
-        "hôtel du Petit Louvre",
-        "hôtel-Dieu-le-Comte",
-        "hôtel de Marisy"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Troyes",
       "hotel_count": 2,
       "hotels": [
@@ -16075,10 +15829,7 @@
       "history_summary": "Le territoire de la commune du Vaudreuil accueille l’une des neuf villes nouvelles initiées à partir de 1965 et créées par la loi du 10 juillet 1970. Leur objectif était, aux termes de la loi du 13 juillet 1983, « d'assurer un meilleur équilibre social, économique et humain dans des régions à forte concentration de population, en offrant des possibilités d'emploi et de logements, ainsi que des équipements publics et privés ».\nL'élaboration d'une première étude d'urbanisation du site de Poses-Tournedos est confiée en 1967 aux architectes de « l'Atelier de Montrouge », Gérard Thurnauer, Jean Renaudie, Pierre Riboulet et Jean-Louis Véret, dans la continuité de leurs premières missions pour des plans d'urbanisme à Rouen. Cette premières étude, présentée en avril 1968, permet de lancer les analyses approfondies du plan d'urbanisme de la ville nouvelle et de ses principes de mise en œuvre,…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "menhir de la Basse Crémonville",
-        "ferme de la Haute-Crémonville"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Val-de-Reuil",
       "hotel_count": 1,
       "hotels": [
@@ -16107,13 +15858,7 @@
       "history_summary": "Si le village de Valbonne n’apparaît qu'au début de l'époque moderne (1519), son territoire a livré des traces d'occupation anciennes.\n\nL'aven de la Mort de Lambert est constitué d'une série de salles qui ont livré de nombreux restes humains, ainsi qu'un dépôt de céréales associé à des céramiques modelées ainsi que des restes d'outils et de parures en bronze. La fonction la plus évidente du site est funéraire, mais une utilisation comme lieu de réserve temporaire de nourriture est généralement admise. L'ensemble du mobilier renvoie à l'âge du bronze.\n\nAu Haut Moyen Âge, quelques hameaux des environs : Opio, Le Brusc, Sartoux (Castellaras), les Clausonnes et Villebruc, étaient déjà habités, mais c'est sur les terres d'un vallon isolé et désert du territoire de Sartoux qui deviendra « Vallis bona » (la bonne vallée), offertes en 1199 par l’évêque d'Antibes à l'abbaye de Prads…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "abbaye de Valbonne",
-        "aqueduc de Clausonnes",
-        "place des Arcades",
-        "domaine des Trois Moulins de la Valmasque",
-        "groupe d'objets à Valbonne"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Valbonne",
       "hotel_count": 1,
       "hotels": [
@@ -16142,16 +15887,7 @@
       "history_summary": "Note : le gentilé correspondant à Valence est Valentinois, mais le « Valentinois » désigne aussi une région géographique, historique et l'une des anciennes provinces de France ayant fait partie de la province du Dauphiné. Le comté, devenu duché de Valentinois n'avait pas Valence pour capitale car cette ville était une possession des comtes-évêques de Valence. Il y avait donc le comté de Valence (capitale Valence), d'une part, et le comté de Valentinois, d'autre part,.\n\nLa cité de Massalia, depuis longtemps en bons termes avec Rome, lui avait demandé de l'aide contre les Salyens qui ravageaient son territoire. L'intervention des Romains, dès 125 avant notre ère, assura sa sécurité mais la guerre se poursuivit contre les Allobroges chez qui les dynastes salyens avaient trouvé refuge. En août 121, l'armée de Quintus Fabius Maximus les écrase lors de la bataille du confluent (sous-entendu,…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Apollinaire de Valence",
-        "Valence-Ville",
-        "kiosque Peynet",
-        "hôtel de ville de Valence",
-        "maison des Têtes de Valence",
-        "parc Jouvet",
-        "Pendentif",
-        "église Saint-Jean-Baptiste de Valence"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Valence_(Drôme)",
       "hotel_count": 1,
       "hotels": [
@@ -16182,16 +15918,7 @@
         "Musée des Beaux Arts"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "musée des Arts et de l'Archéologie de Valenciennes",
-        "basilique Notre-Dame-du-Saint-Cordon de Valenciennes",
-        "hôtel de ville de Valenciennes",
-        "fosse Dutemple",
-        "église Saint-Géry de Valenciennes",
-        "tour de la Dodenne",
-        "citadelle de Valenciennes",
-        "église Notre-Dame-du-Sacré-Cœur de Valenciennes"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Valenciennes",
       "hotel_count": 1,
       "hotels": [
@@ -16212,25 +15939,16 @@
       "id": "vand-uvre-les-nancy",
       "name": "Vandœuvre-lès-Nancy",
       "insee": "54547",
-      "wikidata": "Q320308",
+      "wikidata": null,
       "lat": 48.66,
       "lon": 6.1603,
-      "population": 29942,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Dès le néolithique une présence humaine régulière a lieu sur la côte du Montet et se poursuit jusqu'à l'époque mérovingienne à Brabois comme l'attestent plusieurs pièces trouvées par MM. Barthélemy, Bleicher et Guérin.\nLa commune de Vandœuvre-lès-Nancy faisait partie de l'ancien duché de Lorraine : elle a dépendu de la prévôté et du bailliage de Nancy sous la coutume de Lorraine.\nLa localité de Vandœuvre est ancienne, car un seigneur de ce lieu, qui était comte de Toul au Xe siècle, possédait un château à Vandœuvre, il n'en reste cependant aucun vestige. Il y avait aussi dans cette commune, un prieuré dit de Saint-Melain, fondé par une dame de Vandœuvre. Celui-ci existait déjà au XIIe siècle, car il en est parlé vers 1150, dans le dénombrement des biens de l'abbaye de Cluny. Ce prieuré fut uni à la collégiale Saint-Georges de Nancy, le 29 novembre 1603.\nIl y avait sur le territoire de…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-François-d'Assise de Vandœuvre-lès-Nancy",
-        "château Anthoine",
-        "chapelle de Brabois",
-        "église Saint-Melaine de Vandœuvre-lès-Nancy",
-        "Vierge à l'Enfant",
-        "Saint Mélaine",
-        "plaque commémorative (création de messe) à Vandœuvre-lès-Nancy",
-        "Vierge de Pitié"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Vandœuvre-lès-Nancy",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -16250,27 +15968,18 @@
       "id": "vannes",
       "name": "Vannes",
       "insee": "56260",
-      "wikidata": "Q6593",
+      "wikidata": null,
       "lat": 47.6577,
       "lon": -2.7485,
-      "population": 55790,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "La ville de Vannes ou Darioritum est fondée à l’époque romaine, dans la première moitié du Ier siècle. Elle est la capitale de la Cité des Vénètes.\nLes troubles politiques de l’Antiquité tardive, lors de la seconde moitié du IIIe siècle, entraînent la fortification de Vannes et le regroupement des zones d’habitation vers la colline du Mené.\n\nLa ville est conquise en 578 par Waroch.\nLa ville devient la capitale du royaume du Broërec.\nLa ville est rattachée à la Bretagne en 851.\nEn 753, le roi des Francs Pépin le Bref vainc les Bretons et prend Vannes. Pour contenir les Bretons, il organise une zone-tampon sous administration militaire, la Marche de Bretagne composée du Vannetais, du Nantais, du Rennais et d'un bout du Maine. Vannes en est une des capitales. L'empereur Louis le Débonnaire réunit en septembre 818 son armée est assemblée à Vannes (alors souvent appelée Veneda ou Venedia)…",
       "attractions": [
         "le centre historique de la ville"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Pierre de Vannes",
-        "Vannes",
-        "porte Saint-Vincent",
-        "hôtel de ville de Vannes",
-        "église Saint-Patern de Vannes",
-        "chapelle Saint-Yves de Vannes",
-        "château-Gaillard",
-        "musée de la Cohue"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Vannes",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 2,
       "hotels": [
         {
@@ -16309,16 +16018,7 @@
       "history_summary": "En 1999, des fouilles archéologiques ont mis au jour des vestiges de thermes gallo-romains des IIe – IIIe siècles, rue Gaudray. On ne sait s'il s'agit d'un sanctuaire suburbain de Lutèce, d'une villa ou s'il existait à l'époque sur le site de Vanves, un vicus (agglomération secondaire).\n\nCe village apparaît dans un document de 1163 comme appartenant à l'abbaye Sainte-Geneviève de Paris ; en 1247, les habitants sont affranchis par l'abbé.\nL'église Saint-Rémy (place de la République dans le bas de Vanves) date de 1419.\nEn 1423, l'abbé, resté fidèle à Charles VII, est incarcéré par Henri IV, roi d'Angleterre.\n\nFrançois Ier, écrivant à l'empereur Charles Quint, prend le titre de « roi de France, seigneur de Gonesse et de Vanvres », « pour se moquer de la longue liste de titres qu'étaloit l'empereur » (Mathurin Régnier).\nEn 1700, les princes de Condé font construire un château, dont…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Vanves - Malakoff",
-        "église de la Sainte-Trinité de Vanves",
-        "hôtel de ville de Vanves",
-        "prieuré Sainte-Bathilde de Vanves",
-        "église Saint-Rémy de Vanves",
-        "cimetière de Vanves",
-        "parc Frédéric-Pic",
-        "groupe scolaire Gambetta"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vanves",
       "hotel_count": 1,
       "hotels": [
@@ -16347,9 +16047,7 @@
       "history_summary": "Une présence humaine est attestée sommairement durant les périodes du Bronze final et au premier âge du fer.\nAvant la conquête romaine, le territoire se serait trouvé sur le territoire des Ambarres, une tribu gauloise dont le nom signifie « vivant des deux (*amb) côtés de la Saône (Arar, la Saône) ». Toutefois, la limite territoriale entre les Ambarres et les Allobroges étant mal déterminée, le territoire n'aurait pas dépendu formellement de l'un ou l'autre de ces deux peuples gaulois du fait de sa situation sur le Rhône. À l'époque romaine, le territoire se situe à proximité de la capitale des Gaules Lugdunum, aujourd'hui Lyon. Une voie romaine reliant Lugdunum à Crémieu aurait traversé l'actuel territoire communal et des vestiges antiques ont été repérés au lieu-dit le Ratier.\nAprès la disparition de l'Empire romain la région fut successivement sous le contrôle des Burgondes, puis des…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "usine Tase"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vaulx-en-Velin",
       "hotel_count": 1,
       "hotels": [
@@ -16378,16 +16076,7 @@
       "history_summary": "Venoy est une commune française située dans le département de l'Yonne en région Bourgogne-Franche-Comté.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "Saint Jean-Baptiste et saint Benoît",
-        "groupe d'objets à Venoy",
-        "retable à Venoy",
-        "ensemble de 5 statues et 2 groupes sculptés à Venoy",
-        "plaque commémorative de fondation de messes par Simon Leblanc et Renée Naulin, sa femme à Venoy",
-        "ostensoir à Venoy",
-        "La Descente de Croix",
-        "Saint Michel terrassant le dragon"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Venoy",
       "hotel_count": 1,
       "hotels": [
@@ -16428,16 +16117,7 @@
           "year": 1979
         }
       ],
-      "monuments_historiques": [
-        "château de Versailles",
-        "cathédrale Saint-Louis de Versailles",
-        "jardin de Versailles",
-        "Versailles-Chantiers",
-        "salle du Jeu de paume",
-        "Versailles-Château–Rive-Gauche",
-        "synagogue de Versailles",
-        "parc de Versailles"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Versailles",
       "hotel_count": 1,
       "hotels": [
@@ -16473,16 +16153,7 @@
         "Maison natale du peintre et sculpteur français Jean-Léon Gérôme"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "synagogue de Vesoul",
-        "église Saint-Georges de Vesoul",
-        "monument aux morts des Allées",
-        "collège de Marteroy",
-        "couvent des Ursulines de Vesoul",
-        "hôtel Baressols",
-        "hôtel Lyautey de Genevreuille",
-        "hôtel Pétremand"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vesoul",
       "hotel_count": 1,
       "hotels": [
@@ -16518,16 +16189,7 @@
         "Pavillon Sévigné"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "opéra de Vichy",
-        "pont Boutiron",
-        "église Saint-Blaise de Vichy",
-        "source des Célestins",
-        "hôtel de ville de Vichy",
-        "Confiserie Aux Marocains",
-        "hôtel des Ambassadeurs",
-        "centre culturel Valery-Larbaud"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vichy",
       "hotel_count": 2,
       "hotels": [
@@ -16574,16 +16236,7 @@
         "Jardin de Cybèle"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "cathédrale Saint-Maurice de Vienne",
-        "temple d'Auguste et de Livie",
-        "église Saint-Pierre de Vienne",
-        "cirque romain de Vienne",
-        "théâtre antique de Vienne",
-        "chapelle Saint-Théodore de Vienne",
-        "château de la Bâtie",
-        "enceinte romaine de Vienne"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vienne_(Isère)",
       "hotel_count": 1,
       "hotels": [
@@ -16618,16 +16271,7 @@
         "Musée de Vierzon"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "usine de porcelaine Gaucher-Blin",
-        "jardin de l'abbaye de Vierzon",
-        "église Notre-Dame de Vierzon",
-        "beffroi de Vierzon",
-        "maison des Vicaires",
-        "maison, 55 rue du Maréchal-Joffre",
-        "maison à pans de bois, 36 rue du Maréchal-Joffre, rue du Marché-au-Blé",
-        "ateliers Célestin Gérard"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vierzon",
       "hotel_count": 1,
       "hotels": [
@@ -16656,15 +16300,7 @@
       "history_summary": "Les vestiges de la nécropole mégalithique de Peyrehaut témoignent d'une présence humaine sur le territoire communal, il y a 5 000 ans.\nUn aqueduc gallo-romain, datant du Ier siècle partait du lieu-dit Carbonnieux à Villenave-d'Ornon. Il passait ensuite au lieu-dit Sarcignan où des vestiges de l’édifice ont été découverts en 1973. L'édifice était prolongé vers le lieu-dit Madère, pour venir alimenter en eau la cité romaine de Burdigala (aujourd’hui Bordeaux).\n\nEn 960, une chapelle en bois, baptisée « Notre-Dame-des-Bois » est édifiée par une mission évangélique, dans un site composé d'une forêt dense de pins, de landes et de marais, avec des clairières et quelques habitants disséminés. C'est au XIe siècle que la ville voit le jour et une église est bâtie en pierre, peut-être sur l'emplacement de la chapelle initiale en bois. La paroisse Saint-Martin se développe alors autour de cette…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Martin de Villenave-d'Ornon",
-        "château de Sallegourde",
-        "Vierge à l'Enfant",
-        "cloche à Villenave-d'Ornon",
-        "l'Adoration des bergers",
-        "saint Roch",
-        "saint Jean-Baptiste et Vierge, la Crucifixion, saint Martin à Villenave-d'Ornon"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villenave-d'Ornon",
       "hotel_count": 2,
       "hotels": [
@@ -16696,16 +16332,23 @@
       "id": "villeneuve-d-ascq",
       "name": "Villeneuve-d'Ascq",
       "insee": "59009",
-      "wikidata": "Q2180094",
+      "wikidata": null,
       "lat": 50.6362,
       "lon": 3.1619,
-      "population": 11618,
-      "population_year": "1968",
-      "history_summary": "Dans les années 1980, on a trouvé dans le parc de l'actuelle école Saint-Adrien un fragment de hache polie en silex, datant selon les estimations d'environ 2 000 ans avant notre ère. Plusieurs haches de ce genre ont été découvertes aux alentours de Lille, notamment dans les alluvions de la Deûle. Les historiens les attribuent à des populations employant encore un outillage de pierre, mais déjà adonnées à l'élevage et à l'agriculture.\nDes fouilles effectuées en 2017 par l'Institut national de recherches archéologiques préventives, sur la place de la République, confirment[réf. nécessaire] que les premiers phénomènes d'occupation du sol datent de la Protohistoire ancienne[pas clair]. Des vestiges de la fin de la Tène et du Haut-Empire romain[pas clair] indiquent en effet qu’un espace consacré à la culture ou à la pâture se trouvait à cet endroit.\nCependant, il n'y a aucune preuve que…",
-      "attractions": [],
+      "population": null,
+      "population_year": null,
+      "history_summary": "L'histoire de Villeneuve-d'Ascq est liée à l'aventure commune des trois villages d'Annappes, Ascq et Flers dont elle est issue. Quelle que soit l'époque, quelques constantes marquent l'histoire de ces villages : une vie rurale autrefois (cette ville est à présent très urbaine), en proie à des épidémies, à la famine et à la guerre.\n\nLe premier passage connu de l'homme sur ce qui est maintenant le territoire de Villeneuve-d'Ascq est attesté par un fragment de hache polie en silex, trouvé dans les années 1980 dans le parc de l'école Saint-Adrien à Annappes. Elle est estimée à environ -2000 ans. Selon les historiens, ces haches sont attribuées à des populations qui pratiquent déjà l'élevage et l'agriculture mais emploient encore un outillage de pierre taillée. Cependant, il n'y a aucune preuve que l'homme se soit alors sédentarisé à cet endroit ; en effet les traces d'occupation humaine…",
+      "attractions": [
+        "Mémorial Ascq 1944",
+        "Château de Flers",
+        "Château du Sart",
+        "Villa Gabrielle",
+        "Château du Recueil",
+        "LaM - Lille Métropole Musée d'art moderne, d'art contemporain et d'art brut"
+      ],
       "unesco_sites": [],
       "monuments_historiques": [],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Annappes",
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -16733,16 +16376,7 @@
       "history_summary": "Le village de Villeneuve a été construit sur un sol inculte qui faisait partie des biens donnés par l'empereur Charlemagne avant 896, à un nommé Valchaire qui édifia d'abord quelques constructions et une église, et qui peu à peu, par l'adjonction d'autres constructions formèrent une Ville neuve, d'où l'étymologie de Villeneuve.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "canal du Midi",
-        "église de l'Invention-de-Saint-Étienne de Villeneuve-lès-Béziers",
-        "groupe d'objets à Villeneuve-lès-Béziers",
-        "la Nativité",
-        "Sainte Madeleine",
-        "Saint Jacques",
-        "Saint Roch",
-        "autel (maître-autel) à Villeneuve-lès-Béziers"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villeneuve-lès-Béziers",
       "hotel_count": 1,
       "hotels": [
@@ -16763,25 +16397,16 @@
       "id": "villeneuve-sur-lot",
       "name": "Villeneuve-sur-Lot",
       "insee": "47323",
-      "wikidata": "Q205638",
+      "wikidata": null,
       "lat": 44.4183,
       "lon": 0.7484,
-      "population": 22350,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Insérée aujourd'hui entre les collines vertes et boisées qui dominent les premières terrasses et la basse vallée du Lot, le site de Villeneuve possède déjà une longue histoire à la fin de la période de La Tène, avec les installations de transport, entre chemins et la puissante voie d'eau Oldus, des Nitiobroges[pas clair]. L'occupation romaine valorise le site antique d'Eysses, nommé en latin Excisum, à environ un kilomètre au nord de l'actuel centre-ville, au carrefour de deux grandes voies de communication. Les nombreuses explorations ou fouilles archéologiques attestent l'érection d'un premier noyau urbain comprenant camp de légionnaires, quartiers artisanaux, forum, curie, temples dont il nous reste quelques sous-structures.\nEn particulier, des fouilles INRAP effectuées en 2005 sur le site de Ressigué ont permis de mettre au jour des structures fossoyées dans un puits daté du IIe…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "pont des Cieutats",
-        "pont de la Libération de Villeneuve-sur-Lot",
-        "centre de détention d'Eysses",
-        "église Saint-Étienne de Villeneuve-sur-Lot",
-        "château de Lamothe",
-        "église Sainte-Catherine de Villeneuve-sur-Lot",
-        "chapelle Notre-Dame-de-Grâce-et-de-Toute-Joie de Villeneuve-sur-Lot",
-        "chapelle des Pénitents blancs de Villeneuve-sur-Lot"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Villeneuve-sur-Lot",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -16809,14 +16434,7 @@
       "history_summary": "Situé au cœur de la plaine céréalière du pays de France, au nord-est de Paris, le territoire de la commune semble avoir été peuplé dès le néolithique (des outils en silex de cette période ont été découverts voie des Prés). Durant l'antiquité, le lieu est habité par la tribu gauloise des Parisii, ceci jusqu'à la conquête romaine du Ier siècle av. J.-C., comme en témoignent les multiples tessons de céramique datant de la Tène finale découverts en prospection. Des fouilles ont mis au jour un puits datant du Haut Empire, attestant de l'occupation du site à l'époque gallo-romaine. Dès le IXe siècle, Villa picta est signalée comme possession de la puissante abbaye de Saint-Denis, après que les terres lui ont été cédées par l'empereur Louis le Pieux, vers 830. Le roi Robert II le Pieux ayant renoncé en 1008 aux droits de justice qu'il y détient, elle est constituée en châtellenie, territoire…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "pavillon du centenaire de l'aluminium",
-        "Saint Pierre",
-        "dalle funéraire de Nicolas Caillot, curé de Villepinte à Villepinte",
-        "l'Assomption de la Vierge à Villepinte",
-        "fonts baptismaux à Villepinte",
-        "dalle funéraire de Louise de Launay à Villepinte"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villepinte_(Seine-Saint-Denis)",
       "hotel_count": 2,
       "hotels": [
@@ -16856,16 +16474,7 @@
       "history_summary": "Avant la Révolution française, Villers-Saint-Paul est le siège d'une seigneurie. Elle est détenue en 1764 par Henry-Gabriel de Béry, marquis d'Essertaux, seigneur d'Oresmaux, Jumelle, Treux, Villecourt et Villers-Saint-Paul, époux d'Anne Marie Claude de Berbier du Metz.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "château de Villers-Saint-Paul",
-        "église Saint-Pierre-et-Saint-Paul de Villers-Saint-Paul",
-        "Vierge de l'Annonciation ou Sainte",
-        "Saint entre Guillaume et Jacqueline Brunel ou Les époux agenouillés sous la protection d'un saint patron",
-        "Saint Paul",
-        "dalle funéraire à effigie gravée à Villers-Saint-Paul",
-        "dalle funéraire à effigie gravée de Jacqueline Brunel à Villers-Saint-Paul",
-        "dalle funéraire de Gallerand Vuibert et Jeanne Mahieu à Villers-Saint-Paul"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villers-Saint-Paul",
       "hotel_count": 1,
       "hotels": [
@@ -16894,11 +16503,7 @@
       "history_summary": "Dès avant la Première Guerre mondiale, le centre militaire de Mézières disposait d'un terrain d'atterrissage situé près du fort des Ayvelles et offrant aux navigateurs aériens aussi bien abri que ravitaillement et matériel complets.\nEn 1910, avec l'essor de l'aviation, le circuit de l'Est, course aéronautique reliant Paris – Troyes – Nancy – Mézières – Douai – Amiens – Paris, fait escale sur le terrain d'aviation de Villers-Semeuse.\n\nLe 18 décembre 1918, près de Villers-Semeuse, dans une revue passée par le général Marie-Eugène Debeney, le drapeau du 115e R.I. reçoit la fourragère aux couleurs de la Croix de guerre 1914-1918[réf. nécessaire].\n\nLa commune a été décorée de la Croix de guerre 1939-1945 le 11 novembre 1948\n\nEn 1969 Citroën implante une fonderie sur les communes de Villers-Semeuse et des Ayvelles, destinée à l'origine à fabriquer les pièces du moteur de la Citroën GS et GSA.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Pierre de Villers-Semeuse",
-        "groupe d'objets à Villers-Semeuse",
-        "saint Pierre"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villers-Semeuse",
       "hotel_count": 1,
       "hotels": [
@@ -16930,12 +16535,7 @@
         "Falaises des vaches noires"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Saint-Martin de Villers-sur-Mer",
-        "château de Villers",
-        "Saint Joseph père nourricier du Christ",
-        "statuaire, verrières à Villers-sur-Mer"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villers-sur-Mer",
       "hotel_count": 1,
       "hotels": [
@@ -16966,15 +16566,7 @@
         "Hôtel de ville"
       ],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "centrale hydroélectrique de Cusset",
-        "hôtel de ville de Villeurbanne",
-        "Gratte-ciel",
-        "villa Lafont",
-        "monument aux morts de Villeurbanne",
-        "résidence La Perralière",
-        "minoterie de la Société des Grands Moulins Electriques de Villeurbanne"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Villeurbanne",
       "hotel_count": 1,
       "hotels": [
@@ -17003,16 +16595,7 @@
       "history_summary": "Une première agglomération protohistorique, vraisemblablement fortifiée, a été retrouvée sur le site du Griffon. Au sein de celle-ci, un bâtiment monumental, rappelant ceux, proches, de Glanum, d'Ensérune ou d'Entremont, a pu être mis au jour. L'ensemble est daté des IIIe-IInd siècles av. J.-C..\nLe village de Vitrolles prend sa naissance vers le Ve siècle de notre ère quand, à la chute de l'empire romain, la population de la région cherche à se protéger des invasions barbares, Goths, Francs et Sarrasins, en se réfugiant autour du rocher de granit rose (le rocher = lou roucas en provençal) dominant la plaine du massif de l'Arbois. Le village se constitue alors autour de celui-ci et s'entoure de remparts comportant deux portes : Notre-Dame au sud et le Portalet à l'ouest.\nPendant la majeure partie du Moyen Âge le village passe de main en main aux différentes familles comtales provençale…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "tour sarrasine de Vitrolles",
-        "chapelle Notre-Dame-de-Vie, des Pénitents bleus",
-        "Présentation de l'Enfant Jésus au Temple",
-        "Saint Denis, saint Roch et saint Eloi devant la Vierge à l'Enfant",
-        "L'Arrestation de Jésus au Jardin des oliviers",
-        "Mort de saint Joseph avec saint Clair",
-        "L'Education de la Vierge avec saint Mitre et sainte Marguerite",
-        "croix de procession de l'ancienne confrérie des Pénitents Blancs à Vitrolles"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vitrolles_(Bouches-du-Rhône)",
       "hotel_count": 1,
       "hotels": [
@@ -17041,16 +16624,7 @@
       "history_summary": "Le site de Vitré a été occupé dès le Néolithique. À moins d'un kilomètre de l'agglomération, sur la commune de Pocé-les-Bois, se dresse le menhir de la Pierre Blanche.\nÀ 2 km à l'est de la ville, l'INRAP a fouillé en 2007 et 2008 un site d'habitat daté du second âge du fer. Occupé de la fin du Ve siècle au Ier siècle av. J.-C., il se compose entre autres de deux enclos aménagés successivement, le premier couvrant un espace de 3 000 m2, le second, formé lui-même de deux enceintes concentriques s'étendant sur 1,8 ha. Les traces de bâtiments en bois et torchis, associées à de nombreux restes de céramiques témoignant de la vie quotidienne des occupants des lieux ont été retrouvées à l'intérieur des enclos. La conformation du site, ainsi que quelques indices perçus parmi les objets archéologiques découverts suggèrent un statut social remarquable pour le propriétaire de cette exploitation…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "château de Vitré",
-        "château des Rochers-Sévigné",
-        "Vitré",
-        "remparts de Vitré",
-        "église Notre-Dame de Vitré",
-        "chapelle Saint-Nicolas de Vitré",
-        "prieuré Notre-Dame de Vitré",
-        "église Saint-Martin de Vitré"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vitré_(Ille-et-Vilaine)",
       "hotel_count": 1,
       "hotels": [
@@ -17079,9 +16653,7 @@
       "history_summary": "Vouillé est une commune du Centre-Ouest de la France située dans le département des Deux-Sèvres, dans la région Nouvelle-Aquitaine.",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "église Notre-Dame de Vouillé"
-      ],
+      "monuments_historiques": [],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Vouillé_(Deux-Sèvres)",
       "hotel_count": 1,
       "hotels": [
@@ -17131,18 +16703,16 @@
       "id": "woippy",
       "name": "Woippy",
       "insee": "57751",
-      "wikidata": "Q22300",
+      "wikidata": null,
       "lat": 49.1651,
       "lon": 6.1552,
-      "population": 14967,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "À l’automne 2007, le Pôle d’archéologie préventive de la communauté d'agglomération de Metz-Métropole met au jour des traces d’activités humaines datant du Néolithique et du Premier âge du fer au niveau de la ZAC des Côteaux. De nombreux objets sont retrouvés : trois outils taillés dans des galets de quartzite de la Moselle, dont un racloir, datés du Moustérien (– 50 000 ans), des outils agricoles de l’époque du Rubané (début du Néolithique, – 5300 à – 4900) et des du Néolithique moyen (– 4400 à – 4300) ; des traces de graines de céréales (orge vêtue, blé épeautre, millet commun et lentille) et de pollens d’arbres (aulne, noisetier, chêne) suggèrent l’existence d’un établissement agropastoral situé à proximité d’une forêt humide. Les vestiges, discrets, sont caractéristiques des habitats construits en matériaux périssables de l’extrême fin du Premier âge du Fer (bâtiments à quatre et à…",
       "attractions": [],
       "unesco_sites": [],
-      "monuments_historiques": [
-        "château de Woippy"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Woippy",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -17264,11 +16834,11 @@
       "id": "epernay",
       "name": "Épernay",
       "insee": "51230",
-      "wikidata": "Q205537",
+      "wikidata": null,
       "lat": 49.0391,
       "lon": 3.9282,
-      "population": 22174,
-      "population_year": "2023",
+      "population": null,
+      "population_year": null,
       "history_summary": "Il n’a pas été retrouvé de documents concernant la fondation de la ville, mais on sait qu’à l’époque gallo-romaine, la Marne sert de délimitation entre la Gaule Celtique et la Gaule belgique. Épernay, étant sur la rive gauche, appartient à la Gaule Celtique. Elle apparaît dans certains écrits à partir du Ve siècle, date généralement considérée comme celle de la fondation de la ville. Il est généralement admis que la fondation d'Épernay date de 418 l'endroit étant déjà considérable en 445. Il semble pourtant que la fondation d’Épernay soit antérieure à l’installation des tanneurs comme le veut la légende. Des tombes datant du Ve siècle av. J.-C. y ont été retrouvées, notamment rue de Bernon.\n\nAprès les invasions germaniques, la ville passe sous la domination des Francs et c'est Euloge, un officier de Clovis, qui se la voit attribuer. Il est, selon la tradition, le premier seigneur…",
       "attractions": [
         "Musée du vin de Champagne et d'Archéologie régionale d'Epernay",
@@ -17284,17 +16854,8 @@
           "year": 2015
         }
       ],
-      "monuments_historiques": [
-        "Coteaux, maisons et caves de Champagne",
-        "Champagne de Castellane",
-        "avenue de Champagne",
-        "hôtel de ville d'Épernay",
-        "synagogue d'Épernay",
-        "Maison Belle Époque",
-        "fort Chabrol",
-        "hôtel de la Caisse d'épargne d'Épernay"
-      ],
-      "wikipedia_url": "https://fr.wikipedia.org/wiki/Épernay",
+      "monuments_historiques": [],
+      "wikipedia_url": null,
       "hotel_count": 1,
       "hotels": [
         {
@@ -17443,11 +17004,11 @@
         "mosquée d'Évry-Courcouronnes",
         "cathédrale de la Résurrection d'Évry",
         "halles de Méréville",
-        "Les Pyramides",
         "bornes fleurdelysées",
+        "Les Pyramides",
         "La Dame du lac",
         "Le Déambulatoire",
-        "Adoration des bergers"
+        "lustre à Estouches"
       ],
       "wikipedia_url": "https://fr.wikipedia.org/wiki/Évry-Courcouronnes",
       "hotel_count": 3,
