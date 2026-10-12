@@ -1354,5 +1354,9 @@
   "way/67722468": {
     "address": "3 Avenue René Cassin, 23000 Guéret",
     "distance_km": 0.021401975081100772
+  },
+  "node/14262112256": {
+    "address": "7 Avenue du Mont Riboudet, 76000 Rouen",
+    "distance_km": 0.018038256362194714
   }
 }
