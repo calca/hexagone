@@ -3462,5 +3462,13 @@
     "wikidata": null,
     "lat": 44.803,
     "lon": -0.5485
+  },
+  "node/14262112256": {
+    "name": "Rouen",
+    "name_norm": "Rouen",
+    "insee": "76540",
+    "wikidata": null,
+    "lat": 49.4412,
+    "lon": 1.0912
   }
 }
