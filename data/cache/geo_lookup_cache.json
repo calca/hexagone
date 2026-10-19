@@ -3470,5 +3470,13 @@
     "wikidata": null,
     "lat": 49.4412,
     "lon": 1.0912
+  },
+  "node/2657352659": {
+    "name": "Toulouse",
+    "name_norm": "Toulouse",
+    "insee": "31555",
+    "wikidata": null,
+    "lat": 43.6007,
+    "lon": 1.4328
   }
 }
