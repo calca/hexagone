@@ -3478,5 +3478,37 @@
     "wikidata": null,
     "lat": 43.6007,
     "lon": 1.4328
+  },
+  "node/3427564280": {
+    "name": "Orléans",
+    "name_norm": "Orleans",
+    "insee": "45234",
+    "wikidata": null,
+    "lat": 47.8734,
+    "lon": 1.9122
+  },
+  "node/14336792393": {
+    "name": "Aix-en-Provence",
+    "name_norm": "Aix-en-Provence",
+    "insee": "13001",
+    "wikidata": null,
+    "lat": 43.536,
+    "lon": 5.3879
+  },
+  "node/14352885701": {
+    "name": "Paris",
+    "name_norm": "Paris",
+    "insee": "75056",
+    "wikidata": null,
+    "lat": 48.8589,
+    "lon": 2.347
+  },
+  "node/14367622370": {
+    "name": "Honfleur",
+    "name_norm": "Honfleur",
+    "insee": "14333",
+    "wikidata": null,
+    "lat": 49.4086,
+    "lon": 0.2297
   }
 }
