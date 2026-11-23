@@ -1362,5 +1362,17 @@
   "node/2657352659": {
     "address": "2 Rue Claire Pauilhac, 31000 Toulouse",
     "distance_km": 0.01077462720033961
+  },
+  "node/3415274893": {
+    "address": "9 Quai de la Marine, 14800 Deauville",
+    "distance_km": 0.005561618824353562
+  },
+  "node/3427564280": {
+    "address": "17 Avenue de Paris, 45000 Orléans",
+    "distance_km": 0.002293123597094339
+  },
+  "node/14336792393": {
+    "address": "1 Avenue  Robert Schuman, 13090 Aix-en-Provence",
+    "distance_km": 0.024721567570098888
   }
 }
